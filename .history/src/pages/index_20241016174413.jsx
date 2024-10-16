@@ -24,15 +24,8 @@ const DigitalAgency = () => {
 			playCursor();
 			setupTimeline();
 			setupScrollDots();
-			clearCookies(); // Xóa cookie mỗi lần truy cập
 		}
 	}, []);
-
-	function clearCookies() {
-		document.cookie.split(';').forEach(function (c) {
-			document.cookie = c + '=;expires=' + new Date().toUTCString() + ';path=/';
-		});
-	}
 
 	function playCursor() {
 		try {
@@ -222,19 +215,6 @@ const DigitalAgency = () => {
 				<meta
 					name="twitter:creator"
 					content="@NPHDigital"
-				/>
-
-				<meta
-					http-equiv="Cache-Control"
-					content="no-cache, no-store, must-revalidate"
-				/>
-				<meta
-					http-equiv="Pragma"
-					content="no-cache"
-				/>
-				<meta
-					http-equiv="Expires"
-					content="0"
 				/>
 
 				{/* Viewport and Mobile Optimization */}
