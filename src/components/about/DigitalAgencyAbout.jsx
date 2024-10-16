@@ -9,51 +9,56 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const DigitalAgencyAbout = () => {
 	const videoRef = useRef(null);
+	const smootherRef = useRef(null);
 
-	// Scroll Smoother setup
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			const device_width = window.innerWidth;
-			const smootherInstance = ScrollSmoother.create({
+			const deviceWidth = window.innerWidth;
+			smootherRef.current = ScrollSmoother.create({
 				smooth: 1.35,
-				effects: device_width < 1025 ? false : true,
+				effects: deviceWidth >= 1025,
 				smoothTouch: false,
 				normalizeScroll: false,
 				ignoreMobileResize: true,
 			});
 
-			return () => smootherInstance.revert();
+			return () => {
+				smootherRef.current?.revert();
+			};
 		}
 	}, []);
 
-	// Intersection Observer to control video playback
 	useEffect(() => {
 		const videoElement = videoRef.current;
 
-		if (!videoElement) return;
+		const handleVideoPlay = () => {
+			videoElement?.play().catch((error) => {
+				console.error('Không thể tự động phát video:', error);
+			});
+		};
 
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
-						videoElement.play().catch((error) => {
-							console.error('Không thể phát video:', error);
-						});
+						handleVideoPlay();
 					} else {
-						videoElement.pause();
+						videoElement?.pause();
 					}
 				});
 			},
-			{
-				root: null, // Quan sát trong toàn bộ cửa sổ trình duyệt
-				rootMargin: '0px', // Không thêm khoảng cách
-				threshold: 0.3, // Bắt đầu phát khi 30% video xuất hiện
-			}
+			{ root: null, rootMargin: '0px', threshold: 0.5 }
 		);
 
-		observer.observe(videoElement);
+		if (videoElement) {
+			observer.observe(videoElement);
+		}
 
-		return () => observer.unobserve(videoElement);
+		return () => {
+			if (videoElement) {
+				observer.unobserve(videoElement);
+			}
+		};
 	}, []);
 
 	return (
@@ -74,8 +79,10 @@ const DigitalAgencyAbout = () => {
 								<div className="img-anim about__img_left">
 									<video
 										ref={videoRef}
-										src="/assets/video/NPHdigital-01.mp4"
 										playsInline
+										autoPlay
+										muted
+										src="/assets/video/NPHdigital-01.mp4"
 										style={{ width: '100%', height: 'auto' }}
 										data-speed="0.3"
 									/>
