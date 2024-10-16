@@ -1,0 +1,426 @@
+{
+	"nav": [
+		{
+			"nav_name": "Home",
+			"link": "/index",
+			"type": "megamenu",
+			"full_width": false,
+			"sub_nav": [
+				{
+					"title": "Agency",
+					"data": [
+						{
+							"name": "Digital Marketing",
+							"link": "/index"
+						},
+						{
+							"name": "Design Studio",
+							"link": "/design-studio"
+						},
+						{
+							"name": "NPH Digital",
+							"link": "/index"
+						},
+						{
+							"name": "Creative Agency",
+							"link": "/creative-agency"
+						},
+						{
+							"name": "Startup Agency",
+							"link": "/startup-agency"
+						},
+						{
+							"name": "Modern Agency",
+							"link": "/modern-agency"
+						},
+						{
+							"name": "Personal Portfolio",
+							"link": "/personal-portfolio"
+						}
+					]
+				},
+				{
+					"title": "Agency Dark",
+					"data": [
+						{
+							"name": "Digital Marketing",
+							"link": "/index-dark"
+						},
+						{
+							"name": "Design Studio",
+							"link": "/design-studio-dark"
+						},
+						{
+							"name": "NPH Digital",
+							"link": "/index-dark"
+						},
+						{
+							"name": "Creative Agency",
+							"link": "/creative-agency-dark"
+						},
+						{
+							"name": "Startup Agency",
+							"link": "/startup-agency-dark"
+						},
+						{
+							"name": "Modern Agency",
+							"link": "/modern-agency-dark"
+						},
+						{
+							"name": "Personal Portfolio",
+							"link": "/personal-portfolio-dark"
+						}
+					]
+				}
+			]
+		},
+		{
+			"nav_name": "About",
+			"link": "/about",
+			"type": "",
+			"sub_nav": []
+		},
+		{
+			"nav_name": "Pages",
+			"link": "/about",
+			"type": "megamenu",
+			"full_width": true,
+			"sub_nav": [
+				{
+					"title": "Service",
+					"data": [
+						{
+							"name": "Service",
+							"link": "/service"
+						},
+						{
+							"name": "Service Dark",
+							"link": "/service-dark"
+						},
+						{
+							"name": "Service V2",
+							"link": "/service-v2"
+						},
+						{
+							"name": "Service V2 Dark",
+							"link": "/service-v2-dark"
+						},
+						{
+							"name": "Service V3",
+							"link": "/service-v3"
+						},
+						{
+							"name": "Service V3 Dark",
+							"link": "/service-v3-dark"
+						},
+						{
+							"name": "Service V4",
+							"link": "/service-v4"
+						},
+						{
+							"name": "Service V4 Dark",
+							"link": "/service-v4-dark"
+						},
+						{
+							"name": "Service V5",
+							"link": "/service-v5"
+						},
+						{
+							"name": "Service V5 Dark",
+							"link": "/service-v5-dark"
+						},
+						{
+							"name": "Service V6",
+							"link": "/service-v6"
+						},
+						{
+							"name": "Service V6 Dark",
+							"link": "/service-v6-dark"
+						},
+						{
+							"name": "Service Details",
+							"link": "/service-details"
+						},
+						{
+							"name": "Service Details Dark",
+							"link": "/service-details-dark"
+						}
+					]
+				},
+				{
+					"title": "Portfolio",
+					"data": [
+						{
+							"name": "Portfolio",
+							"link": "/portfolio"
+						},
+						{
+							"name": "Portfolio Dark",
+							"link": "/portfolio-dark"
+						},
+						{
+							"name": "Portfolio V2",
+							"link": "/portfolio-v2"
+						},
+						{
+							"name": "Portfolio V2 Dark",
+							"link": "/portfolio-v2-dark"
+						},
+						{
+							"name": "Portfolio V3",
+							"link": "/portfolio-v3"
+						},
+						{
+							"name": "Portfolio V3 Dark",
+							"link": "/portfolio-v3-dark"
+						},
+						{
+							"name": "Portfolio V4",
+							"link": "/portfolio-v4"
+						},
+						{
+							"name": "Portfolio V4 Dark",
+							"link": "/portfolio-v4-dark"
+						},
+						{
+							"name": "Portfolio V5",
+							"link": "/portfolio-v5"
+						},
+						{
+							"name": "Portfolio V5 Dark",
+							"link": "/portfolio-v5-dark"
+						},
+						{
+							"name": "Portfolio Details",
+							"link": "/portfolio-details"
+						},
+						{
+							"name": "Portfolio Details Dark",
+							"link": "/portfolio-details-dark"
+						}
+					]
+				},
+				{
+					"title": "Team",
+					"data": [
+						{
+							"name": "Team",
+							"link": "/team"
+						},
+						{
+							"name": "Team Dark",
+							"link": "/team-dark"
+						},
+						{
+							"name": "Team Details",
+							"link": "/team-details"
+						},
+						{
+							"name": "Team Details Dark",
+							"link": "/team-details-dark"
+						},
+						{
+							"name": "Career",
+							"link": "/career"
+						},
+						{
+							"name": "Career Dark",
+							"link": "/career-dark"
+						},
+						{
+							"name": "Job Details",
+							"link": "/job-details"
+						},
+						{
+							"name": "Job Details Dark",
+							"link": "/job-details-dark"
+						}
+					]
+				},
+				{
+					"title": "Blog",
+					"data": [
+						{
+							"name": "Blog",
+							"link": "/blog"
+						},
+						{
+							"name": "Blog Dark",
+							"link": "/blog-dark"
+						},
+						{
+							"name": "Blog V2",
+							"link": "/blog-v2"
+						},
+						{
+							"name": "Blog V2 Dark",
+							"link": "/blog-v2-dark"
+						},
+						{
+							"name": "Category",
+							"link": "/category"
+						},
+						{
+							"name": "Category Dark",
+							"link": "/category-dark"
+						},
+						{
+							"name": "Blog Details",
+							"link": "/chi-tiet-bai-viet"
+						},
+						{
+							"name": "Blog Details Dark",
+							"link": "/chi-tiet-bai-viet-dark"
+						}
+					]
+				},
+				{
+					"title": "Others",
+					"data": [
+						{
+							"name": "About",
+							"link": "/about"
+						},
+						{
+							"name": "About Dark",
+							"link": "/about-dark"
+						},
+						{
+							"name": "FAQs",
+							"link": "/faq"
+						},
+						{
+							"name": "FAQs Dark",
+							"link": "/faq-dark"
+						},
+						{
+							"name": "Contact",
+							"link": "/contact"
+						},
+						{
+							"name": "Contact Dark",
+							"link": "/contact-dark"
+						},
+						{
+							"name": "404",
+							"link": "/error"
+						},
+						{
+							"name": "404 Dark",
+							"link": "/error-dark"
+						}
+					]
+				}
+			]
+		},
+		{
+			"nav_name": "Services",
+			"link": "/service",
+			"type": "dropdown",
+			"sub_nav": [
+				{
+					"name": "Service",
+					"link": "/service",
+					"sub_dropdown_nav": [
+						{
+							"name": "Service Dark",
+							"link": "/service-dark"
+						},
+						{
+							"name": "Service V2 Dark",
+							"link": "/service-v2-dark"
+						},
+						{
+							"name": "Service V3 Dark",
+							"link": "/service-v3-dark"
+						},
+						{
+							"name": "Service V4 Dark",
+							"link": "/service-v4-dark"
+						},
+						{
+							"name": "Service V5 Dark",
+							"link": "/service-v5-dark"
+						},
+						{
+							"name": "Service V6 Dark",
+							"link": "/service-dark-v6"
+						},
+						{
+							"name": "Service Details Dark",
+							"link": "/service-details-dark"
+						}
+					]
+				},
+				{
+					"name": "Service V2",
+					"link": "/service-v2"
+				},
+				{
+					"name": "Service V3",
+					"link": "/service-v3"
+				},
+				{
+					"name": "Service V4",
+					"link": "/service-v4"
+				},
+				{
+					"name": "Service V5",
+					"link": "/service-v5"
+				},
+				{
+					"name": "Service V6",
+					"link": "/service-v6"
+				},
+				{
+					"name": "Service Details",
+					"link": "/service-details"
+				}
+			]
+		},
+		{
+			"nav_name": "Team",
+			"link": "team",
+			"type": "dropdown",
+			"sub_nav": [
+				{
+					"name": "Team",
+					"link": "/team"
+				},
+				{
+					"name": "Team Details",
+					"link": "/team-details"
+				}
+			]
+		},
+		{
+			"nav_name": "Blog",
+			"link": "blog",
+			"type": "dropdown",
+			"sub_nav": [
+				{
+					"name": "Blog",
+					"link": "/blog"
+				},
+				{
+					"name": "Blog V2",
+					"link": "/blog-v2"
+				},
+				{
+					"name": "Category",
+					"link": "/category"
+				},
+				{
+					"name": "Blog Details",
+					"link": "/chi-tiet-bai-viet"
+				}
+			]
+		},
+		{
+			"nav_name": "Contact",
+			"link": "/contact",
+			"type": "",
+			"sub_nav": []
+		}
+	]
+}
