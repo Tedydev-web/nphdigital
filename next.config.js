@@ -1,3 +1,8 @@
+const crypto = require('crypto');
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+	enabled: process.env.ANALYZE === 'true',
+});
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	reactStrictMode: true,
@@ -9,26 +14,21 @@ const nextConfig = {
 	async headers() {
 		return [
 			{
-				// Định nghĩa các route để áp dụng headers
 				source: '/:path*',
 				headers: [
 					{
 						key: 'Cache-Control',
-						value: 'no-store, no-cache, must-revalidate, proxy-revalidate',
+						value: 'public, max-age=31536000, immutable',
 					},
 					{
-						key: 'Pragma',
-						value: 'no-cache',
-					},
-					{
-						key: 'Expires',
-						value: '0',
+						key: 'Link',
+						value: '</_next/static/chunks/main-3cda6c34556c1bb9.js>; rel=preload; as=script',
 					},
 				],
 			},
 		];
 	},
-	webpack(config, options) {
+	webpack(config, { isServer }) {
 		config.module.rules.push({
 			test: /\.(mp4|webm)$/,
 			use: {
@@ -41,8 +41,42 @@ const nextConfig = {
 			},
 		});
 
+		if (!isServer) {
+			config.optimization.splitChunks.cacheGroups = {
+				default: false,
+				vendors: false,
+				framework: {
+					chunks: 'all',
+					name: 'framework',
+					test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+					priority: 40,
+					enforce: true,
+				},
+				lib: {
+					test(module) {
+						return module.size() > 160000 && /node_modules[/\\]/.test(module.identifier());
+					},
+					name(module) {
+						const hash = crypto.createHash('sha1');
+						if (module.type === 'css/mini-extract') {
+							module.updateHash(hash);
+						} else {
+							if (!module.libIdent) {
+								throw new Error(`Encountered unknown module type: ${module.type}`);
+							}
+							hash.update(module.libIdent({ context: this.context }));
+						}
+						return hash.digest('hex').substring(0, 8);
+					},
+					priority: 30,
+					minChunks: 1,
+					reuseExistingChunk: true,
+				},
+			};
+		}
+
 		return config;
 	},
 };
 
-module.exports = nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);
