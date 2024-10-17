@@ -2,8 +2,8 @@ import DigitalAgencyBrand from '@/components/brand/DigitalAgencyBrand';
 import RootLayout from '@/components/common/layout/RootLayout';
 import AboutCounter from '@/components/counter/AboutCounter';
 import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
-import AboutHero from '@/components/hero/AboutHero';
-import AboutStory from '@/components/story/AboutStory';
+import ModernAgencySingleImage from '@/components/hero/ModernAgencySingleImage';
+import CreativeAgencyAbout from '@/components/story/CreativeAgencyAbout';
 // import AboutTeam from '@/components/team/AboutTeam';
 import AboutTestimonial from '@/components/testimonial/AboutTestimonial';
 import Head from 'next/head';
@@ -174,8 +174,8 @@ const About = () => {
 
 			<main>
 				<RootLayout>
-					<AboutHero />
-					<AboutStory />
+					<ModernAgencySingleImage />
+					<CreativeAgencyAbout />
 					<AboutCounter />
 					{/* <AboutTeam /> */}
 					<DigitalAgencyBrand />

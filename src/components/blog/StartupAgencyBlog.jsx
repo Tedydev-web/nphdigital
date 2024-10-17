@@ -17,7 +17,7 @@ import Blog52 from '../../../public/assets/imgs/blog/3/14.jpg';
 import Blog53 from '../../../public/assets/imgs/blog/3/15.jpg';
 import Blog54 from '../../../public/assets/imgs/blog/3/16.png';
 import Blog55 from '../../../public/assets/imgs/blog/3/17.png';
-import Blog56 from '../../../public/assets/imgs/blog/3/18.png';
+import Blog56 from '../../../public/assets/imgs/blog/detail/2.png';
 import Blog57 from '../../../public/assets/imgs/blog/3/19.png';
 import Blog58 from '../../../public/assets/imgs/blog/3/20.png';
 import Blog59 from '../../../public/assets/imgs/blog/3/21.jpg';
@@ -49,6 +49,14 @@ import React from 'react';
 gsap.registerPlugin(ScrollTrigger);
 
 const blogs = [
+	{
+		src: Blog56,
+		href: '/cong-ty-tnhh-nph-digital-vinh-du-nhan-giai-thuong-top-10-thuong-hieu-uy-tin-hang-dau-viet-nam-2024',
+		category: 'NPH Digital',
+		date: '12 Oct 2024',
+		title: 'NPH Digital nhận giải thưởng “TOP 10 Thương Hiệu Uy Tín Hàng Đầu Việt Nam 2024”',
+		excerpt: 'Ngày 12 tháng 10 năm 2024, Công ty TNHH NPH Digital đã vinh dự được trao tặng danh hiệu “TOP 10 Thương Hiệu Uy Tín Hàng Đầu Việt Nam”, đánh dấu một cột mốc quan trọng trong hành trình phát triển và khẳng định vị thế của mình trong ngành công nghệ số. Đây không chỉ là sự ghi nhận cho những nỗ lực không ngừng nghỉ mà còn là sự khẳng định uy tín và chất lượng dịch vụ mà NPH Digital đã mang đến cho khách hàng suốt thời gian qua.',
+	},
 	{ src: Blog54, href: '/chi-tiet-bai-viet-14', category: 'Innovation', date: '14 May 2019', title: 'Thiết Kế App Cho Doanh Nghiệp Năm 2023: Chiến Lược Số Hóa Đa Dạng Và Tương Lai' },
 	{ src: Blog55, href: '/chi-tiet-bai-viet-15', category: 'Technology', date: '15 May 2019', title: 'Thiết kế app giao hàng cho thị trường nông thôn: 10 thách thức và giải pháp', excerpt: 'Thiết kế app giao hàng cho thị trường nông thôn không chỉ mang lại lợi ích kinh tế cho doanh nghiệp mà còn góp phần nâng cao chất lượng cuộc sống và thúc đẩy sự phát triển bền vững của cộng đồng nông thôn.' },
 	{ src: Blog49, href: '/chi-tiet-bai-viet-9', category: 'Branding', date: '09 May 2019', title: 'Thiết Kế App Theo Yêu Cầu: 7 Nguyên Tắc Vàng', excerpt: 'Thiết kế app theo yêu cầu đòi hỏi phải tuân thủ các nguyên tắc cơ bản để đảm bảo tính khả thi, hiệu năng và bảo mật của ứng dụng.' },
@@ -64,7 +72,6 @@ const blogs = [
 	{ src: Blog46, href: '/chi-tiet-bai-viet-6', category: 'SEO', date: '06 May 2019', title: '10 Công Nghệ Mới Trong Thiết Kế App Giao Nhận', excerpt: 'Các công nghệ mới như AI, Machine Learning, Blockchain, IoT, AR/VR, Big Data, Cloud Computing, 5G, Chatbots và Trợ Lý Ảo, Contactless Payment, và BaaS đang thay đổi cách thức phát triển và tối ưu hóa trong thiết kế app giao nhận.' },
 	{ src: Blog47, href: '/chi-tiet-bai-viet-7', category: 'Content Marketing', date: '07 May 2019', title: '10 Cách Tối Ưu Hóa Trải Nghiệm Người Dùng Trong Thiết Kế App', excerpt: 'Trong quá trình thiết kế app, các nguyên tắc của UX phải được áp dụng để đảm bảo rằng ứng dụng không chỉ đẹp mắt mà còn dễ sử dụng và hiệu quả.' },
 	{ src: Blog48, href: '/chi-tiet-bai-viet-8', category: 'Social Media', date: '08 May 2019', title: 'Thiết Kế App Giao Hàng Đa Nền Tảng | Xu Hướng 2024', excerpt: 'Các xu hướng thiết kế app giao hàng năm 2024 tập trung vào việc tối ưu hóa trải nghiệm người dùng thông qua công nghệ tiên tiến như AI, AR, và blockchain.' },
-	// { src: Blog56, href: '/chi-tiet-bai-viet-1'category: 'Entrepreneurship', date: '16 May 2019', title: 'Học máy (Machine Learning) trong Xây dựng App Giao hàng: Thúc đẩy Hiệu quả Kinh doanh Thời đại 4.0', excerpt: 'Học máy (Machine Learning) đang trở thành cột mốc quan trọng trong xây dựng ứng dụng giao hàng, đem lại tiềm năng tối ưu hóa tuyến đường, dự báo nhu cầu và cải thiện trải nghiệm người dùng. Bài viết này khám phá cách mà công nghệ hiện đại này thúc đẩy hiệu quả kinh doanh trong bối cảnh Cách mạng Công nghiệp 4.0.' },
 	// { src: Blog57, href: '/chi-tiet-bai-viet-1'category: 'Leadership', date: '17 May 2019', title: 'Các Xu Hướng Trong Thiết Kế App Năm 2024', excerpt: 'Thiết kế app hiệu quả giúp cải thiện sự tương tác, tối ưu hóa hiệu suất và làm tăng độ tin cậy của ứng dụng, từ đó góp phần vào sự phát triển của doanh nghiệp và nâng cao giá trị thương hiệu.' },
 	// { src: Blog58, href: '/chi-tiet-bai-viet-1'category: 'Productivity', date: '18 May 2019', title: '10 Cách Sử Dụng Animation Trong Thiết Kế App Giao Hàng', excerpt: 'Trong thiết kế app giao hàng, animation không chỉ là một yếu tố thẩm mỹ mà còn là một phần thiết yếu để nâng cao trải nghiệm người dùng.' },
 	// { src: Blog59, href: '/chi-tiet-bai-viet-1'category: 'Work-Life Balance', date: '19 May 2019', title: '9 Yếu Tố Quyết Định Thành Công Trong Thiết Kế App Theo Yêu Cầu', excerpt: 'Nội dung bài viết Giới Thiệu Chung Tầm Quan Trọng và Sự Cạch Tranh Của…' },

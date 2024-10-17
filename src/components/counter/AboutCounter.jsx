@@ -60,7 +60,9 @@ const AboutCounter = () => {
 	}, []);
 	return (
 		<>
-			<section className="counter__area">
+			<section
+				className="counter__area"
+				style={{ backgroundColor: '#121212' }}>
 				<div className="container g-0 line pb-140 pt-140">
 					<span className="line-3"></span>
 

@@ -54,7 +54,7 @@ const AboutHero = () => {
 										autoPlay
 										playsInline>
 										<source
-											src="/assets/video/intro-01.mp4"
+											src="/assets/imgs/story/2.mp4"
 											type="video/mp4"
 										/>
 									</video>
