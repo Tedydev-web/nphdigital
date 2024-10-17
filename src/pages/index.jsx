@@ -9,11 +9,11 @@ import ServiceElementV4 from '@/components/service/ServiceElementV4';
 import DigitalAgencyCounter from '@/components/counter/DigitalAgencyCounter';
 import DigitalAgencyWorkflow from '@/components/workflow/DigitalAgencyWorkflow';
 import DigitalAgencyPortfolio from '@/components/portfolio/DigitalAgencyPortfolio';
-// import DigitalAgencyBrand from '@/components/brand/DigitalAgencyBrand';
+import DigitalAgencyBrand from '@/components/brand/DigitalAgencyBrand';
 import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
+import DigitalMarketingTestimonial from '@/components/testimonial/DigitalMarketingTestimonial';
+
 import gsap from 'gsap';
-const DigitalAgencyBrand = dynamic(() => import('@/components/brand/DigitalAgencyBrand'), { ssr: false });
-const DigitalMarketingTestimonial = dynamic(() => import('@/components/testimonial/DigitalMarketingTestimonial'), { ssr: false });
 const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
 
 const DigitalAgency = () => {
@@ -282,12 +282,12 @@ const DigitalAgency = () => {
 				<meta
 					name="theme-color"
 					media="(prefers-color-scheme: light)"
-					content="cyan"
+					content="#020203"
 				/>
 				<meta
 					name="theme-color"
 					media="(prefers-color-scheme: dark)"
-					content="black"
+					content="#020203"
 				/>
 
 				<meta
