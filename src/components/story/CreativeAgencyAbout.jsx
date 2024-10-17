@@ -188,9 +188,10 @@ const CreativeAgencyAbout = () => {
 					padding: 20px;
 					border-radius: 10px;
 					text-align: center;
-					margin-top: 20vw;
+					margin-top: 40vh;
 					width: 80%;
 				}
+
 				.popup-button {
 					margin-top: 10px;
 					padding: 10px 20px;
