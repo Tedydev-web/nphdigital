@@ -62,7 +62,7 @@ const nextConfig = {
 							module.updateHash(hash);
 						} else {
 							if (!module.libIdent) {
-								throw new Error(`Encountered unknown module type: ${module.type}`);
+								return null;
 							}
 							hash.update(module.libIdent({ context: this.context }));
 						}
@@ -77,6 +77,6 @@ const nextConfig = {
 
 		return config;
 	},
-}
+};
 
 module.exports = withBundleAnalyzer(nextConfig);
