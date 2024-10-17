@@ -102,46 +102,6 @@ const PortfolioElementV4 = () => {
 										</div>
 									</SwiperSlide>
 
-									{/* Slide: Thiết kế Website */}
-									<SwiperSlide>
-										<div className="portfolio__slide-3">
-											<Link href="/thiet-ke-website">
-												<h3
-													className="portfolio__title-3"
-													id="website">
-													Thiết kế <span>website</span>
-												</h3>
-												<Image
-													priority
-													width={550}
-													style={{ height: 'auto', borderRadius: '50px' }}
-													src={Portfilio2}
-													alt="Portfolio Image"
-												/>
-											</Link>
-										</div>
-									</SwiperSlide>
-
-									{/* Slide: Quảng cáo số */}
-									<SwiperSlide>
-										<div className="portfolio__slide-3">
-											<Link href="/quang-cao-so">
-												<h3
-													className="portfolio__title-3"
-													id="marketing">
-													Quảng cáo số
-												</h3>
-												<Image
-													priority
-													width={550}
-													style={{ height: 'auto', borderRadius: '50px' }}
-													src={Portfilio3}
-													alt="Portfolio Image"
-												/>
-											</Link>
-										</div>
-									</SwiperSlide>
-
 									{/* Slide: Thiết kế UI/UX */}
 									<SwiperSlide>
 										<div className="portfolio__slide-3">
@@ -182,6 +142,86 @@ const PortfolioElementV4 = () => {
 										</div>
 									</SwiperSlide>
 
+									{/* Slide: Thuê phòng IT ngoài */}
+									<SwiperSlide>
+										<div className="portfolio__slide-3">
+											<Link href="/thue-phong-it-ngoai">
+												<h3
+													className="portfolio__title-3"
+													id="it">
+													Thuê Phòng <span>IT ngoài</span>
+												</h3>
+												<Image
+													priority
+													width={550}
+													style={{ height: 'auto', borderRadius: '50px' }}
+													src={Portfilio10}
+													alt="Portfolio Image"
+												/>
+											</Link>
+										</div>
+									</SwiperSlide>
+
+									{/* Slide: tương tác số */}
+									<SwiperSlide>
+										<div className="portfolio__slide-3">
+											<Link href="/cham-soc-fanpage">
+												<h3
+													className="portfolio__title-3"
+													id="fanpage">
+													Chăm sóc fanpage
+												</h3>
+												<Image
+													priority
+													width={550}
+													style={{ height: 'auto', borderRadius: '50px' }}
+													src={Portfilio7}
+													alt="Portfolio Image"
+												/>
+											</Link>
+										</div>
+									</SwiperSlide>
+
+									{/* Slide: Thiết kế Website */}
+									<SwiperSlide>
+										<div className="portfolio__slide-3">
+											<Link href="/thiet-ke-website">
+												<h3
+													className="portfolio__title-3"
+													id="website">
+													Thiết kế <span>website</span>
+												</h3>
+												<Image
+													priority
+													width={550}
+													style={{ height: 'auto', borderRadius: '50px' }}
+													src={Portfilio2}
+													alt="Portfolio Image"
+												/>
+											</Link>
+										</div>
+									</SwiperSlide>
+
+									{/* Slide: Quảng cáo số */}
+									<SwiperSlide>
+										<div className="portfolio__slide-3">
+											<Link href="/quang-cao-so">
+												<h3
+													className="portfolio__title-3"
+													id="marketing">
+													Quảng cáo số
+												</h3>
+												<Image
+													priority
+													width={550}
+													style={{ height: 'auto', borderRadius: '50px' }}
+													src={Portfilio3}
+													alt="Portfolio Image"
+												/>
+											</Link>
+										</div>
+									</SwiperSlide>
+
 									{/* Slide: Lập trình AI */}
 									<SwiperSlide>
 										<div className="portfolio__slide-3">
@@ -202,20 +242,20 @@ const PortfolioElementV4 = () => {
 										</div>
 									</SwiperSlide>
 
-									{/* Slide: Thuê phòng IT ngoài */}
+									{/* Slide: tương tác số */}
 									<SwiperSlide>
 										<div className="portfolio__slide-3">
-											<Link href="/thue-phong-it-ngoai">
+											<Link href="/tuong-tac-so">
 												<h3
 													className="portfolio__title-3"
-													id="it">
-													Thuê Phòng <span>IT ngoài</span>
+													id="tuong-tac-so">
+													Tương tác số
 												</h3>
 												<Image
 													priority
 													width={550}
 													style={{ height: 'auto', borderRadius: '50px' }}
-													src={Portfilio10}
+													src={Portfilio6}
 													alt="Portfolio Image"
 												/>
 											</Link>
