@@ -351,7 +351,7 @@ const StartupAgencyBlog = () => {
 										</h5>
 										<p className="blog__excerpt-4">{blog.excerpt}</p>
 										<Link
-											href="#"
+											href={blog.href}
 											className="blog__btn-4">
 											Xem thêm{' '}
 											<span>
