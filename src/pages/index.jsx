@@ -296,8 +296,15 @@ const DigitalAgency = () => {
 				/>
 				<meta
 					name="theme-color"
-					content="#5468A9"
+					media="(prefers-color-scheme: light)"
+					content="cyan"
 				/>
+				<meta
+					name="theme-color"
+					media="(prefers-color-scheme: dark)"
+					content="black"
+				/>
+
 				<meta
 					name="copyright"
 					content="NPH Digital"
