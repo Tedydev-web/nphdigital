@@ -76,7 +76,7 @@ const BlogDetails2024 = () => {
 											style={{ borderRadius: '50%' }}
 										/>
 										<p>
-											Viết bởi <span>CHI DINH KIEM</span>
+											Viết bởi <span>NPH Digital</span>
 										</p>
 									</div>
 									<div className="blog__detail-meta">

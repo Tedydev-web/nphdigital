@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
-import Detail1 from '../../../public/assets/imgs/blog/detail/16/1.png';
+import Author from '../../../public/assets/imgs/blog/detail/author.png';
+import Detail1 from '../../../public/assets/imgs/blog/detail/16/1.jpg';
 import Detail3 from '../../../public/assets/imgs/blog/detail/16/3.webp';
 import Detail4 from '../../../public/assets/imgs/blog/detail/16/4.webp';
 import Detail5 from '../../../public/assets/imgs/blog/detail/16/5.webp';
 import Detail2 from '../../../public/assets/imgs/blog/detail/2.png';
-
+import avt from '../../../public/assets/imgs/blog/avt.png';
 import animationWordCome from '@/lib/utils/animationWordCome';
 import Switcher from '../../components/common/Switcher';
 import { useEffect, useRef, useState } from 'react';
@@ -58,11 +58,16 @@ const BlogDetails2024 = () => {
 								</h3>
 								<div className="blog__detail-metalist">
 									<div className="blog__detail-meta">
-										<div
+										<Image
+											src={avt}
+											alt="Author"
 											className="blog__detail-author-img"
-											style={{ width: 50, height: 50, backgroundColor: '#f0f0f0', borderRadius: '50%' }}></div>
+											width={50}
+											height={50}
+											style={{ borderRadius: '50%' }}
+										/>
 										<p>
-											Viết bởi <span>NPH Digital </span>
+											Viết bởi <span>NPH Digital</span>
 										</p>
 									</div>
 									<div className="blog__detail-meta">
@@ -74,24 +79,23 @@ const BlogDetails2024 = () => {
 							</div>
 						</div>
 						<div className="col-xxl-12">
-							<div className="blog__detail-thumb">
-								<p>Công ty TNHH NPH Digital vinh dự nhận giải thưởng “TOP 10 Thương Hiệu Uy Tín Hàng Đầu Việt Nam 2024” là một dấu mốc quan trọng trong hành trình phát triển của doanh nghiệp. Giải thưởng này không chỉ là sự ghi nhận cho những nỗ lực không ngừng của NPH Digital mà còn khẳng định vị thế vững chắc của công ty trong lĩnh vực công nghệ tại Việt Nam.</p>
+							<div className="blog__detail">
 								<Image
 									priority
-									style={{ width: '100%', height: '100%' }}
 									src={Detail2}
-									alt="Thiết kế App 2024"
+									alt="NPH Digital"
+									style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
 									data-speed="0.5"
-									layout="fill"
 								/>
 							</div>
 						</div>
 						<div className="col-xxl-8 col-xl-10 offset-xxl-2 offset-xl-1">
 							<div className="blog__detail-content">
+								<p>Công ty TNHH NPH Digital vinh dự nhận giải thưởng “TOP 10 Thương Hiệu Uy Tín Hàng Đầu Việt Nam 2024” là một dấu mốc quan trọng trong hành trình phát triển của doanh nghiệp. Giải thưởng này không chỉ là sự ghi nhận cho những nỗ lực không ngừng của NPH Digital mà còn khẳng định vị thế vững chắc của công ty trong lĩnh vực công nghệ tại Việt Nam.</p>
 								<h2>Công ty TNHH NPH Digital: Vinh dự đạt giải thưởng “TOP 10 Thương Hiệu Uy Tín Hàng Đầu Việt Nam 2024”</h2>
 								<p>Trong bối cảnh nền kinh tế Việt Nam đang trên đà phát triển mạnh mẽ và cạnh tranh ngày càng gay gắt, việc khẳng định thương hiệu và chất lượng sản phẩm gia tăng tính cạnh tranh là điều thiết yếu. Công ty TNHH NPH Digital đã chứng minh được khả năng đó thông qua sự cống hiến và những sản phẩm, dịch vụ nổi bật.</p>
 								<video
-									width="850"
+									width="100%"
 									style={{ height: 'auto' }}
 									controls
 									autoPlay
@@ -114,7 +118,7 @@ const BlogDetails2024 = () => {
 									priority
 									style={{ width: '100%', height: 'auto' }}
 									src={Detail3}
-									alt="Thiết kế App 2024"
+									alt="NPH Digital"
 									data-speed="0.5"
 								/>
 								<h3>Đội ngũ nhân viên chuyên nghiệp</h3>
@@ -130,7 +134,7 @@ const BlogDetails2024 = () => {
 									priority
 									style={{ width: 'auto', height: 'auto' }}
 									src={Detail4}
-									alt="Thiết kế App 2024"
+									alt="NPH Digital"
 									data-speed="0.5"
 								/>
 								<h3>Quá trình xây dựng thương hiệu</h3>
@@ -146,7 +150,7 @@ const BlogDetails2024 = () => {
 									priority
 									style={{ width: '100%', height: 'auto' }}
 									src={Detail5}
-									alt="Thiết kế App 2024"
+									alt="NPH Digital"
 									data-speed="0.5"
 								/>
 								<h3>Giá trị cốt lõi</h3>
@@ -191,7 +195,7 @@ const BlogDetails2024 = () => {
 									priority
 									style={{ width: '100%', height: 'auto' }}
 									src={Detail1}
-									alt="Thiết kế App 2024"
+									alt="NPH Digital"
 									data-speed="0.5"
 								/>
 								<h3>Xây dựng thương hiệu quốc tế</h3>

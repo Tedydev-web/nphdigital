@@ -80,7 +80,6 @@ const CreativeAgencyAbout = () => {
 					src="/assets/video/2.mp4"
 					playsInline
 					autoPlay
-					loop
 					muted
 				/>
 			</div>

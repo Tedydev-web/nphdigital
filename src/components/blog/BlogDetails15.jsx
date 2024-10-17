@@ -16,6 +16,7 @@ import Detail12 from '../../../public/assets/imgs/blog/detail/15/12.webp';
 import Detail13 from '../../../public/assets/imgs/blog/detail/15/13.webp';
 import animationWordCome from '@/lib/utils/animationWordCome';
 import Switcher from '../../components/common/Switcher';
+import avt from '../../../public/assets/imgs/blog/avt.png';
 import { useEffect, useRef, useState } from 'react';
 
 const BlogDetails2024 = () => {
@@ -65,11 +66,16 @@ const BlogDetails2024 = () => {
 								</h3>
 								<div className="blog__detail-metalist">
 									<div className="blog__detail-meta">
-										<div
+										<Image
+											src={avt}
+											alt="Author"
 											className="blog__detail-author-img"
-											style={{ width: 50, height: 50, backgroundColor: '#f0f0f0', borderRadius: '50%' }}></div>
+											width={50}
+											height={50}
+											style={{ borderRadius: '50%' }}
+										/>
 										<p>
-											Viết bởi <span>CHI DINH KIEM</span>
+											Viết bởi <span>NPH Digital</span>
 										</p>
 									</div>
 									<div className="blog__detail-meta">
