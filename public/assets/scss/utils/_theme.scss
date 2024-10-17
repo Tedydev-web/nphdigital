@@ -12,8 +12,15 @@ body {
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  overflow: auto; /* Cho phép cuộn */
+  scrollbar-width: none; /* Ẩn thanh cuộn trên Firefox */
 }
+
+html::-webkit-scrollbar {
+  display: none; /* Ẩn thanh cuộn trên Chrome, Safari, và Opera */
+}
+
 
 h1,
 h2,
