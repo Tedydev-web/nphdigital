@@ -44,9 +44,14 @@ export default function Footer3() {
 		<footer className="footer__area">
 			<div
 				className="footer__top-2 text-anim"
-				style={{ position: 'relative', zIndex: 1 }}>
+				style={{ position: 'relative', zIndex: '1' }}
+				onClick={(e) => e.stopPropagation()}
+				onMouseEnter={(e) => e.stopPropagation()}
+				onTouchStart={(e) => e.stopPropagation()}>
 				<div className="contact_wrap">
-					<div className="roll__slider">
+					<div
+						className="roll__slider"
+						style={{ pointerEvents: 'none' }}>
 						<Swiper
 							modules={[FreeMode, Autoplay]}
 							spaceBetween={60}
@@ -74,13 +79,9 @@ export default function Footer3() {
 							</div>
 						</Swiper>
 					</div>
-					{/* <Link
-							href="/contact"
-							className="link">
-							Bấm vào đây
-						</Link> */}
 				</div>
 			</div>
+
 			<div className="footer__top">
 				<div className="container footer-line"></div>
 				<Image

@@ -248,7 +248,7 @@ const PortfolioElementV4 = () => {
 											<Link href="/tuong-tac-so">
 												<h3
 													className="portfolio__title-3"
-													id="tuong-tac-so">
+													id="tuongTacSo">
 													Tương tác số
 												</h3>
 												<Image

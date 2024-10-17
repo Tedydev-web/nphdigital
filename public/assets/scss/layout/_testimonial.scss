@@ -506,19 +506,25 @@
 
 		&-2 {
 			position: absolute;
-			top: 10rem;
 			right: 20%;
 			width: 15%;
 			height: auto;
+			z-index: 0;
 
 			@media #{$lg} {
-				top: 60px;
+				top: 30vh;
 				right: 15%;
 			}
 			@media #{$md} {
-				top: 130px;
 				right: 15%;
-				display: none;
+				top: 30vh;
+
+			}
+
+			@media #{$sm} {
+				right: 15%;
+				top: 5vh;
+
 			}
 
 			@media (min-width: 2560px) {
