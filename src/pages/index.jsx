@@ -9,10 +9,11 @@ import ServiceElementV4 from '@/components/service/ServiceElementV4';
 import DigitalAgencyCounter from '@/components/counter/DigitalAgencyCounter';
 import DigitalAgencyWorkflow from '@/components/workflow/DigitalAgencyWorkflow';
 import DigitalAgencyPortfolio from '@/components/portfolio/DigitalAgencyPortfolio';
-import DigitalAgencyBrand from '@/components/brand/DigitalAgencyBrand';
-import DigitalMarketingTestimonial from '@/components/testimonial/DigitalMarketingTestimonial';
+// import DigitalAgencyBrand from '@/components/brand/DigitalAgencyBrand';
 import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
 import gsap from 'gsap';
+const DigitalAgencyBrand = dynamic(() => import('@/components/brand/DigitalAgencyBrand'), { ssr: false });
+const DigitalMarketingTestimonial = dynamic(() => import('@/components/testimonial/DigitalMarketingTestimonial'), { ssr: false });
 const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
 
 const DigitalAgency = () => {
@@ -24,20 +25,13 @@ const DigitalAgency = () => {
 			playCursor();
 			setupTimeline();
 			setupScrollDots();
-			clearCookies(); // Xóa cookie mỗi lần truy cập
 		}
 	}, []);
-
-	function clearCookies() {
-		document.cookie.split(';').forEach(function (c) {
-			document.cookie = c + '=;expires=' + new Date().toUTCString() + ';path=/';
-		});
-	}
 
 	function playCursor() {
 		try {
 			let client_cursor = document.getElementById('client_cursor');
-			document.addEventListener('mousemove', (e) => {
+			const handleMouseMove = (e) => {
 				const target = e.target;
 				let tHero = gsap.context(() => {
 					let tl = gsap.timeline({
@@ -75,7 +69,12 @@ const DigitalAgency = () => {
 					}
 				});
 				return () => tHero.revert();
-			});
+			};
+
+			document.addEventListener('mousemove', handleMouseMove);
+			return () => {
+				document.removeEventListener('mousemove', handleMouseMove);
+			};
 		} catch (err) {
 			console.log(err);
 		}
@@ -86,7 +85,7 @@ const DigitalAgency = () => {
 		const sections = document.querySelectorAll('section');
 		const totalSections = sections.length;
 
-		window.addEventListener('scroll', () => {
+		const handleScroll = () => {
 			const scrollPosition = window.scrollY + window.innerHeight / 2;
 			sections.forEach((section, index) => {
 				const sectionTop = section.offsetTop;
@@ -97,13 +96,16 @@ const DigitalAgency = () => {
 					unhighlightDot(index);
 				}
 			});
-		});
+		};
+
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
 	}
 
 	function setupTimeline() {
 		const timeline = timelineRef.current;
-		const sections = document.querySelectorAll('section');
-		const totalSections = sections.length;
 
 		gsap.to(timeline, {
 			scrollTrigger: {

@@ -115,34 +115,6 @@ const DigitalMarketingTestimonial = () => {
 												<h3 className="client__role-3">CEO NPH Digital</h3>
 											</div>
 										</SwiperSlide>
-										<SwiperSlide>
-											<div className="testimonial__slide-3">
-												<p>Chúng tôi tin rằng sự hài lòng của khách hàng là chỉ số thành công tối thượng tại NPH Digital. Cam kết của chúng tôi là cung cấp các giải pháp công nghệ tiên tiến, hiệu quả và dễ sử dụng, giúp các đối tác đạt được mục tiêu kinh doanh. Chúng tôi luôn đặt lợi ích của khách hàng lên hàng đầu và không ngừng cải thiện chất lượng dịch vụ để đáp ứng mọi mong đợi..</p>
-												<h2 className="client__name-3">Mr. YURI KC</h2>
-												<h3 className="client__role-3">CEO NPH Digital</h3>
-											</div>
-										</SwiperSlide>
-										<SwiperSlide>
-											<div className="testimonial__slide-3">
-												<p>Chúng tôi tin rằng sự hài lòng của khách hàng là chỉ số thành công tối thượng tại NPH Digital. Cam kết của chúng tôi là cung cấp các giải pháp công nghệ tiên tiến, hiệu quả và dễ sử dụng, giúp các đối tác đạt được mục tiêu kinh doanh. Chúng tôi luôn đặt lợi ích của khách hàng lên hàng đầu và không ngừng cải thiện chất lượng dịch vụ để đáp ứng mọi mong đợi..</p>
-												<h2 className="client__name-3">Mr. YURI KC</h2>
-												<h3 className="client__role-3">CEO NPH Digital</h3>
-											</div>
-										</SwiperSlide>
-										<SwiperSlide>
-											<div className="testimonial__slide-3">
-												<p>Chúng tôi tin rằng sự hài lòng của khách hàng là chỉ số thành công tối thượng tại NPH Digital. Cam kết của chúng tôi là cung cấp các giải pháp công nghệ tiên tiến, hiệu quả và dễ sử dụng, giúp các đối tác đạt được mục tiêu kinh doanh. Chúng tôi luôn đặt lợi ích của khách hàng lên hàng đầu và không ngừng cải thiện chất lượng dịch vụ để đáp ứng mọi mong đợi..</p>
-												<h2 className="client__name-3">Mr. YURI KC</h2>
-												<h3 className="client__role-3">CEO NPH Digital</h3>
-											</div>
-										</SwiperSlide>
-										<SwiperSlide>
-											<div className="testimonial__slide-3">
-												<p>Chúng tôi tin rằng sự hài lòng của khách hàng là chỉ số thành công tối thượng tại NPH Digital. Cam kết của chúng tôi là cung cấp các giải pháp công nghệ tiên tiến, hiệu quả và dễ sử dụng, giúp các đối tác đạt được mục tiêu kinh doanh. Chúng tôi luôn đặt lợi ích của khách hàng lên hàng đầu và không ngừng cải thiện chất lượng dịch vụ để đáp ứng mọi mong đợi..</p>
-												<h2 className="client__name-3">Mr. YURI KC</h2>
-												<h3 className="client__role-3">CEO NPH Digital</h3>
-											</div>
-										</SwiperSlide>
 									</div>
 									<div
 										style={{ cursor: 'pointer' }}

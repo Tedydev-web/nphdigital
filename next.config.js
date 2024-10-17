@@ -77,6 +77,6 @@ const nextConfig = {
 
 		return config;
 	},
-};
+}
 
 module.exports = withBundleAnalyzer(nextConfig);
