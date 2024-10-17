@@ -180,8 +180,8 @@ const CreativeAgencyAbout = () => {
 					background-color: rgba(0, 0, 0, 0.8);
 					display: flex;
 					justify-content: center;
-					align-items: flex-start; /* Căn giữa theo chiều dọc, nhưng nằm ở trên cùng */
-					z-index: 9999;
+					align-items: flex-start;
+					z-index: 9998;
 				}
 				.popup-content {
 					background-color: transparent;

@@ -22,7 +22,8 @@ const Preloader = () => {
 	return (
 		<div
 			className="preloader"
-			ref={preloaderSection}>
+			ref={preloaderSection}
+			style={{ zIndex: '9999' }}>
 			<div className="loading">
 				<video
 					autoPlay

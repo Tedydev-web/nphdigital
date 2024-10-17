@@ -72,7 +72,8 @@ const ModernAgencySingleImage = () => {
 						<div className="hover_8_wrap">
 							<h2
 								className="tech_title fade_bottom_4"
-								ref={hoverWrap}>
+								ref={hoverWrap}
+								style={{ paddingTop: '50px' }}>
 								Giải pháp Công nghệ & Thiết kế Đưa Ý tưởng của bạn thành hiện thực
 							</h2>
 
