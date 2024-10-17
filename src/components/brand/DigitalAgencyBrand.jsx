@@ -100,7 +100,9 @@ const DigitalAgencyBrand = () => {
 						</div>
 					</div>
 
-					<div className="col-xxl-12">
+					<div
+						className="col-xxl-12"
+						style={{ pointerEvents: 'none' }}>
 						<div ref={firstRowRef}>
 							<Swiper
 								{...swiperCommonProps}
