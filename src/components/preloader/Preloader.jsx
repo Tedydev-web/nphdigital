@@ -4,18 +4,10 @@ const Preloader = () => {
 	const preloaderSection = useRef();
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			const hidePreloader = () => {
-				const preloader = preloaderSection.current;
-				if (preloader) {
-					preloader.style.opacity = 0;
-					setTimeout(() => {
-						preloader.style.display = 'none';
-					}, 3100);
-				}
-			};
 			setTimeout(() => {
-				requestAnimationFrame(hidePreloader);
-			}, 3000);
+				const preloader = preloaderSection.current;
+				preloader.style.display = 'none';
+			}, 3100);
 		}
 	}, []);
 

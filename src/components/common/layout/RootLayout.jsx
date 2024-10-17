@@ -144,11 +144,6 @@ export default function RootLayout({ children, header = '', footer = '', default
 				className="has-smooth"
 				id="has_smooth"></div>
 			<ScrollSmootherComponents />
-			<div
-				className="cursor"
-				id="team_cursor">
-				Drag
-			</div>
 			<Preloader />
 			<CursorAnimation
 				cursor1={cursor1}
