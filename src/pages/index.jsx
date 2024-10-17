@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useCallback } from 'react';
 import RootLayout from '@/components/common/layout/RootLayout';
 import DigitalAgencyHero from '@/components/hero/DigitalAgencyHero';
 import DigitalAgencyRoll from '@/components/roll/DigitalAgencyRoll';
@@ -20,70 +20,9 @@ const DigitalAgency = () => {
 	const timelineRef = useRef(null);
 	const dotsRef = useRef([]);
 
-	useEffect(() => {
-		if (typeof window !== 'undefined') {
-			playCursor();
-			setupTimeline();
-			setupScrollDots();
-		}
-	}, []);
-
-	function playCursor() {
-		try {
-			let client_cursor = document.getElementById('client_cursor');
-			const handleMouseMove = (e) => {
-				const target = e.target;
-				let tHero = gsap.context(() => {
-					let tl = gsap.timeline({
-						defaults: {
-							x: e.clientX,
-							y: e.clientY,
-						},
-					});
-					let t2 = gsap.timeline({
-						defaults: {
-							x: e.clientX,
-							y: e.clientY,
-						},
-					});
-
-					// Home Page Client Cursor
-					if (target.closest('.testimonial__img')) {
-						tl.to(
-							client_cursor,
-							{
-								opacity: 1,
-								ease: 'power4.out',
-							},
-							'-=0.3'
-						);
-					} else {
-						t2.to(
-							client_cursor,
-							{
-								opacity: 0,
-								ease: 'power4.out',
-							},
-							'-=0.3'
-						);
-					}
-				});
-				return () => tHero.revert();
-			};
-
-			document.addEventListener('mousemove', handleMouseMove);
-			return () => {
-				document.removeEventListener('mousemove', handleMouseMove);
-			};
-		} catch (err) {
-			console.log(err);
-		}
-	}
-
-	function setupScrollDots() {
+	const setupScrollDots = useCallback(() => {
 		const dots = dotsRef.current;
 		const sections = document.querySelectorAll('section');
-		const totalSections = sections.length;
 
 		const handleScroll = () => {
 			const scrollPosition = window.scrollY + window.innerHeight / 2;
@@ -102,9 +41,9 @@ const DigitalAgency = () => {
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
 		};
-	}
+	}, []);
 
-	function setupTimeline() {
+	const setupTimeline = useCallback(() => {
 		const timeline = timelineRef.current;
 
 		gsap.to(timeline, {
@@ -119,19 +58,63 @@ const DigitalAgency = () => {
 				},
 			},
 		});
-	}
+	}, []);
 
-	function highlightDot(index) {
+	const playCursor = useCallback(() => {
+		let client_cursor = document.getElementById('client_cursor');
+
+		const handleMouseMove = (e) => {
+			const target = e.target;
+			let tHero = gsap.context(() => {
+				let tl = gsap.timeline({
+					defaults: { x: e.clientX, y: e.clientY },
+				});
+
+				let t2 = gsap.timeline({
+					defaults: { x: e.clientX, y: e.clientY },
+				});
+
+				if (target.closest('.testimonial__img')) {
+					tl.to(client_cursor, {
+						opacity: 1,
+						ease: 'power4.out',
+					});
+				} else {
+					t2.to(client_cursor, {
+						opacity: 0,
+						ease: 'power4.out',
+					});
+				}
+			});
+
+			return () => tHero.revert();
+		};
+
+		document.addEventListener('mousemove', handleMouseMove);
+		return () => {
+			document.removeEventListener('mousemove', handleMouseMove);
+		};
+	}, []);
+
+	useEffect(() => {
+		if (typeof window !== 'undefined') {
+			playCursor();
+			setupTimeline();
+			setupScrollDots();
+		}
+	}, [playCursor, setupTimeline, setupScrollDots]);
+
+	const highlightDot = (index) => {
 		if (dotsRef.current[index]) {
 			dotsRef.current[index].classList.add('active');
 		}
-	}
+	};
 
-	function unhighlightDot(index) {
+	const unhighlightDot = (index) => {
 		if (dotsRef.current[index]) {
 			dotsRef.current[index].classList.remove('active');
 		}
-	}
+	};
 
 	return (
 		<div>

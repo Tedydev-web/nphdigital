@@ -58,13 +58,16 @@ const nextConfig = {
 					},
 					name(module) {
 						const hash = crypto.createHash('sha1');
-						if (module.type === 'css/mini-extract') {
-							module.updateHash(hash);
-						} else {
-							if (!module.libIdent) {
-								return null;
+						try {
+							if (module.type === 'css/mini-extract') {
+								module.updateHash(hash);
+							} else if (module.libIdent) {
+								hash.update(module.libIdent({ context: this.context }));
+							} else {
+								hash.update(module.identifier());
 							}
-							hash.update(module.libIdent({ context: this.context }));
+						} catch (error) {
+							console.warn(`Failed to generate hash for module: ${error.message}`);
 						}
 						return hash.digest('hex').substring(0, 8);
 					},

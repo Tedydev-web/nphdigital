@@ -13,6 +13,7 @@
 		"@fortawesome/fontawesome-svg-core": "^6.4.0",
 		"@fortawesome/free-solid-svg-icons": "^6.4.0",
 		"@fortawesome/react-fontawesome": "^0.2.0",
+		"@next/bundle-analyzer": "^14.2.15",
 		"@tsparticles/confetti": "^3.5.0",
 		"@tsparticles/engine": "^3.5.0",
 		"@tsparticles/react": "^3.0.0",
