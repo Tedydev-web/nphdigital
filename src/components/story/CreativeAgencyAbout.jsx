@@ -7,6 +7,7 @@ import Shape4 from '../../../public/assets/imgs/home-7/shape-4.png';
 import SVGstar from '../../../public/assets/imgs/home-7/svgstar.png';
 import A2 from '../../../public/assets/imgs/home-7/a2.png';
 import A3 from '../../../public/assets/imgs/home-7/a3.jpg';
+import Link from 'next/link';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
@@ -153,6 +154,19 @@ const CreativeAgencyAbout = () => {
 					alt="Shape"
 					className="shape-1"
 				/>
+
+				<div
+					className="portfolio__btn btn_wrapper"
+					data-speed="1"
+					data-lag="0.2">
+					<Link
+						className="wc-btn-secondary btn-hover btn-item"
+						href="cong-ty-tnhh-nph-digital-vinh-du-nhan-giai-thuong-top-10-thuong-hieu-uy-tin-hang-dau-viet-nam-2024"
+						scroll={false}>
+						Tìm hiểu <br />
+						chúng tôi<i className="fa-solid fa-arrow-right"></i>
+					</Link>
+				</div>
 			</section>
 
 			{/* CSS Popup */}
