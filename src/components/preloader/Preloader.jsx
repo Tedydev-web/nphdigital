@@ -4,14 +4,9 @@ const Preloader = () => {
 	const preloaderSection = useRef();
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			// Add no-scroll class to body
-			document.body.classList.add('no-scroll');
-
 			setTimeout(() => {
 				const preloader = preloaderSection.current;
 				preloader.style.display = 'none';
-				// Remove no-scroll class from body
-				document.body.classList.remove('no-scroll');
 			}, 3100);
 		}
 	}, []);
