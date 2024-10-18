@@ -8,11 +8,22 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/free-mode';
 import { useEffect, useRef, useState } from 'react';
-
+import { useRouter } from 'next/router';
 export default function Footer3() {
 	const [init, setInit] = useState(false);
 	const menuAnim = useRef();
 	const menuAnim2 = useRef();
+	const router = useRouter();
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		const email = e.target.email.value;
+		router.push({
+			pathname: '/lien-he',
+			query: { email },
+		});
+	};
+
 	useEffect(() => {
 		if (menuAnim.current) {
 			menuAnimation(menuAnim);
@@ -163,7 +174,7 @@ export default function Footer3() {
 										</a>
 
 										<a
-											href="https://www.facebook.com/nphdigital838"
+											href="https://www.facebook.com/nphdigital838838"
 											target="_blank"
 											rel="noopener noreferrer">
 											<button class="Btn facebook">
@@ -290,7 +301,7 @@ export default function Footer3() {
 								</div>
 
 								<div className="footer__subscribe">
-									<form action="#">
+									<form onSubmit={handleSubmit}>
 										<input
 											type="email"
 											name="email"

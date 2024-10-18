@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/router';
 import emailjs from 'emailjs-com';
 import animationCharCome from '@/lib/utils/animationCharCome';
 import animationWordCome from '@/lib/utils/animationWordCome';
@@ -7,11 +8,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import { POSITION } from 'react-toastify'; // Import trực tiếp POSITION
 
 const Contact1 = () => {
+	const router = useRouter();
+	const { email } = router.query;
 	const charAnim = useRef();
 	const wordAnim = useRef();
 	const [formData, setFormData] = useState({
 		name: '',
-		email: '',
+		email: email || '',
 		phone: '',
 		subject: '',
 		message: '',

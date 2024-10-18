@@ -587,7 +587,7 @@
 	&__copyright {
 		grid-column: span 4;
 		border-top: 1px solid var(--gray-6);
-		margin-left: -66px;
+		margin-left: 60px 0 0 -66px;
 		padding: 35px 0 35px 66px;
 
 		@media #{$xxl} {
