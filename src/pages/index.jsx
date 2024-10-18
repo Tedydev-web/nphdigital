@@ -281,12 +281,6 @@ const DigitalAgency = () => {
 				/>
 				<meta
 					name="theme-color"
-					media="(prefers-color-scheme: light)"
-					content="#020203"
-				/>
-				<meta
-					name="theme-color"
-					media="(prefers-color-scheme: dark)"
 					content="#020203"
 				/>
 
