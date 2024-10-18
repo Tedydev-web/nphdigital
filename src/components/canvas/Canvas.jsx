@@ -74,7 +74,7 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 									<a href="https://zalo.me/2599746016148700210?src=qr&f=1"> Zalo</a>{' '}
 								</li>{' '}
 								<li>
-									<a href="https://www.facebook.com/nphdigital838838"> Facebook </a>{' '}
+									<a href="https://www.facebook.com/nphdigital838"> Facebook </a>{' '}
 								</li>{' '}
 								<li>
 									<a href="https://t.me/Nphdigital"> Telegram </a>{' '}

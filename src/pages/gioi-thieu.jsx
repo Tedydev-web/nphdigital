@@ -166,7 +166,7 @@ const About = () => {
 							name: 'NPH Digital',
 							url: 'https://nphdigital.com',
 							logo: 'https://res.cloudinary.com/tedydev/image/upload/nphdigital/logo.png',
-							sameAs: ['https://www.facebook.com/nphdigital838838', 'https://twitter.com/NPHDigital'],
+							sameAs: ['https://www.facebook.com/nphdigital838', 'https://twitter.com/NPHDigital'],
 						}),
 					}}
 				/>
