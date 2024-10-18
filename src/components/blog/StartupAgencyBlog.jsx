@@ -53,7 +53,7 @@ const blogs = [
 		src: Blog56,
 		href: '/cong-ty-tnhh-nph-digital-vinh-du-nhan-giai-thuong-top-10-thuong-hieu-uy-tin-hang-dau-viet-nam-2024',
 		category: 'NPH Digital',
-		date: '12 Oct 2024',
+		date: '12/10/2024',
 		title: 'NPH Digital nhận giải thưởng “TOP 10 Thương Hiệu Uy Tín Hàng Đầu Việt Nam 2024”',
 		excerpt: 'Ngày 12 tháng 10 năm 2024, Công ty TNHH NPH Digital đã vinh dự được trao tặng danh hiệu “TOP 10 Thương Hiệu Uy Tín Hàng Đầu Việt Nam”, đánh dấu một cột mốc quan trọng trong hành trình phát triển và khẳng định vị thế của mình trong ngành công nghệ số. Đây không chỉ là sự ghi nhận cho những nỗ lực không ngừng nghỉ mà còn là sự khẳng định uy tín và chất lượng dịch vụ mà NPH Digital đã mang đến cho khách hàng suốt thời gian qua.',
 	},
