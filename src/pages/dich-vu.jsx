@@ -2,7 +2,7 @@ import Head from 'next/head';
 import RootLayout from '@/components/common/layout/RootLayout';
 import ServiceHero from '@/components/hero/ServiceHero';
 import Service1 from '@/components/service/Service1';
-import DigitalMarketingService from '@/components/service/DigitalMarketingService';
+import ServiceElementV5 from '@/components/service/ServiceElementV5';
 import DigitalAgencyBrand from '@/components/brand/DigitalAgencyBrand';
 import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
 
@@ -166,7 +166,7 @@ const ServiceV5 = () => {
 					footer="footer3">
 					<ServiceHero />
 					{/* <Service1 /> */}
-					<DigitalMarketingService />
+					<ServiceElementV5 />
 					<DigitalAgencyBrand />
 					<DigitalAgencyCTA />
 				</RootLayout>
