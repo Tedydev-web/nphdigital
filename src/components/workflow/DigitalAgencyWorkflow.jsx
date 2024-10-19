@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Autoplay, Scrollbar } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { gsap } from 'gsap';
@@ -14,6 +14,8 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 
 const DigitalAgencyWorkflow = () => {
+	const swiperRef = useRef(null);
+
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let tHero = gsap.context(() => {
@@ -32,7 +34,21 @@ const DigitalAgencyWorkflow = () => {
 					},
 				});
 			});
-			return () => tHero.revert();
+
+			ScrollTrigger.create({
+				trigger: '.workflow__area',
+				start: 'top center',
+				onEnter: () => {
+					if (swiperRef.current) {
+						swiperRef.current.slideTo(0);
+					}
+				},
+			});
+
+			return () => {
+				tHero.revert();
+				ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+			};
 		}
 	}, []);
 
@@ -67,6 +83,9 @@ const DigitalAgencyWorkflow = () => {
 								}}
 								scrollbar={{ draggable: true }}
 								initialSlide={0}
+								onSwiper={(swiper) => {
+									swiperRef.current = swiper;
+								}}
 								breakpoints={{
 									640: {
 										slidesPerView: 2,
