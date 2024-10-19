@@ -1,15 +1,14 @@
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Portfilio1 from '../../../public/assets/imgs/service/5/service1.webp';
-import Portfilio2 from '../../../public/assets/imgs/service/5/service2.webp';
-import Portfilio3 from '../../../public/assets/imgs/service/5/service3.webp';
-import Portfilio4 from '../../../public/assets/imgs/service/5/service4.webp';
-import Portfilio5 from '../../../public/assets/imgs/service/5/service5.webp';
-import Portfilio6 from '../../../public/assets/imgs/service/5/service6.webp';
-import Portfilio7 from '../../../public/assets/imgs/service/5/service7.webp';
-import Portfilio8 from '../../../public/assets/imgs/service/5/service8.webp';
-import Portfilio9 from '../../../public/assets/imgs/service/5/service9.webp';
-import Portfilio10 from '../../../public/assets/imgs/service/5/service10.webp';
+import Portfilio1 from '../../../public/assets/imgs/service/5/service1.webp'; //Mobile App
+import Portfilio2 from '../../../public/assets/imgs/service/5/service2.webp'; //Thiết kê website
+import Portfilio3 from '../../../public/assets/imgs/service/5/service3.webp'; //Quảng cáo số
+import Portfilio4 from '../../../public/assets/imgs/service/5/service4.webp'; //THiết kế UI/UX
+import Portfilio6 from '../../../public/assets/imgs/service/5/service6.webp'; //Tương tác số
+import Portfilio7 from '../../../public/assets/imgs/service/5/service7.webp'; //Chăm sóc fanpage
+import Portfilio8 from '../../../public/assets/imgs/service/5/service8.webp'; //CRM, ERP, HRM
+import Portfilio9 from '../../../public/assets/imgs/service/5/service9.webp'; //Lập trình AI
+import Portfilio10 from '../../../public/assets/imgs/service/5/service10.webp'; //Thuê phòng IT ngoài
 import Image from 'next/image';
 
 // Import Swiper styles
@@ -57,8 +56,7 @@ const PortfolioElementV4 = () => {
 						<div className="col-xxl-12">
 							<div className="sec-title-wrapper">
 								<h2 className="sec-sub-title title-anim">
-									Dịch vụ
-									<br />
+									Dịch vụ <br />
 									của chúng tôi
 								</h2>
 							</div>
@@ -306,7 +304,7 @@ const PortfolioElementV4 = () => {
 						#fanpage {
 							bottom: 0;
 							color: #fff;
-							font-size: 50px;
+							font-size: 40px;
 							margin: 0 15px;
 						}
 
