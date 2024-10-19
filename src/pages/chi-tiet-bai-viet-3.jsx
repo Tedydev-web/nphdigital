@@ -149,7 +149,7 @@ const BlogDetails = () => {
 				/>
 				<meta
 					name="theme-color"
-					content="#020203"
+					content="#121212"
 				/>
 				<meta
 					name="copyright"
