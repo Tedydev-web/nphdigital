@@ -70,7 +70,7 @@ const DigitalAgencyAbout = () => {
 					<div className="col-xxl-12">
 						<div className="about__title-wrapper">
 							<h3 className="sec-title title-anim">
-								NPH Digital <br className="responsive-br" />
+								<span>NPH Digital</span> <br className="responsive-br" />
 								<span>{t('pages.home.about.title')}</span>
 							</h3>
 						</div>

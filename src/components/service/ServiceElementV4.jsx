@@ -57,10 +57,7 @@ const PortfolioElementV4 = () => {
 					<div className="row">
 						<div className="col-xxl-12">
 							<div className="sec-title-wrapper">
-								<h2 className="sec-sub-title title-anim">
-									{t('pages.home.service.secSubTitle.line1')} <br />
-									{t('pages.home.service.secSubTitle.line2')}
-								</h2>
+								<h2 className="sec-sub-title title-anim">{t('pages.home.service.secSubTitle')}</h2>
 							</div>
 						</div>
 					</div>
@@ -89,7 +86,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="mobileApp">
-													Mobile App
+													{t('pages.home.service.mobileApp.line1')} <span>{t('pages.home.service.mobileApp.line2')}</span>
 												</h3>
 												<Image
 													priority

@@ -39,10 +39,7 @@
       "service": {
         "title": "Services by",
         "blogText": "We understand that every project requires creativity. That’s why NPH Digital continuously listens and learns to bring you the best value possible.",
-        "secSubTitle": {
-          "line1": "Our",
-          "line2": "Services"
-        },
+        "secSubTitle": "Our Services",
         "mobileApp": {
           "line1": "Mobile",
           "line2": "Applications"

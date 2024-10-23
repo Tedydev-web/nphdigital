@@ -39,10 +39,7 @@
       "service": {
         "title":  "Dịch vụ của",
         "blogText": "Chúng tôi hiểu rằng mỗi dự án độc đáo đều đòi hỏi sự sáng tạo. Vì thế, NPH Digital không ngừng nỗ lực lắng nghe, học hỏi nhằm mang đến những giá trị tốt nhất dành cho bạn.",
-        "secSubTitle": {
-          "line1": "Dịch vụ",
-          "line2": "của chúng tôi"
-        },
+        "secSubTitle": "Dịch vụ của chúng tôi",
         "mobileApp": {
           "line1": "Ứng dụng",
           "line2": "di động"
