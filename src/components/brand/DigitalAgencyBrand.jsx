@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from '@/plugins';
@@ -29,6 +30,7 @@ const DigitalAgencyBrand = () => {
 	const sectionRef = useRef(null);
 	const firstRowRef = useRef(null);
 	const secondRowRef = useRef(null);
+	const { t } = useTranslation();
 
 	useEffect(() => {
 		const section = sectionRef.current;
@@ -92,11 +94,8 @@ const DigitalAgencyBrand = () => {
 				<div className="row">
 					<div className="col-xxl-12">
 						<div className="sec-title-wrapper">
-							<h2 className="sec-sub-title title-anim">Các nhãn hàng</h2>
-							<h3 className="sec-title title-anim">
-								Chúng tôi rất vui khi đã từng hợp tác và làm việc <br />
-								với những thương hiệu công nghệ lớn sau đây
-							</h3>
+							<h2 className="sec-sub-title title-anim">{t('pages.home.brand.secSubTitle')}</h2>
+							<h3 className="sec-title title-anim">{t('pages.home.brand.secTitle')}</h3>
 						</div>
 					</div>
 

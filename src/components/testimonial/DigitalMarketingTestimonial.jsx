@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -16,7 +17,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const DigitalMarketingTestimonial = () => {
 	const testimonialArea = useRef();
-
+	const { t } = useTranslation();
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let tHero = gsap.context(() => {
@@ -110,9 +111,9 @@ const DigitalMarketingTestimonial = () => {
 									<div className="swiper-wrapper">
 										<SwiperSlide>
 											<div className="testimonial__slide-3">
-												<p>Chúng tôi tin rằng sự hài lòng của khách hàng là chỉ số thành công tối thượng tại NPH Digital. Cam kết của chúng tôi là cung cấp các giải pháp công nghệ tiên tiến, hiệu quả và dễ sử dụng, giúp các đối tác đạt được mục tiêu kinh doanh. Chúng tôi luôn đặt lợi ích của khách hàng lên hàng đầu và không ngừng cải thiện chất lượng dịch vụ để đáp ứng mọi mong đợi..</p>
-												<h2 className="client__name-3">Mr. YURI KC</h2>
-												<h3 className="client__role-3">CEO NPH Digital</h3>
+												<p>{t('pages.home.testimonial.slide')}</p>
+												<h2 className="client__name-3">{t('pages.home.testimonial.name')}</h2>
+												<h3 className="client__role-3">{t('pages.home.testimonial.role')}</h3>
 											</div>
 										</SwiperSlide>
 									</div>

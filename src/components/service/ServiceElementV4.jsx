@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Portfilio1 from '../../../public/assets/imgs/service/5/service1.webp'; //Mobile App
@@ -23,6 +24,7 @@ import { useEffect, useRef } from 'react';
 import animationCharCome from '@/lib/utils/animationCharCome';
 
 const PortfolioElementV4 = () => {
+	const { t } = useTranslation();
 	const charAnim = useRef();
 
 	useEffect(() => {
@@ -40,14 +42,14 @@ const PortfolioElementV4 = () => {
 									className="sec-title-2 animation__char_come"
 									ref={charAnim}
 									style={{ lineHeight: '1.2' }}>
-									Dịch vụ của <br />
+									<span>{t('pages.home.service.title')}</span> <br />
 									NPH Digital
 								</h2>
 							</div>
 						</div>
 						<div className="col-xxl-4 col-xl-5 col-lg-6 col-md-6">
 							<div className="blog__text">
-								<p>Chúng tôi hiểu rằng mỗi dự án độc đáo đều đòi hỏi sự sáng tạo. Vì thế, NPH Digital không ngừng nỗ lực lắng nghe, học hỏi nhằm mang đến những giá trị tốt nhất dành cho bạn.</p>
+								<p>{t('pages.home.service.blogText')}</p>
 							</div>
 						</div>
 					</div>
@@ -56,8 +58,8 @@ const PortfolioElementV4 = () => {
 						<div className="col-xxl-12">
 							<div className="sec-title-wrapper">
 								<h2 className="sec-sub-title title-anim">
-									Dịch vụ <br />
-									của chúng tôi
+									{t('pages.home.service.secSubTitle.line1')} <br />
+									{t('pages.home.service.secSubTitle.line2')}
 								</h2>
 							</div>
 						</div>
@@ -107,7 +109,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="uiux">
-													Thiết kế <span>UI/UX</span>
+													{t('pages.home.service.uiUx.line1')} <span>{t('pages.home.service.uiUx.line2')}</span>
 												</h3>
 												<Image
 													priority
@@ -127,7 +129,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="system">
-													CRM, ERP, HRM
+													{t('pages.home.service.crmErpHrm')}
 												</h3>
 												<Image
 													priority
@@ -147,7 +149,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="it">
-													Thuê Phòng <span>IT ngoài</span>
+													{t('pages.home.service.it.line1')} <span>{t('pages.home.service.it.line2')}</span>
 												</h3>
 												<Image
 													priority
@@ -160,14 +162,14 @@ const PortfolioElementV4 = () => {
 										</div>
 									</SwiperSlide>
 
-									{/* Slide: tương tác số */}
+									{/* Slide: Chăm sóc fanpage */}
 									<SwiperSlide>
 										<div className="portfolio__slide-3">
 											<Link href="/cham-soc-fanpage">
 												<h3
 													className="portfolio__title-3"
 													id="fanpage">
-													Chăm sóc fanpage
+													{t('pages.home.service.fanpage.line1')} <span>{t('pages.home.service.fanpage.line2')}</span>
 												</h3>
 												<Image
 													priority
@@ -187,7 +189,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="website">
-													Thiết kế <span>website</span>
+													{t('pages.home.service.web.line1')} <span>{t('pages.home.service.web.line2')}</span>
 												</h3>
 												<Image
 													priority
@@ -207,7 +209,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="marketing">
-													Quảng cáo số
+													{t('pages.home.service.ads.line1')} <span>{t('pages.home.service.ads.line2')}</span>
 												</h3>
 												<Image
 													priority
@@ -227,7 +229,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="ai">
-													Lập trình AI
+													{t('pages.home.service.ai')}
 												</h3>
 												<Image
 													priority
@@ -247,7 +249,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="tuongTacSo">
-													Tương tác số
+													{t('pages.home.service.interaction.line1')} <span>{t('pages.home.service.interaction.line2')}</span>
 												</h3>
 												<Image
 													priority

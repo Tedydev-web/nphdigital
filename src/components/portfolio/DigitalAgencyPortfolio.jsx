@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from '@/plugins';
@@ -15,6 +16,7 @@ import Image from 'next/image';
 gsap.registerPlugin(ScrollTrigger);
 
 const DigitalAgencyPortfolio = () => {
+	const { t } = useTranslation();
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let device_width = window.innerWidth;
@@ -108,7 +110,7 @@ const DigitalAgencyPortfolio = () => {
 				id="portfolio">
 				<div className="container">
 					<div className="row top_row">
-						<h2 className="portfolio__text">Dự án</h2>
+						<h2 className="portfolio__text">{t('pages.home.portfolio.secTitle')}</h2>
 						<div className="portfolio__list-1">
 							<div className="portfolio__item">
 								<Link href="#">
@@ -121,8 +123,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">LUA - Ứng dụng luyện tập yoga tại nhà</h3>
-									<p>Phát triển ứng dụng di động</p>
+									<h3 className="portfolio__title">{t('pages.home.portfolio.title1')}</h3>
+									<p>{t('pages.home.portfolio.description1')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -135,8 +137,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">Ứng Dụng Giao Lưu Tennis</h3>
-									<p>Phát triển ứng dụng di động</p>
+									<h3 className="portfolio__title">{t('pages.home.portfolio.title2')}</h3>
+									<p>{t('pages.home.portfolio.description2')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -149,8 +151,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">Sense - Ứng dụng đặt lịch dịch vụ</h3>
-									<p>Phát triển ứng dụng di động</p>
+									<h3 className="portfolio__title">{t('pages.home.portfolio.title3')}</h3>
+									<p>{t('pages.home.portfolio.description3')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -163,8 +165,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">Fowi - Ứng Dụng Hẹn Hò Trực Tuyến</h3>
-									<p>Phát triển ứng dụng di động</p>
+									<h3 className="portfolio__title">{t('pages.home.portfolio.title4')}</h3>
+									<p>{t('pages.home.portfolio.description4')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -177,8 +179,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">Aquabay - Dự án Website Aquabay</h3>
-									<p>Phát triển & Thiết kế Website</p>
+									<h3 className="portfolio__title">{t('pages.home.portfolio.title5')}</h3>
+									<p>{t('pages.home.portfolio.description5')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -191,8 +193,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">OCCO - Dự án Website OCCO</h3>
-									<p>Phát triển & Thiết kế Website</p>
+									<h3 className="portfolio__title">{t('pages.home.portfolio.title6')}</h3>
+									<p>{t('pages.home.portfolio.description6')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -205,8 +207,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">CSIP - Dự án Website CSIP</h3>
-									<p>Phát triển & Thiết kế Website</p>
+									<h3 className="portfolio__title">{t('pages.home.portfolio.title7')}</h3>
+									<p>{t('pages.home.portfolio.description7')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -219,8 +221,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">DĐTM - Full Wep App ERP</h3>
-									<p>Phát triển & Thiết kế Website</p>
+									<h3 className="portfolio__title">{t('pages.home.portfolio.title8')}</h3>
+									<p>{t('pages.home.portfolio.description8')}</p>
 								</div>
 							</div>
 						</div>
@@ -236,7 +238,9 @@ const DigitalAgencyPortfolio = () => {
 									className="wc-btn-secondary btn-hover btn-item"
 									href="#portfolio"
 									scroll={false}>
-									Xem dự án khác<i className="fa-solid fa-arrow-right"></i>
+									{t('pages.home.portfolio.button.line1')} <br />
+									{t('pages.home.portfolio.button.line2')}
+									<i className="fa-solid fa-arrow-right"></i>
 								</Link>
 							</div>
 						</div>

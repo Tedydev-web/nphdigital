@@ -1,21 +1,18 @@
+import { useTranslation } from 'react-i18next';
 import { useEffect, useRef } from 'react';
 import { Autoplay, Scrollbar } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from '@/plugins';
-
-// Register GSAP plugins
-gsap.registerPlugin(ScrollTrigger);
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
+gsap.registerPlugin(ScrollTrigger);
 
 const DigitalAgencyWorkflow = () => {
 	const swiperRef = useRef(null);
-
+	const { t } = useTranslation();
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let tHero = gsap.context(() => {
@@ -23,14 +20,14 @@ const DigitalAgencyWorkflow = () => {
 				gsap.to('.fade_left', {
 					scrollTrigger: {
 						trigger: '.fade_left',
-						start: 'top center+=200', // Adjust start position
+						start: 'top center+=200',
 					},
 					x: 0,
 					opacity: 1,
 					ease: 'power2.out',
-					duration: 1.2, // Adjust duration
+					duration: 1.2,
 					stagger: {
-						each: 0.3, // Adjust stagger timing
+						each: 0.3,
 					},
 				});
 			});
@@ -56,14 +53,12 @@ const DigitalAgencyWorkflow = () => {
 		<>
 			<section className="workflow__area">
 				<div className="container g-0 line pt-120 pb-120">
-					{' '}
-					{/* Adjust padding */}
 					<div className="line-3"></div>
 					<div className="row">
 						<div className="col-xxl-12">
 							<div className="sec-title-wrapper">
-								<h2 className="sec-sub-title title-anim">quy trình</h2>
-								<h3 className="sec-title title-anim">Quy trình làm việc</h3>
+								<h2 className="sec-sub-title title-anim">{t('pages.home.workflow.secSubTitle')}</h2>
+								<h3 className="sec-title title-anim">{t('pages.home.workflow.secTitle')}</h3>
 							</div>
 						</div>
 
@@ -72,13 +67,13 @@ const DigitalAgencyWorkflow = () => {
 							style={{ paddingBottom: '30px' }}>
 							<Swiper
 								modules={[Scrollbar, Autoplay]}
-								spaceBetween={20} // Adjust space between slides
-								slidesPerView={1}
-								freeMode={false} // Disable freeMode
-								loop={false} // Disable loop
-								speed={800} // Adjust speed
+								spaceBetween={30}
+								slidesPerView={3}
+								slidesPerGroup={3} // Thêm thuộc tính này
+								loop={false}
+								speed={800}
 								autoplay={{
-									delay: 2000, // Adjust delay
+									delay: 2500,
 									disableOnInteraction: false,
 								}}
 								scrollbar={{ draggable: true }}
@@ -87,74 +82,73 @@ const DigitalAgencyWorkflow = () => {
 									swiperRef.current = swiper;
 								}}
 								breakpoints={{
-									640: {
-										slidesPerView: 2,
-										spaceBetween: 20, // Adjust space for smaller screens
+									320: {
+										slidesPerView: 1,
+										slidesPerGroup: 1, // Điều chỉnh cho màn hình nhỏ
+										spaceBetween: 20,
 									},
 									768: {
 										slidesPerView: 2,
+										slidesPerGroup: 2, // Điều chỉnh cho màn hình trung bình
 										spaceBetween: 30,
 									},
 									1024: {
 										slidesPerView: 3,
-										spaceBetween: 40,
-									},
-									1200: {
-										slidesPerView: 4,
-										spaceBetween: 50,
+										slidesPerGroup: 3, // Giữ nguyên cho màn hình lớn
+										spaceBetween: 30,
 									},
 								}}>
 								<SwiperSlide>
 									<div className="workflow__slide fade_left">
-										<h4 className="workflow__step">bước 01</h4>
-										<h5 className="workflow__number">01</h5>
-										<h6 className="workflow__title">Ý tưởng</h6>
-										<p>Bộ phận phân tích nghiệp vụ sẽ thảo luận và lấy yêu cầu thiết kế chi tiết từ khách hàng.</p>
+										<h4 className="workflow__step">{t('pages.home.workflow.step1')}</h4>
+										<h5 className="workflow__number">{t('pages.home.workflow.number1')}</h5>
+										<h6 className="workflow__title">{t('pages.home.workflow.title1')}</h6>
+										<p>{t('pages.home.workflow.description1')}</p>
 									</div>
 								</SwiperSlide>
 
 								<SwiperSlide>
 									<div className="workflow__slide fade_left">
-										<h4 className="workflow__step">bước 02</h4>
-										<h5 className="workflow__number">02</h5>
-										<h6 className="workflow__title">phác thảo</h6>
-										<p>Dựa vào thông tin cung cấp, chúng tôi sẽ phân tích và phác thảo kiến trúc hệ thống cho sản phẩm.</p>
+										<h4 className="workflow__step">{t('pages.home.workflow.step2')}</h4>
+										<h5 className="workflow__number">{t('pages.home.workflow.number2')}</h5>
+										<h6 className="workflow__title">{t('pages.home.workflow.title2')}</h6>
+										<p>{t('pages.home.workflow.description2')}</p>
 									</div>
 								</SwiperSlide>
 
 								<SwiperSlide>
 									<div className="workflow__slide fade_left">
-										<h4 className="workflow__step">bước 03</h4>
-										<h5 className="workflow__number">03</h5>
-										<h6 className="workflow__title">Thiết kế</h6>
-										<p>Sau khi tiếp nhận mô tả chức năng, đội ngũ thiết kế sẽ tiến hành xây dựng giao diện cho hệ thống.</p>
+										<h4 className="workflow__step">{t('pages.home.workflow.step3')}</h4>
+										<h5 className="workflow__number">{t('pages.home.workflow.number3')}</h5>
+										<h6 className="workflow__title">{t('pages.home.workflow.title3')}</h6>
+										<p>{t('pages.home.workflow.description3')}</p>
 									</div>
 								</SwiperSlide>
 
 								<SwiperSlide>
 									<div className="workflow__slide fade_left">
-										<h4 className="workflow__step">bước 04</h4>
-										<h5 className="workflow__number">04</h5>
-										<h6 className="workflow__title">Phát triển</h6>
-										<p>Đội ngũ phát triển sẽ tiến hành phân tích, lựa chọn giải pháp và công nghệ phù hợp để xây dựng sản phẩm dựa theo bản thiết kế.</p>
+										<h4 className="workflow__step">{t('pages.home.workflow.step4')}</h4>
+										<h5 className="workflow__number">{t('pages.home.workflow.number4')}</h5>
+										<h6 className="workflow__title">{t('pages.home.workflow.title4')}</h6>
+										<p>{t('pages.home.workflow.description4')}</p>
 									</div>
 								</SwiperSlide>
 
 								<SwiperSlide>
 									<div className="workflow__slide fade_left">
-										<h4 className="workflow__step">bước 05</h4>
-										<h5 className="workflow__number">05</h5>
-										<h6 className="workflow__title">Kiểm thử</h6>
-										<p>Bộ phận kiểm thử sẽ luôn làm việc song song với bộ phận phát triển để đưa ra phản hồi nhằm đảm bảo chất lượng sản phẩm ở mọi giai đoạn.</p>
+										<h4 className="workflow__step">{t('pages.home.workflow.step5')}</h4>
+										<h5 className="workflow__number">{t('pages.home.workflow.number5')}</h5>
+										<h6 className="workflow__title">{t('pages.home.workflow.title5')}</h6>
+										<p>{t('pages.home.workflow.description5')}</p>
 									</div>
 								</SwiperSlide>
 
 								<SwiperSlide>
 									<div className="workflow__slide fade_left">
-										<h4 className="workflow__step">bước 06</h4>
-										<h5 className="workflow__number">06</h5>
-										<h6 className="workflow__title">Triển khai</h6>
-										<p>Đội ngũ phát triển sẽ tiến hành triển khai - vận hành hệ thống để đảm bảo hệ thống hoạt động ổn định và tối ưu chi phí tốt nhất.</p>
+										<h4 className="workflow__step">{t('pages.home.workflow.step6')}</h4>
+										<h5 className="workflow__number">{t('pages.home.workflow.number6')}</h5>
+										<h6 className="workflow__title">{t('pages.home.workflow.title6')}</h6>
+										<p>{t('pages.home.workflow.description6')}</p>
 									</div>
 								</SwiperSlide>
 							</Swiper>

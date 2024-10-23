@@ -56,7 +56,7 @@ const BlogDetails2024 = () => {
 								<h2
 									className="blog__detail-date animation__word_come"
 									ref={wordAnim}>
-									Thiết kế App, UX/UI <span>06 Jan 2024</span>
+									{t('pages.baiViet.blogDetails.blogDetails1.detailsDate')} <span>06 Jan 2024</span>
 								</h2>
 								<h3
 									className="blog__detail-title animation__word_come"

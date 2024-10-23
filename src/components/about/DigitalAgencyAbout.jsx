@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger, ScrollSmoother } from '@/plugins';
@@ -8,6 +9,7 @@ import About12 from '../../../public/assets/imgs/about/1/3.png';
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const DigitalAgencyAbout = () => {
+	const { t } = useTranslation();
 	const videoRef = useRef(null);
 	const smootherRef = useRef(null);
 
@@ -30,7 +32,6 @@ const DigitalAgencyAbout = () => {
 
 	useEffect(() => {
 		const videoElement = videoRef.current;
-
 		const handleVideoPlay = () => {
 			videoElement?.play().catch((error) => {
 				console.error('Không thể tự động phát video:', error);
@@ -69,8 +70,8 @@ const DigitalAgencyAbout = () => {
 					<div className="col-xxl-12">
 						<div className="about__title-wrapper">
 							<h3 className="sec-title title-anim">
-								NPH DIGITAL <br className="responsive-br" />
-								Công nghệ chuyển đổi số tối ưu hóa quy trình và trải nghiệm, gia tăng giá trị cho bạn.
+								NPH Digital <br className="responsive-br" />
+								<span>{t('pages.home.about.title')}</span>
 							</h3>
 						</div>
 
@@ -105,12 +106,13 @@ const DigitalAgencyAbout = () => {
 								</div>
 							</div>
 							<div className="about__content text-anim">
-								<p>Chúng tôi cam kết cung cấp các giải pháp phần mềm chuyển đổi số vượt trội, đem lại sự ấn tượng và hiệu quả, đồng thời đảm bảo chi phí phát triển tối ưu nhất. Sự hoàn hảo không chỉ trong sản phẩm mà còn trong ngân sách của bạn là ưu tiên hàng đầu của chúng tôi.</p>
+								<p>{t('pages.home.about.description')}</p>
 								<div className="cursor-btn btn_wrapper">
 									<Link
 										className="btn-item wc-btn-primary btn-hover"
 										href="/gioi-thieu">
-										<span></span> Giới thiệu <br /> về chúng tôi <i className="fa-solid fa-arrow-right"></i>
+										<span></span> {t('pages.home.about.button.line1')} <br />
+										{t('pages.home.about.button.line2')} <i className="fa-solid fa-arrow-right"></i>
 									</Link>
 								</div>
 							</div>

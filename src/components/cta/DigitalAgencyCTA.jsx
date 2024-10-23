@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import VideoBackground from '../VideoBackground';
+import { useTranslation } from 'react-i18next';
 
 const DigitalAgencyCTA = () => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<section
@@ -12,7 +14,7 @@ const DigitalAgencyCTA = () => {
 					display: 'flex',
 					justifyContent: 'center',
 					alignItems: 'center',
-					height: '100vh', // Đảm bảo chiều cao toàn màn hình
+					height: '100vh',
 				}}>
 				<VideoBackground
 					videoSrc="/assets/video/bg-cta.mp4"
@@ -29,7 +31,7 @@ const DigitalAgencyCTA = () => {
 						position: 'absolute',
 						top: 0,
 						left: 0,
-						zIndex: -1, // Đảm bảo canvas nằm phía sau nội dung
+						zIndex: -1,
 					}}></canvas>
 				<div className="container line pb-110">
 					<div className="row">
@@ -37,13 +39,16 @@ const DigitalAgencyCTA = () => {
 							<div
 								className="cta__content"
 								style={{ textAlign: 'center' }}>
-								<p className="cta__sub-title">Liên hệ</p>
-								<h2 className="cta__title title-anim">Chúng tôi rất vui khi được lắng nghe những ý tưởng của bạn</h2>
+								<p className="cta__sub-title">{t('pages.home.cta.subTitle')}</p>
+								<h2 className="cta__title title-anim">{t('pages.home.cta.title')}</h2>
 								<div className="btn_wrapper">
 									<Link
 										href="/lien-he"
 										className="wc-btn-primary btn-hover btn-item">
-										<span></span>Liên hệ với <br /> chúng tôi <i className="fa-solid fa-arrow-right"></i>
+										<span></span>
+										{t('pages.home.cta.button.line1')} <br />
+										{t('pages.home.cta.button.line2')}
+										<i className="fa-solid fa-arrow-right"></i>
 									</Link>
 								</div>
 							</div>

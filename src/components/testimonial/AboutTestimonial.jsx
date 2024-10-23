@@ -57,28 +57,6 @@ const AboutTestimonial = () => {
 												</div>
 											</div>
 										</SwiperSlide>
-
-										<SwiperSlide className="swiper-slide ">
-											<div className="testimonial__slide">
-												<div className="testimonial__inner-2">
-													<h2 className="testimonial__title-2">Amazing digital service</h2>
-													<p className="testimonial__text-2">We were there right at the beginning just when the concept for search engine optimisation taking office and the full of internet. So wewe’ve grown to employ than 50 talented specialists with diverse experiences and broad skill sets of huge markers.</p>
-													<h3 className="testimonial__author">Adam Syndera</h3>
-													<h4 className="testimonial__role">CEO, Agency</h4>
-												</div>
-											</div>
-										</SwiperSlide>
-
-										<SwiperSlide>
-											<div className="testimonial__slide">
-												<div className="testimonial__inner-2">
-													<h2 className="testimonial__title-2">Amazing digital service</h2>
-													<p className="testimonial__text-2">We were there right at the beginning just when the concept for search engine optimisation taking office and the full of internet. So wewe’ve grown to employ than 50 talented specialists with diverse experiences and broad skill sets of huge markers.</p>
-													<h3 className="testimonial__author">Adam Syndera</h3>
-													<h4 className="testimonial__role">CEO, Agency</h4>
-												</div>
-											</div>
-										</SwiperSlide>
 									</Swiper>
 								</div>
 

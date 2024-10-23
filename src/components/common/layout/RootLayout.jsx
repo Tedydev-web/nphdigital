@@ -1,3 +1,5 @@
+import '../../../i18n.js';
+import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState, useMemo } from 'react';
 import allNavData from '../../../data/navData.json';
 import Preloader from '@/components/preloader/Preloader';
@@ -38,6 +40,7 @@ export default function RootLayout({ children, header = '', footer = '', default
 	const [particleValue, setParticleValue] = useState(70);
 	const cursor1 = useRef();
 	const cursor2 = useRef();
+	const { t, i18n } = useTranslation();
 
 	useEffect(() => {
 		setNavData(allNavData);
@@ -138,13 +141,17 @@ export default function RootLayout({ children, header = '', footer = '', default
 		[particleValue]
 	);
 
+	const changeLanguage = (lng) => {
+		i18n.changeLanguage(lng);
+	};
+
 	return (
 		<CommonAnimation>
 			<div
 				className="has-smooth"
 				id="has_smooth"></div>
 			<ScrollSmootherComponents />
-			<Preloader />
+			{/* <Preloader /> */}
 			<CursorAnimation
 				cursor1={cursor1}
 				cursor2={cursor2}
@@ -154,6 +161,18 @@ export default function RootLayout({ children, header = '', footer = '', default
 				header={header}
 				navData={navData}
 			/>
+			<div style={{ position: 'fixed', top: '20px', right: '20px', zIndex: 1000 }}>
+				<button
+					onClick={() => changeLanguage('vi')}
+					style={{ marginRight: '10px', color: '#fff' }}>
+					{t('common.languageSwitcher.vietnamese')}
+				</button>
+				<button
+					onClick={() => changeLanguage('en')}
+					style={{ color: '#fff' }}>
+					{t('common.languageSwitcher.english')}
+				</button>
+			</div>
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					{children}

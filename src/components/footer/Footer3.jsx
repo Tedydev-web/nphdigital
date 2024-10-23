@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import ThumbFooter from '../../../public/assets/imgs/thumb/footer.png';
 import FooterLogoWhite from '../../../public/assets/imgs/logo/site-logo-white-2.png';
@@ -14,7 +15,7 @@ export default function Footer3() {
 	const menuAnim = useRef();
 	const menuAnim2 = useRef();
 	const router = useRouter();
-
+	const { t } = useTranslation();
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		const email = e.target.email.value;
@@ -79,12 +80,12 @@ export default function Footer3() {
 							<div className="swiper-wrapper">
 								<SwiperSlide>
 									<h2 className="rollslide_title-1">
-										{'liên hệ'} <span>chúng tôi </span>
+										{t('pages.footer.roll.line1')} <span>{t('pages.footer.roll.line2')}</span>
 									</h2>
 								</SwiperSlide>
 								<SwiperSlide>
 									<h2 className="rollslide_title-1">
-										{'liên hệ'} <span>chúng tôi </span>
+										{t('pages.footer.roll.line1')} <span>{t('pages.footer.roll.line2')}</span>
 									</h2>
 								</SwiperSlide>
 							</div>
@@ -117,7 +118,7 @@ export default function Footer3() {
 										src={FooterLogoWhite}
 										alt="Footer Logo"
 									/>
-									<p>Chúng tôi luôn phát huy tính sáng tạo và chuyên nghiệp trong công việc để làm hài lòng mọi yêu cầu của khách hàng một cách tốt nhất.</p>
+									<p>{t('pages.footer.widget.content')}</p>
 									<div className="footer__social">
 										<a
 											href="https://zalo.me/2599746016148700210?src=qr&f=1"
@@ -246,57 +247,57 @@ export default function Footer3() {
 								</div>
 
 								<div className="footer__widget-2">
-									<h2 className="footer__widget-title">Thông tin</h2>
+									<h2 className="footer__widget-title">{t('pages.footer.title.title1')}</h2>
 									<ul className="footer__link">
 										<li>
-											<Link href="/gioi-thieu">Giới thiệu</Link>
+											<Link href="/gioi-thieu">{t('pages.footer.link.about')}</Link>
 										</li>
 										<li>
-											<Link href="/dich-vu">Dịch vụ</Link>
+											<Link href="/dich-vu">{t('pages.footer.link.service')}</Link>
 										</li>
 										<li>
-											<Link href="/bai-viet">Bài Viết</Link>
+											<Link href="/bai-viet">{t('pages.footer.link.blog')}</Link>
 										</li>
 										<li>
-											<Link href="/lien-he">Liên Hệ</Link>
+											<Link href="/lien-he">{t('pages.footer.link.contact')}</Link>
 										</li>
 									</ul>
 								</div>
 
 								<div className="footer__widget-3">
-									<h2 className="footer__widget-title">Liên hệ</h2>
+									<h2 className="footer__widget-title">{t('pages.footer.title.title2')}</h2>
 									<ul className="footer__contact">
-										<li>Số 838, Ấp Vĩnh Bình, Xã An Vĩnh Ngãi, Tp Tân An, T Long An</li>
+										<li>{t('pages.footer.contact.address')}</li>
 										<li>
 											<a
 												href="tel:02574328301"
 												className="phone">
-												(+84) 777 018 333{' '}
+												{t('pages.footer.contact.phone')}
 											</a>
 										</li>
 										<li>
-											<a href="mailto:hi@nphdigital.com">hi@nphdigital.com</a>
+											<a href="mailto:hi@nphdigital.com">{t('pages.footer.contact.email')}</a>
 										</li>
 									</ul>
 								</div>
 
 								<div className="footer__widget-4">
-									<h2 className="project-title">Bạn đang ấp ủ một ý tưởng tiềm năng?</h2>
+									<h2 className="project-title">{t('pages.footer.title.title3')}</h2>
 									<div className="btn_wrapper">
 										<Link
 											href="/lien-he"
 											className="wc-btn-primary btn-hover btn-item">
-											<span></span> Liên hệ <br />
-											Chúng tôi ngay <i className="fa-solid fa-arrow-right"></i>
+											<span></span> {t('pages.footer.roll.line1')} <br />
+											{t('pages.footer.roll.line2')} <i className="fa-solid fa-arrow-right"></i>
 										</Link>
 									</div>
-									<h3 className="contact-time">08 : 00 AM - 10 : 00 PM</h3>
-									<h4 className="contact-day">tất cả các ngày trong tuần</h4>
+									<h3 className="contact-time">{t('pages.footer.contact.time')}</h3>
+									<h4 className="contact-day">{t('pages.footer.contact.day')}</h4>
 								</div>
 
 								<div className="footer__copyright">
 									<p>
-										© Copyright NPH Digital. <br /> All Rights Reserved
+										{t('pages.footer.copyright.line1')} <br /> {t('pages.footer.copyright.line2')}
 									</p>
 								</div>
 
@@ -305,7 +306,7 @@ export default function Footer3() {
 										<input
 											type="email"
 											name="email"
-											placeholder="Nhập email của bạn"
+											placeholder={t('pages.footer.contact.emailFrom')}
 										/>
 										<button
 											type="submit"

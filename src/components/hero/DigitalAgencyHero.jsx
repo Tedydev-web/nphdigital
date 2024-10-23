@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { SplitText } from '@/plugins';
@@ -8,6 +9,7 @@ import Hero1bg from '../../../public/assets/imgs/hero/1/1-bg.png';
 import Image from 'next/image.js';
 
 const DigitalAgencyHero = () => {
+	const { t } = useTranslation();
 	const heroTitle = useRef();
 	const heroSubTitle = useRef();
 	useEffect(() => {
@@ -46,6 +48,7 @@ const DigitalAgencyHero = () => {
 			return () => tHero.revert();
 		}
 	}, []);
+
 	return (
 		<>
 			<section className="hero__area ">
@@ -54,7 +57,7 @@ const DigitalAgencyHero = () => {
 						<div className="col-xxl-12">
 							<div className="hero__content animation__hero_one">
 								<Link href="/dich-vu">
-									Tư vấn, thiết kế, giải pháp <br /> công nghệ chuyển đổi số{' '}
+									{t('pages.home.hero.link')}{' '}
 									<span>
 										<i className="fa-solid fa-arrow-right"></i>
 									</span>
@@ -63,14 +66,14 @@ const DigitalAgencyHero = () => {
 									<h1
 										className="hero__title"
 										ref={heroTitle}>
-										NPH Digital <br className="responsive-br" />
-										Transformation <br className="responsive-br" />
-										Solutions
+										<span>{t('pages.home.hero.title.line1')}</span> <br className="responsive-br" />
+										<span>{t('pages.home.hero.title.line2')}</span> <br className="responsive-br" />
+										<span>{t('pages.home.hero.title.line3')}</span>
 									</h1>
 									<p
 										className="hero__sub-title"
 										ref={heroSubTitle}>
-										Với mục tiêu trở thành đối tác công nghệ thông tin hàng đầu trong khu vực. Chúng tôi luôn phát huy tính sáng tạo và chuyên nghiệp trong công việc để làm hài lòng mọi yêu cầu của khách hàng một cách tốt nhất.{' '}
+										{t('pages.home.hero.subtitle')}
 									</p>
 								</div>
 								<Image
@@ -81,11 +84,8 @@ const DigitalAgencyHero = () => {
 									alt="Arrow Down Icon"
 								/>
 								<div className="experience">
-									<h2 className="title">1000+</h2>
-									<p>
-										Dự án đã hoàn thành <br />
-										xuất sắc{' '}
-									</p>
+									<h2 className="title">{t('pages.home.hero.experience.title')}</h2>
+									<p>{t('pages.home.hero.experience.description')}</p>
 								</div>
 							</div>
 						</div>

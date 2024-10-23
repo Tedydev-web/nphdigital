@@ -737,14 +737,12 @@
 	}
 }
 
-/* hiển thị thẻ <br> trên các thiết bị di động */
 @media (max-width: 767px) {
 	.responsive-br {
 		display: inline;
 	}
 }
 
-/* Hiển thị thẻ <br> trên các thiết bị desktop */
 @media (min-width: 768px) {
 	.responsive-br {
 		display: inline;
