@@ -24,7 +24,7 @@ import { useEffect, useRef } from 'react';
 import animationCharCome from '@/lib/utils/animationCharCome';
 
 const PortfolioElementV4 = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation('home');
 	const charAnim = useRef();
 
 	useEffect(() => {
@@ -42,14 +42,14 @@ const PortfolioElementV4 = () => {
 									className="sec-title-2 animation__char_come"
 									ref={charAnim}
 									style={{ lineHeight: '1.2' }}>
-									<span>{t('pages.home.service.title')}</span> <br />
+									<span>{t('ServiceElementV4.title')}</span> <br />
 									NPH Digital
 								</h2>
 							</div>
 						</div>
 						<div className="col-xxl-4 col-xl-5 col-lg-6 col-md-6">
 							<div className="blog__text">
-								<p>{t('pages.home.service.blogText')}</p>
+								<p>{t('ServiceElementV4.blogText')}</p>
 							</div>
 						</div>
 					</div>
@@ -57,7 +57,7 @@ const PortfolioElementV4 = () => {
 					<div className="row">
 						<div className="col-xxl-12">
 							<div className="sec-title-wrapper">
-								<h2 className="sec-sub-title title-anim">{t('pages.home.service.secSubTitle')}</h2>
+								<h2 className="sec-sub-title title-anim">{t('ServiceElementV4.secSubTitle')}</h2>
 							</div>
 						</div>
 					</div>
@@ -86,7 +86,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="mobileApp">
-													{t('pages.home.service.mobileApp.line1')} <span>{t('pages.home.service.mobileApp.line2')}</span>
+													{t('ServiceElementV4.mobileApp.line1')} <span>{t('ServiceElementV4.mobileApp.line2')}</span>
 												</h3>
 												<Image
 													priority
@@ -106,7 +106,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="uiux">
-													{t('pages.home.service.uiUx.line1')} <span>{t('pages.home.service.uiUx.line2')}</span>
+													{t('ServiceElementV4.uiUx.line1')} <span>{t('ServiceElementV4.uiUx.line2')}</span>
 												</h3>
 												<Image
 													priority
@@ -126,7 +126,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="system">
-													{t('pages.home.service.crmErpHrm')}
+													{t('ServiceElementV4.crmErpHrm')}
 												</h3>
 												<Image
 													priority
@@ -146,7 +146,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="it">
-													{t('pages.home.service.it.line1')} <span>{t('pages.home.service.it.line2')}</span>
+													{t('ServiceElementV4.it.line1')} <span>{t('ServiceElementV4.it.line2')}</span>
 												</h3>
 												<Image
 													priority
@@ -166,7 +166,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="fanpage">
-													{t('pages.home.service.fanpage.line1')} <span>{t('pages.home.service.fanpage.line2')}</span>
+													{t('ServiceElementV4.fanpage.line1')} <span>{t('ServiceElementV4.fanpage.line2')}</span>
 												</h3>
 												<Image
 													priority
@@ -186,7 +186,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="website">
-													{t('pages.home.service.web.line1')} <span>{t('pages.home.service.web.line2')}</span>
+													{t('ServiceElementV4.web.line1')} <span>{t('ServiceElementV4.web.line2')}</span>
 												</h3>
 												<Image
 													priority
@@ -206,7 +206,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="marketing">
-													{t('pages.home.service.ads.line1')} <span>{t('pages.home.service.ads.line2')}</span>
+													{t('ServiceElementV4.ads.line1')} <span>{t('ServiceElementV4.ads.line2')}</span>
 												</h3>
 												<Image
 													priority
@@ -226,7 +226,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="ai">
-													{t('pages.home.service.ai')}
+													{t('ServiceElementV4.ai')}
 												</h3>
 												<Image
 													priority
@@ -246,7 +246,7 @@ const PortfolioElementV4 = () => {
 												<h3
 													className="portfolio__title-3"
 													id="tuongTacSo">
-													{t('pages.home.service.interaction.line1')} <span>{t('pages.home.service.interaction.line2')}</span>
+													{t('ServiceElementV4.interaction.line1')} <span>{t('ServiceElementV4.interaction.line2')}</span>
 												</h3>
 												<Image
 													priority

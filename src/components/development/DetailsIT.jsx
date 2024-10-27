@@ -3,8 +3,9 @@ import ThumbDev1 from '../../../public/assets/imgs/service/detail/IT/1.jpeg';
 
 import Image from 'next/image';
 import animationCharCome from '@/lib/utils/animationCharCome';
-
+import { useTranslation } from 'react-i18next';
 const DetailsIT = () => {
+	const { t } = useTranslation('serviceDetails');
 	const charAnim = useRef();
 	useEffect(() => {
 		animationCharCome(charAnim.current);
@@ -20,21 +21,21 @@ const DetailsIT = () => {
 								<h2
 									className="sec-title animation__char_come"
 									ref={charAnim}>
-									Cho thuê phòng IT ngoài
+									{t('thuePhongItNgoai.DetailsIT.secTitle')}
 								</h2>
 							</div>
 						</div>
 						<div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
 							<div className="development__wrapper">
 								<div className="development__content">
-									<p>Tại NPH Digital, chúng tôi cung cấp dịch vụ cho thuê phòng IT ngoài với tiêu chuẩn chất lượng cao, giúp các doanh nghiệp tối ưu hóa chi phí hoạt động và nâng cao hiệu quả làm việc. Các phòng IT được thiết kế hiện đại và tiện nghi, phục vụ cho nhu cầu làm việc, tổ chức sự kiện và đào tạo.</p>
-									<p>Với sự am hiểu sâu sắc về nhu cầu của các doanh nghiệp, chúng tôi cam kết cung cấp môi trường làm việc linh hoạt và sáng tạo. Khách hàng sẽ được hưởng lợi từ các giải pháp kỹ thuật tiên tiến, trang thiết bị hiện đại và đội ngũ nhân viên hỗ trợ chuyên nghiệp.</p>
+									<p>{t('thuePhongItNgoai.DetailsIT.p.1')}</p>
+									<p>{t('thuePhongItNgoai.DetailsIT.p.2')}</p>
 								</div>
 								<ul>
-									<li>+ Hỗ trợ kỹ thuật 24/7 từ đội ngũ chuyên gia IT.</li>
-									<li>+ Phòng làm việc đầy đủ tiện nghi, đáp ứng tiêu chuẩn cao về chất lượng.</li>
-									<li>+ Kết nối internet tốc độ cao và bảo mật thông tin tuyệt đối.</li>
-									<li>+ Dịch vụ linh hoạt, cho phép thuê theo giờ, ngày hoặc tháng tùy theo nhu cầu.</li>
+									<li>{t('thuePhongItNgoai.DetailsIT.ul.1.li.1')}</li>
+									<li>{t('thuePhongItNgoai.DetailsIT.ul.1.li.2')}</li>
+									<li>{t('thuePhongItNgoai.DetailsIT.ul.1.li.3')}</li>
+									<li>{t('thuePhongItNgoai.DetailsIT.ul.1.li.4')}</li>
 								</ul>
 							</div>
 						</div>

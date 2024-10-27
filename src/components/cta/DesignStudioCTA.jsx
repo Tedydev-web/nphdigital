@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import VideoBackground from '../VideoBackground';
+import { useTranslation } from 'react-i18next';
 
 const DesignStudioCTA = () => {
+	const { t } = useTranslation('blog');
+
 	return (
 		<>
 			<section
@@ -14,14 +17,15 @@ const DesignStudioCTA = () => {
 					<div className="row">
 						<div className="col-xxl-12">
 							<div className="cta__content-2">
-								<p className="cta__sub-title-2 title-anim">Bạn đã có ý tưởng?</p>
-								<h2 className="cta__title-2 title-anim">Hãy cùng nhau tạo ra những điều tuyệt vời!</h2>
+								<p className="cta__sub-title-2 title-anim">{t('DesignStudioCTA.title')}</p>
+								<h2 className="cta__title-2 title-anim">{t('DesignStudioCTA.description')}</h2>
 								<div className="btn_wrapper">
 									<Link
 										href="/lien-he"
 										className="wc-btn-pink btn-hover btn-item">
-										<span></span>Liên hệ <br />
-										với chúng tôi <i className="fa-solid fa-arrow-right"></i>
+										<span></span>
+										{t('DesignStudioCTA.button.line1')} <br />
+										{t('DesignStudioCTA.button.line2')} <i className="fa-solid fa-arrow-right"></i>
 									</Link>
 								</div>
 							</div>

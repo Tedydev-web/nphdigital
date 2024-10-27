@@ -13,7 +13,7 @@ Use this section to tell people about which versions of your project are current
 
 ## Reporting a Vulnerability
 
-If you discover a vulnerability, please report it via email to [hieudat2310.bh@gmail.com] or through our issue tracker on GitHub. 
+If you discover a vulnerability, please report it via email to [hieudat2310.bh@gmail.com] or through our issue tracker on GitHub.
 
 - **Response Time:** You can expect a response within 48 hours.
 - **Acknowledgment:** If the vulnerability is accepted, it will be addressed in the next release.

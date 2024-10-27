@@ -2,7 +2,7 @@ import { FreeMode, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import Boss from '../../../public/assets/imgs/about/yuri.webp';
-
+import { useTranslation } from 'react-i18next';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/autoplay';
@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/free-mode';
 
 const AboutTestimonial = () => {
+	const { t } = useTranslation('about');
 	return (
 		<>
 			<section className="testimonial__area-2">
@@ -49,11 +50,12 @@ const AboutTestimonial = () => {
 											<div className="testimonial__slide">
 												<div className="testimonial__inner-2">
 													<h2 className="testimonial__title-2">
-														NPH Digital <br /> Đối Tác Công Nghệ Thông Tin Tuyệt Vời
+														NPH Digital <br />
+														<span>{t('testimonial.title')}</span>
 													</h2>
-													<p class="testimonial__text-2">Tại NPH Digital, chất lượng và hiệu suất không chỉ là mục tiêu, mà còn là sự cam kết. Chúng tôi luôn tập trung vào tối ưu hóa hiệu suất và đảm bảo chất lượng tối ưu cho mọi dự án, để bạn không phải lo lắng về sự hoàn hảo bị gián đoạn.</p>
-													<h3 className="testimonial__author">Mr. YURI KC </h3>
-													<h4 className="testimonial__role">CEO NPH Digital</h4>
+													<p className="testimonial__text-2">{t('testimonial.description')}</p>
+													<h3 className="testimonial__author">{t('testimonial.author')}</h3>
+													<h4 className="testimonial__role">{t('testimonial.role')}</h4>
 												</div>
 											</div>
 										</SwiperSlide>

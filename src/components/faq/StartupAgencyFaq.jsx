@@ -128,7 +128,7 @@ const StartupAgencyFaq = () => {
                     </Accordion.Header>
                     <Accordion.Body className="accordion-body">
                       <p>
-                        Our design services starts and ends with a best-in-class
+                        Our design services starts and ends with a best-in-className
                         experience strategy that builds brands. Through a
                         process of iteration and prototyping design interfaces
                         that bring joy to people
@@ -148,7 +148,7 @@ const StartupAgencyFaq = () => {
                     </Accordion.Header>
                     <Accordion.Body className="accordion-body">
                       <p>
-                        Our design services starts and ends with a best-in-class
+                        Our design services starts and ends with a best-in-className
                         experience strategy that builds brands. Through a
                         process of iteration and prototyping design interfaces
                         that bring joy to people

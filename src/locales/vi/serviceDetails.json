@@ -1,0 +1,667 @@
+{
+"tuongTacSo": {
+    "DetailsTuongTacSo": {
+      "secTitle": "Tương tác số",
+    "p": {
+      "1": "Chúng tôi cung cấp dịch vụ tương tác số, giúp doanh nghiệp chuyển đổi số và tạo ra trải nghiệm tương tác phong phú với người dùng thông qua các nền tảng kỹ thuật số. Dịch vụ này tập trung vào việc nâng cao khả năng kết nối giữa thương hiệu và khách hàng thông qua các công cụ, ứng dụng và chiến lược tương tác số.",
+      "2": "Với sự kết hợp giữa công nghệ hiện đại và sáng tạo, chúng tôi phát triển các giải pháp tương tác giúp doanh nghiệp tiếp cận khách hàng một cách trực tiếp và hiệu quả hơn. Chúng tôi cam kết mang đến sự khác biệt trong từng dự án, từ việc phát triển các ứng dụng tương tác đến tích hợp các công cụ hỗ trợ phân tích hành vi người dùng."
+    },
+    "ul": {
+      "1": {
+        "li": {
+          "1": "+ Xây dựng chiến lược tương tác số toàn diện",
+          "2": "+ Phát triển các nền tảng tương tác số cho doanh nghiệp",
+          "3": "+ Hỗ trợ bảo trì và nâng cấp dịch vụ tương tác liên tục",
+          "4": "+ Tối ưu hóa trải nghiệm người dùng trên các thiết bị di động",
+          "5": "+ Đảm bảo bảo mật và tính riêng tư cho người dùng",
+          "6": "+ Tích hợp các công cụ phân tích hành vi và dữ liệu khách hàng"
+        }
+      }
+    }
+  },
+  "tuongTacSoWorkflow": {
+    "1": {
+      "title": {
+        "line1": "Lập kế hoạch và",
+        "line2": "phác thảo"
+      },
+      "description": "Chúng tôi bắt đầu bằng việc lắng nghe nhu cầu và mong muốn của khách hàng, từ đó lên kế hoạch chi tiết và phác thảo chiến lược tương tác số. Điều này giúp tạo ra các giải pháp tương tác hiệu quả, đảm bảo rằng mọi bước đi đều hướng tới mục tiêu cụ thể của doanh nghiệp."
+    },
+    "2": {
+      "title": "Làm việc nhóm",
+      "description": "Chúng tôi tập hợp đội ngũ chuyên gia từ nhiều lĩnh vực, từ công nghệ đến marketing, để cùng làm việc và phát triển các giải pháp tương tác số. Sự kết hợp của các chuyên gia sẽ mang lại hiệu quả tối ưu trong mọi khía cạnh của dự án, từ thiết kế trải nghiệm người dùng đến triển khai công nghệ."
+    },
+    "3": {
+      "title": {
+        "line1": "Flowchart và",
+        "line2": "Wireframe"
+      },
+      "description": "Chúng tôi phát triển sơ đồ luồng và wireframe chi tiết để minh họa quy trình tương tác của khách hàng với thương hiệu. Điều này giúp doanh nghiệp dễ dàng hình dung ra kịch bản tương tác và điều chỉnh chiến lược trước khi triển khai chính thức."
+    },
+    "4": {
+      "title": {
+        "line1": "Kiểm thử trải nghiệm",
+        "line2": "người dùng"
+      },
+      "description": "Trước khi triển khai, chúng tôi tiến hành kiểm thử trải nghiệm người dùng kỹ lưỡng. Các phương pháp kiểm thử sẽ giúp phát hiện và khắc phục các vấn đề, đảm bảo rằng giải pháp tương tác số không chỉ dễ sử dụng mà còn mang lại trải nghiệm mượt mà và tối ưu nhất."
+    }
+  },
+  "TuongTacSoService": {
+    "secTitle": "Giải pháp tương tác số toàn diện giúp doanh nghiệp kết nối và phát triển mạnh mẽ trong thời đại số.",
+    "p": {
+      "1": "Tương tác số là yếu tố quan trọng giúp doanh nghiệp tiếp cận khách hàng một cách sáng tạo và hiệu quả. Chúng tôi cung cấp các giải pháp từ thiết kế tương tác đến tích hợp công nghệ hiện đại, đảm bảo sự tương tác giữa doanh nghiệp và khách hàng diễn ra mượt mà và tối ưu.",
+      "2": "Với khả năng phát triển ứng dụng đa nền tảng, tích hợp công cụ tự động hóa, và xây dựng trải nghiệm người dùng hoàn hảo, chúng tôi giúp doanh nghiệp không chỉ duy trì mối quan hệ với khách hàng hiện tại mà còn thu hút thêm những khách hàng tiềm năng mới."
+    }
+  },
+  "TuongTacSoFaq": {
+    "title": "Dịch vụ tương tác số",
+    "question": {
+      "1": "Tương tác số là gì?",
+      "2": "Tại sao nên sử dụng dịch vụ Tương tác số?",
+      "3": "Những công cụ nào được sử dụng trong Tương tác số?",
+      "4": "Có những xu hướng nào trong Tương tác số hiện nay?",
+      "5": "Làm thế nào để bắt đầu với dịch vụ Tương tác số?"
+    },
+    "answer": {
+      "1": "Tương tác số là cách thức mà người dùng tương tác với các dịch vụ trực tuyến thông qua các giao diện số, bao gồm website, ứng dụng di động, và các nền tảng truyền thông xã hội.",
+      "2": "Dịch vụ Tương tác số giúp tăng cường trải nghiệm người dùng, cải thiện mức độ tương tác và giữ chân khách hàng, từ đó nâng cao hiệu quả kinh doanh.",
+      "3": "Chúng tôi sử dụng các công cụ như Google Analytics, các nền tảng CRM, và các phần mềm tự động hóa marketing để tối ưu hóa quá trình tương tác và phân tích dữ liệu.",
+      "4": "Một số xu hướng bao gồm việc sử dụng trí tuệ nhân tạo, trải nghiệm người dùng tùy chỉnh, và giao diện người dùng tối giản nhằm tối đa hóa tính hiệu quả.",
+      "5": "Bạn có thể liên hệ với chúng tôi để được tư vấn và thiết lập một chiến lược Tương tác số phù hợp với nhu cầu của doanh nghiệp."
+    }
+  }
+},
+
+"thuePhongItNgoai": {
+  "DetailsIT": {
+    "secTitle": "Cho thuê phòng IT ngoài",
+  "p": {
+    "1": "Tại NPH Digital, chúng tôi cung cấp dịch vụ cho thuê phòng IT ngoài với tiêu chuẩn chất lượng cao, giúp các doanh nghiệp tối ưu hóa chi phí hoạt động và nâng cao hiệu quả làm việc. Các phòng IT được thiết kế hiện đại và tiện nghi, phục vụ cho nhu cầu làm việc, tổ chức sự kiện và đào tạo.",
+    "2": "Với sự am hiểu sâu sắc về nhu cầu của các doanh nghiệp, chúng tôi cam kết cung cấp môi trường làm việc linh hoạt và sáng tạo. Khách hàng sẽ được hưởng lợi từ các giải pháp kỹ thuật tiên tiến, trang thiết bị hiện đại và đội ngũ nhân viên hỗ trợ chuyên nghiệp."
+  },
+  "ul": {
+    "1": {
+      "li": {
+        "1": "+ Hỗ trợ kỹ thuật 24/7 từ đội ngũ chuyên gia IT.",
+        "2": "+ Phòng làm việc đầy đủ tiện nghi, đáp ứng tiêu chuẩn cao về chất lượng.",
+        "3": "+ Kết nối internet tốc độ cao và bảo mật thông tin tuyệt đối.",
+        "4": "+ Dịch vụ linh hoạt, cho phép thuê theo giờ, ngày hoặc tháng tùy theo nhu cầu."
+      }
+    }
+  }
+},
+"ITWorkflow": {
+  "1": {
+    "title": {
+      "line1": "Lập kế hoạch và",
+      "line2": "phác thảo"
+    },
+    "description": "Chúng tôi bắt đầu bằng việc lắng nghe nhu cầu và mong muốn của khách hàng, từ đó lập ra kế hoạch chi tiết và phác thảo giải pháp cho việc cho thuê phòng IT. Điều này giúp đảm bảo rằng mọi yêu cầu và mong đợi của khách hàng đều được đáp ứng tốt nhất."
+  },
+  "2": {
+    "title": "Làm việc nhóm",
+    "description": "Đội ngũ chuyên gia giàu kinh nghiệm từ nhiều lĩnh vực làm việc chặt chẽ với nhau để đảm bảo mọi khía cạnh của dịch vụ cho thuê phòng IT đều được tối ưu hóa. Mỗi thành viên đóng góp ý tưởng và giải pháp nhằm mang lại sự đồng bộ và hiệu quả cao nhất cho khách hàng."
+  },
+  "3": {
+    "title": {
+      "line1": "Thiết kế không gian",
+      "line2": "làm việc"
+    },
+    "description": "Chúng tôi thiết kế không gian làm việc linh hoạt và tiện nghi, đáp ứng mọi nhu cầu của khách hàng. Điều này bao gồm việc sắp xếp nội thất, trang thiết bị công nghệ và các tiện ích đi kèm để đảm bảo môi trường làm việc lý tưởng."
+  },
+  "4": {
+    "title": {
+      "line1": "Kiểm thử và",
+      "line2": "đánh giá"
+    },
+    "description": "Trước khi bàn giao dịch vụ, chúng tôi tiến hành kiểm thử và đánh giá không gian làm việc để đảm bảo mọi yêu cầu được thực hiện một cách hoàn hảo. Chúng tôi sẽ giải quyết ngay lập tức bất kỳ vấn đề nào phát sinh để mang lại trải nghiệm tốt nhất cho khách hàng."
+  }
+},
+"ITService": {
+  "secTitle": "Cho thuê phòng IT ngoài - Giải pháp hiệu quả cho doanh nghiệp của bạn",
+  "p": {
+    "1": "Dịch vụ Cho thuê phòng IT ngoài của NPH Digital cung cấp không gian làm việc linh hoạt và tiện nghi, được thiết kế để hỗ trợ tối đa cho các doanh nghiệp trong quá trình phát triển. Chúng tôi hiểu rằng môi trường làm việc ảnh hưởng lớn đến hiệu suất làm việc của nhân viên, vì vậy chúng tôi tạo ra những không gian thích hợp nhất.",
+    "2": "Với cơ sở hạ tầng công nghệ tiên tiến và các tiện ích đi kèm, chúng tôi cam kết mang đến cho bạn không chỉ một không gian làm việc mà còn là một giải pháp giúp bạn tiếp cận và phục vụ khách hàng tốt hơn. Hãy để chúng tôi hỗ trợ bạn trong việc xây dựng môi trường làm việc tối ưu, giúp doanh nghiệp bạn phát triển bền vững trong kỷ nguyên số."
+  }
+},
+"ITFaq": {
+  "title": "Câu hỏi thường gặp về dịch vụ Cho thuê phòng IT ngoài",
+  "question": {
+    "1": "Dịch vụ Cho thuê phòng IT ngoài là gì?",
+    "2": "Các tiện ích nào được cung cấp khi thuê phòng IT ngoài?",
+    "3": "Tôi có thể tùy chỉnh không gian làm việc theo nhu cầu không?",
+    "4": "Có các lựa chọn nào về thời gian thuê phòng?",
+    "5": "Làm thế nào để đặt thuê phòng IT ngoài?"
+  },
+  "answer": {
+    "1": "Dịch vụ Cho thuê phòng IT ngoài cung cấp không gian làm việc linh hoạt và tiện nghi, giúp doanh nghiệp tiếp cận các giải pháp công nghệ và nhân lực chuyên nghiệp mà không cần đầu tư vào cơ sở hạ tầng cố định.",
+    "2": "Khi thuê phòng IT ngoài, bạn sẽ được cung cấp các tiện ích như internet tốc độ cao, thiết bị văn phòng, không gian họp và hỗ trợ kỹ thuật 24/7. Chúng tôi cam kết tạo ra môi trường làm việc hiệu quả nhất cho bạn.",
+    "3": "Có, chúng tôi cung cấp các giải pháp tùy chỉnh cho không gian làm việc của bạn để phù hợp với nhu cầu và phong cách làm việc của doanh nghiệp. Bạn có thể điều chỉnh bố trí và thiết kế theo ý thích.",
+    "4": "Chúng tôi cung cấp nhiều lựa chọn thời gian thuê linh hoạt, từ thuê theo giờ, theo ngày đến thuê dài hạn, giúp bạn dễ dàng lựa chọn gói dịch vụ phù hợp với nhu cầu của mình.",
+    "5": "Bạn có thể đặt thuê phòng IT ngoài qua trang web của chúng tôi hoặc liên hệ trực tiếp với đội ngũ hỗ trợ khách hàng để được tư vấn và hướng dẫn chi tiết về quy trình đặt phòng."
+  }
+}
+},
+
+"thietKeWebsite": {
+  "DetailsWebsite": {
+    "secTitle": "Thiết kế và Phát triển Website",
+  "p": {
+    "1": "Chúng tôi cung cấp dịch vụ thiết kế và phát triển website chất lượng cao, giúp doanh nghiệp của bạn hiện diện mạnh mẽ hơn trên mạng. Mỗi website mà chúng tôi phát triển đều được thiết kế riêng biệt, phù hợp với nhu cầu và mong muốn của khách hàng.",
+    "2": "Chúng tôi cam kết sử dụng công nghệ tiên tiến nhất để tạo ra các trang web nhanh chóng, tối ưu hóa cho các thiết bị di động và thân thiện với người dùng. Với đội ngũ chuyên gia dày dạn kinh nghiệm, chúng tôi sẽ hỗ trợ bạn từ khâu lên ý tưởng cho đến khi website đi vào hoạt động."
+  },
+  "ul": {
+    "1": {
+      "li": {
+        "1": "+ Thiết kế UI/UX chuyên nghiệp",
+        "2": "+ Phát triển web ứng dụng động",
+        "3": "+ Tối ưu hóa SEO cho website",
+        "4": "+ Tích hợp hệ thống quản lý nội dung (CMS)",
+        "5": "+ Đảm bảo tính tương thích trên mọi thiết bị",
+        "6": "+ Hỗ trợ bảo trì và cập nhật website thường xuyên"
+      }
+    }
+  }
+},
+"WebsiteWorkflow": {
+  "1": {
+    "title": {
+      "line1": "Lập kế hoạch và",
+      "line2": "phác thảo"
+    },
+    "description": "Chúng tôi bắt đầu với việc lập kế hoạch chi tiết và phác thảo ý tưởng dựa trên yêu cầu của khách hàng. Mọi yếu tố thiết kế đều được cân nhắc kỹ lưỡng để phù hợp với mục tiêu và hướng đi của dự án."
+  },
+  "2": {
+    "title": "Làm việc nhóm",
+    "description": "Sự hợp tác chặt chẽ giữa các nhóm phát triển giúp tạo ra sản phẩm chất lượng cao, đáp ứng đúng nhu cầu của khách hàng. Các nhà thiết kế, lập trình viên và chuyên gia UX/UI cùng làm việc để tối ưu hóa quy trình."
+  },
+  "3": {
+    "title": {
+      "line1": "Flowchart và",
+      "line2": "Wireframe"
+    },
+    "description": "Chúng tôi xây dựng biểu đồ quy trình và wireframe chi tiết để hình dung cấu trúc và luồng hoạt động của ứng dụng, đảm bảo rằng mọi bước đều được thực hiện một cách logic và hiệu quả."
+  },
+  "4": {
+    "title": {
+      "line1": "Kiểm thử và",
+      "line2": "đánh giá"
+    },
+    "description": "Sau khi hoàn tất phát triển, chúng tôi tiến hành kiểm thử trải nghiệm người dùng để đảm bảo rằng ứng dụng thân thiện, dễ sử dụng và đáp ứng kỳ vọng của khách hàng cuối."
+  }
+},
+"WebsiteService": {
+  "secTitle": "Chúng tôi mang đến giải pháp thiết kế và phát triển website toàn diện và chuyên nghiệp.",
+  "p": {
+    "1": "Thiết kế và phát triển website của chúng tôi đảm bảo rằng mọi doanh nghiệp đều có một giải pháp số hoàn chỉnh. Từ việc tạo ra những trang web thân thiện với người dùng đến tối ưu hóa tốc độ và hiệu suất, chúng tôi giúp doanh nghiệp của bạn tiếp cận khách hàng tiềm năng một cách dễ dàng.",
+    "2": "Chúng tôi tập trung vào việc tạo ra trải nghiệm người dùng mượt mà, tích hợp SEO và bảo mật mạnh mẽ. Bằng cách sử dụng các công nghệ tiên tiến như React, Next.js, và WordPress, chúng tôi cung cấp giải pháp website tùy chỉnh phù hợp với từng nhu cầu cụ thể của doanh nghiệp, đồng thời giúp bạn mở rộng quy mô trong tương lai.",
+    "3": "Đội ngũ của chúng tôi cam kết mang đến sản phẩm chất lượng, giúp bạn xây dựng thương hiệu mạnh mẽ trên không gian số và đạt được mục tiêu kinh doanh nhanh chóng."
+  }
+},
+"WebsiteFaq": {
+  "title": "Câu hỏi thường gặp về Thiết kế và Phát triển Website",
+  "question": {
+    "1": "Quy trình phát triển website của NPH Digital?",
+    "2": "Lợi ích của việc thiết kế website chuẩn SEO là gì?",
+    "3": "Thời gian hoàn thành dự án thiết kế và phát triển website là bao lâu?",
+    "4": "Các giải pháp kỹ thuật nào được sử dụng để phát triển website?",
+    "5": "Có hỗ trợ bảo trì và cập nhật website sau khi hoàn thành không?"
+  },
+  "answer": {
+    "1": "Quy trình phát triển website của chúng tôi gồm 6 bước chính: phân tích yêu cầu, thiết kế giao diện (UI/UX), lập trình, kiểm thử, tối ưu SEO, và triển khai. Mỗi bước đều được thực hiện tỉ mỉ và chuyên nghiệp để đảm bảo sản phẩm hoàn thiện đạt hiệu suất tốt nhất.",
+    "2": "Website chuẩn SEO giúp cải thiện thứ hạng trên các công cụ tìm kiếm như Google, từ đó tăng lượng truy cập tự nhiên và tiếp cận khách hàng tiềm năng hiệu quả hơn. Chúng tôi đảm bảo rằng mỗi website phát triển đều tích hợp SEO từ giai đoạn đầu, giúp bạn đạt được hiệu quả cao trong dài hạn.",
+    "3": "Thời gian hoàn thành phụ thuộc vào độ phức tạp của dự án. Thông thường, một website cơ bản có thể hoàn thành trong 4 đến 6 tuần, bao gồm cả giai đoạn thiết kế, phát triển và kiểm thử. Đối với các dự án phức tạp hơn, thời gian có thể kéo dài từ 8 đến 12 tuần.",
+    "4": "Chúng tôi sử dụng nhiều công nghệ tiên tiến như React, Next.js, và WordPress để phát triển website. Các nền tảng này không chỉ giúp tối ưu hóa trải nghiệm người dùng mà còn đảm bảo tốc độ tải trang nhanh, dễ dàng mở rộng và bảo mật mạnh mẽ.",
+    "5": "Có, chúng tôi cung cấp dịch vụ bảo trì và cập nhật sau khi hoàn thành dự án. Điều này bao gồm kiểm tra định kỳ, sửa lỗi, và cập nhật các tính năng mới theo nhu cầu của khách hàng để đảm bảo website luôn vận hành ổn định và đáp ứng các yêu cầu kinh doanh thay đổi."
+  }
+}
+},
+
+"thietKeUIUX": {
+  "DetailsUIUX": {
+    "secTitle": "Thiết kế UI/UX",
+  "p": {
+    "1": "Tại NPH Digital, chúng tôi cung cấp dịch vụ thiết kế UI/UX chuyên nghiệp, tập trung vào việc tạo ra trải nghiệm người dùng hấp dẫn và hiệu quả. Chúng tôi hiểu rằng một thiết kế tốt không chỉ thu hút người dùng mà còn phải tối ưu hóa quy trình tương tác với sản phẩm.",
+    "2": "Quy trình thiết kế của chúng tôi bắt đầu từ việc nghiên cứu người dùng và phân tích thị trường để hiểu rõ nhu cầu và hành vi của khách hàng. Sau đó, chúng tôi phát triển các mẫu thiết kế, tiến hành thử nghiệm và nhận phản hồi để cải thiện sản phẩm. Đội ngũ thiết kế của chúng tôi sử dụng các công cụ hiện đại để tạo ra các sản phẩm chất lượng cao, đảm bảo rằng mỗi giao diện đều thân thiện và dễ sử dụng."
+  },
+  "ul": {
+    "1": {
+      "li": {
+        "1": "+ Nghiên cứu người dùng, phân tích đối thủ cạnh tranh",
+        "2": "+ Thiết kế giao diện người dùng (UI) đẹp mắt và trực quan",
+        "3": "+ Xây dựng prototype và wireframe cho sản phẩm",
+        "4": "+ Tối ưu hóa trải nghiệm người dùng (UX) thông qua thử nghiệm A/B",
+        "5": "+ Thiết kế responsive cho mọi thiết bị",
+        "6": "+ Hỗ trợ bảo trì và cập nhật thiết kế theo phản hồi người dùng"
+      }
+    }
+  }
+},
+"UIUXWorkflow": {
+  "1": {
+    "title": {
+      "line1": "Lập kế hoạch và",
+      "line2": "phác thảo"
+    },
+    "description": "Chúng tôi bắt đầu bằng việc lắng nghe nhu cầu và mong muốn của khách hàng, từ đó lập ra kế hoạch chi tiết và phác thảo giải pháp. Điều này giúp đảm bảo rằng mỗi bước tiếp theo sẽ phù hợp với mục tiêu cuối cùng."
+  },
+  "2": {
+    "title": "Làm việc nhóm",
+    "description": "Với đội ngũ chuyên gia giàu kinh nghiệm từ nhiều lĩnh vực, chúng tôi hợp tác chặt chẽ để đảm bảo sự sáng tạo, hiệu quả và đồng bộ trong quá trình phát triển ứng dụng. Mỗi thành viên đóng góp vào từng phần của dự án, từ thiết kế đến lập trình."
+  },
+  "3": {
+    "title": {
+      "line1": "Flowchart và",
+      "line2": "Wireframe"
+    },
+    "description": "Tiếp theo, chúng tôi tạo ra các sơ đồ luồng và wireframe chi tiết, giúp khách hàng hình dung rõ ràng hơn về cấu trúc và chức năng của ứng dụng. Đây là bước quan trọng để giảm thiểu rủi ro và điều chỉnh sớm nếu cần."
+  },
+  "4": {
+    "title": {
+      "line1": "Kiểm thử và",
+      "line2": "đánh giá"
+    },
+    "description": "Trước khi ứng dụng được ra mắt, chúng tôi tiến hành kiểm thử trải nghiệm người dùng để đảm bảo giao diện trực quan, dễ sử dụng và mang lại trải nghiệm tốt nhất. Bất kỳ vấn đề nào cũng sẽ được phát hiện và khắc phục ngay lập tức."
+  }
+},
+"UIUXService": {
+  "secTitle": "Chúng tôi mang đến những giải pháp sáng tạo và đáng tin cậy nâng cao trải nghiệm người dùng.",
+  "p": {
+    "1": "Thiết kế UI/UX không chỉ đơn thuần là tạo ra giao diện đẹp mắt, mà còn là việc tối ưu hóa trải nghiệm người dùng nhằm mang đến sự hài lòng và hiệu quả cao nhất cho người sử dụng. Tại NPH Digital, chúng tôi hiểu rằng một sản phẩm thành công phải kết hợp hài hòa giữa thẩm mỹ và chức năng.",
+    "2": "Với đội ngũ thiết kế giàu kinh nghiệm và công nghệ tiên tiến, NPH Digital cam kết mang đến giải pháp thiết kế UI/UX chất lượng nhất, giúp doanh nghiệp của bạn phát triển bền vững trong thời đại số."
+  }
+},
+"UIUXFaq": {
+  "title": "Câu hỏi thường gặp về thiết kế UI/UX",
+  "question": {
+    "1": "Thiết kế UI là gì?",
+    "2": "UX có phải là một phần của UI không?",
+    "3": "Nguyên tắc cơ bản của thiết kế UI là gì?",
+    "4": "Làm thế nào để đảm bảo thiết kế UX tốt?",
+    "5": "Các công cụ phổ biến để thiết kế UI/UX là gì?"
+  },
+  "answer": {
+    "1": "UI (Giao diện người dùng) là cách mà người dùng tương tác với sản phẩm hoặc dịch vụ kỹ thuật số. Thiết kế UI tập trung vào việc tối ưu hóa các yếu tố trực quan như nút, biểu tượng và bố cục để đảm bảo trải nghiệm người dùng tốt nhất.",
+    "2": "Không. UX (Trải nghiệm người dùng) tập trung vào việc tối ưu hóa hành trình người dùng, trong khi UI tập trung vào các yếu tố giao diện. Cả hai phối hợp với nhau để tạo ra trải nghiệm sản phẩm hoàn chỉnh.",
+    "3": "Thiết kế UI cần phải nhất quán, dễ sử dụng, rõ ràng, và trực quan. Các yếu tố như màu sắc, phông chữ, và bố cục phải được sử dụng một cách hợp lý để tạo sự dễ hiểu và hấp dẫn cho người dùng.",
+    "4": "Thiết kế UX tốt bắt đầu từ việc hiểu rõ nhu cầu của người dùng. Việc nghiên cứu người dùng, thử nghiệm với prototype và lắng nghe phản hồi là các bước cần thiết để cải thiện trải nghiệm người dùng liên tục.",
+    "5": "Một số công cụ phổ biến cho thiết kế UI/UX bao gồm Figma, Sketch, Adobe XD, và InVision. Các công cụ này hỗ trợ quá trình tạo mẫu, thiết kế giao diện và hợp tác trong nhóm."
+  }
+}
+},
+
+"quangCaoSo": {
+  "DetailsMarketing": {
+    "secTitle": "Quảng cáo số",
+  "p": {
+    "1": "Tại NPH Digital, chúng tôi cung cấp dịch vụ quảng cáo số chuyên nghiệp giúp nâng cao nhận diện thương hiệu và thúc đẩy doanh thu.",
+    "2": "Mỗi chiến dịch quảng cáo số của chúng tôi đều được thiết kế đặc thù nhằm tối ưu hóa lợi ích cho khách hàng, sử dụng các giải pháp công nghệ tiên tiến nhất."
+  },
+  "ul": {
+    "1": {
+      "li": {
+        "1": "+ Quảng cáo Google Ads",
+        "2": "+ Quảng cáo Facebook Ads",
+        "3": "+ Quảng cáo trên mạng xã hội",
+        "4": "+ SEO & Tối ưu hóa từ khóa",
+        "5": "+ Phân tích dữ liệu & Đo lường hiệu quả",
+        "6": "+ Tư vấn chiến lược Digital Marketing"
+      }
+    }
+  }
+},
+"MarketingWorkflow": {
+  "1": {
+    "title": {
+      "line1": "Lập kế hoạch",
+      "line2": "chiến lược quảng cáo"
+    },
+    "description": "Chúng tôi bắt đầu bằng việc hiểu rõ mục tiêu của doanh nghiệp và từ đó xây dựng chiến lược quảng cáo số phù hợp. Kế hoạch này được điều chỉnh để nhắm tới thị trường mục tiêu, tối ưu hóa chi phí và đạt được kết quả mong muốn."
+  },
+  "2": {
+    "title": {
+      "line1": "Làm việc với",
+      "line2": "nhóm chuyên gia"
+    },
+    "description": "Nhóm chuyên gia từ các lĩnh vực quảng cáo, sáng tạo nội dung và phân tích dữ liệu của chúng tôi sẽ phối hợp để phát triển các chiến dịch hiệu quả. Chúng tôi đảm bảo mỗi chiến dịch được thực hiện với sự sáng tạo và phân tích kỹ lưỡng."
+  },
+  "3": {
+    "title": {
+      "line1": "Thiết kế nội dung",
+      "line2": "và triển khai chiến dịch"
+    },
+    "description": "Chúng tôi tạo ra nội dung quảng cáo chất lượng, bao gồm cả hình ảnh và video, để tối ưu hóa tương tác với khách hàng. Chiến dịch được tối ưu hóa để nhắm đến đúng đối tượng khách hàng và thúc đẩy tỷ lệ chuyển đổi cao nhất."
+  },
+  "4": {
+    "title": {
+      "line1": "Kiểm thử và",
+      "line2": "tối ưu quảng cáo"
+    },
+    "description": "Chúng tôi tiến hành kiểm thử và tối ưu hóa chiến dịch quảng cáo liên tục để đảm bảo hiệu quả. Sử dụng các công cụ đo lường như Google Analytics và Facebook Pixel, chúng tôi theo dõi và điều chỉnh chiến dịch dựa trên dữ liệu thực tế."
+  }
+},
+"MarketingService": {
+  "secTitle": "Chúng tôi cung cấp giải pháp quảng cáo số sáng tạo và hiệu quả.",
+  "p": {
+    "1": "Tại NPH Digital, chúng tôi hiểu rằng quảng cáo số không chỉ là một phần trong chiến lược marketing, mà còn là một công cụ mạnh mẽ giúp kết nối doanh nghiệp với khách hàng. Chúng tôi phát triển các chiến dịch quảng cáo số hiệu quả, nhắm đến đúng đối tượng và tối ưu hóa chi phí quảng cáo.",
+    "2": "Với đội ngũ chuyên gia giàu kinh nghiệm trong lĩnh vực quảng cáo và phân tích dữ liệu, chúng tôi cam kết mang đến những giải pháp toàn diện từ lập kế hoạch chiến lược đến triển khai và tối ưu hóa chiến dịch, đảm bảo rằng bạn sẽ đạt được kết quả tốt nhất trong mọi hoạt động quảng cáo số."
+  }
+},
+"MarketingFaq": {
+  "title": "Câu hỏi thường gặp về dịch vụ quảng cáo số",
+  "question": {
+    "1": "Quy trình triển khai quảng cáo số diễn ra như thế nào?",
+    "2": "Tôi có thể tự chạy quảng cáo trên mạng xã hội không?",
+    "3": "Các chỉ số nào tôi nên theo dõi để đánh giá hiệu quả quảng cáo?",
+    "4": "Thời gian để thấy được kết quả từ quảng cáo là bao lâu?",
+    "5": "Có hỗ trợ nào cho việc tối ưu hóa chiến dịch quảng cáo không?"
+  },
+  "answer": {
+    "1": "Quy trình của chúng tôi bắt đầu bằng việc phân tích yêu cầu và mục tiêu của doanh nghiệp. Sau đó, chúng tôi lập kế hoạch chiến lược, thiết kế nội dung quảng cáo, triển khai chiến dịch, và cuối cùng là đo lường hiệu quả để tối ưu hóa.",
+    "2": "Có, bạn có thể tự chạy quảng cáo, nhưng chúng tôi khuyên bạn nên làm việc với chuyên gia để tối ưu hóa hiệu quả. Đội ngũ của chúng tôi có thể hỗ trợ bạn trong việc lên kế hoạch và thực hiện các chiến dịch quảng cáo thành công.",
+    "3": "Các chỉ số quan trọng bao gồm tỷ lệ nhấp chuột (CTR), tỷ lệ chuyển đổi, chi phí trên mỗi nhấp chuột (CPC), và doanh thu từ quảng cáo. Chúng tôi sẽ giúp bạn thiết lập các công cụ phân tích để theo dõi và đánh giá hiệu quả chiến dịch.",
+    "4": "Thời gian để thấy kết quả từ quảng cáo phụ thuộc vào nhiều yếu tố như loại quảng cáo, ngân sách, và thị trường mục tiêu. Thông thường, bạn có thể bắt đầu thấy kết quả sau từ 1 đến 4 tuần.",
+    "5": "Có, chúng tôi cung cấp dịch vụ tối ưu hóa chiến dịch quảng cáo liên tục để đảm bảo hiệu quả tối đa. Chúng tôi theo dõi và điều chỉnh các chiến dịch dựa trên dữ liệu thực tế để đảm bảo rằng bạn đạt được kết quả tốt nhất."
+  }
+}
+},
+
+"mobileApp": {
+  "DetailsMobileApp": {
+    "secTitle": "Phát triển ứng dụng di động",
+  "p": {
+    "1": "Tại NPH Digital, chúng tôi tự hào là đối tác phát triển ứng dụng di động chuyên nghiệp, cung cấp giải pháp toàn diện từ ý tưởng đến thực thi. Chúng tôi giúp các doanh nghiệp chuyển đổi số hiệu quả bằng cách tạo ra các ứng dụng di động tối ưu, mang lại giá trị thực tiễn và tạo dấu ấn thương hiệu trong mắt người dùng.",
+    "2": "Chúng tôi tuân thủ quy trình phát triển chuyên nghiệp từ nghiên cứu nhu cầu, thiết kế UI/UX, phát triển ứng dụng, đến kiểm thử và hỗ trợ sau triển khai. Với đội ngũ kỹ thuật giàu kinh nghiệm, chúng tôi đảm bảo mọi ứng dụng đều đáp ứng tiêu chuẩn cao nhất về chất lượng và hiệu suất."
+  },
+  "ul": {
+    "1": {
+      "li": {
+        "1": "+ Thiết kế UI/UX chuyên nghiệp",
+        "2": "+ Phát triển đa nền tảng",
+        "3": "+ Tối ưu hiệu suất",
+        "4": "+ Bảo mật ứng dụng",
+        "5": "+ Tích hợp API và dịch vụ backend",
+        "6": "+ Hỗ trợ bảo trì và cập nhật liên tục"
+      }
+    }
+  }
+},
+"MobileAppWorkflow": {
+  "1": {
+    "title": {
+      "line1": "Lập kế hoạch và",
+      "line2": "phác thảo"
+    },
+    "description": "Chúng tôi bắt đầu bằng việc lắng nghe nhu cầu và mong muốn của khách hàng, từ đó lập ra kế hoạch chi tiết và phác thảo giải pháp. Điều này giúp đảm bảo rằng mỗi bước tiếp theo sẽ phù hợp với mục tiêu cuối cùng."
+  },
+  "2": {
+    "title": "Làm việc nhóm",
+    "description": "Với đội ngũ chuyên gia giàu kinh nghiệm từ nhiều lĩnh vực, chúng tôi hợp tác chặt chẽ để đảm bảo sự sáng tạo, hiệu quả và đồng bộ trong quá trình phát triển ứng dụng. Mỗi thành viên đóng góp vào từng phần của dự án, từ thiết kế đến lập trình."
+  },
+  "3": {
+    "title": {
+      "line1": "Flowchart và",
+      "line2": "Wireframe"
+    },
+    "description": "Tiếp theo, chúng tôi tạo ra các sơ đồ luồng và wireframe chi tiết, giúp khách hàng hình dung rõ ràng hơn về cấu trúc và chức năng của ứng dụng. Đây là bước quan trọng để giảm thiểu rủi ro và điều chỉnh sớm nếu cần."
+  },
+  "4": {
+    "title": {
+      "line1": "Kiểm thử",
+      "line2": "trải nghiệm người dùng"
+    },
+    "description": "Trước khi ứng dụng được ra mắt, chúng tôi tiến hành kiểm thử trải nghiệm người dùng để đảm bảo giao diện trực quan, dễ sử dụng và mang lại trải nghiệm tốt nhất. Bất kỳ vấn đề nào cũng sẽ được phát hiện và khắc phục ngay lập tức."
+  }
+},
+"MobileAppDetailsService": {
+  "secTitle": "Chúng tôi không chỉ phát triển ứng dụng di động, mà còn mang đến những giải pháp sáng tạo và đáng tin cậy.",
+  "p": {
+    "1": "Ứng dụng di động ngày nay không chỉ là công cụ kết nối, mà còn là cầu nối giữa doanh nghiệp và khách hàng. Chúng tôi xây dựng những sản phẩm giúp bạn tiếp cận thị trường mục tiêu hiệu quả hơn.",
+    "2": "Từ phát triển ứng dụng đa nền tảng đến tối ưu hóa hiệu năng và trải nghiệm người dùng, chúng tôi cam kết cung cấp giải pháp chất lượng cao nhất, giúp bạn phát triển mạnh mẽ trong kỷ nguyên số."
+  }
+},
+"MobileAppFaq": {
+  "title": "Câu hỏi thường gặp về phát triển ứng dụng di động",
+  "question": {
+    "1": "Quy trình phát triển ứng dụng di động gồm những bước nào?",
+    "2": "Tôi có thể phát triển ứng dụng đa nền tảng không?",
+    "3": "Thời gian hoàn thành một dự án phát triển ứng dụng là bao lâu?",
+    "4": "Làm thế nào để tối ưu trải nghiệm người dùng trên ứng dụng di động?",
+    "5": "Có hỗ trợ bảo trì và cập nhật ứng dụng sau khi hoàn thành không?"
+  },
+  "answer": {
+    "1": "Quy trình phát triển ứng dụng của chúng tôi bao gồm: phân tích yêu cầu, thiết kế UI/UX, lập trình, kiểm thử, và triển khai. Mỗi giai đoạn đều được thực hiện một cách chuyên nghiệp để đảm bảo ứng dụng vận hành trơn tru và mang lại trải nghiệm tốt nhất cho người dùng.",
+    "2": "Có, chúng tôi cung cấp dịch vụ phát triển ứng dụng đa nền tảng sử dụng các framework hiện đại như Flutter và React Native. Điều này giúp bạn tiết kiệm chi phí và thời gian phát triển mà vẫn đảm bảo hiệu năng tốt trên cả iOS và Android.",
+    "3": "Thời gian phát triển ứng dụng phụ thuộc vào độ phức tạp và yêu cầu cụ thể của dự án. Thông thường, một ứng dụng cơ bản sẽ mất từ 3 đến 6 tháng để hoàn thiện, bao gồm cả giai đoạn kiểm thử và tối ưu hóa.",
+    "4": "Thời gian để thấy kết quả từ quảng cáo phụ thuộc vào nhiều yếu tố như loại quảng cáo, ngân sách, và thị trường mục tiêu. Thông thường, bạn có thể bắt đầu thấy kết quả sau từ 1 đến 4 tuần.",
+    "5": "Có, chúng tôi cung cấp dịch vụ tối ưu hóa chiến dịch quảng cáo liên tục để đảm bảo hiệu quả tối đa. Chúng tôi theo dõi và điều chỉnh các chiến dịch dựa trên dữ liệu thực tế để đảm bảo rằng bạn đạt được kết quả tốt nhất."
+  }
+}
+},
+
+"lapTrinhAI": {
+  "DetailsAI": {
+    "secTitle": "Lập trình AI và tự động hóa",
+  "p": {
+    "1": "Tại NPH Digital, chúng tôi cung cấp dịch vụ lập trình AI và tự động hóa tiên tiến, giúp doanh nghiệp tối ưu hóa quy trình làm việc và nâng cao hiệu suất. Chúng tôi tập trung vào việc phát triển các giải pháp thông minh, từ phân tích dữ liệu đến tự động hóa quy trình kinh doanh, nhằm mang lại giá trị tối đa cho khách hàng.",
+    "2": "Quy trình lập trình AI của chúng tôi bao gồm: phân tích yêu cầu, thiết kế giải pháp, phát triển mô hình AI, kiểm thử và triển khai. Đội ngũ kỹ sư chuyên nghiệp của chúng tôi cam kết đảm bảo rằng mỗi dự án đều đáp ứng các tiêu chuẩn chất lượng cao và tính ứng dụng thực tiễn."
+  },
+  "ul": {
+    "1": {
+      "li": {
+        "1": "+ Hỗ trợ bảo trì và cập nhật liên tục các giải pháp AI",
+        "2": "+ Phát triển các mô hình học máy (Machine Learning) và học sâu (Deep Learning)",
+        "3": "+ Tự động hóa quy trình kinh doanh (RPA) để giảm thiểu công việc thủ công",
+        "4": "+ Cung cấp giải pháp chatbot và trợ lý ảo để nâng cao trải nghiệm khách hàng",
+        "5": "+ Phân tích dữ liệu lớn (Big Data) để đưa ra các quyết định thông minh hơn",
+        "6": "+ Tích hợp AI vào các hệ thống hiện có để tối ưu hóa hiệu suất"
+      }
+    }
+  }
+},
+"AIWorkflow": {
+  "1": {
+    "title": {
+      "line1": "Lập kế hoạch và",
+      "line2": "phác thảo"
+    },
+    "description": "Chúng tôi bắt đầu bằng việc lắng nghe nhu cầu và mong muốn của khách hàng, từ đó lập ra kế hoạch chi tiết và phác thảo giải pháp. Điều này giúp đảm bảo rằng mỗi bước tiếp theo sẽ phù hợp với mục tiêu cuối cùng."
+  },
+  "2": {
+    "title": "Làm việc nhóm",
+    "description": "Với đội ngũ chuyên gia giàu kinh nghiệm từ nhiều lĩnh vực, chúng tôi hợp tác chặt chẽ để đảm bảo sự sáng tạo, hiệu quả và đồng bộ trong quá trình phát triển ứng dụng. Mỗi thành viên đóng góp vào từng phần của dự án, từ thiết kế đến lập trình."
+  },
+  "3": {
+    "title": {
+      "line1": "Flowchart và",
+      "line2": "Wireframe"
+    },
+    "description": "Tiếp theo, chúng tôi tạo ra các sơ đồ luồng và wireframe chi tiết, giúp khách hàng hình dung rõ ràng hơn về cấu trúc và chức năng của ứng dụng. Đây là bước quan trọng để giảm thiểu rủi ro và điều chỉnh sớm nếu cần."
+  },
+  "4": {
+    "title": {
+      "line1": "Kiểm thử",
+      "line2": "trải nghiệm người dùng"
+    },
+    "description": "Trước khi ứng dụng được ra mắt, chúng tôi tiến hành kiểm thử trải nghiệm người dùng để đảm bảo giao diện trực quan, dễ sử dụng và mang lại trải nghiệm tốt nhất. Bất kỳ vấn đề nào cũng sẽ được phát hiện và khắc phục ngay lập tức."
+  }
+},
+"AIService": {
+  "secTitle": "Dịch vụ lập trình AI và tự động hóa từ NPH Digital giúp doanh nghiệp tối ưu hóa quy trình và nâng cao hiệu suất làm việc.",
+  "p": {
+    "1": "Với dịch vụ lập trình AI và tự động hóa từ NPH Digital, chúng tôi giúp doanh nghiệp tối ưu hóa quy trình làm việc, tăng cường hiệu suất và giảm thiểu chi phí. Chúng tôi phát triển các giải pháp AI tùy chỉnh phù hợp với nhu cầu cụ thể của từng khách hàng.",
+    "2": "Chúng tôi cam kết sử dụng các công nghệ tiên tiến nhất, từ machine learning đến deep learning, để xây dựng các ứng dụng thông minh và tự động hóa các quy trình kinh doanh. Điều này giúp bạn tiết kiệm thời gian và nguồn lực, đồng thời tăng cường khả năng cạnh tranh trên thị trường."
+  }
+},
+"AIFaq": {
+  "title": "Câu hỏi thường gặp về dịch vụ Lập trình AI và tự động hóa",
+  "question": {
+    "1": "Dịch vụ lập trình AI và tự động hóa là gì?",
+    "2": "Các công nghệ nào được sử dụng trong lập trình AI?",
+    "3": "Làm thế nào để xác định giải pháp AI phù hợp cho doanh nghiệp của tôi?",
+    "4": "Tôi có thể yêu cầu nâng cấp và bảo trì cho ứng dụng AI của mình không?",
+    "5": "Có hỗ trợ đào tạo cho đội ngũ nhân viên sử dụng giải pháp AI không?"
+  },
+  "answer": {
+    "1": "Dịch vụ lập trình AI và tự động hóa từ NPH Digital giúp doanh nghiệp tối ưu hóa quy trình làm việc, nâng cao hiệu suất và giảm chi phí thông qua việc sử dụng các giải pháp AI tùy chỉnh và tự động hóa quy trình.",
+    "2": "Chúng tôi sử dụng các công nghệ hiện đại như machine learning, deep learning, và tự động hóa quy trình (RPA) để phát triển các ứng dụng AI hiệu quả và đáp ứng nhu cầu của doanh nghiệp.",
+    "3": "Chúng tôi sẽ tiến hành phân tích nhu cầu và quy trình hiện tại của doanh nghiệp bạn để đưa ra những giải pháp AI tùy chỉnh và phù hợp nhất. Đội ngũ chuyên gia của chúng tôi sẽ tư vấn và hỗ trợ bạn trong từng bước của quá trình này.",
+    "4": "Có, chúng tôi cung cấp dịch vụ bảo trì và nâng cấp ứng dụng AI sau khi hoàn thành. Chúng tôi sẵn sàng hỗ trợ sửa lỗi, cập nhật tính năng và tối ưu hóa hiệu suất để đảm bảo ứng dụng hoạt động ổn định và đáp ứng nhu cầu của bạn.",
+    "5": "Có, chúng tôi cung cấp các khóa đào tạo cho đội ngũ nhân viên của bạn để đảm bảo họ có thể sử dụng và khai thác hiệu quả các giải pháp AI mà chúng tôi cung cấp."
+  }
+}
+},
+
+"crmErpHrm": {
+  "DetailsSystem": {
+    "secTitle": {
+      "line1": "Dịch vụ",
+      "line2": "CRM, ERP, HRM"
+    },
+  "p": {
+    "1": "Tại NPH Digital, chúng tôi cung cấp giải pháp tích hợp CRM, ERP và HRM giúp doanh nghiệp tối ưu hóa quy trình làm việc và nâng cao hiệu quả quản lý. Các hệ thống này không chỉ đơn thuần là phần mềm, mà còn là công cụ mạnh mẽ hỗ trợ doanh nghiệp trong việc quản lý mối quan hệ khách hàng, tài nguyên doanh nghiệp và nhân sự một cách đồng bộ và hiệu quả.",
+    "2": "Quy trình triển khai dịch vụ của chúng tôi bao gồm: tư vấn, phân tích nhu cầu, thiết kế giải pháp tùy chỉnh, triển khai hệ thống, đào tạo nhân viên và hỗ trợ sau triển khai. Chúng tôi cam kết mang lại giải pháp chất lượng cao với sự hỗ trợ tận tâm từ đội ngũ chuyên gia giàu kinh nghiệm."
+  },
+  "ul": {
+    "1": {
+      "li": {
+        "1": "+ Hỗ trợ tuỳ chỉnh hệ thống phù hợp với nhu cầu cụ thể của doanh nghiệp.",
+        "2": "+ Quản lý mối quan hệ khách hàng (CRM) để tối ưu hóa quy trình bán hàng và chăm sóc khách hàng.",
+        "3": "+ Bảo trì và cập nhật hệ thống liên tục để đảm bảo hiệu suất tối ưu.",
+        "4": "+ Quản lý tài nguyên doanh nghiệp (ERP) giúp theo dõi và quản lý tất cả các hoạt động nội bộ."
+      }
+    }
+  }
+},
+"SystemWorkflow": {
+  "1": {
+    "title": {
+      "line1": "Tư vấn và",
+      "line2": "phân tích yêu cầu"
+    },
+    "description": "Tại NPH Digital, chúng tôi bắt đầu quy trình dịch vụ CRM, ERP, HRM bằng việc lắng nghe nhu cầu và mong muốn của khách hàng. Chúng tôi tiến hành phân tích sâu rộng để hiểu rõ các yêu cầu và thách thức hiện tại mà doanh nghiệp đang đối mặt."
+  },
+  "2": {
+    "title": {
+      "line1": "Thiết kế",
+      "line2": "giải pháp tùy chỉnh"
+    },
+    "description": "Sau khi nắm bắt được các yêu cầu, đội ngũ chuyên gia của chúng tôi sẽ thiết kế giải pháp CRM, ERP, HRM tùy chỉnh. Điều này đảm bảo rằng hệ thống được xây dựng phù hợp với quy trình kinh doanh và mục tiêu cụ thể của doanh nghiệp."
+  },
+  "3": {
+    "title": {
+      "line1": "Triển khai và",
+      "line2": "đào tạo"
+    },
+    "description": "Khi giải pháp đã được thiết kế xong, chúng tôi sẽ tiến hành triển khai hệ thống. Đội ngũ của chúng tôi cũng sẽ đào tạo nhân viên doanh nghiệp để họ có thể sử dụng hệ thống một cách hiệu quả nhất."
+  },
+  "4": {
+    "title": {
+      "line1": "Kiểm thử và",
+      "line2": "Hỗ trợ sau triển khai"
+    },
+    "description": "Sau khi hệ thống đã được triển khai, chúng tôi cung cấp hỗ trợ liên tục để đảm bảo rằng hệ thống hoạt động mượt mà và đáp ứng được các yêu cầu cụ thể của doanh nghiệp. Đội ngũ chuyên gia của chúng tôi sẽ hỗ trợ đào tạo nhân viên và đảm bảo rằng hệ thống được sử dụng hiệu quả nhất."
+  }
+},
+"SystemService": {
+  "secTitle": "Dịch vụ CRM, ERP, HRM từ NPH Digital giúp doanh nghiệp tối ưu hóa quy trình và nâng cao hiệu suất làm việc.",
+  "p": {
+    "1": "Với dịch vụ CRM, ERP, HRM từ NPH Digital, chúng tôi giúp doanh nghiệp tối ưu hóa quy trình làm việc, tăng cường hiệu suất và giảm thiểu chi phí. Chúng tôi phát triển các giải pháp tùy chỉnh phù hợp với nhu cầu cụ thể của từng khách hàng.",
+    "2": "Đội ngũ của chúng tôi không chỉ phát triển các hệ thống tùy chỉnh phù hợp với nhu cầu riêng của doanh nghiệp, mà còn hỗ trợ triển khai và đào tạo nhân viên sử dụng hiệu quả. Từ việc quản lý thông tin khách hàng đến tối ưu hóa quy trình làm việc và nâng cao sự hài lòng của nhân viên, dịch vụ của chúng tôi giúp bạn xây dựng một môi trường làm việc hiệu quả và bền vững trong kỷ nguyên số."
+  }
+},
+"SystemFaq": {
+  "title": "Câu hỏi thường gặp về dịch vụ CRM, ERP, HRM",
+  "question": {
+    "1": "Dịch vụ CRM là gì và nó mang lại lợi ích gì cho doanh nghiệp?",
+    "2": "ERP là gì và nó giúp doanh nghiệp tiết kiệm thời gian thế nào?",
+    "3": "HRM là gì và nó mang lại lợi ích gì cho việc quản lý nhân sự?",
+    "4": "Chúng tôi có thể tùy chỉnh dịch vụ theo nhu cầu cụ thể không?",
+    "5": "Có hỗ trợ bảo trì và cập nhật các hệ thống sau khi triển khai?"
+  },
+  "answer": {
+    "1": "Dịch vụ CRM (Quản lý quan hệ khách hàng) giúp doanh nghiệp quản lý thông tin khách hàng, cải thiện mối quan hệ và tăng cường sự hài lòng của khách hàng. Nó cho phép bạn theo dõi lịch sử tương tác, quản lý giao dịch và phân tích dữ liệu để đưa ra quyết định kinh doanh tốt hơn.",
+    "2": "ERP (Hoạch định nguồn lực doanh nghiệp) là một hệ thống quản lý tích hợp giúp doanh nghiệp tự động hóa và tối ưu hóa các quy trình kinh doanh. Nó cho phép bạn theo dõi tài chính, sản xuất, và quản lý chuỗi cung ứng, từ đó tiết kiệm thời gian và giảm thiểu lỗi do xử lý thủ công.",
+    "3": "HRM (Quản lý nguồn nhân lực) là một hệ thống giúp doanh nghiệp quản lý thông tin nhân viên, theo dõi hiệu suất, và xử lý các quy trình tuyển dụng, đào tạo, và phát triển nhân tài. Nó giúp tăng cường hiệu quả làm việc và giữ chân nhân viên tốt hơn.",
+    "4": "Có, chúng tôi cung cấp dịch vụ tùy chỉnh cho các hệ thống CRM, ERP, và HRM để phù hợp với nhu cầu riêng của doanh nghiệp. Đội ngũ chuyên gia của chúng tôi sẽ làm việc với bạn để xác định các yêu cầu và phát triển giải pháp tốt nhất cho bạn.",
+    "5": "Có, chúng tôi cung cấp dịch vụ bảo trì và cập nhật liên tục cho các hệ thống CRM, ERP, và HRM sau khi triển khai. Chúng tôi đảm bảo rằng các hệ thống luôn hoạt động hiệu quả và đáp ứng nhu cầu thay đổi của doanh nghiệp."
+  }
+}
+},
+
+"chamSocFanpage": {
+  "DetailsFanpage": {
+    "secTitle": "Chăm sóc Fanpage",
+  "p": {
+    "1": "Tại NPH Digital, chúng tôi cung cấp dịch vụ chăm sóc Fanpage toàn diện và chuyên nghiệp, giúp doanh nghiệp của bạn tăng cường tương tác và xây dựng hình ảnh thương hiệu một cách nhất quán. Chúng tôi tạo nội dung phù hợp, tăng lượt tương tác, và đảm bảo rằng mỗi bài đăng trên Fanpage đều đem lại giá trị thực sự cho khách hàng mục tiêu.",
+    "2": "Dịch vụ chăm sóc Fanpage của chúng tôi bao gồm nghiên cứu đối tượng khách hàng, xây dựng kế hoạch nội dung chi tiết, và thực hiện các chiến lược marketing qua mạng xã hội. Chúng tôi hỗ trợ doanh nghiệp không chỉ tăng trưởng số lượng người theo dõi mà còn tối ưu hóa hiệu suất từ các chiến dịch quảng cáo trên Facebook."
+  },
+  "ul": {
+    "1": {
+      "li": {
+        "1": "+ Quản lý và tương tác với khách hàng trên Fanpage",
+        "2": "+ Xây dựng nội dung bài đăng hấp dẫn, phù hợp với từng đối tượng khách hàng",
+        "3": "+ Thiết kế hình ảnh, video chuyên nghiệp cho các bài đăng",
+        "4": "+ Chạy quảng cáo tối ưu ngân sách, tiếp cận đúng khách hàng tiềm năng",
+        "5": "+ Tư vấn và phát triển chiến lược Fanpage dài hạn",
+        "6": "+ Phân tích, báo cáo và cải thiện hiệu quả hoạt động của Fanpage"
+      }
+    }
+  }
+},
+"FanpageWorkflow": {
+  "1": {
+    "title": {
+      "line1": "Phân tích nhu cầu",
+      "line2": "và lập kế hoạch"
+    },
+    "description": "Chúng tôi bắt đầu bằng việc phân tích chi tiết các yêu cầu từ khách hàng. Qua đó, lập kế hoạch nội dung và chiến lược tiếp cận phù hợp với mục tiêu cụ thể của Fanpage, đảm bảo mỗi bước đi đều có sự tính toán kỹ lưỡng."
+  },
+  "2": {
+    "title": {
+      "line1": "Xây dựng",
+      "line2": "nội dung sáng tạo"
+    },
+    "description": "Với đội ngũ chuyên gia sáng tạo và giàu kinh nghiệm, chúng tôi tạo ra những nội dung thu hút và ấn tượng. Từ bài viết, hình ảnh đến video, tất cả đều được tối ưu để tăng cường tương tác và truyền tải thông điệp thương hiệu hiệu quả nhất."
+  },
+  "3": {
+    "title": {
+      "line1": "Quản lý tương tác",
+      "line2": "hiệu quả"
+    },
+    "description": "Chúng tôi chủ động quản lý các hoạt động tương tác trên Fanpage, từ trả lời bình luận, tin nhắn đến điều phối các cuộc thi và sự kiện online. Điều này giúp duy trì mối quan hệ với khách hàng và tăng cường sự gắn kết của cộng đồng."
+  },
+  "4": {
+    "title": {
+      "line1": "Phân tích và",
+      "line2": "tối ưu hóa chiến lược"
+    },
+    "description": "Sau mỗi chiến dịch, chúng tôi phân tích kỹ lưỡng dữ liệu để đánh giá hiệu quả và đưa ra các giải pháp tối ưu cho những bước tiếp theo. Từ việc điều chỉnh nội dung đến tối ưu quảng cáo, chúng tôi đảm bảo Fanpage của bạn luôn đạt được kết quả tốt nhất."
+  }
+},
+"FanpageService": {
+  "secTitle": "Dịch vụ chăm sóc Fanpage chuyên nghiệp từ NPH Digital giúp bạn xây dựng thương hiệu mạnh mẽ và gắn kết khách hàng hiệu quả.",
+  "p": {
+    "1": "Với dịch vụ chăm sóc Fanpage từ NPH Digital, chúng tôi không chỉ đơn thuần quản lý nội dung mà còn giúp bạn xây dựng hình ảnh thương hiệu vững chắc, tiếp cận đúng đối tượng khách hàng và tăng cường tương tác trên mạng xã hội.",
+    "2": "Chúng tôi phát triển chiến lược nội dung sáng tạo, độc đáo và thu hút, đồng thời tối ưu hóa quảng cáo để tăng cường tương tác và chuyển đổi. Từ việc quản lý bình luận, tin nhắn đến phân tích hiệu quả, chúng tôi luôn đồng hành cùng bạn trên hành trình phát triển thương hiệu."
+  }
+},
+"FanpageFaq": {
+  "title": "Câu hỏi thường gặp về dịch vụ Chăm sóc Fanpage",
+  "question": {
+    "1": "Dịch vụ chăm sóc Fanpage bao gồm những gì?",
+    "2": "Làm thế nào để xây dựng nội dung Fanpage hiệu quả?",
+    "3": "Lợi ích của việc chăm sóc Fanpage là gì?",
+    "4": "Dịch vụ này có hỗ trợ quảng cáo không?",
+    "5": "Tôi có thể theo dõi kết quả chăm sóc Fanpage như thế nào?"
+  },
+  "answer": {
+    "1": "Dịch vụ chăm sóc Fanpage của chúng tôi bao gồm quản lý nội dung, tạo bài đăng, tối ưu hóa quảng cáo, theo dõi tương tác, phân tích dữ liệu và quản lý bình luận, tin nhắn. Chúng tôi giúp bạn xây dựng hình ảnh thương hiệu và tăng cường tương tác với khách hàng trên mạng xã hội.",
+    "2": "Chúng tôi xây dựng nội dung Fanpage dựa trên chiến lược sáng tạo, hướng tới đối tượng khách hàng mục tiêu. Nội dung đa dạng bao gồm hình ảnh, video, bài viết và tương tác trực tiếp, giúp tăng cường mức độ nhận diện thương hiệu và tương tác từ người dùng.",
+    "3": "Chăm sóc Fanpage giúp thương hiệu của bạn duy trì sự hiện diện trên mạng xã hội, tăng cường tương tác với khách hàng và thúc đẩy doanh số. Ngoài ra, việc thường xuyên theo dõi và tối ưu hóa Fanpage còn giúp bạn nắm bắt xu hướng và điều chỉnh chiến lược tiếp thị kịp thời.",
+    "4": "Có, chúng tôi cung cấp dịch vụ tối ưu hóa quảng cáo trên Fanpage, giúp bạn tiếp cận đúng đối tượng khách hàng mục tiêu. Chúng tôi sẽ theo dõi hiệu quả quảng cáo, điều chỉnh ngân sách và chiến lược để đạt được kết quả tốt nhất.",
+    "5": "Chúng tôi cung cấp báo cáo chi tiết về hiệu quả chăm sóc Fanpage, bao gồm số lượt thích, bình luận, chia sẻ, và tương tác của người dùng. Bạn sẽ có cái nhìn toàn diện về sự phát triển của Fanpage và có thể điều chỉnh chiến lược tiếp thị nếu cần."
+  }
+}
+}
+}

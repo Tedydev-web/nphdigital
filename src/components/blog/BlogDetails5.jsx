@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -28,6 +29,7 @@ import { useEffect, useRef, useState } from 'react';
 import avt from '../../../public/assets/imgs/blog/avt.png';
 
 const BlogDetails2024 = () => {
+	const { t } = useTranslation('blog5');
 	const wordAnim = useRef();
 	const wordAnim2 = useRef();
 	const [mode, setMode] = useState('light');
@@ -65,12 +67,13 @@ const BlogDetails2024 = () => {
 								<h2
 									className="blog__detail-date animation__word_come"
 									ref={wordAnim}>
-									Thiết kế App, UX/UI <span>06 Jan 2024</span>
+									<span>{t('blogDetails5.content.h2.1')}</span>
+									<span>06 Jan 2024</span>
 								</h2>
 								<h3
 									className="blog__detail-title animation__word_come"
 									ref={wordAnim2}>
-									Thiết Kế App Theo Yêu Cầu: 10 Bước Đơn Giản Để Bắt Đầu
+									{t('blogDetails5.content.h3.1')}
 								</h3>
 								<div className="blog__detail-metalist">
 									<div className="blog__detail-meta">
@@ -83,12 +86,14 @@ const BlogDetails2024 = () => {
 											style={{ borderRadius: '50%' }}
 										/>
 										<p>
-											Viết bởi <span>NPH Digital</span>
+											<span>{t('blogDetails5.authorInfo')}</span>
+											<span>{t('blogDetails5.authorName')}</span>
 										</p>
 									</div>
 									<div className="blog__detail-meta">
 										<p>
-											Thời gian đọc <span>09/08/2024</span>
+											<span>{t('blogDetails5.realTime')}</span>
+											<span>09/08/2024</span>
 										</p>
 									</div>
 								</div>
@@ -107,9 +112,9 @@ const BlogDetails2024 = () => {
 						</div>
 						<div className="col-xxl-8 col-xl-10 offset-xxl-2 offset-xl-1">
 							<div className="blog__detail-content">
-								<p>Thiết kế app theo yêu cầu không chỉ là một xu hướng mà còn là một giải pháp cần thiết cho sự phát triển và thành công của doanh nghiệp trong thời đại kỹ thuật số.</p>
-								<h2>1. Giới Thiệu Chung</h2>
-								<p>Thiết kế app theo yêu cầu ngày càng trở nên quan trọng trong bối cảnh kinh doanh hiện đại. Khi mà công nghệ số và di động phát triển mạnh mẽ, các doanh nghiệp cần tìm kiếm những giải pháp tối ưu để cạnh tranh và phát triển. Một trong những cách hiệu quả nhất để làm điều này là thông qua việc phát triển ứng dụng di động tùy chỉnh, được thiết kế riêng theo nhu cầu và mục tiêu cụ thể của doanh nghiệp.</p>
+								<p>{t('blogDetails5.content.p.1')}</p>
+								<h2>{t('blogDetails5.content.h2.2')}</h2>
+								<p>{t('blogDetails5.content.p.2')}</p>
 								<Image
 									priority
 									width={850}
@@ -118,27 +123,31 @@ const BlogDetails2024 = () => {
 									alt="Sự phát triển của công nghệ di động"
 								/>
 								<p>
-									<strong>Vai Trò Của App Mobile Trong Kinh Doanh Hiện Nay </strong>
+									<strong>{t('blogDetails5.content.p.3')}</strong>
 								</p>
 								<ul>
 									<li>
-										<strong>ăng Cường Tương Tác Khách Hàng: </strong>p giúp doanh nghiệp tương tác trực tiếp và liên tục với khách hàng. Từ đó, doanh nghiệp có thể dễ dàng tiếp cận và thấu hiểu nhu cầu, mong muốn của khách hàng, cải thiện trải nghiệm người dùng và tăng cường sự hài lòng.
+										<strong>{t('blogDetails5.content.ul.1.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.1.li.2')}</span>
 									</li>
 									<li>
-										<strong>Tạo Lợi Thế Cạnh Tranh: </strong>App không chỉ giúp doanh nghiệp nổi bật so với đối thủ mà còn cung cấp các tính năng và dịch vụ đặc biệt, tạo ra lợi thế cạnh tranh đáng kể.
+										<strong>{t('blogDetails5.content.ul.1.li.3')}</strong>
+										<span>{t('blogDetails5.content.ul.1.li.4')}</span>
 									</li>
 									<li>
-										<strong>Tăng Doanh Thu Và Mở Rộng Thị Trường: </strong>Thông qua app, doanh nghiệp có thể mở rộng phạm vi tiếp cận khách hàng, không giới hạn bởi địa lý, từ đó tăng doanh thu và phát triển thị trường mới.
+										<strong>{t('blogDetails5.content.ul.1.li.5')}</strong>
+										<span>{t('blogDetails5.content.ul.1.li.6')}</span>
 									</li>
 									<li>
-										<strong>Tối Ưu Hóa Hoạt Động Kinh Doanh: </strong>App giúp tự động hóa nhiều quy trình kinh doanh, từ quản lý đơn hàng, chăm sóc khách hàng đến tiếp thị và bán hàng, giúp tiết kiệm thời gian và chi phí.
+										<strong>{t('blogDetails5.content.ul.1.li.7')}</strong>
+										<span>{t('blogDetails5.content.ul.1.li.8')}</span>
 									</li>
 								</ul>
-								<h2>Lợi Ích Của Việc Thiết Kế App Theo Yêu Cầu So Với Sử Dụng App Có Sẵn</h2>
-								<h3>Tùy Biến Cao</h3>
-								<p>Thiết kế app theo yêu cầu cho phép tùy chỉnh mọi tính năng và giao diện theo đúng nhu cầu của doanh nghiệp, đảm bảo phù hợp với chiến lược kinh doanh và yêu cầu cụ thể. Mỗi doanh nghiệp có những yêu cầu và mục tiêu riêng, và một ứng dụng tùy chỉnh có thể phản ánh chính xác bản sắc và phong cách riêng biệt của doanh nghiệp đó. Điều này giúp tạo ra một trải nghiệm người dùng đồng nhất và chuyên nghiệp, từ đó tăng cường uy tín và sự tin tưởng từ khách hàng.</p>
-								<h3>Đáp Ứng Nhu Cầu Đặc Thù</h3>
-								<p>Một app tùy chỉnh có thể đáp ứng chính xác các yêu cầu đặc thù của doanh nghiệp mà các ứng dụng có sẵn trên thị trường không thể cung cấp. Các ứng dụng có sẵn thường được thiết kế để phù hợp với nhiều loại hình doanh nghiệp khác nhau, do đó khó có thể đáp ứng đầy đủ các nhu cầu đặc thù của từng doanh nghiệp. Ngược lại, một ứng dụng tùy chỉnh có thể được xây dựng để giải quyết các vấn đề cụ thể, từ các tính năng độc đáo đến quy trình hoạt động riêng biệt của doanh nghiệp.</p>
+								<h2>{t('blogDetails5.content.h2.3')}</h2>
+								<h3>{t('blogDetails5.content.h3.2')}</h3>
+								<p>{t('blogDetails5.content.p.4')}</p>
+								<h3>{t('blogDetails5.content.h3.31')}</h3>
+								<p>{t('blogDetails5.content.p.5')}</p>
 								<Image
 									priority
 									width={850}
@@ -146,13 +155,13 @@ const BlogDetails2024 = () => {
 									src={Detail3}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3>Tích Hợp Hệ Thống</h3>
+								<h3>{t('blogDetails5.content.h3.3')}</h3>
 								<ul>
-									<li>Ứng dụng theo yêu cầu dễ dàng tích hợp với các hệ thống và phần mềm hiện có của doanh nghiệp, tạo ra một hệ sinh thái công nghệ liền mạch và hiệu quả. Điều này giúp doanh nghiệp tận dụng tối đa các tài nguyên hiện có, đồng thời đảm bảo sự tương tác và truyền thông dữ liệu mượt mà giữa các hệ thống khác nhau. Từ đó, doanh nghiệp có thể quản lý và vận hành các quy trình một cách hiệu quả hơn, giảm thiểu thời gian và công sức cần thiết..</li>
+									<li>{t('blogDetails5.content.ul.2.li.1')}</li>
 								</ul>
-								<h3>Bảo Mật Cao</h3>
+								<h3>{t('blogDetails5.content.h3.4')}</h3>
 								<ul>
-									<li>Bảo mật là yếu tố quan trọng và thiết kế app theo yêu cầu cho phép áp dụng các biện pháp bảo mật nghiêm ngặt, phù hợp với tiêu chuẩn và quy định của doanh nghiệp. Trong bối cảnh tấn công mạng ngày càng gia tăng, việc bảo vệ dữ liệu và thông tin khách hàng trở nên cấp thiết hơn bao giờ hết. Một ứng dụng tùy chỉnh có thể được thiết kế với các lớp bảo mật tiên tiến, từ mã hóa dữ liệu đến xác thực người dùng, giúp bảo vệ doanh nghiệp khỏi các mối đe dọa tiềm ẩn.</li>
+									<li>{t('blogDetails5.content.ul.2.li.2')}</li>
 								</ul>
 								<Image
 									priority
@@ -161,17 +170,21 @@ const BlogDetails2024 = () => {
 									src={Detail4}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3>Hỗ Trợ Và Bảo Trì Dài Hạn</h3>
+								<h3>{t('blogDetails5.content.h3.5')}</h3>
 								<ul>
-									<li>Khi sử dụng dịch vụ thiết kế app theo yêu cầu, doanh nghiệp thường nhận được sự hỗ trợ và bảo trì từ đội ngũ phát triển, giúp đảm bảo ứng dụng luôn hoạt động ổn định và được cập nhật thường xuyên. Điều này không chỉ giúp khắc phục các sự cố nhanh chóng mà còn đảm bảo rằng ứng dụng luôn được nâng cấp với các tính năng mới và cải tiến theo xu hướng công nghệ. Sự hỗ trợ liên tục này giúp doanh nghiệp duy trì và phát triển ứng dụng một cách bền vững, tối ưu hóa hiệu quả kinh doanh trong dài hạn.</li>
+									<li>{t('blogDetails5.content.ul.2.li.3')}</li>
 								</ul>
-								<h3>Trải Nghiệm Người Dùng Tốt Hơn</h3>
+								<h3>{t('blogDetails5.content.h3.6')}</h3>
+
 								<ul>
 									<li>
-										<strong>Tùy Chỉnh Giao Diện:</strong>Ứng dụng tùy chỉnh cho phép doanh nghiệp tạo ra giao diện người dùng độc đáo và phù hợp với thương hiệu của mình, mang lại trải nghiệm người dùng tốt hơn và tăng cường sự hài lòng của khách hàng.
+										<strong>{t('blogDetails5.content.ul.3.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.3.li.2')}</span>
 									</li>
+
 									<li>
-										<strong>Cải Tiến Liên Tục:</strong>Doanh nghiệp có thể thu thập phản hồi từ người dùng và cập nhật ứng dụng một cách liên tục để cải thiện trải nghiệm người dùng và đáp ứng nhu cầu thay đổi của họ.
+										<strong>{t('blogDetails5.content.ul.3.li.3')}</strong>
+										<span>{t('blogDetails5.content.ul.3.li.4')}</span>
 									</li>
 								</ul>
 								<Image
@@ -181,22 +194,26 @@ const BlogDetails2024 = () => {
 									src={Detail5}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3>Tăng Hiệu Quả Vận Hành</h3>
+								<h3>{t('blogDetails5.content.h3.7')}</h3>
 								<ul>
 									<li>
-										<strong>Tự Động Hóa Quy Trình: </strong>Ứng dụng tùy chỉnh có thể tích hợp các quy trình tự động hóa, giảm thiểu công việc thủ công và tăng hiệu quả vận hành.
+										<strong>{t('blogDetails5.content.ul.4.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.4.li.2')}</span>
 									</li>
 									<li>
-										<strong>Tự Động Hóa Quy Trình: </strong>Doanh nghiệp có thể thu thập và phân tích dữ liệu người dùng chi tiết thông qua ứng dụng, giúp đưa ra các quyết định kinh doanh dựa trên dữ liệu chính xác.
+										<strong>{t('blogDetails5.content.ul.4.li.3')}</strong>
+										<span>{t('blogDetails5.content.ul.4.li.4')}</span>
 									</li>
 								</ul>
-								<h3>Tăng Cường Tương Tác Và Gắn Kết Khách Hàng</h3>
+								<h3>{t('blogDetails5.content.h3.8')}</h3>
 								<ul>
 									<li>
-										<strong>Chương Trình Khách Hàng Thân Thiết: </strong> Ứng dụng tùy chỉnh có thể tích hợp các chương trình khách hàng thân thiết, từ đó khuyến khích người dùng quay lại và sử dụng dịch vụ thường xuyên hơn.
+										<strong>{t('blogDetails5.content.ul.5.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.5.li.2')}</span>
 									</li>
 									<li>
-										<strong>Thông Báo Đẩy: </strong>Doanh nghiệp có thể sử dụng thông báo đẩy để thông báo cho khách hàng về các ưu đãi, cập nhật sản phẩm hoặc sự kiện quan trọng, tăng cường sự gắn kết và tương tác.
+										<strong>{t('blogDetails5.content.ul.5.li.3')}</strong>
+										<span>{t('blogDetails5.content.ul.5.li.4')}</span>
 									</li>
 								</ul>
 								<Image
@@ -207,22 +224,26 @@ const BlogDetails2024 = () => {
 									alt="Sự phát triển của công nghệ di động"
 								/>
 
-								<h3>Linh Hoạt Và Mở Rộng Dễ Dàng</h3>
+								<h3>{t('blogDetails5.content.h3.9')}</h3>
 								<ul>
 									<li>
-										<strong>Khả Năng Mở Rộng: </strong>Một ứng dụng tùy chỉnh có thể dễ dàng mở rộng và thêm các tính năng mới theo nhu cầu phát triển của doanh nghiệp.
+										<strong>{t('blogDetails5.content.ul.6.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.6.li.2')}</span>
 									</li>
 									<li>
-										<strong>Tích Hợp Với Công Nghệ Mới: </strong>Doanh nghiệp có thể tích hợp ứng dụng với các công nghệ mới như AI, IoT để nâng cao hiệu quả và cung cấp các dịch vụ tiên tiến cho khách hàng.
+										<strong>{t('blogDetails5.content.ul.6.li.3')}</strong>
+										<span>{t('blogDetails5.content.ul.6.li.4')}</span>
 									</li>
 								</ul>
-								<h3>Giảm Chi Phí Dài Hạn</h3>
+								<h3>{t('blogDetails5.content.h3.10')}</h3>
 								<ul>
 									<li>
-										<strong>Tối Ưu Hóa Chi Phí: </strong>Mặc dù việc phát triển ứng dụng tùy chỉnh ban đầu có thể tốn kém hơn, nhưng về lâu dài, doanh nghiệp sẽ tiết kiệm được chi phí vận hành và bảo trì so với việc sử dụng các giải pháp sẵn có có thể không hoàn toàn phù hợp.
+										<strong>{t('blogDetails5.content.ul.7.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.7.li.2')}</span>
 									</li>
 									<li>
-										<strong>Kiểm Soát Toàn Diện: </strong>Doanh nghiệp có quyền kiểm soát toàn diện đối với ứng dụng của mình, từ quản lý dữ liệu đến triển khai các tính năng mới, giúp tối ưu hóa chi phí và hiệu quả kinh doanh.
+										<strong>{t('blogDetails5.content.ul.7.li.3')}</strong>
+										<span>{t('blogDetails5.content.ul.7.li.4')}</span>
 									</li>
 								</ul>
 								<Image
@@ -232,42 +253,42 @@ const BlogDetails2024 = () => {
 									src={Detail7}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3>Nâng Cao Thương Hiệu</h3>
+								<h3>{t('blogDetails5.content.h3.11')}</h3>
 								<ul>
 									<li>
-										{' '}
-										<strong>Truyền Thông Thương Hiệu: </strong>Ứng dụng tùy chỉnh có thể được thiết kế để phản ánh bản sắc và giá trị thương hiệu một cách rõ ràng và nhất quán, từ logo, màu sắc đến ngôn ngữ giao diện.
+										<strong>{t('blogDetails5.content.ul.8.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.8.li.2')}</span>
 									</li>
 									<li>
-										{' '}
-										<strong>Độc Quyền:</strong>Một ứng dụng tùy chỉnh sẽ mang lại cho doanh nghiệp một công cụ độc quyền, không bị trùng lặp với bất kỳ ứng dụng nào khác trên thị trường, giúp nâng cao giá trị và uy tín thương hiệu.
+										<strong>{t('blogDetails5.content.ul.8.li.3')}</strong>
+										<span>{t('blogDetails5.content.ul.8.li.4')}</span>
 									</li>
 								</ul>
-								<h2>3. Các Bước Đơn Giản Khi Thiết Kế App Theo Yêu Cầu</h2>
-								<h3>Bước 1: Xác Định Mục Tiêu Của App</h3>
+								<h2>{t('blogDetails5.content.h2.4')}</h2>
+								<h3>{t('blogDetails5.content.h3.12')}</h3>
 								<ul>
 									<li>
-										<strong>Đặt ra mục tiêu rõ ràng cho app</strong>
-										<li>Xác định mục tiêu ngắn hạn và dài hạn.</li>
-										<li>Xác định mục tiêu cụ thể như tăng doanh thu, nâng cao nhận diện thương hiệu, cải thiện trải nghiệm khách hàng.</li>
+										<strong>{t('blogDetails5.content.ul.9.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.9.li.2')}</span>
+										<span>{t('blogDetails5.content.ul.9.li.3')}</span>
 									</li>
 
 									<li>
-										<strong>Xác định đối tượng người dùng chín</strong>
-										<li>Phân tích đặc điểm nhân khẩu học của người dùng.</li>
-										<li>Xác định nhu cầu và sở thích của nhóm đối tượng mục tiêu.</li>
+										<strong>{t('blogDetails5.content.ul.10.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.10.li.2')}</span>
+										<span>{t('blogDetails5.content.ul.10.li.3')}</span>
 									</li>
 
 									<li>
-										<strong>Xác định các chức năng chính cần có</strong>
-										<li>Liệt kê các tính năng cần thiết như đăng nhập, tìm kiếm, giỏ hàng, thanh toán.</li>
-										<li>Xác định các tính năng bổ sung có thể mang lại giá trị gia tăng.</li>
+										<strong>{t('blogDetails5.content.ul.11.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.11.li.2')}</span>
+										<span>{t('blogDetails5.content.ul.11.li.3')}</span>
 									</li>
 
 									<li>
-										<strong>Mục tiêu kinh doanh và cách app sẽ hỗ trợ đạt được mục tiêu đó</strong>
-										<li>Xác định cách ứng dụng sẽ hỗ trợ đạt được các mục tiêu kinh doanh.</li>
-										<li>Lập kế hoạch tích hợp ứng dụng với các chiến lược marketing và bán hàng.</li>
+										<strong>{t('blogDetails5.content.ul.12.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.12.li.2')}</span>
+										<span>{t('blogDetails5.content.ul.12.li.3')}</span>
 									</li>
 									<Image
 										priority
@@ -277,30 +298,30 @@ const BlogDetails2024 = () => {
 										alt="Sự phát triển của công nghệ di động"
 									/>
 								</ul>
-								<h3>Bước 2: Nghiên Cứu Thị Trường</h3>
+								<h3>{t('blogDetails5.content.h3.13')}</h3>
 								<ul>
 									<li>
-										<strong>Phân tích thị trường và đối thủ cạnh tranh </strong>
-										<li>Nghiên cứu thị trường mục tiêu để hiểu rõ nhu cầu và xu hướng.</li>
-										<li>Phân tích đối thủ cạnh tranh chính và các ứng dụng tương tự.</li>
+										<strong>{t('blogDetails5.content.ul.13.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.13.li.2')}</span>
+										<span>{t('blogDetails5.content.ul.13.li.3')}</span>
 									</li>
 
 									<li>
-										<strong>Tìm hiểu các app tương tự</strong>
-										<li>Nghiên cứu các ứng dụng hiện có trên thị trường.</li>
-										<li>Xác định những điểm mạnh và yếu của các ứng dụng này.</li>
+										<strong>{t('blogDetails5.content.ul.14.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.14.li.2')}</span>
+										<span>{t('blogDetails5.content.ul.14.li.3')}</span>
 									</li>
 
 									<li>
-										<strong>Phân tích điểm mạnh và điểm yếu của đối thủ</strong>
-										<li>Xác định những tính năng nổi bật của đối thủ.</li>
-										<li>Tìm ra những điểm yếu và cơ hội cải thiện.</li>
+										<strong>{t('blogDetails5.content.ul.15.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.15.li.2')}</span>
+										<span>{t('blogDetails5.content.ul.15.li.3')}</span>
 									</li>
 
 									<li>
-										<strong>Xác định xu hướng thị trường và nhu cầu người dùng</strong>
-										<li>Cập nhật các xu hướng mới nhất trong ngành.</li>
-										<li>Xác định những nhu cầu chưa được đáp ứng của người dùng.</li>
+										<strong>{t('blogDetails5.content.ul.16.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.16.li.2')}</span>
+										<span>{t('blogDetails5.content.ul.16.li.3')}</span>
 									</li>
 								</ul>
 								<Image
@@ -311,27 +332,27 @@ const BlogDetails2024 = () => {
 									alt="Sự phát triển của công nghệ di động"
 								/>
 
-								<h3>Bước 3: Lên Kế Hoạch Và Chiến Lược</h3>
+								<h3>{t('blogDetails5.content.h3.14')}</h3>
 								<ul>
 									<li>
-										<strong>Xây dựng kế hoạch phát triển ứng dụng </strong>
-										<li>Lập kế hoạch chi tiết từ khâu ý tưởng đến triển khai.</li>
+										<strong>{t('blogDetails5.content.ul.17.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.17.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Lập lịch trình phát triển cụ thể</strong>
-										<li>Xác định các giai đoạn phát triển và thời gian hoàn thành.</li>
+										<strong>{t('blogDetails5.content.ul.18.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.18.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Xác định ngân sách và nguồn lực cần thiết</strong>
-										<li>Dự trù kinh phí cho từng giai đoạn phát triển.</li>
-										<li>Xác định các nguồn lực cần thiết như nhân sự, thiết bị, công nghệ.</li>
+										<strong>{t('blogDetails5.content.ul.19.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.19.li.2')}</span>
+										<span>{t('blogDetails5.content.ul.19.li.3')}</span>
 									</li>
 
 									<li>
-										<strong>Lựa chọn nền tảng (iOS, Android, hoặc cả hai)</strong>
-										<li>Quyết định phát triển trên nền tảng nào dựa trên đối tượng người dùng và ngân sách.</li>
+										<strong>{t('blogDetails5.content.ul.20.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.20.li.2')}</span>
 									</li>
 								</ul>
 								<Image
@@ -341,26 +362,26 @@ const BlogDetails2024 = () => {
 									src={Detail10}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3>Bước 4: Thiết Kế Giao Diện Người Dùng (UI/UX)</h3>
+								<h3>{t('blogDetails5.content.h3.15')}</h3>
 								<ul>
 									<li>
-										<strong>Tạo mẫu thiết kế và nguyên mẫu </strong>
-										<li>Sử dụng wireframe và mockup để phác thảo ý tưởng.</li>
+										<strong>{t('blogDetails5.content.ul.21.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.21.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Thiết kế giao diện người dùng (UI)</strong>
-										<li>Tạo giao diện trực quan, thân thiện và dễ sử dụng.</li>
+										<strong>{t('blogDetails5.content.ul.22.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.22.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Tạo trải nghiệm người dùng (UX) thân thiện và trực quan</strong>
-										<li>Thiết kế trải nghiệm người dùng mượt mà, tối ưu hóa luồng tương tác.</li>
+										<strong>{t('blogDetails5.content.ul.23.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.23.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Sử dụng các công cụ thiết kế và tạo nguyên mẫu</strong>
-										<li>Sử dụng các công cụ như Figma, Adobe XD để thiết kế và tạo nguyên mẫu.</li>
+										<strong>{t('blogDetails5.content.ul.24.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.24.li.2')}</span>
 									</li>
 								</ul>
 								<Image
@@ -370,21 +391,21 @@ const BlogDetails2024 = () => {
 									src={Detail11}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3>Bước 5: Lựa Chọn Công Nghệ Và Công Cụ Phát Triển</h3>
+								<h3>{t('blogDetails5.content.h3.16')}</h3>
 								<ul>
 									<li>
-										<strong>Quyết định công nghệ và công cụ sử dụng </strong>
-										<li>Lựa chọn các công nghệ phù hợp như React Native, Flutter, Swift, Kotlin.</li>
+										<strong>{t('blogDetails5.content.ul.25.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.25.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Lựa chọn ngôn ngữ lập trình và framework</strong>
-										<li>Quyết định ngôn ngữ lập trình dựa trên yêu cầu kỹ thuật và nền tảng phát triển.</li>
+										<strong>{t('blogDetails5.content.ul.26.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.26.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Sử dụng các công cụ phát triển và quản lý dự án</strong>
-										<li>Sử dụng các công cụ như GitHub, JIRA, Trello để quản lý dự án và theo dõi tiến độ.</li>
+										<strong>{t('blogDetails5.content.ul.27.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.27.li.2')}</span>
 									</li>
 								</ul>
 								<Image
@@ -394,21 +415,21 @@ const BlogDetails2024 = () => {
 									src={Detail12}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3>Bước 6: Phát Triển Ứng Dụng</h3>
+								<h3>{t('blogDetails5.content.h3.17')}</h3>
 								<ul>
 									<li>
-										<strong>Tiến hành lập trình và phát triển app </strong>
-										<li>Bắt đầu quá trình phát triển dựa trên kế hoạch đã đề ra.</li>
+										<strong>{t('blogDetails5.content.ul.28.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.28.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Phân chia công việc và nhiệm vụ cho đội ngũ phát triển</strong>
-										<li>Phân chia công việc cho các thành viên trong nhóm theo kỹ năng và chuyên môn.</li>
+										<strong>{t('blogDetails5.content.ul.29.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.29.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Thực hiện lập trình theo từng giai đoạn</strong>
-										<li>Phát triển ứng dụng theo từng giai đoạn, kiểm tra và hiệu chỉnh liên tục.</li>
+										<strong>{t('blogDetails5.content.ul.30.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.30.li.2')}</span>
 									</li>
 								</ul>
 								<Image
@@ -418,26 +439,26 @@ const BlogDetails2024 = () => {
 									src={Detail13}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3>Bước 7: Kiểm Thử Và Đánh Giá</h3>
+								<h3>{t('blogDetails5.content.h3.18')}</h3>
 								<ul>
 									<li>
-										<strong>Tiến hành kiểm thử ứng dụng </strong>
-										<li>Thực hiện kiểm thử toàn diện để phát hiện lỗi và vấn đề.</li>
+										<strong>{t('blogDetails5.content.ul.31.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.31.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Thử nghiệm chức năng và hiệu suất của ứng dụng</strong>
-										<li>Kiểm tra các tính năng và hiệu suất hoạt động của ứng dụng.</li>
+										<strong>{t('blogDetails5.content.ul.32.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.32.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Phát hiện và sửa lỗi</strong>
-										<li>Ghi nhận các lỗi và tiến hành sửa chữa kịp thời.</li>
+										<strong>{t('blogDetails5.content.ul.33.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.33.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Đánh giá và cải thiện UX/UI</strong>
-										<li>Đánh giá trải nghiệm người dùng và thực hiện các cải tiến cần thiết.</li>
+										<strong>{t('blogDetails5.content.ul.34.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.34.li.2')}</span>
 									</li>
 								</ul>
 								<Image
@@ -447,21 +468,21 @@ const BlogDetails2024 = () => {
 									src={Detail14}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3>Bước 8: Triển Khai Và Phát Hành</h3>
+								<h3>{t('blogDetails5.content.h3.19')}</h3>
 								<ul>
 									<li>
-										<strong>Đưa app lên các nền tảng </strong>
-										<li>Chuẩn bị ứng dụng để phát hành trên App Store và Google Play.</li>
+										<strong>{t('blogDetails5.content.ul.35.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.35.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Chuẩn bị tài liệu và hình ảnh cần thiết</strong>
-										<li>Chuẩn bị các tài liệu và hình ảnh cần thiết cho việc phát hành app.</li>
+										<strong>{t('blogDetails5.content.ul.36.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.36.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Đăng ký và phát hành ứng dụng trên App Store và Google Play</strong>
-										<li>Thực hiện quy trình đăng ký và phát hành ứng dụng trên các nền tảng.</li>
+										<strong>{t('blogDetails5.content.ul.37.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.37.li.2')}</span>
 									</li>
 								</ul>
 								<Image
@@ -471,26 +492,26 @@ const BlogDetails2024 = () => {
 									src={Detail15}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3>Bước 9: Tiếp Thị Và Quảng Bá Ứng Dụng</h3>
+								<h3>{t('blogDetails5.content.h3.20')}</h3>
 								<ul>
 									<li>
-										<strong>Chiến lược marketing cho app</strong>
-										<li>Lập kế hoạch marketing chi tiết để quảng bá ứng dụng.</li>
+										<strong>{t('blogDetails5.content.ul.38.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.38.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Sử dụng các kênh tiếp thị kỹ thuật sốt</strong>
-										<li>Tận dụng các kênh như mạng xã hội, email marketing, SEO để tiếp cận người dùng.</li>
+										<strong>{t('blogDetails5.content.ul.39.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.39.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Tạo chiến dịch quảng bá trên mạng xã hội và các nền tảng khác</strong>
-										<li>Tạo các chiến dịch quảng bá để tăng cường nhận diện thương hiệu và thu hút người dùng.</li>
+										<strong>{t('blogDetails5.content.ul.40.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.40.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Sử dụng phản hồi từ người dùng để cải thiện ứng dụng</strong>
-										<li>Thu thập phản hồi từ người dùng và sử dụng để cải thiện ứng dụng liên tục.</li>
+										<strong>{t('blogDetails5.content.ul.41.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.41.li.2')}</span>
 									</li>
 								</ul>
 								<Image
@@ -500,26 +521,26 @@ const BlogDetails2024 = () => {
 									src={Detail16}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3>Bước 10: Bảo Trì Và Cập Nhật</h3>
+								<h3>{t('blogDetails5.content.h3.21')}</h3>
 								<ul>
 									<li>
-										<strong>Duy trì và nâng cấp ứng dụng sau khi phát hành</strong>
-										<li>Thực hiện bảo trì và nâng cấp ứng dụng định kỳ.</li>
+										<strong>{t('blogDetails5.content.ul.42.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.42.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Giải quyết các vấn đề và lỗi phát sinh</strong>
-										<li>Theo dõi và khắc phục các vấn đề và lỗi phát sinh sau khi phát hành.</li>
+										<strong>{t('blogDetails5.content.ul.43.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.43.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Cập nhật tính năng mới và cải tiến hiệu suất</strong>
-										<li>Thêm các tính năng mới và cải thiện hiệu suất app. </li>
+										<strong>{t('blogDetails5.content.ul.44.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.44.li.2')}</span>
 									</li>
 
 									<li>
-										<strong>Đáp ứng phản hồi của người dùng và xu hướng mới</strong>
-										<li>Điều chỉnh và cải tiến app dựa trên phản hồi của người dùng và xu hướng công nghệ mới.</li>
+										<strong>{t('blogDetails5.content.ul.45.li.1')}</strong>
+										<span>{t('blogDetails5.content.ul.45.li.2')}</span>
 									</li>
 								</ul>
 								<Image
@@ -529,21 +550,25 @@ const BlogDetails2024 = () => {
 									src={Detail17}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h2> 4. Các Xu Hướng Thiết Kế App Theo Yêu Cầu Hiện Nay</h2>
-								<h3> Thiết Kế Giao Diện Người Dùng (UI) Tối Giản (Minimalist Design) </h3>
+								<h2> {t('blogDetails5.content.h2.5')}</h2>
+								<h3> {t('blogDetails5.content.h3.22')}</h3>
 								<p>
-									<strong>Đặc Điểm: </strong>Giao diện đơn giản, tập trung vào những yếu tố chính, giảm bớt các chi tiết không cần thiết.
+									<strong>{t('blogDetails5.content.p.6')}</strong>
+									<span>{t('blogDetails5.content.p.7')}</span>
 								</p>
 								<p>
-									<strong>Lợi Ích: </strong>Giúp người dùng tập trung vào các tính năng quan trọng, tạo trải nghiệm người dùng dễ dàng và hiệu quả hơn.
+									<strong>{t('blogDetails5.content.p.8')}</strong>
+									<span>{t('blogDetails5.content.p.9')}</span>
 								</p>
 
-								<h3> Tích Hợp Trí Tuệ Nhân Tạo (AI) và Học Máy (Machine Learning) </h3>
+								<h3> {t('blogDetails5.content.h3.23')}</h3>
 								<p>
-									<strong>Đặc Điểm: </strong>Sử dụng AI để cải thiện tính năng và trải nghiệm người dùng như chatbots, phân tích dữ liệu người dùng, dự đoán hành vi.
+									<strong>{t('blogDetails5.content.p.10')}</strong>
+									<span>{t('blogDetails5.content.p.11')}</span>
 								</p>
 								<p>
-									<strong>Lợi Ích: </strong>Nâng cao khả năng cá nhân hóa, cải thiện dịch vụ khách hàng, tối ưu hóa các quy trình kinh doanh.
+									<strong>{t('blogDetails5.content.p.12')}</strong>
+									<span>{t('blogDetails5.content.p.13')}</span>
 								</p>
 								<Image
 									priority
@@ -552,20 +577,24 @@ const BlogDetails2024 = () => {
 									src={Detail18}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3> Ứng Dụng Đa Nền Tảng (Cross-Platform Development)</h3>
+								<h3> {t('blogDetails5.content.h3.24')}</h3>
 								<p>
-									<strong>Đặc Điểm: </strong>Phát triển ứng dụng có thể chạy trên nhiều nền tảng khác nhau như iOS, Android, Windows bằng cách sử dụng các framework như Flutter, React Native.
+									<strong>{t('blogDetails5.content.p.14')}</strong>
+									<span>{t('blogDetails5.content.p.15')}</span>
 								</p>
 								<p>
-									<strong>Lợi Ích: </strong>Giảm chi phí và thời gian phát triển, tiếp cận được lượng người dùng lớn hơn.
+									<strong>{t('blogDetails5.content.p.16')}</strong>
+									<span>{t('blogDetails5.content.p.17')}</span>
 								</p>
 
-								<h3> Giao Diện Tối (Dark Mode)</h3>
+								<h3> {t('blogDetails5.content.h3.25')}</h3>
 								<p>
-									<strong>Đặc Điểm: </strong>Cung cấp chế độ giao diện tối để người dùng lựa chọn, giảm thiểu ánh sáng xanh gây hại cho mắt.
+									<strong>{t('blogDetails5.content.p.18')}</strong>
+									<span>{t('blogDetails5.content.p.19')}</span>
 								</p>
 								<p>
-									<strong>Lợi Ích: </strong> Tiết kiệm pin cho các thiết bị di động, cải thiện trải nghiệm người dùng vào ban đêm hoặc trong điều kiện ánh sáng yếu.
+									<strong>{t('blogDetails5.content.p.20')}</strong>
+									<span>{t('blogDetails5.content.p.21')}</span>
 								</p>
 								<Image
 									priority
@@ -574,20 +603,24 @@ const BlogDetails2024 = () => {
 									src={Detail19}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3> Thiết Kế Tập Trung Vào Trải Nghiệm Người Dùng (User Experience Design)</h3>
+								<h3> {t('blogDetails5.content.h3.26')}</h3>
 								<p>
-									<strong>Đặc Điểm: </strong>Tập trung vào việc tạo ra các trải nghiệm mượt mà, trực quan và thú vị cho người dùng.
+									<strong>{t('blogDetails5.content.p.22')}</strong>
+									<span>{t('blogDetails5.content.p.23')}</span>
 								</p>
 								<p>
-									<strong>Lợi Ích: </strong> Tăng cường sự hài lòng và giữ chân người dùng, cải thiện tỷ lệ chuyển đổi.
+									<strong>{t('blogDetails5.content.p.24')}</strong>
+									<span>{t('blogDetails5.content.p.25')}</span>
 								</p>
 
-								<h3> Sử Dụng Công Nghệ Thực Tế Ảo (AR) và Thực Tế Tăng Cường (VR)</h3>
+								<h3> {t('blogDetails5.content.h3.27')}</h3>
 								<p>
-									<strong>Đặc Điểm: </strong>Ứng dụng công nghệ AR/VR để tạo ra các trải nghiệm tương tác và phong phú.
+									<strong>{t('blogDetails5.content.p.26')}</strong>
+									<span>{t('blogDetails5.content.p.27')}</span>
 								</p>
 								<p>
-									<strong>Lợi Ích: </strong>Tạo ra các trải nghiệm người dùng độc đáo, ứng dụng rộng rãi trong nhiều ngành như bán lẻ, du lịch, giáo dục.
+									<strong>{t('blogDetails5.content.p.28')}</strong>
+									<span>{t('blogDetails5.content.p.29')}</span>
 								</p>
 
 								<Image
@@ -597,20 +630,24 @@ const BlogDetails2024 = () => {
 									src={Detail20}
 									alt="Sự phát triển của công nghệ di động"
 								/>
-								<h3> Thiết Kế Micro-Interactions</h3>
+								<h3> {t('blogDetails5.content.h3.28')}</h3>
 								<p>
-									<strong>Đặc Điểm: </strong>Sử dụng các tương tác nhỏ để cải thiện trải nghiệm người dùng, ví dụ như hiệu ứng chuyển động khi nhấn nút.
+									<strong>{t('blogDetails5.content.p.30')}</strong>
+									<span>{t('blogDetails5.content.p.31')}</span>
 								</p>
 								<p>
-									<strong>Lợi Ích: </strong> Làm cho ứng dụng trở nên sống động và thú vị hơn, tăng cường sự tương tác của người dùng.
+									<strong>{t('blogDetails5.content.p.32')}</strong>
+									<span>{t('blogDetails5.content.p.33')}</span>
 								</p>
 
-								<h3> Tích Hợp IoT (Internet of Things)</h3>
+								<h3> {t('blogDetails5.content.h3.29')}</h3>
 								<p>
-									<strong>Đặc Điểm: </strong>Kết nối ứng dụng với các thiết bị IoT để tạo ra các chức năng thông minh, tự động hóa.
+									<strong>{t('blogDetails5.content.p.34')}</strong>
+									<span>{t('blogDetails5.content.p.35')}</span>
 								</p>
 								<p>
-									<strong>Lợi Ích: </strong>Nâng cao tiện ích và trải nghiệm người dùng, áp dụng trong các lĩnh vực như nhà thông minh, y tế, sản xuất.
+									<strong>{t('blogDetails5.content.p.36')}</strong>
+									<span>{t('blogDetails5.content.p.37')}</span>
 								</p>
 
 								<Image
@@ -621,17 +658,19 @@ const BlogDetails2024 = () => {
 									alt="Sự phát triển của công nghệ di động"
 								/>
 
-								<h3> Sử Dụng Blockchain</h3>
+								<h3> {t('blogDetails5.content.h3.30')}</h3>
 								<p>
-									<strong>Đặc Điểm: </strong>Áp dụng công nghệ blockchain để tăng cường bảo mật và minh bạch cho các ứng dụng.
+									<strong>{t('blogDetails5.content.p.38')}</strong>
+									<span>{t('blogDetails5.content.p.39')}</span>
 								</p>
 								<p>
-									<strong>Lợi Ích: </strong>Đảm bảo tính an toàn cho dữ liệu người dùng, ứng dụng trong các lĩnh vực như tài chính, chuỗi cung ứng.
+									<strong>{t('blogDetails5.content.p.40')}</strong>
+									<span>{t('blogDetails5.content.p.41')}</span>
 								</p>
 							</div>
 							<div className="blog__detail-tags">
 								<p className="sub-title-anim">
-									tags: <Link href="/blog">thiết kế app</Link>, <Link href="/blog">UX/UI</Link>,<Link href="/tag">xu hướng 2024</Link>
+									tags: <Link href="/blog">{t('blogDetails5.content.p.42')}</Link>, <Link href="/blog">UX/UI</Link>,<Link href="/tag">{t('blogDetails5.content.p.43')}</Link>
 								</p>
 							</div>
 						</div>

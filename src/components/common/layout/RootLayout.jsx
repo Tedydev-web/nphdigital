@@ -16,6 +16,7 @@ import Footer3 from '@/components/footer/Footer3';
 import { tsParticles } from '@tsparticles/engine';
 import Particles from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
+import SwitcherLang from '@/components/common/SwitcherLang';
 
 const HeaderContent = ({ header, navData }) => {
 	const headers = {
@@ -26,7 +27,6 @@ const HeaderContent = ({ header, navData }) => {
 		header5: <Header5 />,
 		none: null,
 	};
-
 	return headers[header] || <Header3 />;
 };
 
@@ -40,7 +40,7 @@ export default function RootLayout({ children, header = '', footer = '', default
 	const [particleValue, setParticleValue] = useState(70);
 	const cursor1 = useRef();
 	const cursor2 = useRef();
-	const { t, i18n } = useTranslation();
+	const { t, i18n } = useTranslation('common');
 
 	useEffect(() => {
 		setNavData(allNavData);
@@ -161,18 +161,7 @@ export default function RootLayout({ children, header = '', footer = '', default
 				header={header}
 				navData={navData}
 			/>
-			<div style={{ position: 'fixed', top: '20px', right: '20px', zIndex: 1000 }}>
-				<button
-					onClick={() => changeLanguage('vi')}
-					style={{ marginRight: '10px', color: '#fff' }}>
-					{t('common.languageSwitcher.vietnamese')}
-				</button>
-				<button
-					onClick={() => changeLanguage('en')}
-					style={{ color: '#fff' }}>
-					{t('common.languageSwitcher.english')}
-				</button>
-			</div>
+			<SwitcherLang />
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					{children}

@@ -2,8 +2,10 @@ import { useEffect, useRef } from 'react';
 import ThumbDev1 from '../../../public/assets/imgs/service/detail/MobileApp/1.png';
 import Image from 'next/image';
 import animationCharCome from '@/lib/utils/animationCharCome';
+import { useTranslation } from 'react-i18next';
 
 const DetailsMobileApp = () => {
+	const { t } = useTranslation('serviceDetails');
 	const charAnim = useRef();
 	useEffect(() => {
 		animationCharCome(charAnim.current);
@@ -19,23 +21,23 @@ const DetailsMobileApp = () => {
 								<h2
 									className="sec-title animation__char_come"
 									ref={charAnim}>
-									Phát triển Mobile App
+									{t('mobileApp.DetailsMobileApp.secTitle')}
 								</h2>
 							</div>
 						</div>
 						<div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
 							<div className="development__wrapper">
 								<div className="development__content">
-									<p>Tại NPH Digital, chúng tôi tự hào là đối tác phát triển ứng dụng di động chuyên nghiệp, cung cấp giải pháp toàn diện từ ý tưởng đến thực thi. Chúng tôi giúp các doanh nghiệp chuyển đổi số hiệu quả bằng cách tạo ra các ứng dụng di động tối ưu, mang lại giá trị thực tiễn và tạo dấu ấn thương hiệu trong mắt người dùng.</p>
-									<p>Chúng tôi tuân thủ quy trình phát triển chuyên nghiệp từ nghiên cứu nhu cầu, thiết kế UI/UX, phát triển ứng dụng, đến kiểm thử và hỗ trợ sau triển khai. Với đội ngũ kỹ thuật giàu kinh nghiệm, chúng tôi đảm bảo mọi ứng dụng đều đáp ứng tiêu chuẩn cao nhất về chất lượng và hiệu suất.</p>
+									<p>{t('mobileApp.DetailsMobileApp.p.1')}</p>
+									<p>{t('mobileApp.DetailsMobileApp.p.2')}</p>
 								</div>
 								<ul>
-									<li>+ Phát triển ứng dụng gốc cho iOS và Android với Swift, Kotlin, Java</li>
-									<li>+ Phát triển ứng dụng đa nền tảng với Flutter, React Native</li>
-									<li>+ Tích hợp API và dịch vụ backend</li>
-									<li>+ Bảo mật ứng dụng với mã hóa và xác thực an toàn</li>
-									<li>+ Tối ưu hiệu suất ứng dụng</li>
-									<li>+ Hỗ trợ bảo trì và cập nhật liên tục</li>
+									<li>{t('mobileApp.DetailsMobileApp.ul.1.li.1')}</li>
+									<li>{t('mobileApp.DetailsMobileApp.ul.1.li.2')}</li>
+									<li>{t('mobileApp.DetailsMobileApp.ul.1.li.3')}</li>
+									<li>{t('mobileApp.DetailsMobileApp.ul.1.li.4')}</li>
+									<li>{t('mobileApp.DetailsMobileApp.ul.1.li.5')}</li>
+									<li>{t('mobileApp.DetailsMobileApp.ul.1.li.6')}</li>
 								</ul>
 							</div>
 						</div>

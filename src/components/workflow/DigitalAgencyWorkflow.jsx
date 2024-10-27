@@ -12,7 +12,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const DigitalAgencyWorkflow = () => {
 	const swiperRef = useRef(null);
-	const { t } = useTranslation();
+	const { t } = useTranslation('home');
+
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let tHero = gsap.context(() => {
@@ -32,19 +33,19 @@ const DigitalAgencyWorkflow = () => {
 				});
 			});
 
-			ScrollTrigger.create({
+			const scrollTrigger = ScrollTrigger.create({
 				trigger: '.workflow__area',
 				start: 'top center',
 				onEnter: () => {
-					if (swiperRef.current) {
-						swiperRef.current.slideTo(0);
+					if (swiperRef.current && swiperRef.current.swiper) {
+						swiperRef.current.swiper.slideTo(0);
 					}
 				},
 			});
 
 			return () => {
 				tHero.revert();
-				ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+				scrollTrigger.kill();
 			};
 		}
 	}, []);
@@ -57,8 +58,8 @@ const DigitalAgencyWorkflow = () => {
 					<div className="row">
 						<div className="col-xxl-12">
 							<div className="sec-title-wrapper">
-								<h2 className="sec-sub-title title-anim">{t('pages.home.workflow.secSubTitle')}</h2>
-								<h3 className="sec-title title-anim">{t('pages.home.workflow.secTitle')}</h3>
+								<h2 className="sec-sub-title title-anim">{t('DigitalAgencyWorkflow.secSubTitle')}</h2>
+								<h3 className="sec-title title-anim">{t('DigitalAgencyWorkflow.secTitle')}</h3>
 							</div>
 						</div>
 
@@ -69,7 +70,7 @@ const DigitalAgencyWorkflow = () => {
 								modules={[Scrollbar, Autoplay]}
 								spaceBetween={30}
 								slidesPerView={3}
-								slidesPerGroup={3} // Thêm thuộc tính này
+								slidesPerGroup={3}
 								loop={false}
 								speed={800}
 								autoplay={{
@@ -84,71 +85,71 @@ const DigitalAgencyWorkflow = () => {
 								breakpoints={{
 									320: {
 										slidesPerView: 1,
-										slidesPerGroup: 1, // Điều chỉnh cho màn hình nhỏ
+										slidesPerGroup: 1,
 										spaceBetween: 20,
 									},
 									768: {
 										slidesPerView: 2,
-										slidesPerGroup: 2, // Điều chỉnh cho màn hình trung bình
+										slidesPerGroup: 2,
 										spaceBetween: 30,
 									},
 									1024: {
 										slidesPerView: 3,
-										slidesPerGroup: 3, // Giữ nguyên cho màn hình lớn
+										slidesPerGroup: 3,
 										spaceBetween: 30,
 									},
 								}}>
 								<SwiperSlide>
 									<div className="workflow__slide fade_left">
-										<h4 className="workflow__step">{t('pages.home.workflow.step1')}</h4>
-										<h5 className="workflow__number">{t('pages.home.workflow.number1')}</h5>
-										<h6 className="workflow__title">{t('pages.home.workflow.title1')}</h6>
-										<p>{t('pages.home.workflow.description1')}</p>
+										<h4 className="workflow__step">{t('DigitalAgencyWorkflow.step1')}</h4>
+										<h5 className="workflow__number">{t('DigitalAgencyWorkflow.number1')}</h5>
+										<h6 className="workflow__title">{t('DigitalAgencyWorkflow.title1')}</h6>
+										<p>{t('DigitalAgencyWorkflow.description1')}</p>
 									</div>
 								</SwiperSlide>
 
 								<SwiperSlide>
 									<div className="workflow__slide fade_left">
-										<h4 className="workflow__step">{t('pages.home.workflow.step2')}</h4>
-										<h5 className="workflow__number">{t('pages.home.workflow.number2')}</h5>
-										<h6 className="workflow__title">{t('pages.home.workflow.title2')}</h6>
-										<p>{t('pages.home.workflow.description2')}</p>
+										<h4 className="workflow__step">{t('DigitalAgencyWorkflow.step2')}</h4>
+										<h5 className="workflow__number">{t('DigitalAgencyWorkflow.number2')}</h5>
+										<h6 className="workflow__title">{t('DigitalAgencyWorkflow.title2')}</h6>
+										<p>{t('DigitalAgencyWorkflow.description2')}</p>
 									</div>
 								</SwiperSlide>
 
 								<SwiperSlide>
 									<div className="workflow__slide fade_left">
-										<h4 className="workflow__step">{t('pages.home.workflow.step3')}</h4>
-										<h5 className="workflow__number">{t('pages.home.workflow.number3')}</h5>
-										<h6 className="workflow__title">{t('pages.home.workflow.title3')}</h6>
-										<p>{t('pages.home.workflow.description3')}</p>
+										<h4 className="workflow__step">{t('DigitalAgencyWorkflow.step3')}</h4>
+										<h5 className="workflow__number">{t('DigitalAgencyWorkflow.number3')}</h5>
+										<h6 className="workflow__title">{t('DigitalAgencyWorkflow.title3')}</h6>
+										<p>{t('DigitalAgencyWorkflow.description3')}</p>
 									</div>
 								</SwiperSlide>
 
 								<SwiperSlide>
 									<div className="workflow__slide fade_left">
-										<h4 className="workflow__step">{t('pages.home.workflow.step4')}</h4>
-										<h5 className="workflow__number">{t('pages.home.workflow.number4')}</h5>
-										<h6 className="workflow__title">{t('pages.home.workflow.title4')}</h6>
-										<p>{t('pages.home.workflow.description4')}</p>
+										<h4 className="workflow__step">{t('DigitalAgencyWorkflow.step4')}</h4>
+										<h5 className="workflow__number">{t('DigitalAgencyWorkflow.number4')}</h5>
+										<h6 className="workflow__title">{t('DigitalAgencyWorkflow.title4')}</h6>
+										<p>{t('DigitalAgencyWorkflow.description4')}</p>
 									</div>
 								</SwiperSlide>
 
 								<SwiperSlide>
 									<div className="workflow__slide fade_left">
-										<h4 className="workflow__step">{t('pages.home.workflow.step5')}</h4>
-										<h5 className="workflow__number">{t('pages.home.workflow.number5')}</h5>
-										<h6 className="workflow__title">{t('pages.home.workflow.title5')}</h6>
-										<p>{t('pages.home.workflow.description5')}</p>
+										<h4 className="workflow__step">{t('DigitalAgencyWorkflow.step5')}</h4>
+										<h5 className="workflow__number">{t('DigitalAgencyWorkflow.number5')}</h5>
+										<h6 className="workflow__title">{t('DigitalAgencyWorkflow.title5')}</h6>
+										<p>{t('DigitalAgencyWorkflow.description5')}</p>
 									</div>
 								</SwiperSlide>
 
 								<SwiperSlide>
 									<div className="workflow__slide fade_left">
-										<h4 className="workflow__step">{t('pages.home.workflow.step6')}</h4>
-										<h5 className="workflow__number">{t('pages.home.workflow.number6')}</h5>
-										<h6 className="workflow__title">{t('pages.home.workflow.title6')}</h6>
-										<p>{t('pages.home.workflow.description6')}</p>
+										<h4 className="workflow__step">{t('DigitalAgencyWorkflow.step6')}</h4>
+										<h5 className="workflow__number">{t('DigitalAgencyWorkflow.number6')}</h5>
+										<h6 className="workflow__title">{t('DigitalAgencyWorkflow.title6')}</h6>
+										<p>{t('DigitalAgencyWorkflow.description6')}</p>
 									</div>
 								</SwiperSlide>
 							</Swiper>

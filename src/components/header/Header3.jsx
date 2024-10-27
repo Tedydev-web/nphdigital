@@ -5,10 +5,11 @@ import LogoWhite from '../../../public/assets/imgs/logo/site-logo-white.png';
 import LogoWhite2 from '../../../public/assets/imgs/logo/site-logo-white-2.png';
 import MenuWhite from '../../../public/assets/imgs/icon/menu-white.png';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 export default function Header3() {
 	const [topScroll, setTopScroll] = useState(0);
-
+	const { t } = useTranslation('common');
 	const ofCanvasArea = useRef();
 	const headerArea = useRef();
 
@@ -84,7 +85,7 @@ export default function Header3() {
 					</div>
 					<div className="header__support">
 						<p>
-							Trung tâm hỗ trợ <a href="tel:0777018333">0777 018 333</a>
+							{t('header.support')} <a href="tel:0777018333">0777 018 333</a>
 						</p>
 					</div>
 				</div>

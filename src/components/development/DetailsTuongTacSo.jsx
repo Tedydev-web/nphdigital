@@ -2,8 +2,10 @@ import { useEffect, useRef } from 'react';
 import ThumbDev1 from '../../../public/assets/imgs/service/detail/tuongtacso/1.png';
 import Image from 'next/image';
 import animationCharCome from '@/lib/utils/animationCharCome';
+import { useTranslation } from 'react-i18next';
 
 const DetailsTuongTacSo = () => {
+	const { t } = useTranslation('serviceDetails');
 	const charAnim = useRef();
 	useEffect(() => {
 		animationCharCome(charAnim.current);
@@ -19,23 +21,23 @@ const DetailsTuongTacSo = () => {
 								<h2
 									className="sec-title animation__char_come"
 									ref={charAnim}>
-									Tương tác số
+									{t('tuongTacSo.DetailsTuongTacSo.secTitle')}
 								</h2>
 							</div>
 						</div>
 						<div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
 							<div className="development__wrapper">
 								<div className="development__content">
-									<p>Chúng tôi cung cấp dịch vụ tương tác số, giúp doanh nghiệp chuyển đổi số và tạo ra trải nghiệm tương tác phong phú với người dùng thông qua các nền tảng kỹ thuật số. Dịch vụ này tập trung vào việc nâng cao khả năng kết nối giữa thương hiệu và khách hàng thông qua các công cụ, ứng dụng và chiến lược tương tác số.</p>
-									<p>Với sự kết hợp giữa công nghệ hiện đại và sáng tạo, chúng tôi phát triển các giải pháp tương tác giúp doanh nghiệp tiếp cận khách hàng một cách trực tiếp và hiệu quả hơn. Chúng tôi cam kết mang đến sự khác biệt trong từng dự án, từ việc phát triển các ứng dụng tương tác đến tích hợp các công cụ hỗ trợ phân tích hành vi người dùng.</p>
+									<p>{t('tuongTacSo.DetailsTuongTacSo.p.1')}</p>
+									<p>{t('tuongTacSo.DetailsTuongTacSo.p.2')}</p>
 								</div>
 								<ul>
-									<li>+ Xây dựng chiến lược tương tác số toàn diện</li>
-									<li>+ Phát triển các nền tảng tương tác số cho doanh nghiệp</li>
-									<li>+ Hỗ trợ bảo trì và nâng cấp dịch vụ tương tác liên tục</li>
-									<li>+ Tối ưu hóa trải nghiệm người dùng trên các thiết bị di động</li>
-									<li>+ Đảm bảo bảo mật và tính riêng tư cho người dùng</li>
-									<li>+ Tích hợp các công cụ phân tích hành vi và dữ liệu khách hàng</li>
+									<li>{t('tuongTacSo.DetailsTuongTacSo.ul.1.li.1')}</li>
+									<li>{t('tuongTacSo.DetailsTuongTacSo.ul.1.li.2')}</li>
+									<li>{t('tuongTacSo.DetailsTuongTacSo.ul.1.li.3')}</li>
+									<li>{t('tuongTacSo.DetailsTuongTacSo.ul.1.li.4')}</li>
+									<li>{t('tuongTacSo.DetailsTuongTacSo.ul.1.li.5')}</li>
+									<li>{t('tuongTacSo.DetailsTuongTacSo.ul.1.li.6')}</li>
 								</ul>
 							</div>
 						</div>

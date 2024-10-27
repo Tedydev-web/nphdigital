@@ -12,14 +12,12 @@ import DigitalAgencyPortfolio from '@/components/portfolio/DigitalAgencyPortfoli
 import DigitalAgencyBrand from '@/components/brand/DigitalAgencyBrand';
 import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
 import DigitalMarketingTestimonial from '@/components/testimonial/DigitalMarketingTestimonial';
-
 import gsap from 'gsap';
-const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
 
+const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
 const DigitalAgency = () => {
 	const timelineRef = useRef(null);
 	const dotsRef = useRef([]);
-
 	const setupScrollDots = useCallback(() => {
 		const dots = dotsRef.current;
 		const sections = document.querySelectorAll('section');
@@ -210,15 +208,15 @@ const DigitalAgency = () => {
 				/>
 
 				<meta
-					http-equiv="Cache-Control"
+					httpEquiv="Cache-Control"
 					content="no-cache, no-store, must-revalidate"
 				/>
 				<meta
-					http-equiv="Pragma"
+					httpEquiv="Pragma"
 					content="no-cache"
 				/>
 				<meta
-					http-equiv="Expires"
+					httpEquiv="Expires"
 					content="0"
 				/>
 
@@ -272,7 +270,7 @@ const DigitalAgency = () => {
 					content="index, follow"
 				/>
 				<meta
-					http-equiv="Content-Type"
+					httpEquiv="Content-Type"
 					content="text/html; charset=UTF-8"
 				/>
 				<meta

@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 const TuongTacSoWorkflow = () => {
+	const { t } = useTranslation('serviceDetails');
+
 	return (
 		<>
 			<section className="workflow__area-6">
@@ -9,40 +13,37 @@ const TuongTacSoWorkflow = () => {
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										Lập kế hoạch và <br />
-										phác thảo
+										<span>{t('tuongTacSo.tuongTacSoWorkflow.1.title.line1')}</span> <br />
+										<span>{t('tuongTacSo.tuongTacSoWorkflow.1.title.line2')}</span>
 									</h6>
-									<p>Chúng tôi bắt đầu bằng việc lắng nghe nhu cầu và mong muốn của khách hàng, từ đó lên kế hoạch chi tiết và phác thảo chiến lược tương tác số. Điều này giúp tạo ra các giải pháp tương tác hiệu quả, đảm bảo rằng mọi bước đi đều hướng tới mục tiêu cụ thể của doanh nghiệp.</p>
+									<p>{t('tuongTacSo.tuongTacSoWorkflow.1.description')}</p>
+								</div>
+							</div>
+
+							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+								<div className="workflow__slide-6">
+									<h6 className="workflow__title-6">{t('tuongTacSo.tuongTacSoWorkflow.2.title')}</h6>
+									<p>{t('tuongTacSo.tuongTacSoWorkflow.2.description')}</p>
 								</div>
 							</div>
 
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										Làm việc <br />
-										nhóm
+										<span>{t('tuongTacSo.tuongTacSoWorkflow.3.title.line1')}</span> <br />
+										<span>{t('tuongTacSo.tuongTacSoWorkflow.3.title.line2')}</span>
 									</h6>
-									<p>Chúng tôi tập hợp đội ngũ chuyên gia từ nhiều lĩnh vực, từ công nghệ đến marketing, để cùng làm việc và phát triển các giải pháp tương tác số. Sự kết hợp của các chuyên gia sẽ mang lại hiệu quả tối ưu trong mọi khía cạnh của dự án, từ thiết kế trải nghiệm người dùng đến triển khai công nghệ.</p>
+									<p>{t('tuongTacSo.tuongTacSoWorkflow.3.description')}</p>
 								</div>
 							</div>
 
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										Flowchart và <br />
-										Wireframe
+										<span>{t('tuongTacSo.tuongTacSoWorkflow.4.title.line1')}</span> <br />
+										<span>{t('tuongTacSo.tuongTacSoWorkflow.4.title.line2')}</span>
 									</h6>
-									<p>Chúng tôi phát triển sơ đồ luồng và wireframe chi tiết để minh họa quy trình tương tác của khách hàng với thương hiệu. Điều này giúp doanh nghiệp dễ dàng hình dung ra kịch bản tương tác và điều chỉnh chiến lược trước khi triển khai chính thức.</p>
-								</div>
-							</div>
-
-							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
-								<div className="workflow__slide-6">
-									<h6 className="workflow__title-6">
-										Kiểm thử trải nghiệm <br />
-										người dùng
-									</h6>
-									<p>Trước khi triển khai, chúng tôi tiến hành kiểm thử trải nghiệm người dùng kỹ lưỡng. Các phương pháp kiểm thử sẽ giúp phát hiện và khắc phục các vấn đề, đảm bảo rằng giải pháp tương tác số không chỉ dễ sử dụng mà còn mang lại trải nghiệm mượt mà và tối ưu nhất.</p>
+									<p>{t('tuongTacSo.tuongTacSoWorkflow.4.description')}</p>
 								</div>
 							</div>
 						</div>

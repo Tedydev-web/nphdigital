@@ -1,0 +1,118 @@
+{
+  "StartupAgencyBlog": {
+    "subTitle": "Recent Posts",
+    "title": "Articles",
+    "description": "A place to share our knowledge and experiences on various topics such as design, digital marketing, SEO, and many other fields to help you grow your business.",
+    "viewAll": "All articles",
+    "readMore": "Read more",
+    "previous": "Previous",
+    "next": "Next",
+
+    "blogs": {
+      "blog1": {
+        "category": "NPH Digital",
+        "date": "10/12/2024",
+        "title": "NPH Digital Awarded \"TOP 10 Leading Trusted Brands in Vietnam 2024\"",
+        "excerpt": "On October 12, 2024, NPH Digital Co., Ltd. was honored to be awarded the title \"TOP 10 Leading Trusted Brands in Vietnam\", marking an important milestone in its development journey and affirming its position in the digital technology industry. This recognition is not only a testament to our relentless efforts but also a confirmation of the credibility and quality of services that NPH Digital has provided to customers over the years."
+      },
+      "blog2": {
+        "category": "Innovation",
+        "date": "05/14/2023",
+        "title": "Designing Apps for Businesses in 2023: Diverse Digitalization Strategies and the Future",
+        "excerpt": "Designing apps for businesses in 2023 is not just a trend but a crucial factor in meeting customer needs and enhancing the presence of businesses in the digital technology market."
+      },
+      "blog3": {
+        "category": "Technology",
+        "date": "05/15/2024",
+        "title": "Designing Delivery Apps for Rural Markets: 10 Challenges and Solutions",
+        "excerpt": "Designing delivery apps for rural markets not only brings economic benefits to businesses but also enhances the quality of life and promotes sustainable development in rural communities."
+      },
+      "blog4": {
+        "category": "Branding",
+        "date": "05/09/2024",
+        "title": "Custom App Design: 7 Golden Principles",
+        "excerpt": "Custom app design requires adherence to fundamental principles to ensure the feasibility, performance, and security of the application."
+      },
+      "blog5": {
+        "category": "E-commerce",
+        "date": "05/10/2024",
+        "title": "Designing Delivery Apps for Startups | Trends 2024",
+        "excerpt": "By designing a dedicated delivery app, startups can optimize their business operations, enhance customer experience, and create favorable conditions for sustainable growth in today's fiercely competitive environment."
+      },
+      "blog6": {
+        "category": "Business Strategy",
+        "date": "05/13/2023",
+        "title": "Interior Design Apps in 2023: How to Optimize Your Living Space",
+        "excerpt": "Interior design apps in 2023 are not just a trend but an essential factor in meeting customer needs and enhancing the presence of businesses in the digital technology market."
+      },
+      "blog7": {
+        "category": "Startup Tips",
+        "date": "06/02/2024",
+        "title": "Smart Home Solutions: NPH Digital Smart Home – Convenience Within Reach",
+        "excerpt": "NPH Digital has created a smart home solution to help you enjoy a convenient and modern lifestyle while saving time and energy."
+      },
+      "blog8": {
+        "category": "Mobile App",
+        "date": "04/15/2024",
+        "title": "7 Steps to Create a News Website That Attracts Thousands of Visitors",
+        "excerpt": "Creating a news website is not merely about launching a platform to share information; it’s an opportunity for businesses to enhance their presence and generate new business opportunities."
+      },
+      "blog9": {
+        "category": "App Design",
+        "date": "08/22/2024",
+        "title": "Essential Design Elements for Apps in 2024",
+        "excerpt": "Designing high-quality apps not only brings direct benefits in user experience and enhances brand presence but also creates new business opportunities, provides valuable data, and increases competitive ability."
+      },
+      "blog10": {
+        "category": "App Design",
+        "date": "07/29/2024",
+        "title": "Custom App Design: 9 Ways to Optimize User Interface",
+        "excerpt": "In a context where users are increasingly demanding about convenience and personalized experiences, custom app design is not just an option but a crucial strategy for businesses to gain competitive advantages and sustainable success in the mobile application market."
+      },
+      "blog11": {
+        "category": "App Design",
+        "date": "05/10/2024",
+        "title": "10 Benefits of Applying Gamification in App Design to Increase Engagement",
+        "excerpt": "This section provides insights into how gamification elements are used in app design to enhance engagement and retain users."
+      },
+      "blog12": {
+        "category": "Graphic Design",
+        "date": "06/05/2024",
+        "title": "Food Delivery App Design: 7 Benefits of Chat Features with Drivers",
+        "excerpt": "Implementing chat features in the food delivery app design process is not just a technical task; it requires a combination of technology development, system management, and user experience building."
+      },
+      "blog13": {
+        "category": "Digital Marketing",
+        "date": "06/22/2024",
+        "title": "Custom App Design: 10 Simple Steps to Get Started",
+        "excerpt": "Custom app design is not just a trend but a necessary solution for the development and success of businesses in the digital age."
+      },
+      "blog14": {
+        "category": "SEO",
+        "date": "05/09/2024",
+        "title": "10 New Technologies in Delivery App Design",
+        "excerpt": "New technologies such as AI, Machine Learning, Blockchain, IoT, AR/VR, Big Data, Cloud Computing, 5G, Chatbots, Virtual Assistants, Contactless Payments, and BaaS are transforming how development and optimization are carried out in delivery app design."
+      },
+      "blog15": {
+        "category": "Content Marketing",
+        "date": "07/15/2024",
+        "title": "10 Ways to Optimize User Experience in App Design",
+        "excerpt": "In the app design process, UX principles must be applied to ensure that the application is not only visually appealing but also user-friendly and effective."
+      },
+      "blog16": {
+        "category": "Social Media",
+        "date": "05/30/2024",
+        "title": "Multi-Platform Delivery App Design | Trends 2024",
+        "excerpt": "The design trends for delivery apps in 2024 focus on optimizing user experience through advanced technologies such as AI, AR, and blockchain."
+      }
+    }
+  },
+  "DesignStudioCTA": {
+    "title": "Do you have an idea?",
+    "description": "Let's create something amazing together!",
+    "button": {
+      "line1": "Contact",
+      "line2": "us"
+    }
+  }
+}

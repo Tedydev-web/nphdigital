@@ -3,7 +3,7 @@ import VideoBackground from '../VideoBackground';
 import { useTranslation } from 'react-i18next';
 
 const DigitalAgencyCTA = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation('home');
 	return (
 		<>
 			<section
@@ -39,15 +39,15 @@ const DigitalAgencyCTA = () => {
 							<div
 								className="cta__content"
 								style={{ textAlign: 'center' }}>
-								<p className="cta__sub-title">{t('pages.home.cta.subTitle')}</p>
-								<h2 className="cta__title title-anim">{t('pages.home.cta.title')}</h2>
+								<p className="cta__sub-title">{t('DigitalAgencyCTA.subTitle')}</p>
+								<h2 className="cta__title title-anim">{t('DigitalAgencyCTA.title')}</h2>
 								<div className="btn_wrapper">
 									<Link
 										href="/lien-he"
 										className="wc-btn-primary btn-hover btn-item">
 										<span></span>
-										{t('pages.home.cta.button.line1')} <br />
-										{t('pages.home.cta.button.line2')}
+										{t('DigitalAgencyCTA.button.line1')} <br />
+										{t('DigitalAgencyCTA.button.line2')}
 										<i className="fa-solid fa-arrow-right"></i>
 									</Link>
 								</div>

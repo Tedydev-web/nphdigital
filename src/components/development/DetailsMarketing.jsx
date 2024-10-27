@@ -2,8 +2,10 @@ import { useEffect, useRef } from 'react';
 import ThumbDev1 from '../../../public/assets/imgs/service/detail/maketing/1.png';
 import Image from 'next/image';
 import animationCharCome from '@/lib/utils/animationCharCome';
+import { useTranslation } from 'react-i18next';
 
 const DetailsMarketing = () => {
+	const { t } = useTranslation('serviceDetails');
 	const charAnim = useRef();
 	useEffect(() => {
 		animationCharCome(charAnim.current);
@@ -19,23 +21,23 @@ const DetailsMarketing = () => {
 								<h2
 									className="sec-title animation__char_come"
 									ref={charAnim}>
-									Quảng cáo số
+									{t('quangCaoSo.DetailsMarketing.secTitle')}
 								</h2>
 							</div>
 						</div>
 						<div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
 							<div className="development__wrapper">
 								<div className="development__content">
-									<p>Tại NPH Digital, chúng tôi cung cấp dịch vụ quảng cáo số chuyên nghiệp giúp nâng cao nhận diện thương hiệu và thúc đẩy doanh thu.</p>
-									<p>Mỗi chiến dịch quảng cáo số của chúng tôi đều được thiết kế đặc thù nhằm tối ưu hóa lợi ích cho khách hàng, sử dụng các giải pháp công nghệ tiên tiến nhất.</p>
+									<p>{t('quangCaoSo.DetailsMarketing.p.1')}</p>
+									<p>{t('quangCaoSo.DetailsMarketing.p.2')}</p>
 								</div>
 								<ul>
-									<li>+ Quảng cáo Google Ads</li>
-									<li>+ Quảng cáo Facebook Ads</li>
-									<li>+ Quảng cáo trên mạng xã hội</li>
-									<li>+ SEO & Tối ưu hóa từ khóa</li>
-									<li>+ Phân tích dữ liệu & Đo lường hiệu quả</li>
-									<li>+ Tư vấn chiến lược Digital Marketing</li>
+									<li>{t('quangCaoSo.DetailsMarketing.ul.1.li.1')}</li>
+									<li>{t('quangCaoSo.DetailsMarketing.ul.1.li.2')}</li>
+									<li>{t('quangCaoSo.DetailsMarketing.ul.1.li.3')}</li>
+									<li>{t('quangCaoSo.DetailsMarketing.ul.1.li.4')}</li>
+									<li>{t('quangCaoSo.DetailsMarketing.ul.1.li.5')}</li>
+									<li>{t('quangCaoSo.DetailsMarketing.ul.1.li.6')}</li>
 								</ul>
 							</div>
 						</div>

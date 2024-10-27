@@ -3,7 +3,7 @@ import Head from 'next/head';
 import RootLayout from '@/components/common/layout/RootLayout';
 import BlogDetails1 from '@/components/blog/BlogDetails1';
 import Switcher from '../components/common/Switcher';
-import BlogRelated from '@/components/blog/BlogRelated';
+
 import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
 
 const BlogDetails = () => {
@@ -141,7 +141,7 @@ const BlogDetails = () => {
 					content="index, follow"
 				/>
 				<meta
-					http-equiv="Content-Type"
+					httpEquiv="Content-Type"
 					content="text/html; charset=UTF-8"
 				/>
 				<meta
@@ -186,7 +186,6 @@ const BlogDetails = () => {
 					footer="footer3"
 					defaultMode={mode}>
 					<BlogDetails1 />
-					<BlogRelated />
 					<DigitalAgencyCTA />
 				</RootLayout>
 			</main>

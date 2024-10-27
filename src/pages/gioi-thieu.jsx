@@ -140,7 +140,7 @@ const About = () => {
 					content="index, follow"
 				/>
 				<meta
-					http-equiv="Content-Type"
+					httpEquiv="Content-Type"
 					content="text/html; charset=UTF-8"
 				/>
 				<meta
@@ -173,7 +173,9 @@ const About = () => {
 			</Head>
 
 			<main>
-				<RootLayout>
+				<RootLayout
+					header="header3"
+					footer="footer3">
 					<ModernAgencySingleImage />
 					<CreativeAgencyAbout />
 					<AboutCounter />

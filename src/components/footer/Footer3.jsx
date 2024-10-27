@@ -15,7 +15,7 @@ export default function Footer3() {
 	const menuAnim = useRef();
 	const menuAnim2 = useRef();
 	const router = useRouter();
-	const { t } = useTranslation();
+	const { t } = useTranslation('common');
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		const email = e.target.email.value;
@@ -47,7 +47,7 @@ export default function Footer3() {
 					spanData += `<span>${arr[j]}</span>`;
 				}
 			}
-			let result = '<div class="menu-text">' + spanData + '</div>';
+			let result = '<div className="menu-text">' + spanData + '</div>';
 			firstParent[0].innerHTML = result;
 		}
 	};
@@ -80,12 +80,12 @@ export default function Footer3() {
 							<div className="swiper-wrapper">
 								<SwiperSlide>
 									<h2 className="rollslide_title-1">
-										{t('pages.footer.roll.line1')} <span>{t('pages.footer.roll.line2')}</span>
+										{t('footer.roll.line1')} <span>{t('footer.roll.line2')}</span>
 									</h2>
 								</SwiperSlide>
 								<SwiperSlide>
 									<h2 className="rollslide_title-1">
-										{t('pages.footer.roll.line1')} <span>{t('pages.footer.roll.line2')}</span>
+										{t('footer.roll.line1')} <span>{t('footer.roll.line2')}</span>
 									</h2>
 								</SwiperSlide>
 							</div>
@@ -118,14 +118,14 @@ export default function Footer3() {
 										src={FooterLogoWhite}
 										alt="Footer Logo"
 									/>
-									<p>{t('pages.footer.widget.content')}</p>
+									<p>{t('footer.widget.content')}</p>
 									<div className="footer__social">
 										<a
 											href="https://zalo.me/2599746016148700210?src=qr&f=1"
 											target="_blank"
 											rel="noopener noreferrer">
 											<button
-												class="Btn zalo"
+												className="Btn zalo"
 												style={{ marginLeft: '0' }}>
 												<svg
 													className="svgZalo"
@@ -154,7 +154,7 @@ export default function Footer3() {
 														fill="#2962ff"
 														d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5	c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z"></path>
 												</svg>
-												<span class="text">Zalo</span>
+												<span className="text">Zalo</span>
 											</button>
 										</a>
 
@@ -162,15 +162,15 @@ export default function Footer3() {
 											href="#"
 											target="_blank"
 											rel="noopener noreferrer">
-											<button class="Btn wechat">
+											<button className="Btn wechat">
 												<svg
-													class="svgIcon"
+													className="svgIcon"
 													viewBox="0 0 50 50"
 													height="2em"
 													xmlns="http://www.w3.org/2000/svg">
 													<path d="M 19 6 C 9.746094 6 2 12.359375 2 20.5 C 2 24.894531 4.292969 28.679688 7.835938 31.324219 L 5.179688 39.304688 L 13.472656 34.167969 C 15.1875 34.707031 17.082031 35 19 35 C 19.746094 35 20.472656 34.945313 21.195313 34.863281 C 23.378906 39.105469 28.328125 42 34 42 C 35.722656 42 37.316406 41.675781 38.796875 41.234375 L 45.644531 45.066406 L 43.734375 38.515625 C 46.3125 36.375 48 33.394531 48 30 C 48 23.789063 42.597656 18.835938 35.75 18.105469 C 34.398438 11.125 27.324219 6 19 6 Z M 19 8 C 26.308594 8 32.328125 12.351563 33.703125 18.011719 C 26.183594 18.148438 20 23.355469 20 30 C 20 31.019531 20.160156 32.003906 20.4375 32.941406 C 19.964844 32.980469 19.484375 33 19 33 C 17.101563 33 15.199219 32.710938 13.632813 32.15625 L 13.183594 32 L 8.820313 34.699219 L 10.1875 30.59375 L 9.5625 30.171875 C 6.082031 27.820313 4 24.445313 4 20.5 C 4 13.640625 10.65625 8 19 8 Z M 13 14 C 11.898438 14 11 14.898438 11 16 C 11 17.101563 11.898438 18 13 18 C 14.101563 18 15 17.101563 15 16 C 15 14.898438 14.101563 14 13 14 Z M 25 14 C 23.898438 14 23 14.898438 23 16 C 23 17.101563 23.898438 18 25 18 C 26.101563 18 27 17.101563 27 16 C 27 14.898438 26.101563 14 25 14 Z M 34 20 C 40.746094 20 46 24.535156 46 30 C 46 32.957031 44.492188 35.550781 42.003906 37.394531 L 41.445313 37.8125 L 42.355469 40.933594 L 39.105469 39.109375 L 38.683594 39.25 C 37.285156 39.71875 35.6875 40 34 40 C 27.253906 40 22 35.464844 22 30 C 22 24.535156 27.253906 20 34 20 Z M 29.5 26 C 28.699219 26 28 26.699219 28 27.5 C 28 28.300781 28.699219 29 29.5 29 C 30.300781 29 31 28.300781 31 27.5 C 31 26.699219 30.300781 26 29.5 26 Z M 38.5 26 C 37.699219 26 37 26.699219 37 27.5 C 37 28.300781 37.699219 29 38.5 29 C 39.300781 29 40 28.300781 40 27.5 C 40 26.699219 39.300781 26 38.5 26 Z"></path>{' '}
 												</svg>
-												<span class="text">WeChat</span>
+												<span className="text">WeChat</span>
 											</button>
 										</a>
 
@@ -178,15 +178,15 @@ export default function Footer3() {
 											href="https://www.facebook.com/nphdigital838838"
 											target="_blank"
 											rel="noopener noreferrer">
-											<button class="Btn facebook">
+											<button className="Btn facebook">
 												<svg
-													class="svgIcon"
+													className="svgIcon"
 													viewBox="0 0 50 50"
 													height="2em"
 													xmlns="http://www.w3.org/2000/svg">
 													<path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>{' '}
 												</svg>
-												<span class="text">Facebook</span>
+												<span className="text">Facebook</span>
 											</button>
 										</a>
 
@@ -194,7 +194,7 @@ export default function Footer3() {
 											href="#"
 											target="_blank"
 											rel="noopener noreferrer">
-											<button class="Btn tiktok">
+											<button className="Btn tiktok">
 												<svg
 													className="svgTiktok"
 													xmlns="http://www.w3.org/2000/svg"
@@ -205,26 +205,26 @@ export default function Footer3() {
 													viewBox="0 0 48 48">
 													<path
 														fill="#212121"
-														fill-rule="evenodd"
+														fillRule="evenodd"
 														d="M10.904,6h26.191C39.804,6,42,8.196,42,10.904v26.191 C42,39.804,39.804,42,37.096,42H10.904C8.196,42,6,39.804,6,37.096V10.904C6,8.196,8.196,6,10.904,6z"
-														clip-rule="evenodd"></path>
+														clipRule="evenodd"></path>
 													<path
 														fill="#ec407a"
-														fill-rule="evenodd"
+														fillRule="evenodd"
 														d="M29.208,20.607c1.576,1.126,3.507,1.788,5.592,1.788v-4.011 c-0.395,0-0.788-0.041-1.174-0.123v3.157c-2.085,0-4.015-0.663-5.592-1.788v8.184c0,4.094-3.321,7.413-7.417,7.413 c-1.528,0-2.949-0.462-4.129-1.254c1.347,1.376,3.225,2.23,5.303,2.23c4.096,0,7.417-3.319,7.417-7.413L29.208,20.607L29.208,20.607 z M30.657,16.561c-0.805-0.879-1.334-2.016-1.449-3.273v-0.516h-1.113C28.375,14.369,29.331,15.734,30.657,16.561L30.657,16.561z M19.079,30.832c-0.45-0.59-0.693-1.311-0.692-2.053c0-1.873,1.519-3.391,3.393-3.391c0.349,0,0.696,0.053,1.029,0.159v-4.1 c-0.389-0.053-0.781-0.076-1.174-0.068v3.191c-0.333-0.106-0.68-0.159-1.03-0.159c-1.874,0-3.393,1.518-3.393,3.391 C17.213,29.127,17.972,30.274,19.079,30.832z"
-														clip-rule="evenodd"></path>
+														clipRule="evenodd"></path>
 													<path
 														fill="#fff"
-														fill-rule="evenodd"
+														fillRule="evenodd"
 														d="M28.034,19.63c1.576,1.126,3.507,1.788,5.592,1.788v-3.157 c-1.164-0.248-2.194-0.856-2.969-1.701c-1.326-0.827-2.281-2.191-2.561-3.788h-2.923v16.018c-0.007,1.867-1.523,3.379-3.393,3.379 c-1.102,0-2.081-0.525-2.701-1.338c-1.107-0.558-1.866-1.705-1.866-3.029c0-1.873,1.519-3.391,3.393-3.391 c0.359,0,0.705,0.056,1.03,0.159V21.38c-4.024,0.083-7.26,3.369-7.26,7.411c0,2.018,0.806,3.847,2.114,5.183 c1.18,0.792,2.601,1.254,4.129,1.254c4.096,0,7.417-3.319,7.417-7.413L28.034,19.63L28.034,19.63z"
-														clip-rule="evenodd"></path>
+														clipRule="evenodd"></path>
 													<path
 														fill="#81d4fa"
-														fill-rule="evenodd"
+														fillRule="evenodd"
 														d="M33.626,18.262v-0.854c-1.05,0.002-2.078-0.292-2.969-0.848 C31.445,17.423,32.483,18.018,33.626,18.262z M28.095,12.772c-0.027-0.153-0.047-0.306-0.061-0.461v-0.516h-4.036v16.019 c-0.006,1.867-1.523,3.379-3.393,3.379c-0.549,0-1.067-0.13-1.526-0.362c0.62,0.813,1.599,1.338,2.701,1.338 c1.87,0,3.386-1.512,3.393-3.379V12.772H28.095z M21.635,21.38v-0.909c-0.337-0.046-0.677-0.069-1.018-0.069 c-4.097,0-7.417,3.319-7.417,7.413c0,2.567,1.305,4.829,3.288,6.159c-1.308-1.336-2.114-3.165-2.114-5.183 C14.374,24.749,17.611,21.463,21.635,21.38z"
-														clip-rule="evenodd"></path>
+														clipRule="evenodd"></path>
 												</svg>
-												<span class="text">TikTok</span>
+												<span className="text">TikTok</span>
 											</button>
 										</a>
 
@@ -232,72 +232,72 @@ export default function Footer3() {
 											href="https://t.me/Nphdigital"
 											target="_blank"
 											rel="noopener noreferrer">
-											<button class="Btn telegram">
+											<button className="Btn telegram">
 												<svg
-													class="svgIcon"
+													className="svgIcon"
 													viewBox="0 0 100 100"
 													height="1.5em"
 													xmlns="http://www.w3.org/2000/svg">
 													<path d="M95,9.9c-1.3-1.1-3.4-1.2-7-0.1c0,0,0,0,0,0c-2.5,0.8-24.7,9.2-44.3,17.3c-17.6,7.3-31.9,13.7-33.6,14.5  c-1.9,0.6-6,2.4-6.2,5.2c-0.1,1.8,1.4,3.4,4.3,4.7c3.1,1.6,16.8,6.2,19.7,7.1c1,3.4,6.9,23.3,7.2,24.5c0.4,1.8,1.6,2.8,2.2,3.2  c0.1,0.1,0.3,0.3,0.5,0.4c0.3,0.2,0.7,0.3,1.2,0.3c0.7,0,1.5-0.3,2.2-0.8c3.7-3,10.1-9.7,11.9-11.6c7.9,6.2,16.5,13.1,17.3,13.9  c0,0,0.1,0.1,0.1,0.1c1.9,1.6,3.9,2.5,5.7,2.5c0.6,0,1.2-0.1,1.8-0.3c2.1-0.7,3.6-2.7,4.1-5.4c0-0.1,0.1-0.5,0.3-1.2  c3.4-14.8,6.1-27.8,8.3-38.7c2.1-10.7,3.8-21.2,4.8-26.8c0.2-1.4,0.4-2.5,0.5-3.2C96.3,13.5,96.5,11.2,95,9.9z M30,58.3l47.7-31.6  c0.1-0.1,0.3-0.2,0.4-0.3c0,0,0,0,0,0c0.1,0,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2-0.1c-0.1,0.1-0.2,0.4-0.4,0.6L66,38.1  c-8.4,7.7-19.4,17.8-26.7,24.4c0,0,0,0,0,0.1c0,0-0.1,0.1-0.1,0.1c0,0,0,0.1-0.1,0.1c0,0.1,0,0.1-0.1,0.2c0,0,0,0.1,0,0.1  c0,0,0,0,0,0.1c-0.5,5.6-1.4,15.2-1.8,19.5c0,0,0,0,0-0.1C36.8,81.4,31.2,62.3,30,58.3z"></path>{' '}
 												</svg>
-												<span class="text">Telegram</span>
+												<span className="text">Telegram</span>
 											</button>
 										</a>
 									</div>
 								</div>
 
 								<div className="footer__widget-2">
-									<h2 className="footer__widget-title">{t('pages.footer.title.title1')}</h2>
+									<h2 className="footer__widget-title">{t('footer.title.title1')}</h2>
 									<ul className="footer__link">
 										<li>
-											<Link href="/gioi-thieu">{t('pages.footer.link.about')}</Link>
+											<Link href="/gioi-thieu">{t('footer.link.about')}</Link>
 										</li>
 										<li>
-											<Link href="/dich-vu">{t('pages.footer.link.service')}</Link>
+											<Link href="/dich-vu">{t('footer.link.service')}</Link>
 										</li>
 										<li>
-											<Link href="/bai-viet">{t('pages.footer.link.blog')}</Link>
+											<Link href="/bai-viet">{t('footer.link.blog')}</Link>
 										</li>
 										<li>
-											<Link href="/lien-he">{t('pages.footer.link.contact')}</Link>
+											<Link href="/lien-he">{t('footer.link.contact')}</Link>
 										</li>
 									</ul>
 								</div>
 
 								<div className="footer__widget-3">
-									<h2 className="footer__widget-title">{t('pages.footer.title.title2')}</h2>
+									<h2 className="footer__widget-title">{t('footer.title.title2')}</h2>
 									<ul className="footer__contact">
-										<li>{t('pages.footer.contact.address')}</li>
+										<li>{t('footer.contact.address')}</li>
 										<li>
 											<a
 												href="tel:02574328301"
 												className="phone">
-												{t('pages.footer.contact.phone')}
+												{t('footer.contact.phone')}
 											</a>
 										</li>
 										<li>
-											<a href="mailto:hi@nphdigital.com">{t('pages.footer.contact.email')}</a>
+											<a href="mailto:hi@nphdigital.com">{t('footer.contact.email')}</a>
 										</li>
 									</ul>
 								</div>
 
 								<div className="footer__widget-4">
-									<h2 className="project-title">{t('pages.footer.title.title3')}</h2>
+									<h2 className="project-title">{t('footer.title.title3')}</h2>
 									<div className="btn_wrapper">
 										<Link
 											href="/lien-he"
 											className="wc-btn-primary btn-hover btn-item">
-											<span></span> {t('pages.footer.roll.line1')} <br />
-											{t('pages.footer.roll.line2')} <i className="fa-solid fa-arrow-right"></i>
+											<span></span> {t('footer.roll.line1')} <br />
+											{t('footer.roll.line2')} <i className="fa-solid fa-arrow-right"></i>
 										</Link>
 									</div>
-									<h3 className="contact-time">{t('pages.footer.contact.time')}</h3>
-									<h4 className="contact-day">{t('pages.footer.contact.day')}</h4>
+									<h3 className="contact-time">{t('footer.contact.time')}</h3>
+									<h4 className="contact-day">{t('footer.contact.day')}</h4>
 								</div>
 
 								<div className="footer__copyright">
 									<p>
-										{t('pages.footer.copyright.line1')} <br /> {t('pages.footer.copyright.line2')}
+										{t('footer.copyright.line1')} <br /> {t('footer.copyright.line2')}
 									</p>
 								</div>
 
@@ -306,7 +306,7 @@ export default function Footer3() {
 										<input
 											type="email"
 											name="email"
-											placeholder={t('pages.footer.contact.emailFrom')}
+											placeholder={t('footer.contact.emailFrom')}
 										/>
 										<button
 											type="submit"

@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 import { Power1, gsap } from 'gsap';
 import { ScrollTrigger } from '@/plugins';
+import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
-
 const AboutCounter = () => {
+	const { t } = useTranslation('about');
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let device_width = window.innerWidth;
@@ -72,32 +73,35 @@ const AboutCounter = () => {
 								<div className="counter__item-2 counter__anim">
 									<h2 className="counter__number count1">1000</h2>
 									<p>
-										Dự án đã
+										{t('counter.count1.line1')}
 										<br />
-										hoàn thành xuất sắc
+										{t('counter.count1.line2')}
 									</p>
 									<span className="counter__border"></span>
 								</div>
 								<div className="counter__item-2 counter__anim">
 									<h2 className="counter__number count2">963</h2>
 									<p>
-										Khách hàng <br />
-										hài lòng
+										{t('counter.count2.line1')} <br />
+										{t('counter.count2.line2')}
 									</p>
 									<span className="counter__border"></span>
 								</div>
 								<div className="counter__item-2 counter__anim">
 									<h2 className="counter__number count3">6</h2>
 									<p>
-										Năm kinh nghiệm
-										<br />
-										trong lĩnh vực
+										{t('counter.count3.line1')} <br />
+										{t('counter.count3.line2')}
 									</p>
 									<span className="counter__border"></span>
 								</div>
 								<div className="counter__item-2 counter__anim">
 									<h2 className="counter__number count4">38</h2>
-									<p>Thành viên</p>
+									<p>
+										{t('counter.count4.line1')}
+										<br />
+										{t('counter.count4.line2')}
+									</p>
 									<span className="counter__border"></span>
 								</div>
 							</div>

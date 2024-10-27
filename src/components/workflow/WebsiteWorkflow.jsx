@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 const WebsiteWorkflow = () => {
+	const { t } = useTranslation('serviceDetails');
+
 	return (
 		<>
 			<section className="workflow__area-6">
@@ -10,21 +14,18 @@ const WebsiteWorkflow = () => {
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										Planning and <br />
-										Sketching
+										{t('thietKeWebsite.WebsiteWorkflow.1.title.line1')} <br />
+										{t('thietKeWebsite.WebsiteWorkflow.1.title.line2')}
 									</h6>
-									<p>Chúng tôi bắt đầu với việc lập kế hoạch chi tiết và phác thảo ý tưởng dựa trên yêu cầu của khách hàng. Mọi yếu tố thiết kế đều được cân nhắc kỹ lưỡng để phù hợp với mục tiêu và hướng đi của dự án.</p>
+									<p>{t('thietKeWebsite.WebsiteWorkflow.1.description')}</p>
 								</div>
 							</div>
 
 							{/* Team Collaboration */}
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
-									<h6 className="workflow__title-6">
-										Team <br />
-										Collaboration
-									</h6>
-									<p>Sự hợp tác chặt chẽ giữa các nhóm phát triển giúp tạo ra sản phẩm chất lượng cao, đáp ứng đúng nhu cầu của khách hàng. Các nhà thiết kế, lập trình viên và chuyên gia UX/UI cùng làm việc để tối ưu hóa quy trình.</p>
+									<h6 className="workflow__title-6">{t('thietKeWebsite.WebsiteWorkflow.2.title')}</h6>
+									<p>{t('thietKeWebsite.WebsiteWorkflow.2.description')}</p>
 								</div>
 							</div>
 
@@ -32,10 +33,10 @@ const WebsiteWorkflow = () => {
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										Flowchart and <br />
-										Wireframe
+										{t('thietKeWebsite.WebsiteWorkflow.3.title.line1')} <br />
+										{t('thietKeWebsite.WebsiteWorkflow.3.title.line2')}
 									</h6>
-									<p>Chúng tôi xây dựng biểu đồ quy trình và wireframe chi tiết để hình dung cấu trúc và luồng hoạt động của ứng dụng, đảm bảo rằng mọi bước đều được thực hiện một cách logic và hiệu quả.</p>
+									<p>{t('thietKeWebsite.WebsiteWorkflow.3.description')}</p>
 								</div>
 							</div>
 
@@ -43,10 +44,10 @@ const WebsiteWorkflow = () => {
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										User Experience <br />
-										Testing
+										<span>{t('thietKeWebsite.WebsiteWorkflow.4.title.line1')}</span> <br />
+										<span>{t('thietKeWebsite.WebsiteWorkflow.4.title.line2')}</span>
 									</h6>
-									<p>Sau khi hoàn tất phát triển, chúng tôi tiến hành kiểm thử trải nghiệm người dùng để đảm bảo rằng ứng dụng thân thiện, dễ sử dụng và đáp ứng kỳ vọng của khách hàng cuối.</p>
+									<p>{t('thietKeWebsite.WebsiteWorkflow.4.description')}</p>
 								</div>
 							</div>
 						</div>

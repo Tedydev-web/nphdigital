@@ -9,7 +9,7 @@ import About12 from '../../../public/assets/imgs/about/1/3.png';
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const DigitalAgencyAbout = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation('home');
 	const videoRef = useRef(null);
 	const smootherRef = useRef(null);
 
@@ -69,10 +69,8 @@ const DigitalAgencyAbout = () => {
 				<div className="row">
 					<div className="col-xxl-12">
 						<div className="about__title-wrapper">
-							<h3 className="sec-title title-anim">
-								<span>NPH Digital</span> <br className="responsive-br" />
-								<span>{t('pages.home.about.title')}</span>
-							</h3>
+							<h3 className="sec-title title-anim">NPH Digital</h3>
+							<h3 className="sec-title title-anim">{t('DigitalAgencyAbout.title')}</h3>
 						</div>
 
 						<div className="about__content-wrapper">
@@ -106,13 +104,13 @@ const DigitalAgencyAbout = () => {
 								</div>
 							</div>
 							<div className="about__content text-anim">
-								<p>{t('pages.home.about.description')}</p>
+								<p>{t('DigitalAgencyAbout.description')}</p>
 								<div className="cursor-btn btn_wrapper">
 									<Link
 										className="btn-item wc-btn-primary btn-hover"
 										href="/gioi-thieu">
-										<span></span> {t('pages.home.about.button.line1')} <br />
-										{t('pages.home.about.button.line2')} <i className="fa-solid fa-arrow-right"></i>
+										<span></span> {t('DigitalAgencyAbout.button.line1')} <br />
+										{t('DigitalAgencyAbout.button.line2')} <i className="fa-solid fa-arrow-right"></i>
 									</Link>
 								</div>
 							</div>

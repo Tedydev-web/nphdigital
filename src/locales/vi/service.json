@@ -1,0 +1,71 @@
+{
+  "ServiceHero": {
+    "title": "Dịch vụ",
+    "description": "Chúng tôi cung cấp các dịch vụ liên quan đến phát triển phần mềm, thiết kế website, quảng cáo trực tuyến, và nhiều hơn thế nữa.",
+    "professional": "Chuyên nghiệp",
+    "reliable": "Đáng tin cậy",
+    "support": "Hỗ trợ"
+  },
+  "ServiceElementV5": {
+    "hero": {
+      "title": "Tiêu chí các dịch vụ của NPH Digital",
+      "description": "Với sự hiểu biết sâu rộng và kinh nghiệm đa dạng, chúng tôi cam kết đem lại sự ấn tượng, chuyên nghiệp và hiệu quả để tạo ra các giải pháp phần mềm vượt trội cho dự án của bạn."
+    },
+    "service": {
+      "mobileApp": {
+        "title": "Phát triển ứng dụng di động",
+        "item1": "Thiết kế UI/UX chuyên nghiệp",
+        "item2": "Phát triển đa nền tảng",
+        "item3": "Tối ưu hiệu suất"
+      },
+      "web": {
+        "title": "Thiết kế & Phát triển website",
+        "item1": "Giao diện responsive",
+        "item2": "Tối ưu SEO",
+        "item3": "Tích hợp CMS"
+      },
+    "crmErpHrm": {
+      "title": "Hệ thống CRM, ERP, HRM",
+      "item1": "Tùy chỉnh theo yêu cầu",
+      "item2": "Tích hợp dữ liệu",
+      "item3": "Báo cáo thông minh"
+    },
+    "ads": {
+      "title": "Digital Marketing",
+      "item1": "Chiến lược marketing tổng thể",
+      "item2": "Quảng cáo trực tuyến",
+      "item3": "Phân tích dữ liệu"
+    },
+    "ai": {
+      "title": "Lập trình AI tự động hoá",
+      "item1": "Xử lý ngôn ngữ tự nhiên",
+      "item2": "Học máy",
+      "item3": "Tự động hóa quy trình"
+    },
+    "interaction": {
+      "title": "Tương tác số",
+      "item1": "Trải nghiệm người dùng",
+      "item2": "Tương tác đa phương tiện",
+      "item3": "Phân tích hành vi"
+    },
+    "fanpage": {
+      "title": "Chăm sóc fanpage",
+      "item1": "Tạo và quản lý fanpage",
+      "item2": "Tạo nội dung và quảng cáo",
+      "item3": "Phân tích hiệu suất"
+    },
+    "it": {
+      "title": "Cho thuê phòng IT ngoài",
+      "item1": "Nhân sự chuyên nghiệp",
+      "item2": "Trang thiết bị đầy đủ",
+      "item3": "Hỗ trợ kỹ thuật 24/7"
+    },
+    "uiUx": {
+      "title": "Thiết kế UX/UI",
+      "item1": "Nghiên cứu người dùng",
+      "item2": "Thiết kế giao diện",
+      "item3": "Tối ưu trải nghiệm"
+		}
+	}
+}
+}

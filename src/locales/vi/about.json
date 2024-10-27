@@ -1,0 +1,47 @@
+{
+  "popup": {
+    "line1": "Hãy tương tác với chúng tôi!",
+    "line2": "Click vào đây"
+  },
+  "hero": {
+    "title": "Giải pháp Công nghệ & Thiết kế Đưa Ý tưởng của bạn thành hiện thực",
+    "description": "Qua một chặng đường xây dựng và phát triển, NPH Digital đã dần khẳng định được vị trí của mình trong ngành công nghệ thông tin. Đến với NPH Digital, các bạn không chỉ yên tâm về sản phẩm, dịch vụ mà còn cảm nhận được sự nhiệt huyết đam mê công nghệ của đội ngũ nhân viên có trình độ, kinh nghiệm từ chúng tôi"
+  },
+  "about": {
+    "secTitle": {
+      "line1": "Chúng tôi kết nối",
+      "line2": "doanh nghiệp với thế giới số",
+      "line3": "một cách sáng tạo"
+    },
+    "aboutMid1": "Chúng tôi tự hào đã xây dựng nên một cộng đồng những con người đam mê sự thay đổi và sáng tạo. NPH Digital khởi đầu với mong muốn tạo ra sự hòa hợp giữa doanh nghiệp và thế giới số.",
+    "aboutMid2": "Không chỉ là những thiết kế đẹp, chúng tôi tin rằng thiết kế chính là công cụ mạnh mẽ để thay đổi và nâng cao giá trị doanh nghiệp.",
+    "button": {
+      "line1": "Tìm hiểu",
+      "line2": "chúng tôi"
+    }
+  },
+  "counter": {
+    "count1": {
+      "line1": "Dự án đã",
+      "line2": "hoàn thành xuất sắc"
+    },
+    "count2": {
+      "line1": "Khách hàng",
+      "line2": "hài lòng"
+    },
+    "count3": {
+      "line1": "Năm kinh nghiệm",
+      "line2": "trong lĩnh vực"
+    },
+    "count4": {
+      "line1": "Thành viên",
+      "line2": "của chúng tôi"
+    }
+  },
+  "testimonial": {
+    "title": "Đối Tác Công Nghệ Thông Tin Tuyệt Vời",
+    "description": "Tại NPH Digital, chất lượng và hiệu suất không chỉ là mục tiêu, mà còn là sự cam kết. Chúng tôi luôn tập trung vào tối ưu hóa hiệu suất và đảm bảo chất lượng tối ưu cho mọi dự án, để bạn không phải lo lắng về sự hoàn hảo bị gián đoạn.",
+    "author": "Mr. YURI KC",
+    "role": "CEO NPH Digital"
+  }
+}

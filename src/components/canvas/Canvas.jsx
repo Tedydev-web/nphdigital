@@ -6,8 +6,10 @@ import logoWhite2 from '../../../public/assets/imgs/logo/site-logo-white-2.png';
 import Shape11 from '../../../public/assets/imgs/shape/11.png';
 import Shape12 from '../../../public/assets/imgs/shape/12.png';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
+	const { t } = useTranslation('common');
 	const [accordion, setAccordion] = useState(0);
 	const [subAccordion, setSubAccordion] = useState(0);
 	const headerTitle = useRef();
@@ -28,7 +30,7 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 									spanData += `<span>${arr[k]}</span>`;
 								}
 							}
-							let result = '<div class="menu-text">' + spanData + '</div>';
+							let result = '<div className="menu-text">' + spanData + '</div>';
 							firstParent[j].children[0].innerHTML = result;
 						}
 					}
@@ -68,16 +70,16 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 							</Link>{' '}
 						</div>{' '}
 						<div className="offcanvas__social">
-							<h3 className="social-title"> Theo dõi chúng tôi </h3>{' '}
+							<h3 className="social-title"> {t('canvas.title')} </h3>{' '}
 							<ul>
 								<li>
-									<a href="https://zalo.me/2599746016148700210?src=qr&f=1"> Zalo</a>{' '}
+									<a href="https://zalo.me/2599746016148700210?src=qr&f=1"> {t('canvas.social.zalo')}</a>{' '}
 								</li>{' '}
 								<li>
-									<a href="https://www.facebook.com/nphdigital838"> Facebook </a>{' '}
+									<a href="https://www.facebook.com/nphdigital838"> {t('canvas.social.facebook')}</a>{' '}
 								</li>{' '}
 								<li>
-									<a href="https://t.me/Nphdigital"> Telegram </a>{' '}
+									<a href="https://t.me/Nphdigital"> {t('canvas.social.telegram')}</a>{' '}
 								</li>{' '}
 							</ul>{' '}
 						</div>{' '}
@@ -106,18 +108,18 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 									ref={headerTitle}>
 									<li>
 										<div className="header_title">
-											<Link href={'https://nphdigital.com/'}> TRANG CHỦ </Link>
+											<Link href={'https://nphdigital.com/'}> {t('canvas.home')}</Link>
 											{/* <div className="accordian-btn"> {accordion === 1 ? : <a onClick={() => openData(1)}> + </a>} </div>{' '} */}
 										</div>{' '}
 									</li>{' '}
 									<li>
 										<div className="header_title">
-											<Link href={'/gioi-thieu'}> GIỚI THIỆU </Link>{' '}
+											<Link href={'/gioi-thieu'}> {t('canvas.headerTitle.about')}</Link>{' '}
 										</div>{' '}
 									</li>{' '}
 									<li>
 										<div className="header_title d-flex">
-											<Link href={'/dich-vu'}> DỊCH VỤ </Link>
+											<Link href={'/dich-vu'}> {t('canvas.headerTitle.service')}</Link>
 											{/* <div className="accordian-btn"> {accordion === 3 ? <a onClick={() => openData(0)}> - </a> : <a onClick={() => openData(3)}> + </a>} </div>{' '} */}
 										</div>{' '}
 									</li>{' '}
@@ -128,13 +130,13 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 									</li>{' '} */}
 									<li>
 										<div className="header_title">
-											<Link href={'/bai-viet'}> BÀI VIẾT </Link>
+											<Link href={'/bai-viet'}> {t('canvas.headerTitle.blog')}</Link>
 											{/* <div className="accordian-btn"> {accordion === 5 ? <a onClick={() => openData(0)}> - </a> : <a onClick={() => openData(5)}> + </a>} </div>{' '} */}
 										</div>{' '}
 									</li>{' '}
 									<li>
 										<div className="header_title">
-											<Link href={'/lien-he'}> LIÊN HỆ </Link>{' '}
+											<Link href={'/lien-he'}> {t('canvas.headerTitle.contact')}</Link>{' '}
 										</div>{' '}
 									</li>{' '}
 								</ul>{' '}
@@ -155,7 +157,7 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 							</form>{' '}
 						</div>{' '}
 						<div className="offcanvas__contact">
-							<h3> Liên lạc </h3>{' '}
+							<h3> {t('canvas.contact.title')}</h3>{' '}
 							<ul>
 								<li>
 									<a href="tel:02094980547"> +(84) - 0777 018 333 </a>{' '}
@@ -163,7 +165,7 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 								<li>
 									<a href="mailto:info@extradesign.com"> hi@nphdigital.com </a>{' '}
 								</li>{' '}
-								<li> Số 838, Ấp Vĩnh Bình, Xã An Vĩnh Ngãi, Tp Tân An, T Long An </li>{' '}
+								<li> {t('canvas.contact.address')}</li>{' '}
 							</ul>{' '}
 						</div>{' '}
 						<Image

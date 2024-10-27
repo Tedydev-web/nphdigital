@@ -1,0 +1,68 @@
+{
+  "common": {
+    "languageSwitcher": {
+      "vietnamese": "Vietnamese",
+      "english": "English",
+      "chinese": "Chinese",
+      "hindi": "Hindi",
+      "changing": "Changing Language English",
+      "pleaseWait": "Please wait a moment."
+    }
+  },
+  "header": {
+    "support": "Support Center"
+    },
+
+  "footer": {
+    "roll": {
+      "line1": "Contact",
+      "line2": "Us"
+    },
+    "widget": {
+      "content": "We embrace creativity and professionalism to meet all customer requirements to the highest satisfaction."
+    },
+    "title": {
+      "title1": "Information",
+      "title2": "Contact",
+      "title3": "Do you have a promising idea?"
+    },
+    "contact": {
+      "address": "838, Vinh Binh Hamlet, An Vinh Ngai Commune, Tan An City, Long An Province",
+      "phone": "(+84) 777 018 333",
+      "email": "hi@nphdigital.com",
+      "time": "08:00 AM - 10:00 PM",
+      "day": "Every day of the week",
+      "emailFrom": "Enter your email"
+    },
+    "link": {
+      "about": "About",
+      "service": "Services",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "copyright": {
+      "line1": "© Copyright by NPH Digital.",
+      "line2": "All rights reserved"
+    }
+  },
+  "canvas": {
+    "title": "Follow us",
+    "social": {
+      "zalo": "Zalo",
+      "facebook": "Facebook",
+      "telegram": "Telegram"
+    },
+    "headerTitle": {
+      "home": "Home",
+      "about": "About",
+      "service": "Services",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "838, Vinh Binh Hamlet, An Vinh Ngai Commune, Tan An City, Long An Province"
+    }
+  }
+}
+

@@ -2,8 +2,10 @@ import { useEffect, useRef } from 'react';
 import ThumbDev1 from '../../../public/assets/imgs/service/detail/website/2.png';
 import Image from 'next/image';
 import animationCharCome from '@/lib/utils/animationCharCome';
+import { useTranslation } from 'react-i18next';
 
 const DetailsWebsite = () => {
+	const { t } = useTranslation('serviceDetails');
 	const charAnim = useRef();
 	useEffect(() => {
 		animationCharCome(charAnim.current);
@@ -19,23 +21,23 @@ const DetailsWebsite = () => {
 								<h2
 									className="sec-title animation__char_come"
 									ref={charAnim}>
-									Thiết kế và Phát triển Website
+									{t('thietKeWebsite.DetailsWebsite.secTitle')}
 								</h2>
 							</div>
 						</div>
 						<div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
 							<div className="development__wrapper">
 								<div className="development__content">
-									<p>Chúng tôi cung cấp dịch vụ thiết kế và phát triển website chất lượng cao, giúp doanh nghiệp của bạn hiện diện mạnh mẽ hơn trên mạng. Mỗi website mà chúng tôi phát triển đều được thiết kế riêng biệt, phù hợp với nhu cầu và mong muốn của khách hàng.</p>
-									<p>Chúng tôi cam kết sử dụng công nghệ tiên tiến nhất để tạo ra các trang web nhanh chóng, tối ưu hóa cho các thiết bị di động và thân thiện với người dùng. Với đội ngũ chuyên gia dày dạn kinh nghiệm, chúng tôi sẽ hỗ trợ bạn từ khâu lên ý tưởng cho đến khi website đi vào hoạt động.</p>
+									<p>{t('thietKeWebsite.DetailsWebsite.p.1')}</p>
+									<p>{t('thietKeWebsite.DetailsWebsite.p.2')}</p>
 								</div>
 								<ul>
-									<li>+ Thiết kế UI/UX chuyên nghiệp</li>
-									<li>+ Phát triển web ứng dụng động</li>
-									<li>+ Tối ưu hóa SEO cho website</li>
-									<li>+ Tích hợp hệ thống quản lý nội dung (CMS)</li>
-									<li>+ Đảm bảo tính tương thích trên mọi thiết bị</li>
-									<li>+ Hỗ trợ bảo trì và cập nhật website thường xuyên</li>
+									<li>{t('thietKeWebsite.DetailsWebsite.ul.1.li.1')}</li>
+									<li>{t('thietKeWebsite.DetailsWebsite.ul.1.li.2')}</li>
+									<li>{t('thietKeWebsite.DetailsWebsite.ul.1.li.3')}</li>
+									<li>{t('thietKeWebsite.DetailsWebsite.ul.1.li.4')}</li>
+									<li>{t('thietKeWebsite.DetailsWebsite.ul.1.li.5')}</li>
+									<li>{t('thietKeWebsite.DetailsWebsite.ul.1.li.6')}</li>
 								</ul>
 							</div>
 						</div>

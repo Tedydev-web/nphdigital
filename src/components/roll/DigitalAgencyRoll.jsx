@@ -8,8 +8,8 @@ import 'swiper/css/free-mode';
 import 'swiper/css/autoplay';
 
 const DigitalAgencyRoll = () => {
-	const { t } = useTranslation();
-	const words = t('pages.home.roll.words', { returnObjects: true });
+	const { t } = useTranslation('home');
+	const words = t('DigitalAgencyRoll.words', { returnObjects: true });
 
 	return (
 		<>

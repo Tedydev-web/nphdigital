@@ -16,7 +16,7 @@ import Image from 'next/image';
 gsap.registerPlugin(ScrollTrigger);
 
 const DigitalAgencyPortfolio = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation('home');
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let device_width = window.innerWidth;
@@ -110,7 +110,7 @@ const DigitalAgencyPortfolio = () => {
 				id="portfolio">
 				<div className="container">
 					<div className="row top_row">
-						<h2 className="portfolio__text">{t('pages.home.portfolio.secTitle')}</h2>
+						<h2 className="portfolio__text">{t('DigitalAgencyPortfolio.secTitle')}</h2>
 						<div className="portfolio__list-1">
 							<div className="portfolio__item">
 								<Link href="#">
@@ -123,8 +123,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">{t('pages.home.portfolio.title1')}</h3>
-									<p>{t('pages.home.portfolio.description1')}</p>
+									<h3 className="portfolio__title">{t('DigitalAgencyPortfolio.title1')}</h3>
+									<p>{t('DigitalAgencyPortfolio.description1')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -137,8 +137,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">{t('pages.home.portfolio.title2')}</h3>
-									<p>{t('pages.home.portfolio.description2')}</p>
+									<h3 className="portfolio__title">{t('DigitalAgencyPortfolio.title2')}</h3>
+									<p>{t('DigitalAgencyPortfolio.description2')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -151,8 +151,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">{t('pages.home.portfolio.title3')}</h3>
-									<p>{t('pages.home.portfolio.description3')}</p>
+									<h3 className="portfolio__title">{t('DigitalAgencyPortfolio.title3')}</h3>
+									<p>{t('DigitalAgencyPortfolio.description3')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -165,8 +165,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">{t('pages.home.portfolio.title4')}</h3>
-									<p>{t('pages.home.portfolio.description4')}</p>
+									<h3 className="portfolio__title">{t('DigitalAgencyPortfolio.title4')}</h3>
+									<p>{t('DigitalAgencyPortfolio.description4')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -179,8 +179,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">{t('pages.home.portfolio.title5')}</h3>
-									<p>{t('pages.home.portfolio.description5')}</p>
+									<h3 className="portfolio__title">{t('DigitalAgencyPortfolio.title5')}</h3>
+									<p>{t('DigitalAgencyPortfolio.description5')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -193,8 +193,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">{t('pages.home.portfolio.title6')}</h3>
-									<p>{t('pages.home.portfolio.description6')}</p>
+									<h3 className="portfolio__title">{t('DigitalAgencyPortfolio.title6')}</h3>
+									<p>{t('DigitalAgencyPortfolio.description6')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -207,8 +207,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">{t('pages.home.portfolio.title7')}</h3>
-									<p>{t('pages.home.portfolio.description7')}</p>
+									<h3 className="portfolio__title">{t('DigitalAgencyPortfolio.title7')}</h3>
+									<p>{t('DigitalAgencyPortfolio.description7')}</p>
 								</div>
 							</div>
 							<div className="portfolio__item">
@@ -221,8 +221,8 @@ const DigitalAgencyPortfolio = () => {
 									/>
 								</Link>
 								<div className="portfolio__info">
-									<h3 className="portfolio__title">{t('pages.home.portfolio.title8')}</h3>
-									<p>{t('pages.home.portfolio.description8')}</p>
+									<h3 className="portfolio__title">{t('DigitalAgencyPortfolio.title8')}</h3>
+									<p>{t('DigitalAgencyPortfolio.description8')}</p>
 								</div>
 							</div>
 						</div>
@@ -238,8 +238,8 @@ const DigitalAgencyPortfolio = () => {
 									className="wc-btn-secondary btn-hover btn-item"
 									href="#portfolio"
 									scroll={false}>
-									{t('pages.home.portfolio.button.line1')} <br />
-									{t('pages.home.portfolio.button.line2')}
+									{t('DigitalAgencyPortfolio.button.line1')} <br />
+									{t('DigitalAgencyPortfolio.button.line2')}
 									<i className="fa-solid fa-arrow-right"></i>
 								</Link>
 							</div>

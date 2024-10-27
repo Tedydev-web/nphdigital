@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from '@/plugins';
+import { useTranslation } from 'react-i18next';
 import Link from 'next/link.js';
 import Blog41 from '../../../public/assets/imgs/blog/3/3.png';
 import Blog42 from '../../../public/assets/imgs/blog/3/4.png';
@@ -17,64 +18,136 @@ import Blog52 from '../../../public/assets/imgs/blog/3/14.jpg';
 import Blog53 from '../../../public/assets/imgs/blog/3/15.jpg';
 import Blog54 from '../../../public/assets/imgs/blog/3/16.png';
 import Blog55 from '../../../public/assets/imgs/blog/3/17.png';
-import Blog56 from '../../../public/assets/imgs/blog/detail/2.png';
-import Blog57 from '../../../public/assets/imgs/blog/3/19.png';
-import Blog58 from '../../../public/assets/imgs/blog/3/20.png';
-import Blog59 from '../../../public/assets/imgs/blog/3/21.jpg';
-import Blog60 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog61 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog62 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog63 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog64 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog65 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog66 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog67 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog68 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog69 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog70 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog71 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog72 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog73 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog74 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog75 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog76 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog77 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog78 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog79 from '../../../public/assets/imgs/blog/3/22.png';
-import Blog80 from '../../../public/assets/imgs/blog/3/22.png';
-import baiviet1 from '@/pages/chi-tiet-bai-viet';
+import Blog56 from '../../../public/assets/imgs/blog/3/18.png';
 import Image from 'next/image.js';
 import React from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const blogs = [
-	{
-		src: Blog56,
-		href: '/cong-ty-tnhh-nph-digital-vinh-du-nhan-giai-thuong-top-10-thuong-hieu-uy-tin-hang-dau-viet-nam-2024',
-		category: 'NPH Digital',
-		date: '12/10/2024',
-		title: 'NPH Digital nhận giải thưởng “TOP 10 Thương Hiệu Uy Tín Hàng Đầu Việt Nam 2024”',
-		excerpt: 'Ngày 12 tháng 10 năm 2024, Công ty TNHH NPH Digital đã vinh dự được trao tặng danh hiệu “TOP 10 Thương Hiệu Uy Tín Hàng Đầu Việt Nam”, đánh dấu một cột mốc quan trọng trong hành trình phát triển và khẳng định vị thế của mình trong ngành công nghệ số. Đây không chỉ là sự ghi nhận cho những nỗ lực không ngừng nghỉ mà còn là sự khẳng định uy tín và chất lượng dịch vụ mà NPH Digital đã mang đến cho khách hàng suốt thời gian qua.',
-	},
-	{ src: Blog54, href: '/chi-tiet-bai-viet-14', category: 'Innovation', date: '14/05/2023', title: 'Thiết Kế App Cho Doanh Nghiệp Năm 2023: Chiến Lược Số Hóa Đa Dạng Và Tương Lai' },
-	{ src: Blog55, href: '/chi-tiet-bai-viet-15', category: 'Technology', date: '15/05/2024', title: 'Thiết kế app giao hàng cho thị trường nông thôn: 10 thách thức và giải pháp', excerpt: 'Thiết kế app giao hàng cho thị trường nông thôn không chỉ mang lại lợi ích kinh tế cho doanh nghiệp mà còn góp phần nâng cao chất lượng cuộc sống và thúc đẩy sự phát triển bền vững của cộng đồng nông thôn.' },
-	{ src: Blog49, href: '/chi-tiet-bai-viet-9', category: 'Branding', date: '09/05/2024', title: 'Thiết Kế App Theo Yêu Cầu: 7 Nguyên Tắc Vàng', excerpt: 'Thiết kế app theo yêu cầu đòi hỏi phải tuân thủ các nguyên tắc cơ bản để đảm bảo tính khả thi, hiệu năng và bảo mật của ứng dụng.' },
-	{ src: Blog50, href: '/chi-tiet-bai-viet-10', category: 'E-commerce', date: '10/05/2024', title: 'Thiết Kế App Giao Nhận Cho Các Doanh Nghiệp Khởi Nghiệp | Xu hướng 2024', excerpt: 'Bằng cách thiết kế app giao nhận riêng, các doanh nghiệp khởi nghiệp có thể tối ưu hóa hoạt động kinh doanh của mình, nâng cao trải nghiệm khách hàng và tạo điều kiện thuận lợi cho sự phát triển bền vững trong môi trường cạnh tranh khốc liệt hiện nay.' },
-	{ src: Blog53, href: '/chi-tiet-bai-viet-13', category: 'Business Strategy', date: '13/05/2023', title: 'Thiết Kế App Nội Thất Năm 2023: Cách Tối Ưu Hóa Không Gian Sống Của Bạn' },
-	{ src: Blog52, href: '/chi-tiet-bai-viet-12', category: 'Startup Tips', date: '02/06/2024', title: 'Giải pháp nhà thông minh: Nhà thông minh NPH Digital – 1 Sự tiện nghi trong tầm tay' }, // Ngẫu nhiên
-	{ src: Blog51, href: '/chi-tiet-bai-viet-11', category: 'Mobile App', date: '15/04/2024', title: '7 Bước Tạo Trang Web Tin Tức Thu Hút Hàng Ngàn Lượt Truy Cập' }, // Ngẫu nhiên
-	{ src: Blog41, href: '/chi-tiet-bai-viet', category: 'Thiết kế App', date: '22/08/2024', title: 'Các Yếu Tố Thiết Kế App Không Thể Thiếu Trong Năm 2024', excerpt: 'Việc thiết kế app chất lượng không chỉ mang lại lợi ích trực tiếp về trải nghiệm người dùng và tăng cường sự hiện diện của thương hiệu, mà còn tạo ra nhiều cơ hội kinh doanh mới, cung cấp dữ liệu quý giá, và nâng cao khả năng cạnh tranh.' },
-	{ src: Blog42, href: '/chi-tiet-bai-viet-2', category: 'Thiết kế App', date: '29/07/2024', title: 'Thiết Kế App Theo Yêu Cầu: 9 Cách Tối Ưu Hóa Giao Diện Người Dùng', excerpt: 'Trong bối cảnh người dùng ngày càng đòi hỏi cao về sự tiện ích và trải nghiệm cá nhân, thiết kế app theo yêu cầu không chỉ là một lựa chọn mà còn là một chiến lược quan trọng giúp các doanh nghiệp đạt được lợi thế cạnh tranh và thành công bền vững trong thị trường ứng dụng di động.' }, // Ngẫu nhiên
-	{ src: Blog43, href: '/chi-tiet-bai-viet-3', category: 'Thiết kế App', date: '10/05/2024', title: '10 Lợi Ích Ứng Dụng Gamification Trong Thiết Kế App Để Tăng Tương Tác', excerpt: 'Phần diễn giải này cung cấp một cái nhìn sâu sắc về cách các yếu tố gamification được sử dụng trong thiết kế app, giúp tăng cường sự tương tác và giữ chân người dùng.' },
-	{ src: Blog44, href: '/chi-tiet-bai-viet-4', category: 'Graphic Design', date: '05/06/2024', title: 'Thiết Kế App Giao Nhận Đồ Ăn: 7 Lợi Ích Tính Năng Chat Với Tài Xế', excerpt: 'Triển khai tính năng chat trong quy trình thiết kế app giao nhận đồ ăn không chỉ đơn thuần là một công việc kỹ thuật, mà còn đòi hỏi sự kết hợp giữa việc phát triển công nghệ, quản lý hệ thống, và xây dựng trải nghiệm người dùng.' }, // Ngẫu nhiên
-	{ src: Blog45, href: '/chi-tiet-bai-viet-5', category: 'Digital Marketing', date: '22/06/2024', title: 'Thiết Kế App Theo Yêu Cầu: 10 Bước Đơn Giản Để Bắt Đầu', excerpt: 'Thiết kế app theo yêu cầu không chỉ là một xu hướng mà còn là một giải pháp cần thiết cho sự phát triển và thành công của doanh nghiệp trong thời đại kỹ thuật số.' }, // Ngẫu nhiên
-	{ src: Blog46, href: '/chi-tiet-bai-viet-6', category: 'SEO', date: '09/05/2024', title: '10 Công Nghệ Mới Trong Thiết Kế App Giao Nhận', excerpt: 'Các công nghệ mới như AI, Machine Learning, Blockchain, IoT, AR/VR, Big Data, Cloud Computing, 5G, Chatbots và Trợ Lý Ảo, Contactless Payment, và BaaS đang thay đổi cách thức phát triển và tối ưu hóa trong thiết kế app giao nhận.' },
-	{ src: Blog47, href: '/chi-tiet-bai-viet-7', category: 'Content Marketing', date: '15/07/2024', title: '10 Cách Tối Ưu Hóa Trải Nghiệm Người Dùng Trong Thiết Kế App', excerpt: 'Trong quá trình thiết kế app, các nguyên tắc của UX phải được áp dụng để đảm bảo rằng ứng dụng không chỉ đẹp mắt mà còn dễ sử dụng và hiệu quả.' }, // Ngẫu nhiên
-	{ src: Blog48, href: '/chi-tiet-bai-viet-8', category: 'Social Media', date: '30/05/2024', title: 'Thiết Kế App Giao Hàng Đa Nền Tảng | Xu Hướng 2024', excerpt: 'Các xu hướng thiết kế app giao hàng năm 2024 tập trung vào việc tối ưu hóa trải nghiệm người dùng thông qua công nghệ tiên tiến như AI, AR, và blockchain.' }, // Ngẫu nhiên
-];
-
 const StartupAgencyBlog = () => {
+	const { t } = useTranslation('blog');
+	const blogs = [
+		{
+			src: Blog56,
+			href: '/cong-ty-tnhh-nph-digital-vinh-du-nhan-giai-thuong-top-10-thuong-hieu-uy-tin-hang-dau-viet-nam-2024',
+			category: t('StartupAgencyBlog.blogs.blog1.category'),
+			date: t('StartupAgencyBlog.blogs.blog1.date'),
+			title: t('StartupAgencyBlog.blogs.blog1.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog1.excerpt'),
+		},
+		{
+			src: Blog54,
+			href: '/chi-tiet-bai-viet-14',
+			category: t('StartupAgencyBlog.blogs.blog2.category'),
+			date: t('StartupAgencyBlog.blogs.blog2.date'),
+			title: t('StartupAgencyBlog.blogs.blog2.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog2.excerpt'),
+		},
+		{
+			src: Blog55,
+			href: '/chi-tiet-bai-viet-15',
+			category: t('StartupAgencyBlog.blogs.blog3.category'),
+			date: t('StartupAgencyBlog.blogs.blog3.date'),
+			title: t('StartupAgencyBlog.blogs.blog3.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog3.excerpt'),
+		},
+		{
+			src: Blog49,
+			href: '/chi-tiet-bai-viet-9',
+			category: t('StartupAgencyBlog.blogs.blog4.category'),
+			date: t('StartupAgencyBlog.blogs.blog4.date'),
+			title: t('StartupAgencyBlog.blogs.blog4.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog4.excerpt'),
+		},
+		{
+			src: Blog50,
+			href: '/chi-tiet-bai-viet-10',
+			category: t('StartupAgencyBlog.blogs.blog5.category'),
+			date: t('StartupAgencyBlog.blogs.blog5.date'),
+			title: t('StartupAgencyBlog.blogs.blog5.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog5.excerpt'),
+		},
+		{
+			src: Blog53,
+			href: '/chi-tiet-bai-viet-13',
+			category: t('StartupAgencyBlog.blogs.blog6.category'),
+			date: t('StartupAgencyBlog.blogs.blog6.date'),
+			title: t('StartupAgencyBlog.blogs.blog6.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog6.excerpt'),
+		},
+		{
+			src: Blog52,
+			href: '/chi-tiet-bai-viet-12',
+			category: t('StartupAgencyBlog.blogs.blog7.category'),
+			date: t('StartupAgencyBlog.blogs.blog7.date'),
+			title: t('StartupAgencyBlog.blogs.blog7.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog7.excerpt'),
+		},
+		{
+			src: Blog51,
+			href: '/chi-tiet-bai-viet-11',
+			category: t('StartupAgencyBlog.blogs.blog8.category'),
+			date: t('StartupAgencyBlog.blogs.blog8.date'),
+			title: t('StartupAgencyBlog.blogs.blog8.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog8.excerpt'),
+		},
+		{
+			src: Blog41,
+			href: '/chi-tiet-bai-viet',
+			category: t('StartupAgencyBlog.blogs.blog9.category'),
+			date: t('StartupAgencyBlog.blogs.blog9.date'),
+			title: t('StartupAgencyBlog.blogs.blog9.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog9.excerpt'),
+		},
+		{
+			src: Blog42,
+			href: '/chi-tiet-bai-viet-2',
+			category: t('StartupAgencyBlog.blogs.blog10.category'),
+			date: t('StartupAgencyBlog.blogs.blog10.date'),
+			title: t('StartupAgencyBlog.blogs.blog10.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog10.excerpt'),
+		},
+		{
+			src: Blog43,
+			href: '/chi-tiet-bai-viet-3',
+			category: t('StartupAgencyBlog.blogs.blog11.category'),
+			date: t('StartupAgencyBlog.blogs.blog11.date'),
+			title: t('StartupAgencyBlog.blogs.blog11.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog11.excerpt'),
+		},
+		{
+			src: Blog44,
+			href: '/chi-tiet-bai-viet-4',
+			category: t('StartupAgencyBlog.blogs.blog12.category'),
+			date: t('StartupAgencyBlog.blogs.blog12.date'),
+			title: t('StartupAgencyBlog.blogs.blog12.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog12.excerpt'),
+		},
+		{
+			src: Blog46,
+			href: '/chi-tiet-bai-viet-6',
+			category: t('StartupAgencyBlog.blogs.blog14.category'),
+			date: t('StartupAgencyBlog.blogs.blog14.date'),
+			title: t('StartupAgencyBlog.blogs.blog14.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog14.excerpt'),
+		},
+		{
+			src: Blog47,
+			href: '/chi-tiet-bai-viet-7',
+			category: t('StartupAgencyBlog.blogs.blog15.category'),
+			date: t('StartupAgencyBlog.blogs.blog15.date'),
+			title: t('StartupAgencyBlog.blogs.blog15.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog15.excerpt'),
+		},
+		{
+			src: Blog48,
+			href: '/chi-tiet-bai-viet-8',
+			category: t('StartupAgencyBlog.blogs.blog16.category'),
+			date: t('StartupAgencyBlog.blogs.blog16.date'),
+			title: t('StartupAgencyBlog.blogs.blog16.title'),
+			excerpt: t('StartupAgencyBlog.blogs.blog16.excerpt'),
+		},
+	];
 	const [currentPage, setCurrentPage] = useState(1);
 	const blogsPerPage = 5;
 	const blogAreaRef = useRef(null);
@@ -286,6 +359,7 @@ const StartupAgencyBlog = () => {
 					cursor: not-allowed;
 				}
 			`}</style>
+
 			<section
 				ref={blogAreaRef}
 				className="blog__area-4 blog__animation"
@@ -301,13 +375,13 @@ const StartupAgencyBlog = () => {
 					<div className="row">
 						<div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
 							<div className="sec-title-wrapper text-anim">
-								<h2 className="sec-subtile-6">Bài viết gần đây</h2>
-								<h3 className="sec-title-6 title-anim">Bài viết</h3>
-								<p>Nơi chia sẻ kiến thức và kinh nghiệm của chúng tôi về các chủ đề đa dạng như thiết kế, tiếp thị kỹ thuật số, SEO, và nhiều lĩnh vực khác để giúp bạn phát triển doanh nghiệp của mình.</p>{' '}
+								<h2 className="sec-subtile-6">{t('StartupAgencyBlog.subTitle')}</h2>
+								<h3 className="sec-title-6 title-anim">{t('StartupAgencyBlog.title')}</h3>
+								<p>{t('StartupAgencyBlog.description')}</p>{' '}
 								<Link
 									className="btn-started"
 									href="/bai-viet">
-									Tất cả bài viết{' '}
+									{t('StartupAgencyBlog.viewAll')}
 									<span>
 										<i className="fa-solid fa-arrow-right"></i>
 									</span>
@@ -345,7 +419,7 @@ const StartupAgencyBlog = () => {
 										<Link
 											href={blog.href}
 											className="blog__btn-4">
-											Xem thêm{' '}
+											{t('StartupAgencyBlog.readMore')}
 											<span>
 												<i className="fa-solid fa-arrow-right"></i>
 											</span>
@@ -360,7 +434,7 @@ const StartupAgencyBlog = () => {
 						<button
 							onClick={() => paginate(currentPage - 1)}
 							disabled={currentPage === 1}>
-							Trước
+							{t('StartupAgencyBlog.previous')}
 						</button>
 						{[...Array(totalPages)].map((_, i) => (
 							<button
@@ -373,7 +447,7 @@ const StartupAgencyBlog = () => {
 						<button
 							onClick={() => paginate(currentPage + 1)}
 							disabled={currentPage === totalPages}>
-							Sau
+							{t('StartupAgencyBlog.next')}
 						</button>
 					</div>
 				</div>

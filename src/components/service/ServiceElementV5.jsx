@@ -1,156 +1,159 @@
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from '@/plugins';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Autoplay } from 'swiper';
+import animationCharCome from '@/lib/utils/animationCharCome';
 import Link from 'next/link';
-
+import React, { useEffect, useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/free-mode';
 import 'swiper/css/autoplay';
-
-gsap.registerPlugin(ScrollTrigger);
+import { Autoplay } from 'swiper';
+import { useTranslation } from 'react-i18next';
 
 const ServiceElementV5 = () => {
-	const sectionRef = useRef(null);
-	const firstRowRef = useRef(null);
-	const secondRowRef = useRef(null);
-
+	const { t } = useTranslation('service');
+	const charAnim = useRef();
 	useEffect(() => {
-		const section = sectionRef.current;
-		const firstRow = firstRowRef.current;
-		const secondRow = secondRowRef.current;
-
-		gsap.set(firstRow, { y: 57, opacity: 0 });
-		gsap.set(secondRow, { y: -57, opacity: 0 });
-
-		ScrollTrigger.create({
-			trigger: section,
-			start: 'top 80%',
-			onEnter: () => {
-				gsap.to(firstRow, { y: 0, opacity: 1, duration: 1, ease: 'power3.out' });
-				gsap.to(secondRow, { y: 0, opacity: 1, duration: 1, ease: 'power3.out' });
-			},
-		});
+		animationCharCome(charAnim.current);
 	}, []);
 
-	const services = [
+	const serviceData = [
 		{
-			title: 'Phát triển ứng dụng di động',
-			items: ['Thiết kế UI/UX chuyên nghiệp', 'Phát triển đa nền tảng', 'Tối ưu hiệu suất'],
-			href: '/mobile-app',
+			title: t('ServiceElementV5.service.mobileApp.title'),
+			skills: [t('ServiceElementV5.service.mobileApp.item1'), t('ServiceElementV5.service.mobileApp.item2'), t('ServiceElementV5.service.mobileApp.item3')],
+			slug: 'mobile-app',
 		},
 		{
-			title: 'Thiết kế & Phát triển website',
-			items: ['Giao diện responsive', 'Tối ưu SEO', 'Tích hợp CMS'],
-			href: '/thiet-ke-website',
+			title: t('ServiceElementV5.service.web.title'),
+			skills: [t('ServiceElementV5.service.web.item1'), t('ServiceElementV5.service.web.item2'), t('ServiceElementV5.service.web.item3')],
+			slug: 'thiet-ke-website',
 		},
 		{
-			title: 'Hệ thống CRM, ERP, HRM',
-			items: ['Tùy chỉnh theo yêu cầu', 'Tích hợp dữ liệu', 'Báo cáo thông minh'],
-			href: '/crm-erp-hrm',
+			title: t('ServiceElementV5.service.crmErpHrm.title'),
+			skills: [t('ServiceElementV5.service.crmErpHrm.item1'), t('ServiceElementV5.service.crmErpHrm.item2'), t('ServiceElementV5.service.crmErpHrm.item3')],
+			slug: 'crm-erp-hrm',
 		},
 		{
-			title: 'Digital Marketing',
-			items: ['Chiến lược marketing tổng thể', 'Quảng cáo trực tuyến', 'Phân tích dữ liệu'],
-			href: '/quang-cao-so',
+			title: t('ServiceElementV5.service.ads.title'),
+			skills: [t('ServiceElementV5.service.ads.item1'), t('ServiceElementV5.service.ads.item2'), t('ServiceElementV5.service.ads.item3')],
+			slug: 'quang-cao-so',
 		},
 		{
-			title: 'Lập Trình AI Tự Động Hóa',
-			items: ['Xử lý ngôn ngữ tự nhiên', 'Học máy', 'Tự động hóa quy trình'],
-			href: '/lap-trinh-ai',
+			title: t('ServiceElementV5.service.ai.title'),
+			skills: [t('ServiceElementV5.service.ai.item1'), t('ServiceElementV5.service.ai.item2'), t('ServiceElementV5.service.ai.item3')],
+			slug: 'lap-trinh-ai',
 		},
 		{
-			title: 'Tương tác số',
-			items: ['Trải nghiệm người dùng', 'Tương tác đa phương tiện', 'Phân tích hành vi'],
-			href: '/tuong-tac-so',
+			title: t('ServiceElementV5.service.interaction.title'),
+			skills: [t('ServiceElementV5.service.interaction.item1'), t('ServiceElementV5.service.interaction.item2'), t('ServiceElementV5.service.interaction.item3')],
+			slug: 'tuong-tac-so',
 		},
 		{
-			title: 'Chăm sóc Fanpage',
-			items: ['Lên kế hoạch nội dung', 'Thiết kế hình ảnh và video', 'Tương tác với khách hàng'],
-			href: '/cham-soc-fanpage',
-		},
-		// {
-		// 	title: 'Setup sàn \nthương mại điện tử',
-		// 	items: ['Thiết kế giao diện', 'Quản lý sản phẩm', 'Tích hợp thanh toán'],
-		// 	href: '/e-commerce-setup',
-		// },
-		{
-			title: 'Cho thuê phòng IT ngoài',
-			items: ['Nhân sự chuyên nghiệp', 'Trang thiết bị đầy đủ', 'Hỗ trợ kỹ thuật 24/7'],
-			href: '/thue-phong-it-ngoai',
+			title: t('ServiceElementV5.service.fanpage.title'),
+			skills: [t('ServiceElementV5.service.fanpage.item1'), t('ServiceElementV5.service.fanpage.item2'), t('ServiceElementV5.service.fanpage.item3')],
+			slug: 'cham-soc-fanpage',
 		},
 		{
-			title: 'Thiết kế UX/UI',
-			items: ['Nghiên cứu người dùng', 'Thiết kế giao diện', 'Tối ưu trải nghiệm'],
-			href: '/thiet-ke-ui-ux',
+			title: t('ServiceElementV5.service.it.title'),
+			skills: [t('ServiceElementV5.service.it.item1'), t('ServiceElementV5.service.it.item2'), t('ServiceElementV5.service.it.item3')],
+			slug: 'thue-phong-it-ngoai',
+		},
+		{
+			title: t('ServiceElementV5.service.uiUx.title'),
+			skills: [t('ServiceElementV5.service.uiUx.item1'), t('ServiceElementV5.service.uiUx.item2'), t('ServiceElementV5.service.uiUx.item3')],
+			slug: 'thiet-ke-ui-ux',
 		},
 	];
 
-	const firstRowServices = services.slice(0, 5);
-	const secondRowServices = services.slice(5);
-
-	const swiperCommonProps = {
-		modules: [FreeMode, Autoplay],
+	const swiperParams = {
+		modules: [Autoplay],
 		spaceBetween: 30,
-		slidesPerView: 3,
-		freeMode: true,
-		loop: true,
-		allowTouchMove: true,
-		speed: 5000,
 		autoplay: {
-			delay: 1,
+			delay: 0,
 			disableOnInteraction: false,
 		},
+		speed: 5000,
+		loop: true,
 		breakpoints: {
-			// width >= 320px
 			320: {
 				slidesPerView: 1,
-				spaceBetween: 10,
 			},
-			// width >= 480px
-			480: {
-				slidesPerView: 2,
-				spaceBetween: 20,
-			},
-			// width >= 640px
-			640: {
+			768: {
 				slidesPerView: 3,
-				spaceBetween: 30,
+			},
+			1024: {
+				slidesPerView: 3,
 			},
 		},
 	};
 
 	return (
-		<section
-			className="portfolio__service service-v5 pt-140 pb-140"
-			ref={sectionRef}>
-			<div className="container">
-				<div className="row">
-					<div className="col-xxl-5 col-xl-5 col-lg-6 col-md-6">
-						<h2 className="sec-title">Tiêu chí các dịch vụ của NPH Digital</h2>
-					</div>
-					<div className="col-xxl-7 col-xl-7 col-lg-6 col-md-6">
-						<div className="sec-text">
-							<p>Với sự hiểu biết sâu rộng và kinh nghiệm đa dạng, chúng tôi cam kết đem lại sự ấn tượng, chuyên nghiệp và hiệu quả để tạo ra các giải pháp phần mềm vượt trội cho dự án của bạn. Sau đây là các tiêu chí về dịch vụ của NPH Digital</p>
+		<div>
+			<section className="portfolio__service service-v5 pt-140 pb-140">
+				<div className="container">
+					<div className="row">
+						<div className="col-xxl-5 col-xl-5 col-lg-6 col-md-6">
+							<h2
+								className="sec-title animation__char_come"
+								ref={charAnim}>
+								{t('ServiceElementV5.hero.title')}
+							</h2>
+						</div>
+						<div className="col-xxl-7 col-xl-7 col-lg-6 col-md-6">
+							<div className="sec-text">
+								<p>{t('ServiceElementV5.hero.description')}</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div className="portfolio__service-list">
-					<div ref={firstRowRef}>
+
+					<div className="portfolio__service-list">
+						{/* First Swiper - Left to Right */}
 						<Swiper
-							{...swiperCommonProps}
-							className="service__slider">
-							{firstRowServices.concat(firstRowServices).map((service, index) => (
+							{...swiperParams}
+							className="mb-4">
+							{serviceData.concat(serviceData).map((service, index) => (
 								<SwiperSlide key={index}>
-									<div
-										className="portfolio__service-item"
-										style={{ height: '250px', overflow: 'hidden' }}>
-										<Link href={service.href}>
-											<h3 className="ps-title">{service.title}</h3>
+									<div className="portfolio__service-item">
+										<Link href={`${service.slug}`}>
+											<h3 className="ps-title">
+												{service.title.split(' ').map((word, i) => (
+													<React.Fragment key={i}>
+														{word.split('').map((char, j) => (
+															<span key={j}>{char}</span>
+														))}
+														{i !== service.title.split(' ').length - 1 && ' '}
+													</React.Fragment>
+												))}
+											</h3>
 											<ul>
-												{service.items.map((item, itemIndex) => (
-													<li key={itemIndex}>+ {item}</li>
+												{service.skills.map((skill, i) => (
+													<li key={i}>+ {skill}</li>
+												))}
+											</ul>
+										</Link>
+									</div>
+								</SwiperSlide>
+							))}
+						</Swiper>
+
+						{/* Second Swiper - Right to Left */}
+						<Swiper
+							{...swiperParams}
+							autoplay={{ ...swiperParams.autoplay, reverseDirection: true }}>
+							{serviceData.concat(serviceData).map((service, index) => (
+								<SwiperSlide key={index}>
+									<div className="portfolio__service-item">
+										<Link href={`/${service.slug}`}>
+											<h3 className="ps-title">
+												{service.title.split(' ').map((word, i) => (
+													<React.Fragment key={i}>
+														{word.split('').map((char, j) => (
+															<span key={j}>{char}</span>
+														))}
+														{i !== service.title.split(' ').length - 1 && ' '}
+													</React.Fragment>
+												))}
+											</h3>
+											<ul>
+												{service.skills.map((skill, i) => (
+													<li key={i}>+ {skill}</li>
 												))}
 											</ul>
 										</Link>
@@ -159,32 +162,15 @@ const ServiceElementV5 = () => {
 							))}
 						</Swiper>
 					</div>
-					<div ref={secondRowRef}>
-						<Swiper
-							{...swiperCommonProps}
-							className="service__slider"
-							dir="rtl">
-							{secondRowServices.concat(secondRowServices).map((service, index) => (
-								<SwiperSlide key={index}>
-									<div
-										className="portfolio__service-item"
-										style={{ height: '250px', overflow: 'hidden' }}>
-										<Link href={service.href}>
-											<h3 className="ps-title">{service.title}</h3>
-											<ul>
-												{service.items.map((item, itemIndex) => (
-													<li key={itemIndex}>+ {item}</li>
-												))}
-											</ul>
-										</Link>
-									</div>
-								</SwiperSlide>
-							))}
-						</Swiper>
-					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+			<style jsx>{`
+				.portfolio__service-item {
+					height: 250px;
+					overflow: hidden;
+				}
+			`}</style>
+		</div>
 	);
 };
 

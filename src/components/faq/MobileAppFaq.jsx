@@ -1,8 +1,10 @@
 import { Accordion } from 'react-bootstrap';
-import ThumbFaq from '../../../public/assets/imgs/thumb/faq.jpg';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 const MobileAppFaq = () => {
+	const { t } = useTranslation('serviceDetails');
+
 	return (
 		<>
 			<section className="faq__area">
@@ -21,7 +23,7 @@ const MobileAppFaq = () => {
 							</div>
 						</div> */}
 						<div className="faq__content">
-							<h2 className="faq__title title-anim">Câu hỏi thường gặp về phát triển ứng dụng di động</h2>
+							<h2 className="faq__title title-anim">{t('mobileApp.MobileAppFaq.title')}</h2>
 
 							<div className="faq__list">
 								<Accordion
@@ -34,10 +36,10 @@ const MobileAppFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingOne">
-											Quy trình phát triển ứng dụng di động gồm những bước nào?
+											{t('mobileApp.MobileAppFaq.question.1')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Quy trình phát triển ứng dụng của chúng tôi bao gồm: phân tích yêu cầu, thiết kế UI/UX, lập trình, kiểm thử, và triển khai. Mỗi giai đoạn đều được thực hiện một cách chuyên nghiệp để đảm bảo ứng dụng vận hành trơn tru và mang lại trải nghiệm tốt nhất cho người dùng.</p>
+											<p>{t('mobileApp.MobileAppFaq.answer.1')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -47,10 +49,10 @@ const MobileAppFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingTwo">
-											Tôi có thể phát triển ứng dụng đa nền tảng không?
+											{t('mobileApp.MobileAppFaq.question.2')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Có, chúng tôi cung cấp dịch vụ phát triển ứng dụng đa nền tảng sử dụng các framework hiện đại như Flutter và React Native. Điều này giúp bạn tiết kiệm chi phí và thời gian phát triển mà vẫn đảm bảo hiệu năng tốt trên cả iOS và Android.</p>
+											<p>{t('mobileApp.MobileAppFaq.answer.2')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -60,10 +62,10 @@ const MobileAppFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingThree">
-											Thời gian hoàn thành một dự án phát triển ứng dụng là bao lâu?
+											{t('mobileApp.MobileAppFaq.question.3')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Thời gian phát triển ứng dụng phụ thuộc vào độ phức tạp và yêu cầu cụ thể của dự án. Thông thường, một ứng dụng cơ bản sẽ mất từ 3 đến 6 tháng để hoàn thiện, bao gồm cả giai đoạn kiểm thử và tối ưu hóa.</p>
+											<p>{t('mobileApp.MobileAppFaq.answer.3')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -73,10 +75,10 @@ const MobileAppFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingFour">
-											Làm thế nào để tối ưu trải nghiệm người dùng trên ứng dụng di động?
+											{t('mobileApp.MobileAppFaq.question.4')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Chúng tôi tập trung vào việc thiết kế giao diện người dùng (UI) và trải nghiệm người dùng (UX) tốt nhất. Điều này bao gồm việc thực hiện nghiên cứu người dùng, kiểm tra khả năng sử dụng và tích hợp phản hồi từ người dùng vào quá trình phát triển. Chúng tôi đảm bảo rằng ứng dụng dễ sử dụng và mang lại giá trị thực cho người dùng.</p>
+											<p>{t('mobileApp.MobileAppFaq.answer.4')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -86,10 +88,10 @@ const MobileAppFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingFive">
-											Có hỗ trợ bảo trì và cập nhật ứng dụng sau khi hoàn thành không?
+											{t('mobileApp.MobileAppFaq.question.5')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Có, chúng tôi cung cấp dịch vụ bảo trì và cập nhật ứng dụng sau khi hoàn thành để đảm bảo ứng dụng luôn hoạt động mượt mà và đáp ứng nhu cầu của người dùng. Chúng tôi sẵn sàng hỗ trợ sửa lỗi, cập nhật tính năng và cải thiện hiệu suất ứng dụng theo yêu cầu của bạn.</p>
+											<p>{t('mobileApp.MobileAppFaq.answer.5')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 								</Accordion>

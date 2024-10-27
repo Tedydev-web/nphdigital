@@ -1,8 +1,11 @@
 import { Accordion } from 'react-bootstrap';
 import ThumbFaq from '../../../public/assets/imgs/thumb/faq.jpg';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
-const ServiceDetailsFaq = () => {
+const TuongTacSoFaq = () => {
+	const { t } = useTranslation('serviceDetails');
+
 	return (
 		<>
 			<section className="faq__area">
@@ -21,7 +24,7 @@ const ServiceDetailsFaq = () => {
 							</div>
 						</div> */}
 						<div className="faq__content">
-							<h2 className="faq__title title-anim">Dịch vụ Tương tác số</h2>
+							<h2 className="faq__title title-anim">{t('tuongTacSo.TuongTacSoFaq.title')}</h2>
 
 							<div className="faq__list">
 								<Accordion
@@ -34,10 +37,10 @@ const ServiceDetailsFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingOne">
-											Tương tác số là gì?
+											{t('tuongTacSo.TuongTacSoFaq.question.1')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Tương tác số là cách thức mà người dùng tương tác với các dịch vụ trực tuyến thông qua các giao diện số, bao gồm website, ứng dụng di động, và các nền tảng truyền thông xã hội.</p>
+											<p>{t('tuongTacSo.TuongTacSoFaq.answer.1')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -47,10 +50,10 @@ const ServiceDetailsFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingTwo">
-											Tại sao nên sử dụng dịch vụ Tương tác số?
+											{t('tuongTacSo.TuongTacSoFaq.question.2')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Dịch vụ Tương tác số giúp tăng cường trải nghiệm người dùng, cải thiện mức độ tương tác và giữ chân khách hàng, từ đó nâng cao hiệu quả kinh doanh.</p>
+											<p>{t('tuongTacSo.TuongTacSoFaq.answer.2')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -60,10 +63,10 @@ const ServiceDetailsFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingThree">
-											Những công cụ nào được sử dụng trong Tương tác số?
+											{t('tuongTacSo.TuongTacSoFaq.question.3')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Chúng tôi sử dụng các công cụ như Google Analytics, các nền tảng CRM, và các phần mềm tự động hóa marketing để tối ưu hóa quá trình tương tác và phân tích dữ liệu.</p>
+											<p>{t('tuongTacSo.TuongTacSoFaq.answer.3')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -73,10 +76,10 @@ const ServiceDetailsFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingFour">
-											Có những xu hướng nào trong Tương tác số hiện nay?
+											{t('tuongTacSo.TuongTacSoFaq.question.4')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Một số xu hướng bao gồm việc sử dụng trí tuệ nhân tạo, trải nghiệm người dùng tùy chỉnh, và giao diện người dùng tối giản nhằm tối đa hóa tính hiệu quả.</p>
+											<p>{t('tuongTacSo.TuongTacSoFaq.answer.4')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -86,10 +89,10 @@ const ServiceDetailsFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingFive">
-											Làm thế nào để bắt đầu với dịch vụ Tương tác số?
+											{t('tuongTacSo.TuongTacSoFaq.question.5')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Bạn có thể liên hệ với chúng tôi để được tư vấn và thiết lập một chiến lược Tương tác số phù hợp với nhu cầu của doanh nghiệp.</p>
+											<p>{t('tuongTacSo.TuongTacSoFaq.answer.5')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 								</Accordion>
@@ -102,4 +105,4 @@ const ServiceDetailsFaq = () => {
 	);
 };
 
-export default ServiceDetailsFaq;
+export default TuongTacSoFaq;

@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Author from '../../../public/assets/imgs/blog/detail/author.png';
 import Detail1 from '../../../public/assets/imgs/blog/detail/16/1.jpg';
 import Detail3 from '../../../public/assets/imgs/blog/detail/16/3.webp';
 import Detail4 from '../../../public/assets/imgs/blog/detail/16/4.webp';

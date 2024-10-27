@@ -2,8 +2,9 @@ import { useEffect, useRef } from 'react';
 import ThumbDev1 from '../../../public/assets/imgs/service/detail/fanpage/1.png';
 import Image from 'next/image';
 import animationCharCome from '@/lib/utils/animationCharCome';
-
+import { useTranslation } from 'react-i18next';
 const DetailsFanpage = () => {
+	const { t } = useTranslation('serviceDetails');
 	const charAnim = useRef();
 	useEffect(() => {
 		animationCharCome(charAnim.current);
@@ -19,25 +20,23 @@ const DetailsFanpage = () => {
 								<h2
 									className="sec-title animation__char_come"
 									ref={charAnim}>
-									Chăm sóc Fanpage
+									{t('chamSocFanpage.DetailsFanpage.secTitle')}
 								</h2>
 							</div>
 						</div>
 						<div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
 							<div className="development__wrapper">
 								<div className="development__content">
-									<p>
-										Tại <strong>NPH Digital</strong>, chúng tôi cung cấp dịch vụ chăm sóc Fanpage toàn diện và chuyên nghiệp, giúp doanh nghiệp của bạn tăng cường tương tác và xây dựng hình ảnh thương hiệu một cách nhất quán. Chúng tôi tạo nội dung phù hợp, tăng lượt tương tác, và đảm bảo rằng mỗi bài đăng trên Fanpage đều đem lại giá trị thực sự cho khách hàng mục tiêu.
-									</p>
-									<p>Dịch vụ chăm sóc Fanpage của chúng tôi bao gồm nghiên cứu đối tượng khách hàng, xây dựng kế hoạch nội dung chi tiết, và thực hiện các chiến lược marketing qua mạng xã hội. Chúng tôi hỗ trợ doanh nghiệp không chỉ tăng trưởng số lượng người theo dõi mà còn tối ưu hóa hiệu suất từ các chiến dịch quảng cáo trên Facebook.</p>
+									<p>{t('chamSocFanpage.DetailsFanpage.p.1')}</p>
+									<p>{t('chamSocFanpage.DetailsFanpage.p.2')}</p>
 								</div>
 								<ul>
-									<li>+ Quản lý và tương tác với khách hàng trên Fanpage</li>
-									<li>+ Xây dựng nội dung bài đăng hấp dẫn, phù hợp với từng đối tượng khách hàng</li>
-									<li>+ Thiết kế hình ảnh, video chuyên nghiệp cho các bài đăng</li>
-									<li>+ Chạy quảng cáo tối ưu ngân sách, tiếp cận đúng khách hàng tiềm năng</li>
-									<li>+ Tư vấn và phát triển chiến lược Fanpage dài hạn</li>
-									<li>+ Phân tích, báo cáo và cải thiện hiệu quả hoạt động của Fanpage</li>
+									<li>{t('chamSocFanpage.DetailsFanpage.ul.1.li.1')}</li>
+									<li>{t('chamSocFanpage.DetailsFanpage.ul.1.li.2')}</li>
+									<li>{t('chamSocFanpage.DetailsFanpage.ul.1.li.3')}</li>
+									<li>{t('chamSocFanpage.DetailsFanpage.ul.1.li.4')}</li>
+									<li>{t('chamSocFanpage.DetailsFanpage.ul.1.li.5')}</li>
+									<li>{t('chamSocFanpage.DetailsFanpage.ul.1.li.6')}</li>
 								</ul>
 							</div>
 						</div>

@@ -4,8 +4,10 @@ import VideoFrame from '../../../public/assets/imgs/essential-img/video-frame.pn
 import SvgStar from '../../../public/assets/imgs/essential-img/svgstar.png';
 import Shape24 from '../../../public/assets/imgs/shape/24.png';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 const ModernAgencySingleImage = () => {
+	const { t } = useTranslation('about');
 	const hoverImage = useRef();
 	const hoverImage2 = useRef();
 	const hoverWrap = useRef();
@@ -74,7 +76,7 @@ const ModernAgencySingleImage = () => {
 								className="tech_title fade_bottom_4"
 								ref={hoverWrap}
 								style={{ paddingTop: '50px' }}>
-								Giải pháp Công nghệ & Thiết kế Đưa Ý tưởng của bạn thành hiện thực
+								{t('hero.title')}
 							</h2>
 
 							<div
@@ -90,18 +92,14 @@ const ModernAgencySingleImage = () => {
 								}}
 								ref={hoverImage2}></div>
 						</div>
-						<p className="single_dis pb-110 fade_bottom_4">
-							Qua một chặng đường xây dựng và phát triển, NPH Digital đã dần khẳng định được vị trí của mình <br />
-							trong ngành công nghệ thông tin. Đến với NPH Digital, các bạn không chỉ yên tâm về sản phẩm, dịch <br />
-							vụ mà còn cảm nhận được sự nhiệt huyết đam mê công nghệ của đội ngũ nhân viên có trình độ, <br />
-							kinh nghiệm từ chúng tôi
-						</p>
+						<p className="single_dis pb-110 fade_bottom_4">{t('hero.description')}</p>
 						<div className="single__thumb">
 							<video
 								loop
 								muted
 								autoPlay
-								playsInline>
+								playsInline
+								style={{ width: '99%', height: '100%' }}>
 								<source
 									src="/assets/video/intro-01.mp4"
 									type="video/mp4"

@@ -1,0 +1,66 @@
+{
+  "common": {
+    "languageSwitcher": {
+      "vietnamese": "Tiếng việt",
+      "english": "Tiếng anh",
+      "chinese": "Tiếng Trung",
+      "hindi": "Tiếng Hindi",
+      "changing": "Đổi ngôn ngữ Tiếng việt",
+      "pleaseWait": "Vui lòng chờ trong giây lát."
+    }
+  },
+  "header": {
+    "support": "Trung tâm hỗ trợ"
+  },
+  "footer": {
+    "roll": {
+      "line1": "Liên hệ",
+      "line2": "chúng tôi"
+    },
+    "widget": {
+      "content": "Chúng tôi luôn phát huy tính sáng tạo và chuyên nghiệp trong công việc để làm hài lòng mọi yêu cầu của khách hàng một cách tốt nhất."
+    },
+    "title": {
+      "title1": "Thông tin",
+      "title2": "Liên hệ",
+      "title3": "Bạn đang ấp ủ một ý tưởng tiềm năng?"
+    },
+    "contact": {
+      "address": "Số 838, Ấp Vĩnh Bình, Xã An Vĩnh Ngãi, Tp Tân An, T Long An",
+      "phone": "(+84) 777 018 333",
+      "email": "hi@nphdigital.com",
+      "time": "08 : 00 AM - 10 : 00 PM",
+      "day": "tất cả các ngày trong tuần",
+      "emailFrom": "Nhập email của bạn"
+    },
+    "link": {
+      "about": "Giới thiệu",
+      "service": "Dịch vụ",
+      "blog": "Bài viết",
+      "contact": "Liên hệ"
+    },
+    "copyright": {
+      "line1": "© Bản quyền thuộc NPH Digital.",
+      "line2": "Đã đăng ký bản quyền"
+    }
+  },
+  "canvas": {
+    "title": "Theo dõi chúng tôi",
+    "social": {
+      "zalo": "Zalo",
+      "facebook": "Facebook",
+      "telegram": "Telegram"
+    },
+    "headerTitle": {
+      "home": "Trang chủ",
+      "about": "Giới thiệu",
+      "service": "Dịch vụ",
+      "blog": "Bài viết",
+      "contact": "Liên hệ"
+    },
+    "contact": {
+      "title": "Liên hệ",
+      "address": "Số 838, Ấp Vĩnh Bình, Xã An Vĩnh Ngãi, Tp.Tân An, T.Long An"
+    }
+  }
+}

@@ -17,7 +17,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const DigitalMarketingTestimonial = () => {
 	const testimonialArea = useRef();
-	const { t } = useTranslation();
+	const { t } = useTranslation('home');
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let tHero = gsap.context(() => {
@@ -111,9 +111,9 @@ const DigitalMarketingTestimonial = () => {
 									<div className="swiper-wrapper">
 										<SwiperSlide>
 											<div className="testimonial__slide-3">
-												<p>{t('pages.home.testimonial.slide')}</p>
-												<h2 className="client__name-3">{t('pages.home.testimonial.name')}</h2>
-												<h3 className="client__role-3">{t('pages.home.testimonial.role')}</h3>
+												<p>{t('DigitalMarketingTestimonial.slide')}</p>
+												<h2 className="client__name-3">{t('DigitalMarketingTestimonial.name')}</h2>
+												<h3 className="client__role-3">{t('DigitalMarketingTestimonial.role')}</h3>
 											</div>
 										</SwiperSlide>
 									</div>
@@ -134,10 +134,10 @@ const DigitalMarketingTestimonial = () => {
 				</div>
 				<div className="testimonial__images-3 animation_image_zoom">
 					<video
-						autoplay="true"
-						playsinline="true"
-						loop="true"
-						muted="true"
+						autoPlay={true}
+						playsInline={true}
+						loop={true}
+						muted={true}
 						className="testimonial3__img-2">
 						<source
 							data-src="https://cdn.cuberto.com/cb/hello/brandreel/1.mp4"
@@ -146,10 +146,10 @@ const DigitalMarketingTestimonial = () => {
 						/>
 					</video>
 					<video
-						autoplay="true"
-						playsinline="true"
-						loop="true"
-						muted="true"
+						autoPlay={true}
+						playsInline={true}
+						loop={true}
+						muted={true}
 						className="testimonial3__img-3">
 						<source
 							data-src="https://cdn.cuberto.com/cb/hello/brandreel/1.mp4"
@@ -158,10 +158,10 @@ const DigitalMarketingTestimonial = () => {
 						/>
 					</video>
 					<video
-						autoplay="true"
-						playsinline="true"
-						loop="true"
-						muted="true"
+						autoPlay={true}
+						playsInline={true}
+						loop={true}
+						muted={true}
 						className="testimonial3__img-4">
 						<source
 							data-src="https://cdn.cuberto.com/cb/hello/brandreel/1.mp4"
@@ -170,10 +170,10 @@ const DigitalMarketingTestimonial = () => {
 						/>
 					</video>
 					<video
-						autoplay="true"
-						playsinline="true"
-						loop="true"
-						muted="true"
+						autoPlay={true}
+						playsInline={true}
+						loop={true}
+						muted={true}
 						className="testimonial3__img-5">
 						<source
 							data-src="https://cdn.cuberto.com/cb/hello/brandreel/1.mp4"
@@ -182,10 +182,10 @@ const DigitalMarketingTestimonial = () => {
 						/>
 					</video>
 					<video
-						autoplay="true"
-						playsinline="true"
-						loop="true"
-						muted="true"
+						autoPlay={true}
+						playsInline={true}
+						loop={true}
+						muted={true}
 						className="testimonial3__img-6">
 						<source
 							data-src="https://cdn.cuberto.com/cb/hello/brandreel/1.mp4"

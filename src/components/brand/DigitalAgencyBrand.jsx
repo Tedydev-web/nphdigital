@@ -30,7 +30,7 @@ const DigitalAgencyBrand = () => {
 	const sectionRef = useRef(null);
 	const firstRowRef = useRef(null);
 	const secondRowRef = useRef(null);
-	const { t } = useTranslation();
+	const { t } = useTranslation('home');
 
 	useEffect(() => {
 		const section = sectionRef.current;
@@ -59,7 +59,6 @@ const DigitalAgencyBrand = () => {
 		spaceBetween: 30,
 		freeMode: true,
 		loop: true,
-		loopFillGroupWithBlank: true,
 		allowTouchMove: false,
 		speed: 6000,
 		autoplay: {
@@ -94,8 +93,8 @@ const DigitalAgencyBrand = () => {
 				<div className="row">
 					<div className="col-xxl-12">
 						<div className="sec-title-wrapper">
-							<h2 className="sec-sub-title title-anim">{t('pages.home.brand.secSubTitle')}</h2>
-							<h3 className="sec-title title-anim">{t('pages.home.brand.secTitle')}</h3>
+							<h2 className="sec-sub-title title-anim">{t('DigitalAgencyBrand.secSubTitle')}</h2>
+							<h3 className="sec-title title-anim">{t('DigitalAgencyBrand.secTitle')}</h3>
 						</div>
 					</div>
 

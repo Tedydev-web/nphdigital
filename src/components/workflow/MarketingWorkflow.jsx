@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 const MarketingWorkflow = () => {
+	const { t } = useTranslation('serviceDetails');
+
 	return (
 		<>
 			<section className="workflow__area-6">
@@ -9,40 +13,40 @@ const MarketingWorkflow = () => {
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										Lập kế hoạch chiến lược <br />
-										quảng cáo
+										<span>{t('quangCaoSo.MarketingWorkflow.1.title.line1')}</span> <br />
+										<span>{t('quangCaoSo.MarketingWorkflow.1.title.line2')}</span>
 									</h6>
-									<p>Chúng tôi bắt đầu bằng việc hiểu rõ mục tiêu của doanh nghiệp và từ đó xây dựng chiến lược quảng cáo số phù hợp. Kế hoạch này được điều chỉnh để nhắm tới thị trường mục tiêu, tối ưu hóa chi phí và đạt được kết quả mong muốn.</p>
+									<p>{t('quangCaoSo.MarketingWorkflow.1.description')}</p>
 								</div>
 							</div>
 
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										Làm việc <br />
-										với nhóm chuyên gia
+										<span>{t('quangCaoSo.MarketingWorkflow.2.title.line1')}</span> <br />
+										<span>{t('quangCaoSo.MarketingWorkflow.2.title.line2')}</span>
 									</h6>
-									<p>Nhóm chuyên gia từ các lĩnh vực quảng cáo, sáng tạo nội dung và phân tích dữ liệu của chúng tôi sẽ phối hợp để phát triển các chiến dịch hiệu quả. Chúng tôi đảm bảo mỗi chiến dịch được thực hiện với sự sáng tạo và phân tích kỹ lưỡng.</p>
+									<p>{t('quangCaoSo.MarketingWorkflow.2.description')}</p>
 								</div>
 							</div>
 
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										Thiết kế nội dung <br />
-										và triển khai chiến dịch
+										<span>{t('quangCaoSo.MarketingWorkflow.3.title.line1')}</span> <br />
+										<span>{t('quangCaoSo.MarketingWorkflow.3.title.line2')}</span>
 									</h6>
-									<p>Chúng tôi tạo ra nội dung quảng cáo chất lượng, bao gồm cả hình ảnh và video, để tối ưu hóa tương tác với khách hàng. Chiến dịch được tối ưu hóa để nhắm đến đúng đối tượng khách hàng và thúc đẩy tỷ lệ chuyển đổi cao nhất.</p>
+									<p>{t('quangCaoSo.MarketingWorkflow.3.description')}</p>
 								</div>
 							</div>
 
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										Kiểm thử và tối ưu <br />
-										quảng cáo
+										<span>{t('quangCaoSo.MarketingWorkflow.4.title.line1')}</span> <br />
+										<span>{t('quangCaoSo.MarketingWorkflow.4.title.line2')}</span>
 									</h6>
-									<p>Chúng tôi tiến hành kiểm thử và tối ưu hóa chiến dịch quảng cáo liên tục để đảm bảo hiệu quả. Sử dụng các công cụ đo lường như Google Analytics và Facebook Pixel, chúng tôi theo dõi và điều chỉnh chiến dịch dựa trên dữ liệu thực tế.</p>
+									<p>{t('quangCaoSo.MarketingWorkflow.4.description')}</p>
 								</div>
 							</div>
 						</div>

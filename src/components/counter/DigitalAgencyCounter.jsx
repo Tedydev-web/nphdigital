@@ -6,7 +6,7 @@ import { ScrollTrigger } from '@/plugins';
 gsap.registerPlugin(ScrollTrigger);
 
 const DigitalAgencyCounter = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation('home');
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let device_width = window.innerWidth;
@@ -74,36 +74,36 @@ const DigitalAgencyCounter = () => {
 								<div className="counter__item counter__anim">
 									<h2 className="counter__number count1">1000+</h2>
 									<p>
-										{t('pages.home.counter.count1.line1')}
+										{t('DigitalAgencyCounter.count1.line1')}
 										<br />
-										{t('pages.home.counter.count1.line2')}
+										{t('DigitalAgencyCounter.count1.line2')}
 									</p>
 									<span className="counter__border"></span>
 								</div>
 								<div className="counter__item counter__anim">
 									<h2 className="counter__number count2">963</h2>
 									<p>
-										{t('pages.home.counter.count2.line1')}
+										{t('DigitalAgencyCounter.count2.line1')}
 										<br />
-										{t('pages.home.counter.count2.line2')}
+										{t('DigitalAgencyCounter.count2.line2')}
 									</p>
 									<span className="counter__border"></span>
 								</div>
 								<div className="counter__item counter__anim">
 									<h2 className="counter__number count3">6</h2>
 									<p>
-										{t('pages.home.counter.count3.line1')}
+										{t('DigitalAgencyCounter.count3.line1')}
 										<br />
-										{t('pages.home.counter.count3.line2')}
+										{t('DigitalAgencyCounter.count3.line2')}
 									</p>
 									<span className="counter__border"></span>
 								</div>
 								<div className="counter__item counter__anim">
 									<h2 className="counter__number count4">38</h2>
 									<p>
-										{t('pages.home.counter.count4.line1')}
+										{t('DigitalAgencyCounter.count4.line1')}
 										<br />
-										{t('pages.home.counter.count4.line2')}
+										{t('DigitalAgencyCounter.count4.line2')}
 									</p>
 									<span className="counter__border"></span>
 								</div>

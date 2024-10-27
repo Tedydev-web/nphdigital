@@ -1,7 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import Solution from '../../../public/assets/imgs/thumb/solution.png';
-import Solution2 from '../../../public/assets/imgs/thumb/solution-2.png';
 import Solution3 from '../../../public/assets/imgs/about/1/3.png';
 import Icon1 from '../../../public/assets/imgs/icon/1.png';
 import Icon2 from '../../../public/assets/imgs/icon/2.png';
@@ -11,8 +9,9 @@ import Icon5 from '../../../public/assets/imgs/icon/5.png';
 import Image from 'next/image';
 import animationCharCome from '@/lib/utils/animationCharCome';
 import 'swiper/css/autoplay';
-
+import { useTranslation } from 'react-i18next';
 const ServiceHero = () => {
+	const { t } = useTranslation('service');
 	const charAnim = useRef();
 	const solutionArea = useRef();
 	useEffect(() => {
@@ -104,9 +103,9 @@ const ServiceHero = () => {
 						<h1
 							className="solution__title animation__char_come"
 							ref={charAnim}>
-							Dịch vụ
+							{t('ServiceHero.title')}
 						</h1>
-						<p>Chúng tôi cung cấp các dịch vụ liên quan đến phát triển phần mềm, thiết kế website, quảng cáo trực tuyến, và nhiều hơn thế nữa.</p>
+						<p>{t('ServiceHero.description')}</p>
 					</div>
 
 					<div className="solution__right">
@@ -136,9 +135,9 @@ const ServiceHero = () => {
 						<div className="col-xxl-12">
 							<div className="solution__btm">
 								<ul style={{ display: 'flex', justifyContent: 'center', gap: '30px' }}>
-									<li>Chuyên nghiệp</li>
-									<li>Đáng tin cậy</li>
-									<li>Hỗ trợ</li>
+									<li>{t('ServiceHero.professional')}</li>
+									<li>{t('ServiceHero.reliable')}</li>
+									<li>{t('ServiceHero.support')}</li>
 								</ul>
 							</div>
 						</div>

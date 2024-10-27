@@ -1,0 +1,63 @@
+{
+  "common": {
+    "languageSwitcher": {
+      "vietnamese": "越南语",
+      "english": "英语",
+      "chinese": "中文",
+      "hindi": "印地语",
+      "changing": "切换为越南语",
+      "pleaseWait": "请稍等片刻。"
+    }
+  },
+  "header": {
+    "support": "支持中心"
+  },
+  "footer": {
+    "roll": {
+      "line1": "联系我们",
+      "line2": "我们"
+    },
+    "widget": {
+      "content": "我们在工作中始终保持创造性和专业精神，以最佳方式满足客户的所有要求。"
+    },
+    "title": {
+      "title1": "信息",
+      "title2": "联系",
+      "title3": "你是否有潜在的创意？"
+    },
+    "contact": {
+      "address": "838号, Vĩnh Bình村, An Vĩnh Ngãi社, Tân An市, 龙安省",
+      "phone": "(+84) 777 018 333",
+      "email": "hi@nphdigital.com",
+      "time": "上午08:00 - 晚上10:00",
+      "day": "每周七天",
+      "emailFrom": "输入您的电子邮件"
+    },
+    "link": {
+      "about": "介绍",
+      "service": "服务",
+      "blog": "文章",
+      "contact": "联系"
+    },
+    "copyright": {
+      "line1": "© NPH Digital版权所有。",
+      "line2": "已保留所有版权"
+    }
+  },
+  "canvas": {
+    "title": "关注我们",
+    "social": {
+      "zalo": "Zalo",
+      "facebook": "Facebook",
+      "telegram": "Telegram"
+    },
+    "home": "首页",
+    "about": "介绍",
+    "service": "服务",
+    "blog": "文章",
+    "contact": {
+      "title": "联系",
+      "address": "838, Vinh Binh Hamlet, An Vinh Ngai Commune, Tan An City, Long An Province"
+    }
+  }
+}

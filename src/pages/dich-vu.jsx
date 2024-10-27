@@ -128,7 +128,7 @@ const ServiceV5 = () => {
 					content="index, follow"
 				/>
 				<meta
-					http-equiv="Content-Type"
+					httpEquiv="Content-Type"
 					content="text/html; charset=UTF-8"
 				/>
 				<meta

@@ -1,0 +1,71 @@
+{
+  "ServiceHero": {
+    "title": "Services",
+    "description": "We provide services related to software development, website design, online advertising, and much more.",
+    "professional": "Professional",
+    "reliable": "Reliable",
+    "support": "Support"
+  },
+  "ServiceElementV5": {
+    "hero": {
+      "title": "Criteria for NPH Digital Services",
+      "description": "With extensive knowledge and diverse experience, we are committed to delivering impressive, professional, and effective solutions to create superior software for your projects."
+    },
+    "service": {
+      "mobileApp": {
+        "title": "Mobile App Development",
+        "item1": "Professional UI/UX Design",
+        "item2": "Cross-platform Development",
+        "item3": "Performance Optimization"
+      },
+      "web": {
+        "title": "Website Design & Development",
+        "item1": "Responsive Interface",
+        "item2": "SEO Optimization",
+        "item3": "CMS Integration"
+      },
+      "crmErpHrm": {
+        "title": "CRM, ERP, HRM Systems",
+        "item1": "Customized to Requirements",
+        "item2": "Data Integration",
+        "item3": "Intelligent Reporting"
+      },
+      "ads": {
+        "title": "Digital Marketing",
+        "item1": "Comprehensive Marketing Strategy",
+        "item2": "Online Advertising",
+        "item3": "Data Analysis"
+      },
+      "ai": {
+        "title": "Automated AI Programming",
+        "item1": "Natural Language Processing",
+        "item2": "Machine Learning",
+        "item3": "Process Automation"
+      },
+      "interaction": {
+        "title": "Digital Interaction",
+        "item1": "User Experience",
+        "item2": "Multimedia Interaction",
+        "item3": "Behavior Analysis"
+      },
+      "fanpage": {
+        "title": "Fanpage Management",
+        "item1": "Create and Manage Fanpages",
+        "item2": "Content Creation and Advertising",
+        "item3": "Performance Analysis"
+      },
+      "it": {
+        "title": "Outsourced IT Room Rental",
+        "item1": "Professional Personnel",
+        "item2": "Fully Equipped Facilities",
+        "item3": "24/7 Technical Support"
+      },
+      "uiUx": {
+        "title": "UX/UI Design",
+        "item1": "User Research",
+        "item2": "Interface Design",
+        "item3": "Experience Optimization"
+      }
+    }
+  }
+}

@@ -8,10 +8,11 @@ import SVGstar from '../../../public/assets/imgs/home-7/svgstar.png';
 import A2 from '../../../public/assets/imgs/home-7/a2.png';
 import A3 from '../../../public/assets/imgs/home-7/a3.jpg';
 import Link from 'next/link';
-
+import { useTranslation } from 'react-i18next';
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
 const CreativeAgencyAbout = () => {
+	const { t } = useTranslation('about');
 	const videoRef = useRef(null);
 	const [isPopupVisible, setIsPopupVisible] = useState(true); // Quản lý trạng thái popup
 
@@ -63,11 +64,11 @@ const CreativeAgencyAbout = () => {
 					className="popup-overlay"
 					onClick={handleUserInteraction}>
 					<div className="popup-content">
-						<p style={{ color: '#e0fd60', fontSize: '22px' }}>Hãy tương tác với chúng tôi!</p>
+						<p style={{ color: '#e0fd60', fontSize: '22px' }}>{t('popup.line1')}</p>
 						<button
 							className="popup-button"
 							onClick={handleUserInteraction}>
-							Click vào đây
+							{t('popup.line2')}
 						</button>
 					</div>
 				</div>
@@ -90,9 +91,9 @@ const CreativeAgencyAbout = () => {
 					<div className="row">
 						<div className="col-xxl-12">
 							<div className="sec-title-wrapper">
-								<h2 className="sec-title title-anim">
-									Chúng tôi kết nối <br /> doanh nghiệp với thế giới số <br /> một cách sáng tạo
-								</h2>
+								<h2 className="sec-title title-anim">{t('about.secTitle.line1')}</h2>
+								<h2 className="sec-title title-anim">{t('about.secTitle.line2')}</h2>
+								<h2 className="sec-title title-anim">{t('about.secTitle.line3')}</h2>
 							</div>
 						</div>
 					</div>
@@ -112,8 +113,8 @@ const CreativeAgencyAbout = () => {
 						</div>
 						<div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
 							<div className="about__mid-7 text-anim">
-								<p>Chúng tôi tự hào đã xây dựng nên một cộng đồng những con người đam mê sự thay đổi và sáng tạo. NPH Digital khởi đầu với mong muốn tạo ra sự hòa hợp giữa doanh nghiệp và thế giới số.</p>
-								<p>Không chỉ là những thiết kế đẹp, chúng tôi tin rằng thiết kế chính là công cụ mạnh mẽ để thay đổi và nâng cao giá trị doanh nghiệp.</p>{' '}
+								<p>{t('about.aboutMid1')}</p>
+								<p>{t('about.aboutMid2')}</p>{' '}
 								<Image
 									priority
 									width={155}
@@ -162,8 +163,9 @@ const CreativeAgencyAbout = () => {
 						className="wc-btn-secondary btn-hover btn-item"
 						href="cong-ty-tnhh-nph-digital-vinh-du-nhan-giai-thuong-top-10-thuong-hieu-uy-tin-hang-dau-viet-nam-2024"
 						scroll={false}>
-						Tìm hiểu <br />
-						chúng tôi<i className="fa-solid fa-arrow-right"></i>
+						{t('about.button.line1')} <br />
+						{t('about.button.line2')}
+						<i className="fa-solid fa-arrow-right"></i>
 					</Link>
 				</div>
 			</section>

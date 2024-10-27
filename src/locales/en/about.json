@@ -1,0 +1,47 @@
+{
+  "popup": {
+    "line1": "Interact with us!",
+    "line2": "Click here"
+  },
+  "hero": {
+    "title": "Technology Solutions & Design Bringing Your Ideas to Life",
+    "description": "After a journey of building and development, NPH Digital has gradually asserted its position in the information technology industry. At NPH Digital, you can not only be assured of our products and services but also feel the passionate enthusiasm for technology from our experienced and skilled team."
+  },
+  "about": {
+    "secTitle": {
+      "line1": "We connect",
+      "line2": "businesses to the digital world",
+      "line3": "creatively"
+    },
+    "aboutMid1": "We take pride in having built a community of individuals passionate about change and creativity. NPH Digital began with the desire to create harmony between businesses and the digital world.",
+    "aboutMid2": "Not just beautiful designs, we believe that design is a powerful tool to transform and enhance business value.",
+    "button": {
+      "line1": "Learn about",
+      "line2": "us"
+    }
+  },
+  "counter": {
+    "count1": {
+      "line1": "Projects",
+      "line2": "successfully completed"
+    },
+    "count2": {
+      "line1": "Satisfied",
+      "line2": "customers"
+    },
+    "count3": {
+      "line1": "Years of experience",
+      "line2": "in the field"
+    },
+    "count4": {
+      "line1": "Members",
+      "line2": "of our team"
+    }
+  },
+  "testimonial": {
+    "title": "An Excellent IT Partner",
+    "description": "At NPH Digital, quality and performance are not just goals but commitments. We always focus on optimizing performance and ensuring the best quality for every project, so you don't have to worry about interruptions to perfection.",
+    "author": "Mr. YURI KC",
+    "role": "CEO of NPH Digital"
+  }
+}

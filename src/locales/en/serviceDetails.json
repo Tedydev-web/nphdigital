@@ -1,0 +1,667 @@
+{
+"tuongTacSo": {
+    "DetailsTuongTacSo": {
+      "secTitle": "Digital Interaction",
+      "p": {
+        "1": "We provide digital interaction services, helping businesses transform digitally and create rich interactive experiences for users through digital platforms. This service focuses on enhancing the connection between brands and customers through tools, applications, and digital interaction strategies.",
+        "2": "With a combination of modern technology and creativity, we develop interactive solutions that help businesses reach customers more directly and effectively. We are committed to delivering a difference in every project, from developing interactive applications to integrating tools that support user behavior analysis."
+      },
+      "ul": {
+        "1": {
+          "li": {
+            "1": "+ Building a comprehensive digital interaction strategy",
+            "2": "+ Developing digital interaction platforms for businesses",
+            "3": "+ Supporting continuous maintenance and upgrades of interaction services",
+            "4": "+ Optimizing user experience on mobile devices",
+            "5": "+ Ensuring security and privacy for users",
+            "6": "+ Integrating tools for behavior analysis and customer data"
+          }
+        }
+      }
+    },
+    "tuongTacSoWorkflow": {
+      "1": {
+        "title": {
+          "line1": "Planning and",
+          "line2": "Drafting"
+        },
+        "description": "We start by listening to the needs and desires of our clients, then create a detailed plan and draft a digital interaction strategy. This helps create effective interactive solutions, ensuring that every step is directed towards the specific goals of the business."
+      },
+      "2": {
+        "title": "Team Collaboration",
+        "description": "We assemble a team of experts from various fields, from technology to marketing, to work together and develop digital interaction solutions. The collaboration of specialists will optimize efficiency in every aspect of the project, from user experience design to technology implementation."
+      },
+      "3": {
+        "title": {
+          "line1": "Flowchart and",
+          "line2": "Wireframe"
+        },
+        "description": "We develop detailed flowcharts and wireframes to illustrate the customer interaction process with the brand. This helps businesses easily visualize interaction scenarios and adjust strategies before official implementation."
+      },
+      "4": {
+        "title": {
+          "line1": "User Experience",
+          "line2": "Testing"
+        },
+        "description": "Before deployment, we conduct thorough user experience testing. Testing methods will help identify and fix issues, ensuring that the digital interaction solution is not only user-friendly but also provides the smoothest and most optimized experience."
+      }
+    },
+    "TuongTacSoService": {
+      "secTitle": "Comprehensive digital interaction solutions help businesses connect and grow strongly in the digital age.",
+      "p": {
+        "1": "Digital interaction is a crucial factor that helps businesses creatively and effectively reach customers. We provide solutions from interactive design to integrating modern technology, ensuring that interactions between businesses and customers are smooth and optimized.",
+        "2": "With the ability to develop cross-platform applications, integrate automation tools, and create perfect user experiences, we help businesses not only maintain relationships with existing customers but also attract potential new customers."
+      }
+    },
+    "TuongTacSoFaq": {
+      "title": "Digital Interaction Services",
+      "question": {
+        "1": "What is digital interaction?",
+        "2": "Why should I use digital interaction services?",
+        "3": "What tools are used in digital interaction?",
+        "4": "What are the current trends in digital interaction?",
+        "5": "How to get started with digital interaction services?"
+      },
+      "answer": {
+        "1": "Digital interaction is the way users interact with online services through digital interfaces, including websites, mobile applications, and social media platforms.",
+        "2": "Digital interaction services enhance user experience, improve interaction levels, and retain customers, thereby increasing business efficiency.",
+        "3": "We use tools such as Google Analytics, CRM platforms, and marketing automation software to optimize the interaction process and analyze data.",
+        "4": "Some trends include the use of artificial intelligence, personalized user experiences, and minimalist user interfaces to maximize effectiveness.",
+        "5": "You can contact us for consultation and to establish a digital interaction strategy tailored to your business needs."
+      }
+    }
+  },
+
+"thuePhongItNgoai": {
+    "DetailsIT": {
+      "secTitle": "Outsourced IT Room Rental",
+      "p": {
+        "1": "At NPH Digital, we offer outsourced IT room rental services with high-quality standards, helping businesses optimize operational costs and enhance work efficiency. The IT rooms are designed to be modern and comfortable, serving the needs of work, event organization, and training.",
+        "2": "With a deep understanding of business needs, we are committed to providing a flexible and creative working environment. Customers will benefit from advanced technical solutions, modern equipment, and a professional support team."
+      },
+      "ul": {
+        "1": {
+          "li": {
+            "1": "+ 24/7 technical support from IT experts.",
+            "2": "+ Fully equipped working rooms that meet high-quality standards.",
+            "3": "+ High-speed internet connection with absolute data security.",
+            "4": "+ Flexible services, allowing rental by the hour, day, or month depending on needs."
+          }
+        }
+      }
+    },
+    "ITWorkflow": {
+      "1": {
+        "title": {
+          "line1": "Planning and",
+          "line2": "Drafting"
+        },
+        "description": "We start by listening to the needs and desires of our clients, then create a detailed plan and draft a solution for renting IT rooms. This ensures that all client requests and expectations are met to the best standard."
+      },
+      "2": {
+        "title": "Team Collaboration",
+        "description": "Our team of experienced experts from various fields works closely together to ensure that every aspect of the IT room rental service is optimized. Each member contributes ideas and solutions to achieve maximum consistency and efficiency for the client."
+      },
+      "3": {
+        "title": {
+          "line1": "Workspace",
+          "line2": "Design"
+        },
+        "description": "We design flexible and comfortable workspaces that meet all client needs. This includes arranging furniture, technology equipment, and accompanying utilities to ensure an ideal working environment."
+      },
+      "4": {
+        "title": {
+          "line1": "Testing and",
+          "line2": "Evaluation"
+        },
+        "description": "Before handing over the service, we conduct testing and evaluation of the workspace to ensure that all requirements are perfectly fulfilled. We will immediately address any issues that arise to provide the best experience for clients."
+      }
+    },
+    "ITService": {
+      "secTitle": "Outsourced IT Room Rental - Effective Solutions for Your Business",
+      "p": {
+        "1": "NPH Digital's outsourced IT room rental service provides flexible and comfortable workspaces designed to maximally support businesses during their development process. We understand that the working environment greatly affects employee performance, which is why we create the most suitable spaces.",
+        "2": "With advanced technology infrastructure and accompanying utilities, we are committed to providing you not just a workspace but also a solution that helps you reach and serve customers better. Let us assist you in building an optimal working environment that helps your business grow sustainably in the digital age."
+      }
+    },
+    "ITFaq": {
+      "title": "Frequently Asked Questions About Outsourced IT Room Rental Services",
+      "question": {
+        "1": "What is outsourced IT room rental service?",
+        "2": "What amenities are provided when renting an outsourced IT room?",
+        "3": "Can I customize the workspace according to my needs?",
+        "4": "What rental time options are available?",
+        "5": "How do I book an outsourced IT room rental?"
+      },
+      "answer": {
+        "1": "The outsourced IT room rental service provides flexible and comfortable workspaces, allowing businesses to access professional technology and human resources solutions without needing to invest in fixed infrastructure.",
+        "2": "When renting an outsourced IT room, you will be provided with amenities such as high-speed internet, office equipment, meeting spaces, and 24/7 technical support. We are committed to creating the most efficient working environment for you.",
+        "3": "Yes, we offer customized solutions for your workspace to fit the needs and working style of your business. You can adjust the layout and design according to your preferences.",
+        "4": "We provide various flexible rental time options, from hourly, daily, to long-term rentals, making it easy for you to choose a service package that suits your needs.",
+        "5": "You can book an outsourced IT room rental through our website or contact our customer support team directly for advice and detailed guidance on the booking process."
+      }
+    }
+  },
+
+  "thietKeWebsite": {
+    "DetailsWebsite": {
+      "secTitle": "Website Design and Development",
+      "p": {
+        "1": "We offer high-quality website design and development services, helping your business have a stronger online presence. Every website we develop is uniquely designed to meet the needs and desires of our clients.",
+        "2": "We are committed to using the most advanced technology to create fast, mobile-optimized, and user-friendly websites. With a team of seasoned experts, we will support you from the ideation stage to the website going live."
+      },
+      "ul": {
+        "1": {
+          "li": {
+            "1": "+ Professional UI/UX design",
+            "2": "+ Dynamic web application development",
+            "3": "+ SEO optimization for the website",
+            "4": "+ Content Management System (CMS) integration",
+            "5": "+ Ensuring compatibility on all devices",
+            "6": "+ Regular maintenance and website updates support"
+          }
+        }
+      }
+    },
+    "WebsiteWorkflow": {
+      "1": {
+        "title": {
+          "line1": "Planning and",
+          "line2": "Drafting"
+        },
+        "description": "We start with detailed planning and drafting ideas based on customer requirements. Every design element is carefully considered to align with the project's goals and direction."
+      },
+      "2": {
+        "title": "Team Collaboration",
+        "description": "Close collaboration between development teams helps create high-quality products that meet customer needs. Designers, developers, and UX/UI experts work together to optimize the process."
+      },
+      "3": {
+        "title": {
+          "line1": "Flowchart and",
+          "line2": "Wireframe"
+        },
+        "description": "We create detailed flowcharts and wireframes to visualize the application's structure and workflow, ensuring that every step is executed logically and efficiently."
+      },
+      "4": {
+        "title": {
+          "line1": "Testing and",
+          "line2": "Evaluation"
+        },
+        "description": "After development is completed, we conduct user experience testing to ensure that the application is user-friendly, easy to use, and meets the expectations of end customers."
+      }
+    },
+    "WebsiteService": {
+      "secTitle": "We provide comprehensive and professional website design and development solutions.",
+      "p": {
+        "1": "Our website design and development ensure that every business has a complete digital solution. From creating user-friendly websites to optimizing speed and performance, we help your business easily reach potential customers.",
+        "2": "We focus on creating a smooth user experience, integrating SEO, and robust security. By using advanced technologies such as React, Next.js, and WordPress, we provide customized website solutions tailored to the specific needs of each business, while also helping you scale in the future.",
+        "3": "Our team is committed to delivering quality products, helping you build a strong brand in the digital space and achieve business goals quickly."
+      }
+    },
+    "WebsiteFaq": {
+      "title": "Frequently Asked Questions About Website Design and Development",
+      "question": {
+        "1": "What is NPH Digital's website development process?",
+        "2": "What are the benefits of designing an SEO-friendly website?",
+        "3": "How long does it take to complete a website design and development project?",
+        "4": "What technical solutions are used for website development?",
+        "5": "Is there support for maintenance and website updates after completion?"
+      },
+      "answer": {
+        "1": "Our website development process consists of 6 main steps: requirements analysis, UI/UX design, programming, testing, SEO optimization, and deployment. Each step is meticulously and professionally executed to ensure the final product performs at its best.",
+        "2": "An SEO-friendly website helps improve rankings on search engines like Google, thereby increasing organic traffic and effectively reaching potential customers. We ensure that every developed website integrates SEO from the early stages, helping you achieve long-term effectiveness.",
+        "3": "Completion time depends on the complexity of the project. Typically, a basic website can be completed in 4 to 6 weeks, including design, development, and testing phases. For more complex projects, the time may extend from 8 to 12 weeks.",
+        "4": "We use various advanced technologies such as React, Next.js, and WordPress for website development. These platforms not only optimize user experience but also ensure fast loading speeds, easy scalability, and robust security.",
+        "5": "Yes, we provide maintenance and update services after project completion. This includes regular checks, bug fixes, and updates of new features as per client needs to ensure the website operates smoothly and meets changing business requirements."
+      }
+    }
+  },
+
+"thietKeUIUX": {
+    "DetailsUIUX": {
+      "secTitle": "UI/UX Design",
+      "p": {
+        "1": "At NPH Digital, we provide professional UI/UX design services focused on creating engaging and effective user experiences. We understand that good design not only attracts users but also optimizes the interaction process with the product.",
+        "2": "Our design process begins with user research and market analysis to understand customer needs and behaviors. We then develop design prototypes, conduct testing, and gather feedback to improve the product. Our design team uses modern tools to create high-quality products, ensuring that every interface is user-friendly and easy to use."
+      },
+      "ul": {
+        "1": {
+          "li": {
+            "1": "+ User research and competitor analysis",
+            "2": "+ Beautiful and intuitive user interface (UI) design",
+            "3": "+ Building prototypes and wireframes for the product",
+            "4": "+ Optimizing user experience (UX) through A/B testing",
+            "5": "+ Responsive design for all devices",
+            "6": "+ Maintenance and design updates based on user feedback"
+          }
+        }
+      }
+    },
+    "UIUXWorkflow": {
+      "1": {
+        "title": {
+          "line1": "Planning and",
+          "line2": "Drafting"
+        },
+        "description": "We begin by listening to the needs and desires of our clients, then develop a detailed plan and draft solutions. This ensures that each subsequent step aligns with the final goals."
+      },
+      "2": {
+        "title": "Team Collaboration",
+        "description": "With a team of experienced experts from various fields, we collaborate closely to ensure creativity, efficiency, and consistency throughout the application development process. Each member contributes to different parts of the project, from design to programming."
+      },
+      "3": {
+        "title": {
+          "line1": "Flowchart and",
+          "line2": "Wireframe"
+        },
+        "description": "Next, we create detailed flowcharts and wireframes, helping clients to visualize the structure and functionality of the application more clearly. This is a crucial step to minimize risks and adjust early if necessary."
+      },
+      "4": {
+        "title": {
+          "line1": "Testing and",
+          "line2": "Evaluation"
+        },
+        "description": "Before the application is launched, we conduct user experience testing to ensure the interface is intuitive, easy to use, and provides the best experience. Any issues will be identified and addressed immediately."
+      }
+    },
+    "UIUXService": {
+      "secTitle": "We provide creative and reliable solutions that enhance user experience.",
+      "p": {
+        "1": "UI/UX design is not just about creating beautiful interfaces; it is about optimizing user experience to bring satisfaction and high efficiency for users. At NPH Digital, we understand that a successful product must harmoniously combine aesthetics and functionality.",
+        "2": "With a team of experienced designers and advanced technology, NPH Digital is committed to delivering the highest quality UI/UX design solutions, helping your business develop sustainably in the digital age."
+      }
+    },
+    "UIUXFaq": {
+      "title": "Frequently Asked Questions About UI/UX Design",
+      "question": {
+        "1": "What is UI design?",
+        "2": "Is UX a part of UI?",
+        "3": "What are the basic principles of UI design?",
+        "4": "How to ensure good UX design?",
+        "5": "What are common tools for UI/UX design?"
+      },
+      "answer": {
+        "1": "UI (User Interface) is how users interact with a digital product or service. UI design focuses on optimizing visual elements such as buttons, icons, and layouts to ensure the best user experience.",
+        "2": "No. UX (User Experience) focuses on optimizing the user journey, while UI focuses on interface elements. Both work together to create a complete product experience.",
+        "3": "UI design needs to be consistent, easy to use, clear, and intuitive. Elements such as colors, fonts, and layouts must be used appropriately to create clarity and attractiveness for users.",
+        "4": "Good UX design starts with a clear understanding of user needs. User research, prototyping, and listening to feedback are essential steps to continuously improve the user experience.",
+        "5": "Some popular tools for UI/UX design include Figma, Sketch, Adobe XD, and InVision. These tools support the prototyping process, interface design, and team collaboration."
+      }
+    }
+  },
+
+  "quangCaoSo": {
+    "DetailsMarketing": {
+      "secTitle": "Digital Advertising",
+      "p": {
+        "1": "At NPH Digital, we provide professional digital advertising services to enhance brand awareness and drive revenue.",
+        "2": "Each of our digital advertising campaigns is specifically designed to optimize benefits for customers, utilizing the most advanced technological solutions."
+      },
+      "ul": {
+        "1": {
+          "li": {
+            "1": "+ Google Ads",
+            "2": "+ Facebook Ads",
+            "3": "+ Social media advertising",
+            "4": "+ SEO & Keyword optimization",
+            "5": "+ Data analysis & Performance measurement",
+            "6": "+ Digital marketing strategy consulting"
+          }
+        }
+      }
+    },
+    "MarketingWorkflow": {
+      "1": {
+        "title": {
+          "line1": "Planning",
+          "line2": "Advertising Strategy"
+        },
+        "description": "We begin by clearly understanding the goals of the business and then build a suitable digital advertising strategy. This plan is adjusted to target the market, optimize costs, and achieve the desired results."
+      },
+      "2": {
+        "title": {
+          "line1": "Working with",
+          "line2": "Expert Team"
+        },
+        "description": "Our team of experts from advertising, content creation, and data analysis will collaborate to develop effective campaigns. We ensure that each campaign is executed with creativity and thorough analysis."
+      },
+      "3": {
+        "title": {
+          "line1": "Content Design",
+          "line2": "and Campaign Implementation"
+        },
+        "description": "We create high-quality advertising content, including images and videos, to optimize customer engagement. The campaign is optimized to target the right customer segments and drive the highest conversion rates."
+      },
+      "4": {
+        "title": {
+          "line1": "Testing and",
+          "line2": "Ad Optimization"
+        },
+        "description": "We continuously test and optimize advertising campaigns to ensure effectiveness. Using measurement tools like Google Analytics and Facebook Pixel, we track and adjust campaigns based on real data."
+      }
+    },
+    "MarketingService": {
+      "secTitle": "We provide creative and effective digital advertising solutions.",
+      "p": {
+        "1": "At NPH Digital, we understand that digital advertising is not just a part of the marketing strategy but also a powerful tool to connect businesses with customers. We develop effective digital advertising campaigns targeting the right audience and optimizing advertising costs.",
+        "2": "With a team of experienced experts in advertising and data analysis, we are committed to delivering comprehensive solutions from strategic planning to campaign implementation and optimization, ensuring that you achieve the best results in all digital advertising activities."
+      }
+    },
+    "MarketingFaq": {
+      "title": "Frequently Asked Questions About Digital Advertising Services",
+      "question": {
+        "1": "How does the digital advertising implementation process work?",
+        "2": "Can I run ads on social media myself?",
+        "3": "What metrics should I track to evaluate advertising effectiveness?",
+        "4": "How long does it take to see results from advertising?",
+        "5": "Is there support for optimizing advertising campaigns?"
+      },
+      "answer": {
+        "1": "Our process begins by analyzing the requirements and objectives of the business. Then we plan the strategy, design advertising content, implement the campaign, and finally measure effectiveness to optimize.",
+        "2": "Yes, you can run ads yourself, but we recommend working with experts to optimize effectiveness. Our team can assist you in planning and executing successful advertising campaigns.",
+        "3": "Key metrics include click-through rate (CTR), conversion rate, cost per click (CPC), and revenue from ads. We will help you set up analytics tools to track and evaluate campaign effectiveness.",
+        "4": "The time to see results from advertising depends on many factors such as the type of ads, budget, and target market. Typically, you can start seeing results within 1 to 4 weeks.",
+        "5": "Yes, we provide continuous optimization services for advertising campaigns to ensure maximum effectiveness. We monitor and adjust campaigns based on real data to ensure that you achieve the best results."
+      }
+    }
+  },
+
+  "mobileApp": {
+    "DetailsMobileApp": {
+      "secTitle": "Mobile Application Development",
+      "p": {
+        "1": "At NPH Digital, we pride ourselves on being a professional mobile application development partner, providing comprehensive solutions from idea to execution. We help businesses effectively digitalize by creating optimized mobile applications that deliver practical value and leave a brand impression in users' minds.",
+        "2": "We adhere to a professional development process from needs assessment, UI/UX design, application development, to testing and post-deployment support. With a team of experienced technicians, we ensure that every application meets the highest standards of quality and performance."
+      },
+      "ul": {
+        "1": {
+          "li": {
+            "1": "+ Professional UI/UX Design",
+            "2": "+ Cross-platform Development",
+            "3": "+ Performance Optimization",
+            "4": "+ Application Security",
+            "5": "+ API and Backend Service Integration",
+            "6": "+ Ongoing Maintenance and Updates"
+          }
+        }
+      }
+    },
+    "MobileAppWorkflow": {
+      "1": {
+        "title": {
+          "line1": "Planning and",
+          "line2": "Sketching"
+        },
+        "description": "We start by listening to the needs and desires of our clients, then create a detailed plan and outline solutions. This ensures that each subsequent step aligns with the final objectives."
+      },
+      "2": {
+        "title": "Team Collaboration",
+        "description": "With a team of experienced experts from various fields, we work closely to ensure creativity, efficiency, and synchronization throughout the application development process. Each member contributes to every part of the project, from design to programming."
+      },
+      "3": {
+        "title": {
+          "line1": "Flowchart and",
+          "line2": "Wireframe"
+        },
+        "description": "Next, we create detailed flowcharts and wireframes, helping clients visualize the structure and functionality of the application more clearly. This step is crucial to minimize risks and make adjustments early if necessary."
+      },
+      "4": {
+        "title": {
+          "line1": "User Experience",
+          "line2": "Testing"
+        },
+        "description": "Before the application is launched, we conduct user experience testing to ensure an intuitive interface, ease of use, and the best possible experience. Any issues will be identified and addressed immediately."
+      }
+    },
+    "MobileAppDetailsService": {
+      "secTitle": "We not only develop mobile applications but also provide innovative and reliable solutions.",
+      "p": {
+        "1": "Today’s mobile applications are not just connection tools but also bridges between businesses and customers. We build products that help you reach your target market more effectively.",
+        "2": "From cross-platform application development to performance optimization and user experience enhancement, we are committed to providing the highest quality solutions, helping you thrive in the digital age."
+      }
+    },
+    "MobileAppFaq": {
+      "title": "Frequently Asked Questions About Mobile Application Development",
+      "question": {
+        "1": "What steps are involved in the mobile application development process?",
+        "2": "Can I develop a cross-platform application?",
+        "3": "How long does it take to complete a mobile application development project?",
+        "4": "How can I optimize the user experience on mobile applications?",
+        "5": "Is there support for maintenance and updates after the application is completed?"
+      },
+      "answer": {
+        "1": "Our application development process includes: requirements analysis, UI/UX design, programming, testing, and deployment. Each phase is executed professionally to ensure the application runs smoothly and provides the best user experience.",
+        "2": "Yes, we offer cross-platform application development services using modern frameworks like Flutter and React Native. This helps you save costs and development time while ensuring good performance on both iOS and Android.",
+        "3": "The time required for application development depends on the complexity and specific requirements of the project. Typically, a basic application takes about 3 to 6 months to complete, including testing and optimization phases.",
+        "4": "The time to see results from advertising depends on many factors such as the type of ads, budget, and target market. Generally, you can start seeing results within 1 to 4 weeks.",
+        "5": "Yes, we provide continuous optimization services for advertising campaigns to ensure maximum effectiveness. We monitor and adjust campaigns based on real data to ensure you achieve the best results."
+      }
+    }
+  },
+
+  "lapTrinhAI": {
+    "DetailsAI": {
+      "secTitle": "AI Programming and Automation",
+      "p": {
+        "1": "At NPH Digital, we offer advanced AI programming and automation services, helping businesses optimize workflows and enhance performance. We focus on developing intelligent solutions, from data analysis to business process automation, to deliver maximum value to our clients.",
+        "2": "Our AI programming process includes: requirements analysis, solution design, AI model development, testing, and deployment. Our team of professional engineers is committed to ensuring that each project meets high-quality standards and practical applicability."
+      },
+      "ul": {
+        "1": {
+          "li": {
+            "1": "+ Continuous maintenance and updates for AI solutions",
+            "2": "+ Development of Machine Learning and Deep Learning models",
+            "3": "+ Business Process Automation (RPA) to minimize manual tasks",
+            "4": "+ Provision of chatbot and virtual assistant solutions to enhance customer experience",
+            "5": "+ Big Data analysis for smarter decision-making",
+            "6": "+ Integrating AI into existing systems to optimize performance"
+          }
+        }
+      }
+    },
+    "AIWorkflow": {
+      "1": {
+        "title": {
+          "line1": "Planning and",
+          "line2": "Sketching"
+        },
+        "description": "We start by listening to the needs and desires of our clients, then create a detailed plan and outline solutions. This ensures that each subsequent step aligns with the final objectives."
+      },
+      "2": {
+        "title": "Team Collaboration",
+        "description": "With a team of experienced experts from various fields, we work closely to ensure creativity, efficiency, and synchronization throughout the application development process. Each member contributes to every part of the project, from design to programming."
+      },
+      "3": {
+        "title": {
+          "line1": "Flowchart and",
+          "line2": "Wireframe"
+        },
+        "description": "Next, we create detailed flowcharts and wireframes, helping clients visualize the structure and functionality of the application more clearly. This step is crucial to minimize risks and make adjustments early if necessary."
+      },
+      "4": {
+        "title": {
+          "line1": "User Experience",
+          "line2": "Testing"
+        },
+        "description": "Before the application is launched, we conduct user experience testing to ensure an intuitive interface, ease of use, and the best possible experience. Any issues will be identified and addressed immediately."
+      }
+    },
+    "AIService": {
+      "secTitle": "NPH Digital's AI and automation programming services help businesses optimize processes and enhance work efficiency.",
+      "p": {
+        "1": "With NPH Digital's AI and automation programming services, we help businesses optimize workflows, enhance performance, and reduce costs. We develop customized AI solutions tailored to the specific needs of each client.",
+        "2": "We are committed to using the latest technologies, from machine learning to deep learning, to build intelligent applications and automate business processes. This saves you time and resources while enhancing your competitive ability in the market."
+      }
+    },
+    "AIFaq": {
+      "title": "Frequently Asked Questions About AI Programming and Automation Services",
+      "question": {
+        "1": "What are AI programming and automation services?",
+        "2": "What technologies are used in AI programming?",
+        "3": "How can I determine the right AI solution for my business?",
+        "4": "Can I request upgrades and maintenance for my AI application?",
+        "5": "Is there training support for staff to use the AI solution?"
+      },
+      "answer": {
+        "1": "NPH Digital's AI programming and automation services help businesses optimize workflows, enhance performance, and reduce costs through the use of customized AI solutions and process automation.",
+        "2": "We use modern technologies such as machine learning, deep learning, and Robotic Process Automation (RPA) to develop effective AI applications that meet business needs.",
+        "3": "We will analyze your business's current needs and processes to provide the most customized and suitable AI solutions. Our expert team will advise and support you at every step of this process.",
+        "4": "Yes, we offer maintenance and upgrade services for AI applications after completion. We are ready to assist with bug fixes, feature updates, and performance optimizations to ensure the application operates stably and meets your needs.",
+        "5": "Yes, we provide training courses for your staff to ensure they can effectively use and leverage the AI solutions we offer."
+      }
+    }
+  },
+
+  "crmErpHrm": {
+    "DetailsSystem": {
+      "secTitle": {
+        "line1": "Services",
+        "line2": "CRM, ERP, HRM"
+      },
+      "p": {
+        "1": "At NPH Digital, we provide integrated CRM, ERP, and HRM solutions that help businesses optimize workflows and enhance management efficiency. These systems are not just software; they are powerful tools that assist businesses in managing customer relationships, enterprise resources, and human resources in a synchronized and effective manner.",
+        "2": "Our service deployment process includes: consulting, needs analysis, custom solution design, system deployment, staff training, and post-deployment support. We are committed to delivering high-quality solutions with dedicated support from our experienced team of experts."
+      },
+      "ul": {
+        "1": {
+          "li": {
+            "1": "+ Support customization of the system to fit the specific needs of the business.",
+            "2": "+ Manage customer relationships (CRM) to optimize sales processes and customer care.",
+            "3": "+ Continuous maintenance and updates to ensure optimal performance.",
+            "4": "+ Manage enterprise resources (ERP) to track and manage all internal activities."
+          }
+        }
+      }
+    },
+    "SystemWorkflow": {
+      "1": {
+        "title": {
+          "line1": "Consultation and",
+          "line2": "Requirements Analysis"
+        },
+        "description": "At NPH Digital, we begin the CRM, ERP, HRM service process by listening to the needs and desires of our clients. We conduct in-depth analysis to thoroughly understand the requirements and challenges that businesses are currently facing."
+      },
+      "2": {
+        "title": {
+          "line1": "Designing",
+          "line2": "Custom Solutions"
+        },
+        "description": "After understanding the requirements, our team of experts will design customized CRM, ERP, HRM solutions. This ensures that the system is built in accordance with the business processes and specific objectives of the company."
+      },
+      "3": {
+        "title": {
+          "line1": "Deployment and",
+          "line2": "Training"
+        },
+        "description": "Once the solution has been designed, we will proceed with the system deployment. Our team will also train the business staff to ensure they can use the system as effectively as possible."
+      },
+      "4": {
+        "title": {
+          "line1": "Testing and",
+          "line2": "Post-Deployment Support"
+        },
+        "description": "After the system has been deployed, we provide ongoing support to ensure that the system operates smoothly and meets the specific requirements of the business. Our expert team will assist with staff training and ensure that the system is used effectively."
+      }
+    },
+    "SystemService": {
+      "secTitle": "NPH Digital's CRM, ERP, HRM services help businesses optimize processes and enhance work efficiency.",
+      "p": {
+        "1": "With NPH Digital's CRM, ERP, HRM services, we help businesses optimize workflows, enhance performance, and reduce costs. We develop customized solutions tailored to the specific needs of each client.",
+        "2": "Our team not only develops customized systems suited to the specific needs of the business but also supports deployment and trains staff for effective use. From managing customer information to optimizing workflows and enhancing employee satisfaction, our services help you build an efficient and sustainable work environment in the digital age."
+      }
+    },
+    "SystemFaq": {
+      "title": "Frequently Asked Questions About CRM, ERP, HRM Services",
+      "question": {
+        "1": "What is CRM service and what benefits does it bring to businesses?",
+        "2": "What is ERP and how does it help businesses save time?",
+        "3": "What is HRM and what benefits does it bring to human resource management?",
+        "4": "Can we customize the service according to specific needs?",
+        "5": "Is there support for maintenance and updates of the systems after deployment?"
+      },
+      "answer": {
+        "1": "CRM (Customer Relationship Management) service helps businesses manage customer information, improve relationships, and enhance customer satisfaction. It allows you to track interaction history, manage transactions, and analyze data to make better business decisions.",
+        "2": "ERP (Enterprise Resource Planning) is an integrated management system that helps businesses automate and optimize business processes. It allows you to track finances, production, and supply chain management, thus saving time and minimizing errors due to manual processing.",
+        "3": "HRM (Human Resource Management) is a system that helps businesses manage employee information, track performance, and handle recruitment, training, and talent development processes. It enhances work efficiency and helps retain employees better.",
+        "4": "Yes, we provide customization services for CRM, ERP, and HRM systems to fit the specific needs of the business. Our team of experts will work with you to identify requirements and develop the best solution for you.",
+        "5": "Yes, we provide continuous maintenance and updates for CRM, ERP, and HRM systems after deployment. We ensure that the systems always operate effectively and meet the changing needs of the business."
+      }
+    }
+  },
+
+  "chamSocFanpage": {
+    "DetailsFanpage": {
+      "secTitle": "Fanpage Care",
+      "p": {
+        "1": "At NPH Digital, we provide comprehensive and professional Fanpage care services, helping your business enhance interaction and build a consistent brand image. We create relevant content, increase engagement, and ensure that every post on the Fanpage brings real value to the target customers.",
+        "2": "Our Fanpage care service includes researching the target audience, developing a detailed content plan, and implementing social media marketing strategies. We assist businesses not only in growing their follower count but also in optimizing performance from Facebook advertising campaigns."
+      },
+      "ul": {
+        "1": {
+          "li": {
+            "1": "+ Manage and interact with customers on the Fanpage",
+            "2": "+ Create engaging posts tailored to each customer segment",
+            "3": "+ Design professional images and videos for posts",
+            "4": "+ Run ads to optimize budgets and reach the right potential customers",
+            "5": "+ Consult and develop long-term Fanpage strategies",
+            "6": "+ Analyze, report, and improve Fanpage performance"
+          }
+        }
+      }
+    },
+    "FanpageWorkflow": {
+      "1": {
+        "title": {
+          "line1": "Analyzing Needs",
+          "line2": "and Planning"
+        },
+        "description": "We start by thoroughly analyzing the client's requirements. From there, we create a content plan and an outreach strategy that aligns with the specific goals of the Fanpage, ensuring that each step is well-calculated."
+      },
+      "2": {
+        "title": {
+          "line1": "Creating",
+          "line2": "Creative Content"
+        },
+        "description": "With a team of creative and experienced experts, we produce engaging and impressive content. From posts and images to videos, everything is optimized to enhance interaction and convey the brand message effectively."
+      },
+      "3": {
+        "title": {
+          "line1": "Effective Interaction",
+          "line2": "Management"
+        },
+        "description": "We proactively manage interaction activities on the Fanpage, from responding to comments and messages to coordinating online contests and events. This helps maintain relationships with customers and strengthen community engagement."
+      },
+      "4": {
+        "title": {
+          "line1": "Analyzing and",
+          "line2": "Optimizing Strategy"
+        },
+        "description": "After each campaign, we meticulously analyze data to evaluate effectiveness and propose optimal solutions for the next steps. From adjusting content to optimizing ads, we ensure your Fanpage always achieves the best results."
+      }
+    },
+    "FanpageService": {
+      "secTitle": "NPH Digital's professional Fanpage care services help you build a strong brand and effectively engage customers.",
+      "p": {
+        "1": "With NPH Digital's Fanpage care services, we not only manage content but also help you build a solid brand image, reach the right target audience, and enhance interaction on social media.",
+        "2": "We develop creative, unique, and engaging content strategies while optimizing advertising to boost interaction and conversions. From managing comments and messages to analyzing effectiveness, we are always with you on your brand development journey."
+      }
+    },
+    "FanpageFaq": {
+      "title": "Frequently Asked Questions About Fanpage Care Services",
+      "question": {
+        "1": "What does the Fanpage care service include?",
+        "2": "How to build effective Fanpage content?",
+        "3": "What are the benefits of Fanpage care?",
+        "4": "Does this service support advertising?",
+        "5": "How can I track the results of Fanpage care?"
+      },
+      "answer": {
+        "1": "Our Fanpage care service includes content management, post creation, advertising optimization, interaction tracking, data analysis, and management of comments and messages. We help you build a brand image and enhance interaction with customers on social media.",
+        "2": "We build Fanpage content based on a creative strategy aimed at the target audience. Diverse content includes images, videos, posts, and direct interactions, helping to enhance brand recognition and user engagement.",
+        "3": "Fanpage care helps your brand maintain an online presence, increase interaction with customers, and boost sales. Additionally, regularly monitoring and optimizing the Fanpage allows you to capture trends and adjust marketing strategies in a timely manner.",
+        "4": "Yes, we offer advertising optimization services on the Fanpage, helping you reach the right target customers. We will monitor advertising effectiveness, adjust budgets, and strategies to achieve the best results.",
+        "5": "We provide detailed reports on the effectiveness of Fanpage care, including likes, comments, shares, and user interactions. You will have a comprehensive view of the Fanpage's development and can adjust marketing strategies if needed."
+      }
+    }
+  }
+}

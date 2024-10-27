@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 const SystemWorkflow = () => {
+	const { t } = useTranslation('serviceDetails');
+
 	return (
 		<>
 			<section className="workflow__area-6">
@@ -9,40 +13,40 @@ const SystemWorkflow = () => {
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										Tư vấn và <br />
-										Phân tích yêu cầu
+										<span>{t('crmErpHrm.SystemWorkflow.1.title.line1')}</span> <br />
+										<span>{t('crmErpHrm.SystemWorkflow.1.title.line2')}</span>
 									</h6>
-									<p>Tại NPH Digital, chúng tôi bắt đầu quy trình dịch vụ CRM, ERP, HRM bằng việc lắng nghe nhu cầu và mong muốn của khách hàng. Chúng tôi tiến hành phân tích sâu rộng để hiểu rõ các yêu cầu và thách thức hiện tại mà doanh nghiệp đang đối mặt.</p>
+									<p>{t('crmErpHrm.SystemWorkflow.1.description')}</p>
 								</div>
 							</div>
 
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										Thiết kế giải pháp <br />
-										tùy chỉnh
+										<span>{t('crmErpHrm.SystemWorkflow.2.title.line1')}</span> <br />
+										<span>{t('crmErpHrm.SystemWorkflow.2.title.line2')}</span>
 									</h6>
-									<p>Sau khi nắm bắt được các yêu cầu, đội ngũ chuyên gia của chúng tôi sẽ thiết kế giải pháp CRM, ERP, HRM tùy chỉnh. Điều này đảm bảo rằng hệ thống được xây dựng phù hợp với quy trình kinh doanh và mục tiêu cụ thể của doanh nghiệp.</p>
+									<p>{t('crmErpHrm.SystemWorkflow.2.description')}</p>
 								</div>
 							</div>
 
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										Triển khai và <br />
-										Đào tạo
+										<span>{t('crmErpHrm.SystemWorkflow.3.title.line1')}</span> <br />
+										<span>{t('crmErpHrm.SystemWorkflow.3.title.line2')}</span>
 									</h6>
-									<p>Khi giải pháp đã được thiết kế xong, chúng tôi sẽ tiến hành triển khai hệ thống. Đội ngũ của chúng tôi cũng sẽ đào tạo nhân viên doanh nghiệp để họ có thể sử dụng hệ thống một cách hiệu quả nhất.</p>
+									<p>{t('crmErpHrm.SystemWorkflow.3.description')}</p>
 								</div>
 							</div>
 
 							<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
 								<div className="workflow__slide-6">
 									<h6 className="workflow__title-6">
-										Kiểm thử và <br />
-										Hỗ trợ sau triển khai
+										<span>{t('crmErpHrm.SystemWorkflow.4.title.line1')}</span> <br />
+										<span>{t('crmErpHrm.SystemWorkflow.4.title.line2')}</span>
 									</h6>
-									<p>Sau khi triển khai, chúng tôi thực hiện kiểm thử để đảm bảo mọi chức năng hoạt động đúng như mong đợi. Chúng tôi cũng cung cấp dịch vụ hỗ trợ sau triển khai để khắc phục mọi vấn đề và đảm bảo hệ thống hoạt động ổn định trong thời gian dài.</p>
+									<p>{t('crmErpHrm.SystemWorkflow.4.description')}</p>
 								</div>
 							</div>
 						</div>

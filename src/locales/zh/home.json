@@ -1,0 +1,161 @@
+{
+  "DigitalAgencyHero": {
+    "link": "咨询、设计、数字化转型技术解决方案",
+    "title": {
+      "line1": "NPH 数字",
+      "line2": "解决方案",
+      "line3": "数字化转型"
+    },
+    "subtitle": "我们的目标是成为区域内领先的信息技术合作伙伴。我们始终在工作中发挥创意和专业精神，以最佳方式满足客户的所有需求。",
+    "experience": {
+      "title": "1000+",
+      "description": "出色完成的项目"
+    }
+  },
+
+  "DigitalAgencyRoll": {
+    "words": [
+      "专业", "精致", "高效", "创新", "兼容", 
+      "突破", "简化", "响应", "全面", "创意", 
+      "集成", "战略", "优化", "自动化", "智能", 
+      "可靠", "精准", "简易", "独特"
+    ]
+  },
+
+  "DigitalAgencyAbout": {
+    "title": "数字化转型技术优化流程和体验，为您创造更多价值。",
+    "description": "我们致力于提供卓越的数字化转型软件解决方案，带来令人印象深刻的效果，并确保开发成本的最佳优化。我们的首要任务不仅是产品的完美，还有您的预算控制。",
+    "button": {
+      "line1": "介绍",
+      "line2": "关于我们"
+    }
+  },
+
+  "ServiceElementV4": {
+    "title": "我们的服务",
+    "blogText": "我们明白每个项目的独特性需要创造力。因此，NPH 数字不断努力倾听和学习，为您带来最优价值。",
+    "secSubTitle": "我们的服务",
+    "mobileApp": {
+      "line1": "移动",
+      "line2": "应用"
+    },
+    "uiUx": {
+      "line1": "UI/UX",
+      "line2": "设计"
+    },
+    "crmErpHrm": "CRM、ERP、HRM",
+    "it": {
+      "line1": "外包",
+      "line2": "IT 服务"
+    },
+    "fanpage": {
+      "line1": "粉丝专页",
+      "line2": "管理"
+    },
+    "web": {
+      "line1": "网站",
+      "line2": "设计"
+    },
+    "ads": {
+      "line1": "数字",
+      "line2": "广告"
+    },
+    "ai": "AI 编程",
+    "interaction": {
+      "line1": "数字",
+      "line2": "互动"
+    }
+  },
+
+  "DigitalAgencyCounter": {
+    "count1": {
+      "line1": "出色完成的",
+      "line2": "项目"
+    },
+    "count2": {
+      "line1": "满意的",
+      "line2": "客户"
+    },
+    "count3": {
+      "line1": "领域内的",
+      "line2": "多年经验"
+    },
+    "count4": {
+      "line1": "我们的",
+      "line2": "成员"
+    }
+  },
+
+  "DigitalAgencyWorkflow": {
+    "secSubTitle": "流程",
+    "secTitle": "工作流程",
+    "step1": "步骤 01",
+    "number1": "01",
+    "title1": "构思",
+    "description1": "业务分析团队将讨论并获取客户的详细设计需求。",
+    "step2": "步骤 02",
+    "number2": "02",
+    "title2": "草图",
+    "description2": "根据提供的信息，我们将分析并为产品绘制系统架构。",
+    "step3": "步骤 03",
+    "number3": "03",
+    "title3": "设计",
+    "description3": "接收到功能描述后，设计团队将为系统构建界面。",
+    "step4": "步骤 04",
+    "number4": "04",
+    "title4": "开发",
+    "description4": "开发团队将分析并选择合适的技术和方案，根据设计构建产品。",
+    "step5": "步骤 05",
+    "number5": "05",
+    "title5": "测试",
+    "description5": "测试团队将与开发团队同步工作，提供反馈，确保产品在每个阶段都具备高质量。",
+    "step6": "步骤 06",
+    "number6": "06",
+    "title6": "部署",
+    "description6": "开发团队将进行系统部署和运营，以确保系统稳定运行并优化成本。"
+  },
+
+  "DigitalAgencyPortfolio": {
+    "secTitle": "项目",
+    "title1": "LUA - 家庭瑜伽练习应用",
+    "description1": "移动应用开发",
+    "title2": "网球社交应用",
+    "description2": "移动应用开发",
+    "title3": "Sense - 预约服务应用",
+    "description3": "移动应用开发",
+    "title4": "Fowi - 在线约会应用",
+    "description4": "移动应用开发",
+    "title5": "Aquabay - Aquabay 网站项目",
+    "description5": "网站开发与设计",
+    "title6": "OCCO - OCCO 网站项目",
+    "description6": "网站开发与设计",
+    "title7": "CSIP - CSIP 网站项目",
+    "description7": "网站开发与设计",
+    "title8": "DĐTM - 完整 ERP Web 应用",
+    "description8": "网站开发与设计",
+    "button": {
+      "line1": "查看其他",
+      "line2": "项目"
+    }
+  },
+
+  "DigitalAgencyBrand": {
+    "secSubTitle": "品牌",
+    "secTitle": "我们很高兴与以下知名科技品牌合作"
+  },
+
+  "DigitalMarketingTestimonial": {
+    "slide": "我们相信客户满意度是 NPH 数字成功的最高标准。我们的承诺是提供先进、高效且易于使用的技术解决方案，帮助合作伙伴实现业务目标。我们始终将客户的利益放在首位，并不断提高服务质量以满足所有期望。",
+    "name": "YURI KC 先生",
+    "role": "NPH 数字首席执行官"
+  },
+
+  "DigitalAgencyCTA": {
+    "subTitle": "联系",
+    "title": "我们很高兴聆听您的想法",
+    "button": {
+      "line1": "联系我们",
+      "line2": "获取更多信息"
+    }
+  }
+}

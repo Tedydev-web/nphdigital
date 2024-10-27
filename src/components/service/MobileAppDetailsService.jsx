@@ -1,8 +1,11 @@
 import ServiceDetail from '../../../public/assets/imgs/service/detail/MobileApp/2.jpeg';
 import Shape6 from '../../../public/assets/imgs/icon/shape-6.png';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 const MobileAppDetailsService = () => {
+	const { t } = useTranslation('serviceDetails');
+
 	return (
 		<>
 			<section className="service__detail">
@@ -11,7 +14,7 @@ const MobileAppDetailsService = () => {
 					<div className="row">
 						<div className="col-xxl-12">
 							<div className="sec-title-wrapper">
-								<h2 className="sec-title title-anim">Chúng tôi không chỉ phát triển ứng dụng di động, mà còn mang đến những giải pháp sáng tạo và đáng tin cậy.</h2>
+								<h2 className="sec-title title-anim">{t('mobileApp.MobileAppDetailsService.secTitle')}</h2>
 							</div>
 						</div>
 						<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
@@ -38,8 +41,8 @@ const MobileAppDetailsService = () => {
 								/>
 							</div>
 							<div className="service__detail-content">
-								<p>Ứng dụng di động ngày nay không chỉ là công cụ kết nối, mà còn là cầu nối giữa doanh nghiệp và khách hàng. Chúng tôi xây dựng những sản phẩm giúp bạn tiếp cận thị trường mục tiêu hiệu quả hơn.</p>
-								<p>Từ phát triển ứng dụng đa nền tảng đến tối ưu hóa hiệu năng và trải nghiệm người dùng, chúng tôi cam kết cung cấp giải pháp chất lượng cao nhất, giúp bạn phát triển mạnh mẽ trong kỷ nguyên số.</p>
+								<p>{t('mobileApp.MobileAppDetailsService.p.1')}</p>
+								<p>{t('mobileApp.MobileAppDetailsService.p.2')}</p>
 							</div>
 						</div>
 					</div>

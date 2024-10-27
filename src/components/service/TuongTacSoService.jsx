@@ -1,8 +1,11 @@
 import ServiceDetail from '../../../public/assets/imgs/service/detail/tuongtacso/2.webp';
 import Shape6 from '../../../public/assets/imgs/icon/shape-6.png';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 const TuongTacSoService = () => {
+	const { t } = useTranslation('serviceDetails');
+
 	return (
 		<>
 			<section className="service__detail">
@@ -11,7 +14,7 @@ const TuongTacSoService = () => {
 					<div className="row">
 						<div className="col-xxl-12">
 							<div className="sec-title-wrapper">
-								<h2 className="sec-title title-anim">Giải pháp tương tác số toàn diện giúp doanh nghiệp kết nối và phát triển mạnh mẽ trong thời đại số.</h2>
+								<h2 className="sec-title title-anim">{t('tuongTacSo.TuongTacSoService.secTitle')}</h2>
 							</div>
 						</div>
 						<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
@@ -38,8 +41,8 @@ const TuongTacSoService = () => {
 								/>
 							</div>
 							<div className="service__detail-content">
-								<p>Tương tác số là yếu tố quan trọng giúp doanh nghiệp tiếp cận khách hàng một cách sáng tạo và hiệu quả. Chúng tôi cung cấp các giải pháp từ thiết kế tương tác đến tích hợp công nghệ hiện đại, đảm bảo sự tương tác giữa doanh nghiệp và khách hàng diễn ra mượt mà và tối ưu.</p>
-								<p>Với khả năng phát triển ứng dụng đa nền tảng, tích hợp công cụ tự động hóa, và xây dựng trải nghiệm người dùng hoàn hảo, chúng tôi giúp doanh nghiệp không chỉ duy trì mối quan hệ với khách hàng hiện tại mà còn thu hút thêm những khách hàng tiềm năng mới.</p>
+								<p>{t('tuongTacSo.TuongTacSoService.p.1')}</p>
+								<p>{t('tuongTacSo.TuongTacSoService.p.2')}</p>
 							</div>
 						</div>
 					</div>

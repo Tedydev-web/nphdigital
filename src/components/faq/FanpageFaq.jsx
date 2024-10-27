@@ -1,8 +1,10 @@
 import { Accordion } from 'react-bootstrap';
 import ThumbFaq from '../../../public/assets/imgs/thumb/faq.jpg';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 const FanpageFaq = () => {
+	const { t } = useTranslation('serviceDetails');
 	return (
 		<>
 			<section className="faq__area">
@@ -21,7 +23,7 @@ const FanpageFaq = () => {
 							</div>
 						</div> */}
 						<div className="faq__content">
-							<h2 className="faq__title title-anim">Câu hỏi thường gặp về dịch vụ Chăm sóc Fanpage</h2>
+							<h2 className="faq__title title-anim">{t('chamSocFanpage.FanpageFaq.title')}</h2>
 
 							<div className="faq__list">
 								<Accordion
@@ -34,10 +36,10 @@ const FanpageFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingOne">
-											Dịch vụ chăm sóc Fanpage bao gồm những gì?
+											{t('chamSocFanpage.FanpageFaq.question.1')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Dịch vụ chăm sóc Fanpage của chúng tôi bao gồm quản lý nội dung, tạo bài đăng, tối ưu hóa quảng cáo, theo dõi tương tác, phân tích dữ liệu và quản lý bình luận, tin nhắn. Chúng tôi giúp bạn xây dựng hình ảnh thương hiệu và tăng cường tương tác với khách hàng trên mạng xã hội.</p>
+											<p>{t('chamSocFanpage.FanpageFaq.answer.1')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -47,10 +49,10 @@ const FanpageFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingTwo">
-											Làm thế nào để xây dựng nội dung Fanpage hiệu quả?
+											{t('chamSocFanpage.FanpageFaq.question.2')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Chúng tôi xây dựng nội dung Fanpage dựa trên chiến lược sáng tạo, hướng tới đối tượng khách hàng mục tiêu. Nội dung đa dạng bao gồm hình ảnh, video, bài viết và tương tác trực tiếp, giúp tăng cường mức độ nhận diện thương hiệu và tương tác từ người dùng.</p>
+											<p>{t('chamSocFanpage.FanpageFaq.answer.2')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -60,10 +62,10 @@ const FanpageFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingThree">
-											Lợi ích của việc chăm sóc Fanpage là gì?
+											{t('chamSocFanpage.FanpageFaq.question.3')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Chăm sóc Fanpage giúp thương hiệu của bạn duy trì sự hiện diện trên mạng xã hội, tăng cường tương tác với khách hàng và thúc đẩy doanh số. Ngoài ra, việc thường xuyên theo dõi và tối ưu hóa Fanpage còn giúp bạn nắm bắt xu hướng và điều chỉnh chiến lược tiếp thị kịp thời.</p>
+											<p>{t('chamSocFanpage.FanpageFaq.answer.3')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -73,10 +75,10 @@ const FanpageFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingFour">
-											Dịch vụ này có hỗ trợ quảng cáo không?
+											{t('chamSocFanpage.FanpageFaq.question.4')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Có, chúng tôi cung cấp dịch vụ tối ưu hóa quảng cáo trên Fanpage, giúp bạn tiếp cận đúng đối tượng khách hàng mục tiêu. Chúng tôi sẽ theo dõi hiệu quả quảng cáo, điều chỉnh ngân sách và chiến lược để đạt được kết quả tốt nhất.</p>
+											<p>{t('chamSocFanpage.FanpageFaq.answer.4')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -86,10 +88,10 @@ const FanpageFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingFive">
-											Tôi có thể theo dõi kết quả chăm sóc Fanpage như thế nào?
+											{t('chamSocFanpage.FanpageFaq.question.5')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Chúng tôi cung cấp báo cáo chi tiết về hiệu quả chăm sóc Fanpage, bao gồm số lượt thích, bình luận, chia sẻ, và tương tác của người dùng. Bạn sẽ có cái nhìn toàn diện về sự phát triển của Fanpage và có thể điều chỉnh chiến lược tiếp thị nếu cần.</p>
+											<p>{t('chamSocFanpage.FanpageFaq.answer.5')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 								</Accordion>

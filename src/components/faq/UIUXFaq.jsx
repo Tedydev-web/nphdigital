@@ -1,8 +1,10 @@
 import { Accordion } from 'react-bootstrap';
 import ThumbFaq from '../../../public/assets/imgs/thumb/faq.jpg';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 const ServiceDetailsFaq = () => {
+	const { t } = useTranslation('serviceDetails');
 	return (
 		<>
 			<section className="faq__area">
@@ -21,7 +23,7 @@ const ServiceDetailsFaq = () => {
 							</div>
 						</div> */}
 						<div className="faq__content">
-							<h2 className="faq__title title-anim">Câu hỏi thường gặp về thiết kế UI/UX</h2>
+							<h2 className="faq__title title-anim">{t('thietKeUIUX.UIUXFaq.title')}</h2>
 
 							<div className="faq__list">
 								<Accordion
@@ -34,10 +36,10 @@ const ServiceDetailsFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingOne">
-											Thiết kế UI là gì?
+											{t('thietKeUIUX.UIUXFaq.question.1')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>UI (Giao diện người dùng) là cách mà người dùng tương tác với sản phẩm hoặc dịch vụ kỹ thuật số. Thiết kế UI tập trung vào việc tối ưu hóa các yếu tố trực quan như nút, biểu tượng và bố cục để đảm bảo trải nghiệm người dùng tốt nhất.</p>
+											<p>{t('thietKeUIUX.UIUXFaq.answer.1')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -47,10 +49,10 @@ const ServiceDetailsFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingTwo">
-											UX có phải là một phần của UI không?
+											{t('thietKeUIUX.UIUXFaq.question.2')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Không. UX (Trải nghiệm người dùng) tập trung vào việc tối ưu hóa hành trình người dùng, trong khi UI tập trung vào các yếu tố giao diện. Cả hai phối hợp với nhau để tạo ra trải nghiệm sản phẩm hoàn chỉnh.</p>
+											<p>{t('thietKeUIUX.UIUXFaq.answer.2')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -60,10 +62,10 @@ const ServiceDetailsFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingThree">
-											Nguyên tắc cơ bản của thiết kế UI là gì?
+											{t('thietKeUIUX.UIUXFaq.question.3')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Thiết kế UI cần phải nhất quán, dễ sử dụng, rõ ràng, và trực quan. Các yếu tố như màu sắc, phông chữ, và bố cục phải được sử dụng một cách hợp lý để tạo sự dễ hiểu và hấp dẫn cho người dùng.</p>
+											<p>{t('thietKeUIUX.UIUXFaq.answer.3')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -73,10 +75,10 @@ const ServiceDetailsFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingFour">
-											Làm thế nào để đảm bảo thiết kế UX tốt?
+											{t('thietKeUIUX.UIUXFaq.question.4')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Thiết kế UX tốt bắt đầu từ việc hiểu rõ nhu cầu của người dùng. Việc nghiên cứu người dùng, thử nghiệm với prototype và lắng nghe phản hồi là các bước cần thiết để cải thiện trải nghiệm người dùng liên tục.</p>
+											<p>{t('thietKeUIUX.UIUXFaq.answer.4')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -86,10 +88,10 @@ const ServiceDetailsFaq = () => {
 										<Accordion.Header
 											className="accordion-header"
 											id="headingFive">
-											Các công cụ phổ biến để thiết kế UI/UX là gì?
+											{t('thietKeUIUX.UIUXFaq.question.5')}
 										</Accordion.Header>
 										<Accordion.Body className="accordion-body">
-											<p>Một số công cụ phổ biến cho thiết kế UI/UX bao gồm Figma, Sketch, Adobe XD, và InVision. Các công cụ này hỗ trợ quá trình tạo mẫu, thiết kế giao diện và hợp tác trong nhóm.</p>
+											<p>{t('thietKeUIUX.UIUXFaq.answer.5')}</p>
 										</Accordion.Body>
 									</Accordion.Item>
 								</Accordion>

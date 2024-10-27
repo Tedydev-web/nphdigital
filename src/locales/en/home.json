@@ -1,0 +1,161 @@
+{
+  "DigitalAgencyHero": {
+    "link": "Consultation, design, and digital transformation technology solutions",
+    "title": {
+      "line1": "NPH Digital",
+      "line2": "Transformation",
+      "line3": "Solutions"
+    },
+    "subtitle": "With the goal of becoming the leading IT partner in the region, we continuously foster creativity and professionalism to meet every client's needs to the fullest satisfaction.",
+    "experience": {
+      "title": "1000+",
+      "description": "Successfully completed projects"
+    }
+  },
+
+  "DigitalAgencyRoll": {
+    "words": [
+      "Professional", "Sophisticated", "Effective", "Innovative", "Compatible",
+      "Groundbreaking", "Streamlined", "Responsive", "Comprehensive", "Creative",
+      "Integrated", "Strategic", "Optimized", "Automated", "Smart",
+      "Reliable", "Accurate", "Simple", "Exclusive"
+    ]
+  },
+
+  "DigitalAgencyAbout": {
+    "title": "Optimizing processes and experiences with digital transformation technology, enhancing value for you.",
+    "description": "We are committed to providing superior digital transformation software solutions that impress and deliver efficiency while ensuring the most optimal development costs. Excellence not only lies in our products but also in managing your budget effectively, which remains our top priority.",
+    "button": {
+      "line1": "About",
+      "line2": ""
+    }
+  },
+
+  "ServiceElementV4": {
+    "title": "Our Sevices",
+    "blogText": "We understand that every unique project demands creativity. Therefore, NPH Digital continuously listens and learns to bring the best value to you.",
+    "secSubTitle": "Our services",
+    "mobileApp": {
+      "line1": "Mobile",
+      "line2": "applications"
+    },
+    "uiUx": {
+      "line1": "UI/UX",
+      "line2": "design"
+    },
+    "crmErpHrm": "CRM, ERP, HRM",
+    "it": {
+      "line1": "IT",
+      "line2": "outsourcing"
+    },
+    "fanpage": {
+      "line1": "Fanpage",
+      "line2": "management"
+    },
+    "web": {
+      "line1": "Website",
+      "line2": "design"
+    },
+    "ads": {
+      "line1": "Digital",
+      "line2": "advertising"
+    },
+    "ai": "AI development",
+    "interaction": {
+      "line1": "Digital",
+      "line2": "interaction"
+    }
+  },
+
+  "DigitalAgencyCounter": {
+    "count1": {
+      "line1": "Successfully",
+      "line2": "completed projects"
+    },
+    "count2": {
+      "line1": "Satisfied",
+      "line2": "clients"
+    },
+    "count3": {
+      "line1": "Years of",
+      "line2": "experience"
+    },
+    "count4": {
+      "line1": "Our",
+      "line2": "members"
+    }
+  },
+
+  "DigitalAgencyWorkflow": {
+    "secSubTitle": "Process",
+    "secTitle": "Working process",
+    "step1": "Step 01",
+    "number1": "01",
+    "title1": "Idea",
+    "description1": "Our business analysis team will discuss and gather detailed design requirements from the clients.",
+    "step2": "Step 02",
+    "number2": "02",
+    "title2": "Sketch",
+    "description2": "Based on the provided information, we analyze and outline the system architecture for the product.",
+    "step3": "Step 03",
+    "number3": "03",
+    "title3": "Design",
+    "description3": "After receiving the functional descriptions, our design team will build the system’s interface.",
+    "step4": "Step 04",
+    "number4": "04",
+    "title4": "Development",
+    "description4": "Our development team analyzes and selects the appropriate solutions and technology to build the product based on the design.",
+    "step5": "Step 05",
+    "number5": "05",
+    "title5": "Testing",
+    "description5": "The testing team works alongside the development team to provide feedback, ensuring product quality at every stage.",
+    "step6": "Step 06",
+    "number6": "06",
+    "title6": "Deployment",
+    "description6": "Our development team deploys and operates the system to ensure it runs smoothly and optimizes costs."
+  },
+
+  "DigitalAgencyPortfolio": {
+    "secTitle": "Projects",
+    "title1": "LUA - Home yoga training app",
+    "description1": "Mobile application development",
+    "title2": "Tennis community app",
+    "description2": "Mobile application development",
+    "title3": "Sense - Service booking app",
+    "description3": "Mobile application development",
+    "title4": "Fowi - Online dating app",
+    "description4": "Mobile application development",
+    "title5": "Aquabay - Aquabay Website Project",
+    "description5": "Website development & design",
+    "title6": "OCCO - OCCO Website Project",
+    "description6": "Website development & design",
+    "title7": "CSIP - CSIP Website Project",
+    "description7": "Website development & design",
+    "title8": "DĐTM - Full Web App ERP",
+    "description8": "Website development & design",
+    "button": {
+      "line1": "View more",
+      "line2": "projects"
+    }
+  },
+
+  "DigitalAgencyBrand": {
+    "secSubTitle": "Brands",
+    "secTitle": "We are delighted to have worked with the following prominent technology brands"
+  },
+
+  "DigitalMarketingTestimonial": {
+    "slide": "We believe customer satisfaction is the ultimate measure of success at NPH Digital. Our commitment is to provide advanced, efficient, and user-friendly technology solutions that help partners achieve their business goals. We always prioritize our clients' interests and continuously improve our service quality to meet every expectation.",
+    "name": "Mr. YURI KC",
+    "role": "CEO of NPH Digital"
+  },
+
+  "DigitalAgencyCTA": {
+    "subTitle": "Contact",
+    "title": "We’d love to hear your ideas",
+    "button": {
+      "line1": "Get in touch",
+      "line2": "with us"
+    }
+  }
+}

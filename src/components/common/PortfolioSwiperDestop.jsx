@@ -46,7 +46,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
 					spanData += `<span>${arr[j]}</span>`;
 				}
 			}
-			let result = '<div class="menu-text">' + spanData + '</div>';
+			let result = '<div className="menu-text">' + spanData + '</div>';
 			firstParent[0].innerHTML = result;
 		}
 	};

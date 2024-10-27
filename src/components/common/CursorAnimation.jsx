@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 
-const CursorAnimation = ({ cursor1, cursor2 }) => {
+const CursorAnimation = ({ cursor1, cursor2, isVisible }) => {
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let tHero = gsap.context(() => {
@@ -14,7 +14,6 @@ const CursorAnimation = ({ cursor1, cursor2 }) => {
 							},
 						});
 
-						// Main Cursor Moving
 						tl.to('.cursor1', {
 							ease: 'power2.out',
 						}).to(
@@ -33,6 +32,8 @@ const CursorAnimation = ({ cursor1, cursor2 }) => {
 			return () => tHero.revert();
 		}
 	}, []);
+	if (!isVisible) return null;
+
 	return (
 		<>
 			<div

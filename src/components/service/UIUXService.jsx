@@ -1,8 +1,11 @@
 import ServiceDetail from '../../../public/assets/imgs/service/detail/UXUI/2.jpg';
 import Shape6 from '../../../public/assets/imgs/icon/shape-6.png';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 const UIUXService = () => {
+	const { t } = useTranslation('serviceDetails');
+
 	return (
 		<>
 			<section className="service__detail">
@@ -11,7 +14,7 @@ const UIUXService = () => {
 					<div className="row">
 						<div className="col-xxl-12">
 							<div className="sec-title-wrapper">
-								<h2 className="sec-title title-anim">Chúng tôi mang đến những giải pháp sáng tạo và đáng tin cậy nâng cao trải nghiệm người dùng.</h2>
+								<h2 className="sec-title title-anim">{t('thietKeUIUX.UIUXService.secTitle')}</h2>
 							</div>
 						</div>
 						<div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
@@ -38,8 +41,8 @@ const UIUXService = () => {
 								/>
 							</div>
 							<div className="service__detail-content">
-								<p>Thiết kế UI/UX không chỉ đơn thuần là tạo ra giao diện đẹp mắt, mà còn là việc tối ưu hóa trải nghiệm người dùng nhằm mang đến sự hài lòng và hiệu quả cao nhất cho người sử dụng. Tại NPH Digital, chúng tôi hiểu rằng một sản phẩm thành công phải kết hợp hài hòa giữa thẩm mỹ và chức năng.</p>
-								<p>Với đội ngũ thiết kế giàu kinh nghiệm và công nghệ tiên tiến, NPH Digital cam kết mang đến giải pháp thiết kế UI/UX chất lượng nhất, giúp doanh nghiệp của bạn phát triển bền vững trong thời đại số.</p>
+								<p>{t('thietKeUIUX.UIUXService.p.1')}</p>
+								<p>{t('thietKeUIUX.UIUXService.p.2')}</p>
 							</div>
 						</div>
 					</div>

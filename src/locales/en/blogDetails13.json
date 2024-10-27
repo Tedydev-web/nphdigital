@@ -1,0 +1,418 @@
+{
+      "blogDetails13": {
+        "authorInfo": "Written by",
+        "authorName": "NPH Digital",
+        "realTime": "Reading time",
+        "content": {
+          "h2": {
+           "1": "App Design, UX/UI",
+    "2": "1. General Introduction",
+    "3": "2. Benefits of Custom App Design",
+    "4": "3. Trends in Custom App Design",
+    "5": "4. Custom App Design Process at NPH Digital"
+          },
+          "h3": {
+            "1": "Trends in App Design 2024",
+    "2": "Creating Competitive Differentiation",
+    "3": "Enhancing Operational Efficiency",
+    "4": "Optimizing User Experience",
+    "5": "Enhancing Interactivity and Integration",
+    "6": "Long-term Cost Optimization",
+    "7": "Improving Project Management Capabilities",
+    "8": "Expanding Scalability",
+    "9": "Elegant and Simple User Interface",
+    "10": "Minimalist Design",
+    "11": "User-friendly User Interface (UI)",
+    "12": "Applying AR in App Design",
+    "13": "VR Applications and Prospects for 2024",
+    "14": "Responsive Design",
+    "15": "Integrating New Technologies",
+    "16": "5G and Its Impact on App Design",
+    "17": "Voice Interface and Voice Control",
+    "18": "Sustainable Design",
+    "19": "Step 1: Information Gathering",
+    "20": "Step 2: Solution Discussion",
+    "21": "Step 3: Analysis and Confirmation",
+    "22": "Step 4: Quotation and Contract",
+    "23": "Step 5: Development and Updates",
+    "24": "Step 6: Handover and Testing",
+    "25": "Step 7: Feedback and Adjustments",
+    "26": "Step 8: Final Acceptance and Warranty"
+          },
+
+          "h4": {
+            "1": "Elements of a User-Friendly Interface",
+    "2": "How AI Enhances User Experience",
+    "3": "Customization and User Behavior Prediction",
+    "4": "Benefits of AR in User Experience",
+    "5": "Sectors Applying VR",
+    "6": "Prospects of VR in 2024",
+    "7": "Importance of Responsive Design",
+    "8": "Responsive Design Tools and Techniques",
+    "9": "Designing Apps for Multiple Devices",
+    "10": "Blockchain in App Design",
+    "11": "Connection Speed and User Experience",
+    "12": "Integrating Voice Recognition Technology",
+    "13": "Sustainable App Design"
+          },
+
+          "h5": {
+           "1": "Why Responsive Design Is Increasingly Important",
+    "2": "Benefits and Applications of Blockchain in Security and Transactions",
+    "3": "Benefits and Applications of Voice Interface",
+    "4": "Applications of Voice Control in Mobile Apps",
+    "5": "Challenges and Future of Voice Recognition Technology",
+    "6": "Concept and Benefits of Sustainable Design",
+    "7": "Considerations for Minimizing Environmental Impact"
+          },
+
+          "p": {
+           "1": "Effective app design improves interaction, optimizes performance, and enhances the application's reliability, contributing to business growth and increasing brand value.",
+    "2": "In today’s digital age, app design plays a crucial role not only in creating a product but also in shaping user experience. A well-designed app not only enhances usability but also generates satisfaction and engagement with users.",
+    "3": "With the continual increase in the number of apps and the intense competition in the market, having a standout app design has become a decisive factor for success. Design involves not only the user interface (UI) but also the user experience (UX), which directly impacts the app’s acceptance and performance.",
+    "4": "Effective app design improves interaction, optimizes performance, and enhances the application's reliability, contributing to business growth and brand value. Especially in the context of advancing technology, the demand for app design continuously evolves to meet the rising expectations and needs of users.",
+    "5": "Custom app design allows you to create a unique product that stands out from competitors. This differentiation can come from special features, creative interfaces, or exclusive functions unavailable in other apps. Having a unique app helps businesses stand out in the market and leave a strong impression on customers.",
+    "6": "A custom-designed app can be optimized to improve performance. By eliminating unnecessary features and focusing on core functionalities, you can help the app run more smoothly and efficiently. This also minimizes performance issues and increases loading speed, enhancing the user experience.",
+    "7": "A custom-designed app allows you to focus on enhancing the user experience (UX). You can design the interface and features based on specific user research, which increases satisfaction and promotes long-term user retention. Elements like easy navigation, a user-friendly interface, and features tailored to user needs are optimized more than in standard app solutions.",
+    "8": "Custom app design enables easy integration with other systems and tools your business uses. This creates a synchronized work environment, improves efficiency, and minimizes interruptions in business processes. You can integrate the app with management software, CRM, or ERP systems to optimize operations.",
+    "9": "While the initial cost of custom app design may be higher than using ready-made solutions, it can save costs in the long term. Custom-designed apps typically encounter fewer compatibility and maintenance issues, reducing future maintenance and upgrade expenses. Moreover, an optimized app enhances performance and minimizes incidental costs.",
+    "10": "Custom app design allows you to manage projects more effectively by enabling control over the entire development process. You can monitor progress, control quality, and ensure that the app is developed in the right direction according to set requirements and standards. Project management becomes easier with a reliable app development partner and a clear workflow.",
+    "11": "Finally, custom app design allows you to build a platform with flexible scalability. As your business grows, you can easily expand the app's features and functionalities without needing to overhaul the entire system. Scalability ensures your app grows with the business and meets the increasing demands of users.",
+    "12": "In 2024, a prominent trend in app design is focusing on sleek and simple user interfaces. This not only creates easy-to-use products but also enhances user experience (UX). Below is a detailed analysis of minimalist design and user-friendly interfaces.",
+    "13": "Minimalist design is a style that emphasizes using fewer elements while achieving maximum effect. This style is based on the principle of “less is more,” highlighting simplicity, clarity, and aesthetics.",
+    "14": "The benefits of minimalist design include:",
+    "15": "A user-friendly interface (UI) is an essential factor in creating a positive user experience. The main elements that create a user-friendly interface include:",
+    "16": "In 2024, virtual reality (VR) and augmented reality (AR) technology continue to be significant trends in app design. These technologies not only open up new possibilities for user experience but also transform how apps interact with both the real and virtual worlds. Below is a detailed analysis of the application of AR and VR in app design, along with their benefits and prospects.",
+    "17": "In 2024, responsive design continues to be a key trend in app development. With the rise of multiple devices and screen sizes, optimizing app design to fit all devices is essential to ensure the best user experience. Below is an analysis of the importance of responsive design, why it is increasingly important, tools and techniques for responsive design, and ways to design apps for multiple devices.",
+    "18": "In 2024, integrating new technologies like blockchain and 5G into app design is becoming a significant trend. These technologies not only provide advanced solutions to improve security and performance but also open up new opportunities for optimizing the user experience. Below is a detailed analysis of integrating blockchain and 5G into app design, along with their benefits and impacts.",
+    "19": "Voice interface and voice control are becoming major trends in app design in 2024. With the rapid development of voice recognition technology, users are increasingly able to interact with their apps and devices more naturally and effectively. Below is a detailed analysis of integrating voice recognition technology, the benefits and applications of voice interfaces, and the application of voice control in mobile apps.",
+    "20": "Voice recognition technology, also known as speech recognition, enables apps and devices to understand and process commands and information conveyed by voice. This technology uses machine learning algorithms and artificial intelligence to analyze and convert sound into text or execute commands based on voice recognition.",
+    "21": "In 2024, sustainable design is becoming a key factor in app development, reflecting a growing interest in environmental protection and minimizing negative impacts on the planet. Sustainable design focuses not only on optimizing performance and user experience but also on environmental and resource considerations. Below is an analysis of the concept and benefits of sustainable design, along with factors to consider in minimizing environmental impact in app design.",
+    "22": "1. The Concept of Sustainable Design:",
+    "23": "Sustainable design involves creating apps and products that not only meet current needs but also minimize negative impacts on the environment and society in the long term. This includes using resources efficiently, reducing waste, and lowering energy consumption.",
+    "24": "2. Benefits of Sustainable Design:",
+    "25": "Creating Conditions for Users to Practice Sustainability:",
+    "26": "Providing users with options to reduce energy consumption or use the app sustainably, such as energy-saving modes or guidance on using the app efficiently.",
+    "27": "Optimizing App Performance:",
+    "28": "Creating a User-Friendly Interface (UI):",
+    "29": "Data Management:",
+    "30": "Choosing Sustainable Technology:",
+    "31": "Enhancing the Development Process:",
+    "32": "Encouraging Sustainable Use:"
+          },
+      
+          "ul": {
+            "1": {
+              "li": {
+                "1": "Ask questions, listen, and understand the customer’s needs.",
+                "2": "Engage in conversations to understand the goals, target users, and specific requirements of the delivery app.",
+                "3": "Gather information about required features, desired user interface, performance, and security requirements."
+              }
+            },
+            
+            "2": {
+              "li": {
+                "1": "Discuss specific functionalities and propose appropriate solutions.",
+                "2": "Identify the technology to be used.",
+                "3": "Suggest additional features to optimize the user experience."
+              }
+            },
+            
+            "3": {
+              "li": {
+                "1": "Analyze the functional requirements in detail and confirm with the client.",
+                "2": "Rewrite functional requirements into detailed and clear documents.",
+                "3": "Ensure client agreement on the proposed requirements."
+              }
+            },
+            
+            "4": {
+              "li": {
+                "1": "Provide a project quote, including all agreed-upon requirements and features.",
+                "2": "Sign a contract with the client and process an advance payment (if any)."
+              }
+            },
+            
+            "5": {
+              "li": {
+                "1": "Develop the software according to the requirements and agreements in the contract.",
+                "2": "Provide weekly progress updates to the client.",
+                "3": "Conduct testing and ensure data security."
+              }
+            },
+            
+            "6": {
+              "li": {
+                "1": "Deliver each development phase to the client.",
+                "2": "Client tests the application and provides feedback."
+              }
+            },
+            
+            "7": {
+              "li": {
+                "1": "Receive feedback from the client and make adjustments if necessary.",
+                "2": "Ensure the application meets all requirements and established standards."
+              }
+            },
+            
+            "8": {
+              "li": {
+                "1": "Warranty as per the contract and provide technical support for the client.",
+                "2": "Conduct final acceptance.",
+                "3": "Process final payment and complete the project."
+              }
+            },
+            
+            "9": {
+              "li": {
+                "1": "Enhancing Focus: By minimizing unnecessary elements, users can focus on the core functions and essential tasks without distractions.",
+                "2": "Improving Performance: Minimalistic interfaces often reduce application load times and improve overall performance, as there are fewer complex graphic elements that might slow down the application.",
+                "3": "Ease of Use: Simple and user-friendly interfaces enable users to quickly find and utilize main features without needing to read lengthy instructions or learn how to navigate.",
+                "4": "Aesthetic Impression: Minimalistic interfaces often create an impression of sophistication and modernity, enhancing brand value and attracting users."
+              }
+            },
+            
+            "10": {
+              "li": {
+                "1": "Clear Navigation: Reducing unnecessary elements allows users to focus on primary functions and important tasks without distractions.",
+                "2": "Responsive Design: Simple and easy-to-use interfaces enable users to quickly find and utilize main features without needing extensive instructions or a learning curve.",
+                "3": "Aesthetic Impression: Minimalistic interfaces often create an impression of sophistication and modernity, enhancing brand value and attracting users.",
+                "4": "Creating Aesthetic Impressions: Minimalistic design often reduces application load times and improves overall performance by minimizing complex graphic elements."
+              }
+            },
+            
+            "11": {
+              "li": {
+                "1": "Personalized Experience: AI helps create personalized experiences by analyzing user data to understand their preferences, habits, and needs. For example, applications can recommend content, products, or services based on users’ usage history and behavior.",
+                "2": "Process Automation: AI can automate repetitive processes, reducing workload for users. For example, AI chatbots can handle frequently asked questions and provide 24/7 support without human intervention.",
+                "3": "Smart Data Analysis: AI and machine learning can analyze large data sets quickly and accurately, providing valuable insights and trend predictions to improve business decisions and marketing strategies.",
+                "4": "Enhanced Accuracy: AI algorithms can improve the accuracy of features like image recognition, voice analysis, and predictions, offering better results and reducing errors compared to traditional methods."
+              }
+            },
+            
+            "12": {
+              "li": {
+                "1": "Interface Customization: AI can personalize the user interface based on behavior and preferences. For example, an application can adjust interface elements like color schemes, layout, and content based on user interactions to create a better user experience.",
+                "2": "Content Customization: AI enables applications to tailor content and services to individual needs and preferences. For example, shopping apps can recommend products based on users’ purchase and search history.",
+                "3": "Behavior Prediction: Machine learning can predict user behavior based on historical data and learning models. For example, the app can forecast products that users might be interested in or the time users are likely to take specific actions.",
+                "4": "Creating Dramatic Scenarios: AI can generate engaging scenarios by combining different elements like images, sound, and text. For example, an app can create interactive scenes based on past user behavior."
+              }
+            },
+            
+            "13": {
+              "li": {
+                "1": "Enhanced Interaction: AI enables users to interact with virtual elements in the real world, creating a more immersive experience. For example, users can see virtual objects appear in their real environment through the device’s camera.",
+                "2": "Improved Learning Experience: AI provides a more visual and engaging learning approach by blending virtual information with the real environment, helping users easily understand and remember information, such as in educational and training applications.",
+                "3": "Unique Shopping Experiences: AR shopping applications allow users to try out virtual products before buying, like online fitting rooms or viewing how furniture would look in their space.",
+                "4": "Navigation Assistance: AR can provide visual navigation instructions in large areas such as airports, malls, or hospitals. For example, users can see virtual directions on their screen to guide them in the right direction."
+              }
+            },
+            
+            "14": {
+              "li": {
+                "1": "Education and Training: VR is used to create training simulations, allowing learners to experience realistic scenarios in a virtual environment. Schools and training organizations use VR to teach practical skills or simulate complex situations.",
+                "2": "Healthcare: In healthcare, VR is used to train doctors and medical students by simulating surgeries and medical situations. VR also aids in therapy and rehabilitation for patients.",
+                "3": "Entertainment and Gaming: VR is revolutionizing the entertainment and gaming industry by providing fully immersive gaming experiences, allowing players to step into virtual worlds and interact with environments realistically.",
+                "4": "Tourism and Exploration: VR allows users to experience tourist destinations and famous landmarks remotely, helping plan trips and offering virtual travel experiences for those unable to visit.",
+                "5": "Design and Architecture: Designers and architects use VR to create 3D models of construction and interior projects, helping clients visualize projects clearly and make accurate decisions."
+              }
+            },
+            
+            "15": {
+              "li": {
+                "1": "Integrating AI and Machine Learning: The combination of VR with AI and machine learning creates smarter applications that can predict user behavior and deliver personalized experiences.",
+                "2": "Improving VR Technology: VR technology is continually advancing with higher-quality input and output devices, creating more realistic virtual experiences. By 2024, VR devices are expected to become more affordable and widely accessible.",
+                "3": "Enhancing Interactivity: VR applications will increasingly improve interactivity, from light touch inputs to more complex ones like voice and action recognition.",
+                "4": "Expanding Applications: VR will see wider applications in fields like education, healthcare, and remote work, opening up new opportunities for innovative applications."
+              }
+            },
+                "16": {
+        "li": {
+            "1": "Variety of Devices and Screen Sizes:",
+            "2": "Nowadays, users can access applications from a wide range of devices, from mobile phones and tablets to desktops and laptops of various screen sizes. Responsive design helps ensure that the application will work well and display correctly on all these devices.",
+            "3": "Enhanced User Experience:",
+            "4": "A responsive design improves user experience by ensuring that the application's interface remains easy to use and user-friendly, regardless of the device or screen size. This helps retain users longer and reduces bounce rates.",
+            "5": "SEO Optimization:",
+            "6": "Responsive design not only improves user experience but also positively impacts search engine optimization (SEO). Google prioritizes websites and applications with responsive design in search results, enhancing ranking and accessibility.",
+            "7": "Cost Savings in Development:",
+            "8": "Designing a responsive application minimizes the need to develop different versions for various devices. This saves time, development costs, and maintenance efforts.",
+            "9": "Improved Flexibility:",
+            "10": "Responsive design makes the application more adaptable, easily adjusting to changes in technology and user requirements, reducing the need to develop multiple versions for different devices."
+        }
+    },
+    
+    "17": {
+        "li": {
+            "1": "Media Queries:",
+            "2": "Media queries are an essential tool in responsive design, allowing you to style the application's interface based on the device's screen size. For instance, media queries can be used to adjust layout and element sizes on smaller or larger screens.",
+            "3": "Flexible Grid Layouts:",
+            "4": "Flexible grid design uses relative units like percentages instead of fixed units like pixels. This allows interface elements to resize flexibly to fit various screen sizes.",
+            "5": "Fluid Images:",
+            "6": "Images and graphic elements also need to be flexible to stretch and adjust size according to the screen. Using CSS properties like max-width: 100%; allows images to automatically resize to fit the screen.",
+            "7": "Viewport Meta Tag:",
+            "8": "On mobile websites, using the viewport meta tag helps control how the site displays on mobile devices. This ensures that interface elements are shown at the correct size and proportion on smaller screens.",
+            "9": "Mobile-First Design:",
+            "10": "The 'mobile-first' design approach starts with designing for mobile devices and then expands to larger devices. This emphasizes the most essential elements and ensures the design works well on smaller screens."
+        }
+    },
+    
+    "18": {
+        "li": {
+            "1": "Cross-Platform Interface Design:",
+            "2": "If your application needs to run on multiple operating systems (iOS, Android, Windows), ensure that your design is compatible with different platforms without diminishing the user experience.",
+            "3": "Compatibility with Multiple Screen Formats:",
+            "4": "Ensure that the application's design can display correctly across different screen sizes, from small mobile devices to larger screens like tablets and desktops. Use flexible design methods and grid-based layouts to achieve this.",
+            "5": "Page Load Speed Optimization:",
+            "6": "Ensure that the application loads quickly on all devices by optimizing elements such as images, resources, and source code. Faster load times improve user experience and reduce bounce rates.",
+            "7": "Testing on Multiple Devices:",
+            "8": "Conduct testing on multiple devices and browsers to ensure the application works correctly and displays well. Use responsiveness testing tools and device emulators to assist in this process.",
+            "9": "Creating Balance Points:",
+            "10": "Ensure that the user interface and functional elements are balanced and consistent across all devices, providing a seamless user experience across different platforms."
+        }
+    },
+    
+    "19": {
+        "li": {
+            "1": "1. Enhanced Security:",
+            "2": "Blockchain provides a distributed security system where data is stored on multiple nodes across the network. This minimizes risks of attacks and data tampering, as altering data on one node requires changes across all nodes.",
+            "3": "2. Transparent Transactions:",
+            "4": "Blockchain records all transactions in a public and immutable ledger, enhancing transparency and traceability. This allows users and stakeholders to verify transaction histories and data accuracy.",
+            "5": "3. Automation Through Smart Contracts:",
+            "6": "Blockchain supports smart contracts, which are self-executing programs that automatically enforce contract terms when conditions are met. This helps automate processes and minimizes the need for human intervention.",
+            "7": "4. Reduced Transaction Costs:",
+            "8": "Using blockchain can lower transaction costs, particularly in international transactions, by eliminating intermediaries and associated fees. Blockchain enables fast transactions at a lower cost.",
+            "9": "5. Increased Data Control:",
+            "10": "Blockchain allows users to have better control over their data. Users can choose to share or keep their data private, creating a more secure and privacy-respecting environment."
+        }
+    },
+    
+    "20": {
+        "li": {
+            "1": "1. Higher Connection Speeds:",
+            "2": "5G offers significantly faster connection speeds than 4G, allowing for rapid data download and reduced latency. This improves application performance and provides a smoother user experience.",
+            "3": "2. Multi-Device Connectivity:",
+            "4": "5G supports simultaneous connections with a larger number of devices, which is essential in IoT environments where many devices need continuous connectivity.",
+            "5": "3. High-Precision Data Transmission:",
+            "6": "With wide bandwidth and low latency, 5G enables more accurate data transmission, crucial for real-time applications like gaming, live video, and AR/VR applications.",
+            "7": "4. Enhanced AR/VR Experience:",
+            "8": "5G offers sufficient bandwidth and low latency to support high-quality augmented reality (AR) and virtual reality (VR) applications, providing immersive and interactive experiences.",
+            "9": "5. Optimization for Big Data Applications:",
+            "10": "Big data applications can leverage 5G’s fast connectivity to process and analyze data more quickly, providing real-time information and insights."
+        }
+    },
+    
+    "21": {
+        "li": {
+            "1": "1. Enhanced User Experience:",
+            "2": "Voice interfaces offer a more natural and convenient way to interact, allowing users to perform tasks without using a keyboard or touch screen. This is especially helpful when users cannot use their hands, such as when driving or working with busy devices.",
+            "3": "2. Time-Saving:",
+            "4": "Voice interfaces allow users to complete tasks quickly and efficiently, minimizing the time required to enter data or navigate through menus and options. For instance, users can quickly search for information or issue commands just by speaking.",
+            "5": "3. Improved Accessibility:",
+            "6": "Voice interfaces offer easier access for people with disabilities, such as those who are visually impaired or have difficulty using keyboards and mice. This ensures that applications and services are accessible to a wider range of users.",
+            "7": "4. Increased Interaction:",
+            "8": "Voice recognition technology creates a more interactive experience, making the user experience more engaging and user-friendly. Applications can respond to questions, provide information, and execute commands based on the user’s voice.",
+            "9": "5. Multi-Language Support:",
+            "10": "Voice recognition technology now supports multiple languages, enabling users to interact with applications in their native language without learning to use the interface in a different language."
+        }
+    },
+    
+    "22": {
+        "li": {
+            "1": "1. Virtual Assistant:",
+            "2": "Virtual assistants like Apple's Siri, Google Assistant, and Amazon's Alexa use voice recognition technology to execute commands and provide information upon request. Users can ask virtual assistants to perform tasks such as sending messages, scheduling appointments, searching for information, and controlling smart home devices.",
+            "3": "2. Voice Search:",
+            "4": "Messaging apps like WhatsApp and Messenger allow users to send messages by speaking rather than typing, saving time and making communication more convenient.",
+            "5": "3. Voice Messaging:",
+            "6": "Messaging apps like WhatsApp and Messenger allow users to send messages by speaking rather than typing, saving time and making communication more convenient.",
+            "7": "4. Application Control:",
+            "8": "Mobile apps can integrate voice control to allow users to adjust settings, change modes, or perform other actions without using their hands. For example, music apps can let users adjust volume, change songs, or pause playback with voice commands.",
+            "9": "5. Navigation Applications:",
+            "10": "Navigation apps like Google Maps can use voice control to provide directions and interact with users without requiring screen taps, minimizing distractions while driving and enhancing safety."
+        }
+    },
+    
+    "23": {
+        "li": {
+            "1": "1. Device Compatibility:",
+            "2": "Ensuring that voice recognition technology works effectively across all device types and platforms is essential. Developers need to design applications to support voice control on various devices.",
+            "3": "2. Accuracy and Semantic Understanding:",
+            "4": "Although voice recognition technology has improved significantly, challenges remain in accurately recognizing words and understanding meaning in complex sentences or when there is background noise.",
+            "5": "3. Security and Privacy:",
+            "6": "Using voice recognition technology raises security and privacy concerns as user conversations may be recorded and analyzed. Developers must ensure security measures are implemented to protect user data.",
+            "7": "4. Multi-Language Accessibility:",
+            "8": "Voice recognition technology needs to support multiple languages and dialects to serve a global user base. Improving recognition of less commonly spoken languages is a challenge that developers face.",
+            "9": "5. Background Noise Issues:",
+            "10": "Background noise can interfere with accurate voice recognition, reducing its efficiency. Developers must address this issue to make voice technology practical in various environments."
+        }
+    },
+
+                "24": {
+        "li": {
+            "1": "Reducing Environmental Impact:",
+            "2": "Sustainable design helps reduce carbon emissions, resource consumption, and waste generation. This contributes to environmental protection and minimizes the impact of technology on the planet.",
+            "3": "Cost Savings:",
+            "4": "Using efficient design methods and resource optimization can help save costs during the development and operation of applications. For example, performance optimization can reduce server resource usage and bandwidth.",
+            "5": "Enhancing Brand Reputation:",
+            "6": "Businesses and app developers can build a positive reputation and attract users by demonstrating a commitment to environmental protection and sustainable practices.",
+            "7": "Meeting User Demand:",
+            "8": "More users are becoming increasingly interested in sustainable products and services. Sustainable app design meets the needs of this consumer group and creates a competitive advantage.",
+            "9": "Compliance with Legal Regulations:",
+            "10": "Environmental protection regulations and policies are becoming stricter. Sustainable design helps organizations comply with these regulations and avoid unnecessary penalties or costs."
+        }
+    },
+
+    "25": {
+        "li": {
+            "1": "Reducing Energy Consumption:",
+            "2": "Designing applications to operate more efficiently can help reduce energy consumption. Optimizing source code, improving page load speed, and minimizing server requests all contribute to lower energy use.",
+            "3": "Optimizing Application Size:",
+            "4": "Reducing application size helps decrease the bandwidth needed for downloads and saves server resources. Compressing resources, images, and data can help reduce transmission volume."
+        }
+    },
+
+    "26": {
+        "li": {
+            "1": "Simplifying the Interface:",
+            "2": "Designing a user-friendly and straightforward interface not only improves user experience but also minimizes the number of unnecessary actions users must take, thereby reducing energy consumption.",
+            "3": "Display Optimization:",
+            "4": "Using methods such as dark mode can help save energy on OLED and LED screens, reducing device energy consumption."
+        }
+    },
+
+    "27": {
+        "li": {
+            "1": "Optimizing Data Storage:",
+            "2": "Using compression techniques and data optimization helps reduce the amount of stored and transmitted data, thus lowering resource consumption and costs.",
+            "3": "Minimizing Unnecessary Data:",
+            "4": "Eliminating or minimizing unnecessary data reduces the volume of data that needs to be processed and stored."
+        }
+    },
+
+    "28": {
+        "li": {
+            "1": "Using Green Infrastructure:",
+            "2": "Choose server and cloud service providers committed to using renewable energy and sustainable practices.",
+            "3": "Developing Applications to Support New Technologies:",
+            "4": "Using new and more efficient technologies in application development can help save resources and improve performance."
+        }
+    },
+
+    "29": {
+        "li": {
+            "1": "Integrating Environmental Testing Processes:",
+            "2": "Incorporate environmental factors into the application development process, including assessing and testing the environmental impact of design and development decisions.",
+            "3": "Implementing Green Development Practices:",
+            "4": "Apply sustainable software development methodologies, such as Agile and DevOps, to improve performance and minimize resource consumption."
+        }
+    },
+
+    "30": {
+        "li": {
+            "1": "Creating Conditions for Users to Practice Sustainability:",
+            "2": "Provide users with options to reduce energy consumption or use the application sustainably, such as an energy-saving mode or guidance on using the application effectively."
+        }
+    }
+          }
+        }
+      }
+      }

@@ -9,7 +9,7 @@ import Hero1bg from '../../../public/assets/imgs/hero/1/1-bg.png';
 import Image from 'next/image.js';
 
 const DigitalAgencyHero = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation('home');
 	const heroTitle = useRef();
 	const heroSubTitle = useRef();
 	useEffect(() => {
@@ -57,7 +57,7 @@ const DigitalAgencyHero = () => {
 						<div className="col-xxl-12">
 							<div className="hero__content animation__hero_one">
 								<Link href="/dich-vu">
-									{t('pages.home.hero.link')}{' '}
+									{t('DigitalAgencyHero.link')}{' '}
 									<span>
 										<i className="fa-solid fa-arrow-right"></i>
 									</span>
@@ -66,14 +66,14 @@ const DigitalAgencyHero = () => {
 									<h1
 										className="hero__title"
 										ref={heroTitle}>
-										<span>{t('pages.home.hero.title.line1')}</span> <br className="responsive-br" />
-										<span>{t('pages.home.hero.title.line2')}</span> <br className="responsive-br" />
-										<span>{t('pages.home.hero.title.line3')}</span>
+										<span>{t('DigitalAgencyHero.title.line1')}</span> <br />
+										<span>{t('DigitalAgencyHero.title.line2')}</span> <br />
+										<span>{t('DigitalAgencyHero.title.line3')}</span>
 									</h1>
 									<p
 										className="hero__sub-title"
 										ref={heroSubTitle}>
-										{t('pages.home.hero.subtitle')}
+										{t('DigitalAgencyHero.subtitle')}
 									</p>
 								</div>
 								<Image
@@ -84,8 +84,8 @@ const DigitalAgencyHero = () => {
 									alt="Arrow Down Icon"
 								/>
 								<div className="experience">
-									<h2 className="title">{t('pages.home.hero.experience.title')}</h2>
-									<p>{t('pages.home.hero.experience.description')}</p>
+									<h2 className="title">{t('DigitalAgencyHero.experience.title')}</h2>
+									<p>{t('DigitalAgencyHero.experience.description')}</p>
 								</div>
 							</div>
 						</div>

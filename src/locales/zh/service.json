@@ -1,0 +1,71 @@
+{
+  "ServiceHero": {
+    "title": "服务",
+    "description": "我们提供与软件开发、网站设计、在线广告等相关的服务，远不止于此。",
+    "professional": "专业",
+    "reliable": "可靠",
+    "support": "支持"
+  },
+  "ServiceElementV5": {
+    "hero": {
+      "title": "NPH Digital的服务标准",
+      "description": "凭借深厚的理解和多元的经验，我们承诺为您的项目提供卓越的软件解决方案，以令人印象深刻、专业且高效的方式。"
+    },
+    "service": {
+      "mobileApp": {
+        "title": "移动应用开发",
+        "item1": "专业的UI/UX设计",
+        "item2": "跨平台开发",
+        "item3": "性能优化"
+      },
+      "web": {
+        "title": "网站设计与开发",
+        "item1": "响应式界面",
+        "item2": "SEO优化",
+        "item3": "集成CMS"
+      },
+      "crmErpHrm": {
+        "title": "CRM、ERP、HRM系统",
+        "item1": "按需定制",
+        "item2": "数据集成",
+        "item3": "智能报告"
+      },
+      "ads": {
+        "title": "数字营销",
+        "item1": "全面的营销策略",
+        "item2": "在线广告",
+        "item3": "数据分析"
+      },
+      "ai": {
+        "title": "AI编程与自动化",
+        "item1": "自然语言处理",
+        "item2": "机器学习",
+        "item3": "流程自动化"
+      },
+      "interaction": {
+        "title": "数字交互",
+        "item1": "用户体验",
+        "item2": "多媒体交互",
+        "item3": "行为分析"
+      },
+      "fanpage": {
+        "title": "Fanpage管理",
+        "item1": "创建与管理Fanpage",
+        "item2": "内容创建与广告",
+        "item3": "性能分析"
+      },
+      "it": {
+        "title": "外包IT服务",
+        "item1": "专业人员",
+        "item2": "齐全的设备",
+        "item3": "24/7技术支持"
+      },
+      "uiUx": {
+        "title": "UX/UI设计",
+        "item1": "用户研究",
+        "item2": "界面设计",
+        "item3": "体验优化"
+      }
+    }
+  }
+}

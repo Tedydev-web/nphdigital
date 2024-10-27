@@ -2,8 +2,10 @@ import { useEffect, useRef } from 'react';
 import ThumbDev1 from '../../../public/assets/imgs/service/detail/UXUI/1.jpg';
 import Image from 'next/image';
 import animationCharCome from '@/lib/utils/animationCharCome';
+import { useTranslation } from 'react-i18next';
 
 const DetailsUIUX = () => {
+	const { t } = useTranslation('serviceDetails');
 	const charAnim = useRef();
 	useEffect(() => {
 		animationCharCome(charAnim.current);
@@ -20,23 +22,23 @@ const DetailsUIUX = () => {
 								<h2
 									className="sec-title animation__char_come"
 									ref={charAnim}>
-									Thiết kế UI/UX
+									{t('thietKeUIUX.DetailsUIUX.secTitle')}
 								</h2>
 							</div>
 						</div>
 						<div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
 							<div className="development__wrapper">
 								<div className="development__content">
-									<p>Tại NPH Digital, chúng tôi cung cấp dịch vụ thiết kế UI/UX chuyên nghiệp, tập trung vào việc tạo ra trải nghiệm người dùng hấp dẫn và hiệu quả. Chúng tôi hiểu rằng một thiết kế tốt không chỉ thu hút người dùng mà còn phải tối ưu hóa quy trình tương tác với sản phẩm.</p>
-									<p>Quy trình thiết kế của chúng tôi bắt đầu từ việc nghiên cứu người dùng và phân tích thị trường để hiểu rõ nhu cầu và hành vi của khách hàng. Sau đó, chúng tôi phát triển các mẫu thiết kế, tiến hành thử nghiệm và nhận phản hồi để cải thiện sản phẩm. Đội ngũ thiết kế của chúng tôi sử dụng các công cụ hiện đại để tạo ra các sản phẩm chất lượng cao, đảm bảo rằng mỗi giao diện đều thân thiện và dễ sử dụng.</p>
+									<p>{t('thietKeUIUX.DetailsUIUX.p.1')}</p>
+									<p>{t('thietKeUIUX.DetailsUIUX.p.2')}</p>
 								</div>
 								<ul>
-									<li>+ Nghiên cứu người dùng, phân tích đối thủ cạnh tranh</li>
-									<li>+ Thiết kế giao diện người dùng (UI) đẹp mắt và trực quan</li>
-									<li>+ Xây dựng prototype và wireframe cho sản phẩm</li>
-									<li>+ Tối ưu hóa trải nghiệm người dùng (UX) thông qua thử nghiệm A/B</li>
-									<li>+ Thiết kế responsive cho mọi thiết bị</li>
-									<li>+ Hỗ trợ bảo trì và cập nhật thiết kế theo phản hồi người dùng</li>
+									<li>{t('thietKeUIUX.DetailsUIUX.ul.1.li.1')}</li>
+									<li>{t('thietKeUIUX.DetailsUIUX.ul.1.li.2')}</li>
+									<li>{t('thietKeUIUX.DetailsUIUX.ul.1.li.3')}</li>
+									<li>{t('thietKeUIUX.DetailsUIUX.ul.1.li.4')}</li>
+									<li>{t('thietKeUIUX.DetailsUIUX.ul.1.li.5')}</li>
+									<li>{t('thietKeUIUX.DetailsUIUX.ul.1.li.6')}</li>
 								</ul>
 							</div>
 						</div>

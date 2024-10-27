@@ -1,0 +1,118 @@
+{
+  "StartupAgencyBlog": {
+    "subTitle": "Bài viết gần đây",
+    "title": "Bài viết",
+    "description": "Nơi chia sẻ kiến thức và kinh nghiệm của chúng tôi về các chủ đề đa dạng như thiết kế, tiếp thị kỹ thuật số, SEO, và nhiều lĩnh vực khác để giúp bạn phát triển doanh nghiệp của mình.",
+    "viewAll": "Tất cả bài viết",
+    "readMore": "Xem thêm",
+    "previous": "Trước",
+    "next": "Tiếp",
+
+    "blogs": {
+      "blog1": {
+        "category": "NPH Digital",
+        "date": "12/10/2024",
+        "title": "NPH Digital nhận giải thưởng \"TOP 10 Thương Hiệu Uy Tín Hàng Đầu Việt Nam 2024\"",
+        "excerpt": "Ngày 12 tháng 10 năm 2024, Công ty TNHH NPH Digital đã vinh dự được trao tặng danh hiệu \"TOP 10 Thương Hiệu Uy Tín Hàng Đầu Việt Nam\", đánh dấu một cột mốc quan trọng trong hành trình phát triển và khẳng định vị thế của mình trong ngành công nghệ số. Đây không chỉ là sự ghi nhận cho những nỗ lực không ngừng nghỉ mà còn là sự khẳng định uy tín và chất lượng dịch vụ mà NPH Digital đã mang đến cho khách hàng suốt thời gian qua."
+      },
+      "blog2": {
+        "category": "Innovation",
+        "date": "14/05/2023",
+        "title": "Thiết Kế App Cho Doanh Nghiệp Năm 2023: Chiến Lược Số Hóa Đa Dạng Và Tương Lai",
+        "excerpt": "Thiết kế app cho doanh nghiệp năm 2023 không chỉ là xu hướng mà còn là yếu tố quan trọng để đáp ứng nhu cầu của khách hàng và tăng cường sự hiện diện của doanh nghiệp trong thị trường công nghệ số."
+      },
+      "blog3": {
+        "category": "Technology",
+        "date": "15/05/2024",
+        "title": "Thiết kế app giao hàng cho thị trường nông thôn: 10 thách thức và giải pháp",
+        "excerpt": "Thiết kế app giao hàng cho thị trường nông thôn không chỉ mang lại lợi ích kinh tế cho doanh nghiệp mà còn góp phần nâng cao chất lượng cuộc sống và thúc đẩy sự phát triển bền vững của cộng đồng nông thôn."
+      },
+      "blog4": {
+        "category": "Branding",
+        "date": "09/05/2024",
+        "title": "Thiết Kế App Theo Yêu Cầu: 7 Nguyên Tắc Vàng",
+        "excerpt": "Thiết kế app theo yêu cầu đòi hỏi phải tuân thủ các nguyên tắc cơ bản để đảm bảo tính khả thi, hiệu năng và bảo mật của ứng dụng."
+      },
+      "blog5": {
+        "category": "E-commerce",
+        "date": "10/05/2024",
+        "title": "Thiết Kế App Giao Nhận Cho Các Doanh Nghiệp Khởi Nghiệp | Xu hướng 2024",
+        "excerpt": "Bằng cách thiết kế app giao nhận riêng, các doanh nghiệp khởi nghiệp có thể tối ưu hóa hoạt động kinh doanh của mình, nâng cao trải nghiệm khách hàng và tạo điều kiện thuận lợi cho sự phát triển bền vững trong môi trường cạnh tranh khốc liệt hiện nay."
+      },
+      "blog6": {
+        "category": "Business Strategy",
+        "date": "13/05/2023",
+        "title": "Thiết Kế App Nội Thất Năm 2023: Cách Tối Ưu Hóa Không Gian Sống Của Bạn",
+        "excerpt": "Thiết kế app nội thất năm 2023 không chỉ là xu hướng mà còn là yếu tố quan trọng để đáp ứng nhu cầu của khách hàng và tăng cường sự hiện diện của doanh nghiệp trong thị trường công nghệ số."
+      },
+      "blog7": {
+        "category": "Startup Tips",
+        "date": "02/06/2024",
+        "title": "Giải pháp nhà thông minh: Nhà thông minh NPH Digital – 1 Sự tiện nghi trong tầm tay",
+        "excerpt": "NPH Digital đã tạo ra một giải pháp nhà thông minh để giúp bạn tận hưởng một cuộc sống tiện nghi và hiện đại, đồng thời tiết kiệm thời gian và năng lượng."
+      },
+      "blog8": {
+        "category": "Mobile App",
+        "date": "15/04/2024",
+        "title": "7 Bước Tạo Trang Web Tin Tức Thu Hút Hàng Ngàn Lượt Truy Cập",
+        "excerpt": "Tạo trang web tin tức không chỉ là việc đơn thuần tạo ra một trang web để chia sẻ thông tin, mà còn là một cơ hội để doanh nghiệp tăng cường sự hiện diện và tạo ra nhiều cơ hội kinh doanh mới."
+      },
+      "blog9": {
+        "category": "Thiết kế App",
+        "date": "22/08/2024",
+        "title": "Các Yếu Tố Thiết Kế App Không Thể Thiếu Trong Năm 2024",
+        "excerpt": "Việc thiết kế app chất lượng không chỉ mang lại lợi ích trực tiếp về trải nghiệm người dùng và tăng cường sự hiện diện của thương hiệu, mà còn tạo ra nhiều cơ hội kinh doanh mới, cung cấp dữ liệu quý giá, và nâng cao khả năng cạnh tranh."
+      },
+      "blog10": {
+        "category": "Thiết kế App",
+        "date": "29/07/2024",
+        "title": "Thiết Kế App Theo Yêu Cầu: 9 Cách Tối Ưu Hóa Giao Diện Người Dùng",
+        "excerpt": "Trong bối cảnh người dùng ngày càng đòi hỏi cao về sự tiện ích và trải nghiệm cá nhân, thiết kế app theo yêu cầu không chỉ là một lựa chọn mà còn là một chiến lược quan trọng giúp các doanh nghiệp đạt được lợi thế cạnh tranh và thành công bền vững trong thị trường ứng dụng di động."
+      },
+      "blog11": {
+        "category": "Thiết kế App",
+        "date": "10/05/2024",
+        "title": "10 Lợi Ích Ứng Dụng Gamification Trong Thiết Kế App Để Tăng Tương Tác",
+        "excerpt": "Phần diễn giải này cung cấp một cái nhìn sâu sắc về cách các yếu tố gamification được sử dụng trong thiết kế app, giúp tăng cường sự tương tác và giữ chân người dùng."
+      },
+      "blog12": {
+        "category": "Graphic Design",
+        "date": "05/06/2024",
+        "title": "Thiết Kế App Giao Nhận Đồ Ăn: 7 Lợi Ích Tính Năng Chat Với Tài Xế",
+        "excerpt": "Triển khai tính năng chat trong quy trình thiết kế app giao nhận đồ ăn không chỉ đơn thuần là một công việc kỹ thuật, mà còn đòi hỏi sự kết hợp giữa việc phát triển công nghệ, quản lý hệ thống, và xây dựng trải nghiệm người dùng."
+      },
+      "blog13": {
+        "category": "Digital Marketing",
+        "date": "22/06/2024",
+        "title": "Thiết Kế App Theo Yêu Cầu: 10 Bước Đơn Giản Để Bắt Đầu",
+        "excerpt": "Thiết kế app theo yêu cầu không chỉ là một xu hướng mà còn là một giải pháp cần thiết cho sự phát triển và thành công của doanh nghiệp trong thời đại kỹ thuật số."
+      },
+      "blog14": {
+        "category": "SEO",
+        "date": "09/05/2024",
+        "title": "10 Công Nghệ Mới Trong Thiết Kế App Giao Nhận",
+        "excerpt": "Các công nghệ mới như AI, Machine Learning, Blockchain, IoT, AR/VR, Big Data, Cloud Computing, 5G, Chatbots và Trợ Lý Ảo, Contactless Payment, và BaaS đang thay đổi cách thức phát triển và tối ưu hóa trong thiết kế app giao nhận."
+      },
+      "blog15": {
+        "category": "Content Marketing",
+        "date": "15/07/2024",
+        "title": "10 Cách Tối Ưu Hóa Trải Nghiệm Người Dùng Trong Thiết Kế App",
+        "excerpt": "Trong quá trình thiết kế app, các nguyên tắc của UX phải được áp dụng để đảm bảo rằng ứng dụng không chỉ đẹp mắt mà còn dễ sử dụng và hiệu quả."
+      },
+      "blog16": {
+        "category": "Social Media",
+        "date": "30/05/2024",
+        "title": "Thiết Kế App Giao Hàng Đa Nền Tảng | Xu Hướng 2024",
+        "excerpt": "Các xu hướng thiết kế app giao hàng năm 2024 tập trung vào việc tối ưu hóa trải nghiệm người dùng thông qua công nghệ tiên tiến như AI, AR, và blockchain."
+      }
+    }
+  },
+  "DesignStudioCTA": {
+    "title": "Bạn đã có ý tưởng?",
+    "description": "Hãy cùng nhau tạo ra những điều tuyệt vời!",
+    "button": {
+      "line1": "Liên hệ",
+      "line2": "với chúng tôi"
+    }
+  }
+}
