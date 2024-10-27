@@ -2,7 +2,6 @@ import { useEffect, useRef, useState, useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
-import { setUserLanguage } from '../../utils/languageUtils';
 import LanguageSwitcher, { useLanguageChanging } from './LanguageSwitcher';
 import { motion, AnimatePresence } from 'framer-motion';
 
