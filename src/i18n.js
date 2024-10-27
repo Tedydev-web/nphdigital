@@ -23,6 +23,7 @@ import BLOG_DETAILS_12_VI from './locales/vi/blogDetails12.json';
 import BLOG_DETAILS_13_VI from './locales/vi/blogDetails13.json';
 import BLOG_DETAILS_14_VI from './locales/vi/blogDetails14.json';
 import BLOG_DETAILS_15_VI from './locales/vi/blogDetails15.json';
+import CONTACT_VI from './locales/vi/contact.json';
 
 // Tiếng anh
 import COMMON_EN from './locales/en/common.json';
@@ -46,6 +47,7 @@ import BLOG_DETAILS_12_EN from './locales/en/blogDetails12.json';
 import BLOG_DETAILS_13_EN from './locales/en/blogDetails13.json';
 import BLOG_DETAILS_14_EN from './locales/en/blogDetails14.json';
 import BLOG_DETAILS_15_EN from './locales/en/blogDetails15.json';
+import CONTACT_EN from './locales/en/contact.json';
 
 // Tiếng trung
 import COMMON_ZH from './locales/zh/common.json';
@@ -54,7 +56,22 @@ import ABOUT_ZH from './locales/zh/about.json';
 import SERVICE_ZH from './locales/zh/service.json';
 import SERVICE_DETAILS_ZH from './locales/zh/serviceDetails.json';
 import BLOG_ZH from './locales/zh/blog.json';
-
+import BLOG_DETAILS_1_ZH from './locales/zh/blogDetails1.json';
+import BLOG_DETAILS_2_ZH from './locales/zh/blogDetails2.json';
+import BLOG_DETAILS_3_ZH from './locales/zh/blogDetails3.json';
+import BLOG_DETAILS_4_ZH from './locales/zh/blogDetails4.json';
+import BLOG_DETAILS_5_ZH from './locales/zh/blogDetails5.json';
+import BLOG_DETAILS_6_ZH from './locales/zh/blogDetails6.json';
+import BLOG_DETAILS_7_ZH from './locales/zh/blogDetails7.json';
+import BLOG_DETAILS_8_ZH from './locales/zh/blogDetails8.json';
+import BLOG_DETAILS_9_ZH from './locales/zh/blogDetails9.json';
+import BLOG_DETAILS_10_ZH from './locales/zh/blogDetails10.json';
+import BLOG_DETAILS_11_ZH from './locales/zh/blogDetails11.json';
+import BLOG_DETAILS_12_ZH from './locales/zh/blogDetails12.json';
+import BLOG_DETAILS_13_ZH from './locales/zh/blogDetails13.json';
+import BLOG_DETAILS_14_ZH from './locales/zh/blogDetails14.json';
+import BLOG_DETAILS_15_ZH from './locales/zh/blogDetails15.json';
+import CONTACT_ZH from './locales/zh/contact.json';
 // Tiếng Hindi
 import COMMON_HI from './locales/hi/common.json';
 import HOME_HI from './locales/hi/home.json';
@@ -77,6 +94,7 @@ import BLOG_DETAILS_12_HI from './locales/hi/blogDetails12.json';
 import BLOG_DETAILS_13_HI from './locales/hi/blogDetails13.json';
 import BLOG_DETAILS_14_HI from './locales/hi/blogDetails14.json';
 import BLOG_DETAILS_15_HI from './locales/hi/blogDetails15.json';
+import CONTACT_HI from './locales/hi/contact.json';
 
 const resources = {
 	vi: {
@@ -101,6 +119,7 @@ const resources = {
 		blog13: BLOG_DETAILS_13_VI,
 		blog14: BLOG_DETAILS_14_VI,
 		blog15: BLOG_DETAILS_15_VI,
+		contact: CONTACT_VI,
 	},
 
 	en: {
@@ -125,6 +144,7 @@ const resources = {
 		blog13: BLOG_DETAILS_13_EN,
 		blog14: BLOG_DETAILS_14_EN,
 		blog15: BLOG_DETAILS_15_EN,
+		contact: CONTACT_EN,
 	},
 
 	zh: {
@@ -134,6 +154,22 @@ const resources = {
 		service: SERVICE_ZH,
 		blog: BLOG_ZH,
 		serviceDetails: SERVICE_DETAILS_ZH,
+		blog1: BLOG_DETAILS_1_ZH,
+		blog2: BLOG_DETAILS_2_ZH,
+		blog3: BLOG_DETAILS_3_ZH,
+		blog4: BLOG_DETAILS_4_ZH,
+		blog5: BLOG_DETAILS_5_ZH,
+		blog6: BLOG_DETAILS_6_ZH,
+		blog7: BLOG_DETAILS_7_ZH,
+		blog8: BLOG_DETAILS_8_ZH,
+		blog9: BLOG_DETAILS_9_ZH,
+		blog10: BLOG_DETAILS_10_ZH,
+		blog11: BLOG_DETAILS_11_ZH,
+		blog12: BLOG_DETAILS_12_ZH,
+		blog13: BLOG_DETAILS_13_ZH,
+		blog14: BLOG_DETAILS_14_ZH,
+		blog15: BLOG_DETAILS_15_ZH,
+		contact: CONTACT_ZH,
 	},
 
 	hi: {
@@ -158,17 +194,21 @@ const resources = {
 		blog13: BLOG_DETAILS_13_HI,
 		blog14: BLOG_DETAILS_14_HI,
 		blog15: BLOG_DETAILS_15_HI,
+		contact: CONTACT_HI,
 	},
 };
 const defaultNS = 'home';
 i18n.use(initReactI18next).init({
 	resources,
-	lng: 'vi',
-	ns: ['home'],
+	lng: 'en',
+	ns: ['common', 'home', 'about', 'service', 'serviceDetails', 'blog', 'blogDetails1', 'blogDetails2', 'blogDetails3', 'blogDetails4', 'blogDetails5', 'blogDetails6', 'blogDetails7', 'blogDetails8', 'blogDetails9', 'blogDetails10', 'blogDetails11', 'blogDetails12', 'blogDetails13', 'blogDetails14', 'blogDetails15'],
 	defaultNS,
-	fallbackLng: 'vi',
+	fallbackLng: 'en',
 	interpolation: {
 		escapeValue: false,
+	},
+	react: {
+		useSuspense: false,
 	},
 });
 

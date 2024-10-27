@@ -13,9 +13,11 @@ import DigitalAgencyBrand from '@/components/brand/DigitalAgencyBrand';
 import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
 import DigitalMarketingTestimonial from '@/components/testimonial/DigitalMarketingTestimonial';
 import gsap from 'gsap';
+import { useTranslation } from 'react-i18next';
 
 const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
 const DigitalAgency = () => {
+	const { t } = useTranslation('common');
 	const timelineRef = useRef(null);
 	const dotsRef = useRef([]);
 	const setupScrollDots = useCallback(() => {
@@ -150,7 +152,7 @@ const DigitalAgency = () => {
 				/>
 				<meta
 					property="og:image"
-					content="https://res.cloudinary.com/tedydev/image/upload/nphdigital/cover.png"
+					content="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
 				/>
 				<meta
 					property="og:image:alt"
@@ -192,7 +194,7 @@ const DigitalAgency = () => {
 				/>
 				<meta
 					name="twitter:image"
-					content="https://res.cloudinary.com/tedydev/image/upload/nphdigital/cover.png"
+					content="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
 				/>
 				<meta
 					name="twitter:image:alt"
@@ -261,7 +263,7 @@ const DigitalAgency = () => {
 				<link
 					rel="preload"
 					as="image"
-					href="https://res.cloudinary.com/tedydev/image/upload/nphdigital/cover.png"
+					href="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
 				/>
 
 				{/* Other Meta Tags */}
@@ -306,7 +308,7 @@ const DigitalAgency = () => {
 			<div
 				className="timeline"
 				ref={timelineRef}>
-				{['', '', 'Về chúng tôi', 'Dịch vụ của chúng tôi', 'Thành tích', 'Quy trình làm việc', 'Dự án đã thực hiện', 'Đối tác công nghệ', 'Châm ngôn làm việc', 'Liên hệ với chúng tôi'].map((label, index) => (
+				{['', '', t('timeline.comp1'), t('timeline.comp2'), t('timeline.comp3'), t('timeline.comp4'), t('timeline.comp5'), t('timeline.comp6'), t('timeline.comp7'), t('timeline.comp8')].map((label, index) => (
 					<span
 						key={index}
 						className="dot"

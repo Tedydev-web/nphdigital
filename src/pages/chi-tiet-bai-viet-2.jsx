@@ -60,7 +60,7 @@ const BlogDetails = () => {
 				/>
 				<meta
 					property="og:image"
-					content="https://res.cloudinary.com/tedydev/image/upload/nphdigital/cover.png"
+					content="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
 				/>
 				<meta
 					property="og:locale"
@@ -86,7 +86,7 @@ const BlogDetails = () => {
 				/>
 				<meta
 					name="twitter:image"
-					content="https://res.cloudinary.com/tedydev/image/upload/nphdigital/cover.png"
+					content="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
 				/>
 				<meta
 					name="twitter:site"
@@ -169,7 +169,7 @@ const BlogDetails = () => {
 								url: 'https://nphdigital.com',
 							},
 							url: 'https://nphdigital.com/chi-tiet-bai-viet-2',
-							image: 'https://res.cloudinary.com/tedydev/image/upload/nphdigital/cover.png',
+							image: 'https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png',
 							datePublished: '2024-10-16', // Cập nhật theo ngày bạn xuất bản bài viết
 							dateModified: '2024-10-16', // Cập nhật theo ngày bạn chỉnh sửa bài viết
 						}),

@@ -1,0 +1,29 @@
+{
+  "title": {
+    "line1": "联系我们",
+    "line2": "与我们"
+  },
+  "text": "太棒了！NPH Digital 很高兴聆听您的意见。如有任何疑问，请随时与我们联系。",
+  "subTitle": {
+    "line1": "别犹豫！",
+    "line2": "请发送您的信息给我们"
+  },
+  "address": {
+    "line1": "第838号, Vĩnh Bình村,",
+    "line2": "An Vĩnh Ngãi乡, Tân An市, 龙安省"
+  },
+  "form": {
+    "name": "姓名 *",
+    "email": "电子邮箱 *",
+    "phone": "电话号码",
+    "subject": "主题 *",
+    "message": "内容 *",
+    "send": "发送",
+    "sending": "发送中...",
+    "button": "给我们"
+  },
+  "toast": {
+    "success": "消息已成功发送！",
+    "error": "消息发送失败，请稍后再试。"
+  }
+}

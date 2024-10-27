@@ -6,7 +6,8 @@
       "chinese": "中文",
       "hindi": "印地语",
       "changing": "切换为越南语",
-      "pleaseWait": "请稍等片刻。"
+      "pleaseWait": "请稍等片刻。",
+      "lang": "语言"
     }
   },
   "header": {
@@ -51,13 +52,26 @@
       "facebook": "Facebook",
       "telegram": "Telegram"
     },
-    "home": "首页",
-    "about": "介绍",
-    "service": "服务",
-    "blog": "文章",
+    "menu": {
+      "home": "首页",
+      "about": "介绍",
+      "service": "服务",
+      "blog": "文章",
+      "contact": "联系"
+    },
     "contact": {
       "title": "联系",
-      "address": "838, Vinh Binh Hamlet, An Vinh Ngai Commune, Tan An City, Long An Province"
+      "address": "838号, 永平村, 安永艾社, 新安市, 隆安省"
     }
+  },
+  "timeline": {
+    "comp1": "关于我们",
+    "comp2": "我们的服务",
+    "comp3": "成就",
+    "comp4": "工作流程",
+    "comp5": "已完成项目",
+    "comp6": "技术合作伙伴",
+    "comp7": "工作信条",
+    "comp8": "联系我们"
   }
 }

@@ -43,7 +43,7 @@ const ServiceDetails = () => {
 				/>
 				<meta
 					property="og:image"
-					content="https://res.cloudinary.com/tedydev/image/upload/nphdigital/cover.png"
+					content="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
 				/>
 				<meta
 					property="og:locale"
@@ -65,7 +65,7 @@ const ServiceDetails = () => {
 				/>
 				<meta
 					name="twitter:image"
-					content="https://res.cloudinary.com/tedydev/image/upload/nphdigital/cover.png"
+					content="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
 				/>
 
 				{/* Viewport and Mobile Optimization */}

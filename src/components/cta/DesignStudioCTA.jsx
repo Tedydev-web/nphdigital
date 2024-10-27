@@ -10,8 +10,7 @@ const DesignStudioCTA = () => {
 			<section
 				className="cta__area-2"
 				style={{ position: 'relative', overflow: 'hidden' }}>
-				<VideoBackground videoSrc="https://cdn.cuberto.com/cb/footer/1.mp4" />
-
+				<VideoBackground videoSrc="https://res.cloudinary.com/tedydev/video/upload/v1730016118/nphdigital/1.mp4" />
 				<div className="container line pt-130 pb-120">
 					<div className="line-3"></div>
 					<div className="row">

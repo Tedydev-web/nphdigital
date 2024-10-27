@@ -144,7 +144,8 @@ function LanguageSwitcher() {
 				)}
 			</AnimatePresence>
 
-			<AnimatePresence>
+			{/* Comment phần overlay */}
+			{/* <AnimatePresence>
 				{isChanging && (
 					<motion.div
 						initial={{ opacity: 0 }}
@@ -169,7 +170,7 @@ function LanguageSwitcher() {
 						</motion.div>
 					</motion.div>
 				)}
-			</AnimatePresence>
+			</AnimatePresence> */}
 		</div>
 	);
 }

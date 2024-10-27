@@ -45,7 +45,7 @@ const About = () => {
 				/>
 				<meta
 					property="og:image"
-					content="https://res.cloudinary.com/tedydev/image/upload/nphdigital/cover.png"
+					content="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
 				/>
 				<meta
 					property="og:image:alt"
@@ -75,7 +75,7 @@ const About = () => {
 				/>
 				<meta
 					name="twitter:image"
-					content="https://res.cloudinary.com/tedydev/image/upload/nphdigital/cover.png"
+					content="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
 				/>
 				<meta
 					name="twitter:image:alt"
@@ -131,7 +131,7 @@ const About = () => {
 				<link
 					rel="preload"
 					as="image"
-					href="https://res.cloudinary.com/tedydev/image/upload/nphdigital/cover.png"
+					href="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
 				/>
 
 				{/* Other Meta Tags */}

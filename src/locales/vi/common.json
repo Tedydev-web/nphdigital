@@ -6,7 +6,8 @@
       "chinese": "Tiếng Trung",
       "hindi": "Tiếng Hindi",
       "changing": "Đổi ngôn ngữ Tiếng việt",
-      "pleaseWait": "Vui lòng chờ trong giây lát."
+      "pleaseWait": "Vui lòng chờ trong giây lát.",
+      "lang": "Ngôn ngữ"
     }
   },
   "header": {
@@ -51,7 +52,7 @@
       "facebook": "Facebook",
       "telegram": "Telegram"
     },
-    "headerTitle": {
+    "menu": {
       "home": "Trang chủ",
       "about": "Giới thiệu",
       "service": "Dịch vụ",
@@ -62,5 +63,15 @@
       "title": "Liên hệ",
       "address": "Số 838, Ấp Vĩnh Bình, Xã An Vĩnh Ngãi, Tp.Tân An, T.Long An"
     }
+  },
+  "timeline": {
+    "comp1": "Về chúng tôi",
+    "comp2": "Dịch vụ của chúng tôi",
+    "comp3": "Thành tích",
+    "comp4": "Quy trình làm việc",
+    "comp5": "Dự án đã thực hiện",
+    "comp6": "Đối tác công nghệ",
+    "comp7": "Châm ngôn làm việc",
+    "comp8": "Liên hệ với chúng tôi"
   }
 }

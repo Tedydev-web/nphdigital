@@ -10366,7 +10366,7 @@ img {
 	}
 }
 .testimonial__area-3 {
-	background-image: url(/assets/imgs/testimonial/3/bg.png);
+	/* background-image: url(/assets/imgs/testimonial/3/bg.png); */
 	background-repeat: no-repeat;
 	background-position: 0 150px;
 	position: relative;

@@ -12,11 +12,11 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 	const { t } = useTranslation('common');
 	const [accordion, setAccordion] = useState(0);
 	const [subAccordion, setSubAccordion] = useState(0);
-	const headerTitle = useRef();
+	const menu = useRef();
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			setTimeout(() => {
-				let rootParent = headerTitle.current.children;
+				let rootParent = menu.current.children;
 				for (let i = 0; i < rootParent.length; i++) {
 					let firstParent = rootParent[i].children;
 					for (let j = 0; j < firstParent.length; j++) {
@@ -105,21 +105,21 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 							<nav className="offcanvas__menu">
 								<ul
 									className="menu-anim title"
-									ref={headerTitle}>
+									ref={menu}>
 									<li>
 										<div className="header_title">
-											<Link href={'https://nphdigital.com/'}> {t('canvas.home')}</Link>
+											<Link href={'https://nphdigital.com/'}> {t('canvas.menu.home')}</Link>
 											{/* <div className="accordian-btn"> {accordion === 1 ? : <a onClick={() => openData(1)}> + </a>} </div>{' '} */}
 										</div>{' '}
 									</li>{' '}
 									<li>
 										<div className="header_title">
-											<Link href={'/gioi-thieu'}> {t('canvas.headerTitle.about')}</Link>{' '}
+											<Link href={'/gioi-thieu'}> {t('canvas.menu.about')}</Link>{' '}
 										</div>{' '}
 									</li>{' '}
 									<li>
 										<div className="header_title d-flex">
-											<Link href={'/dich-vu'}> {t('canvas.headerTitle.service')}</Link>
+											<Link href={'/dich-vu'}> {t('canvas.menu.service')}</Link>
 											{/* <div className="accordian-btn"> {accordion === 3 ? <a onClick={() => openData(0)}> - </a> : <a onClick={() => openData(3)}> + </a>} </div>{' '} */}
 										</div>{' '}
 									</li>{' '}
@@ -130,13 +130,13 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 									</li>{' '} */}
 									<li>
 										<div className="header_title">
-											<Link href={'/bai-viet'}> {t('canvas.headerTitle.blog')}</Link>
+											<Link href={'/bai-viet'}> {t('canvas.menu.blog')}</Link>
 											{/* <div className="accordian-btn"> {accordion === 5 ? <a onClick={() => openData(0)}> - </a> : <a onClick={() => openData(5)}> + </a>} </div>{' '} */}
 										</div>{' '}
 									</li>{' '}
 									<li>
 										<div className="header_title">
-											<Link href={'/lien-he'}> {t('canvas.headerTitle.contact')}</Link>{' '}
+											<Link href={'/lien-he'}> {t('canvas.menu.contact')}</Link>{' '}
 										</div>{' '}
 									</li>{' '}
 								</ul>{' '}

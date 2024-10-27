@@ -1,6 +1,7 @@
 import '../../../i18n.js';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState, useMemo } from 'react';
+import { detectUserLanguage } from '../../../utils/languageUtils';
 import allNavData from '../../../data/navData.json';
 import Preloader from '@/components/preloader/Preloader';
 import CommonAnimation from '../CommonAnimation';
@@ -41,6 +42,11 @@ export default function RootLayout({ children, header = '', footer = '', default
 	const cursor1 = useRef();
 	const cursor2 = useRef();
 	const { t, i18n } = useTranslation('common');
+
+	useEffect(() => {
+		detectUserLanguage();
+	}, []);
+
 
 	useEffect(() => {
 		setNavData(allNavData);

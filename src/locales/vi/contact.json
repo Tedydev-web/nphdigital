@@ -1,0 +1,29 @@
+{
+	"title": {
+		"line1": "Liên hệ",
+		"line2": "với chúng tôi"
+	},
+	"text": "Thật tuyệt vời! NPH Digital rất vui khi được lắng nghe ý kiến của bạn. Hãy liên hệ ngay cho chúng tôi nếu có bất kỳ thắc mắc nào.",
+	"subTitle": {
+		"line1": "Đừng ngần ngại !",
+		"line2": "Hãy gửi thông tin cho chúng tôi"
+	},
+	"address": {
+		"line1": "Số 838, Ấp Vĩnh Bình, ",
+		"line2": "Xã An Vĩnh Ngãi, Tp Tân An, T Long An"
+	},
+	"form": {
+		"name": "Tên *",
+		"email": "Email *",
+		"phone": "Số điện thoại",
+		"subject": "Chủ đề *",
+		"message": "Nội dung *",
+		"send": "Gửi ",
+		"sending": "Đang gửi...",
+		"button": "Cho chúng tôi"
+	},
+	"toast": {
+		"success": "Thư đã được gửi thành công!",
+		"error": "Gửi thư thất bại. Vui lòng thử lại sau."
+	}
+}

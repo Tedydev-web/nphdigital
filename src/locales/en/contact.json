@@ -1,0 +1,29 @@
+{
+  "title": {
+    "line1": "Contact",
+    "line2": "Us"
+  },
+  "text": "Great! NPH Digital is excited to hear from you. Feel free to reach out to us if you have any questions.",
+  "subTitle": {
+    "line1": "Don’t hesitate!",
+    "line2": "Send us your information"
+  },
+  "address": {
+    "line1": "No. 838, Vinh Binh Hamlet,",
+    "line2": "An Vinh Ngai Commune, Tan An City, Long An Province"
+  },
+  "form": {
+    "name": "Name *",
+    "email": "Email *",
+    "phone": "Phone Number",
+    "subject": "Subject *",
+    "message": "Message *",
+    "send": "Send",
+    "sending": "Sending...",
+    "button": "To us"
+  },
+  "toast": {
+    "success": "Your message has been successfully sent!",
+    "error": "Failed to send the message. Please try again later."
+  }
+}

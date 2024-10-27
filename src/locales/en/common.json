@@ -6,7 +6,8 @@
       "chinese": "Chinese",
       "hindi": "Hindi",
       "changing": "Changing Language English",
-      "pleaseWait": "Please wait a moment."
+      "pleaseWait": "Please wait a moment.",
+      "lang": "Language"
     }
   },
   "header": {
@@ -52,7 +53,7 @@
       "facebook": "Facebook",
       "telegram": "Telegram"
     },
-    "headerTitle": {
+    "menu": {
       "home": "Home",
       "about": "About",
       "service": "Services",
@@ -63,6 +64,16 @@
       "title": "Contact",
       "address": "838, Vinh Binh Hamlet, An Vinh Ngai Commune, Tan An City, Long An Province"
     }
+  },
+  "timeline": {
+    "comp1": "About Us",
+    "comp2": "Our Services",
+    "comp3": "Achievements",
+    "comp4": "Working Process",
+    "comp5": "Completed Projects",
+    "comp6": "Technology Partners",
+    "comp7": "Working Motto",
+    "comp8": "Contact Us"
   }
 }
 
