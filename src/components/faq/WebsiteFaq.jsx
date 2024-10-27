@@ -1,5 +1,4 @@
 import { Accordion } from 'react-bootstrap';
-import ThumbFaq from '../../../public/assets/imgs/thumb/faq.jpg';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 
