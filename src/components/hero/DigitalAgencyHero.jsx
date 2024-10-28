@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { SplitText } from '@/plugins';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -8,10 +8,23 @@ import ArrowDownBig from '../../../public/assets/imgs/icon/arrow-down-big.png';
 import Hero1bg from '../../../public/assets/imgs/hero/1/1-bg.png';
 import Image from 'next/image.js';
 
+const imageBreakpoints = {
+	mobile: 640,
+	tablet: 1024,
+	desktop: 1920,
+};
+
 const DigitalAgencyHero = () => {
 	const { t } = useTranslation('home');
 	const heroTitle = useRef();
 	const heroSubTitle = useRef();
+	const [isImageLoaded, setIsImageLoaded] = useState(false);
+
+	// Xử lý khi hình ảnh load xong
+	const handleImageLoad = () => {
+		setIsImageLoaded(true);
+	};
+
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let tHero = gsap.context(() => {
@@ -51,7 +64,19 @@ const DigitalAgencyHero = () => {
 
 	return (
 		<>
-			<section className="hero__area ">
+			<section className={`hero__area ${isImageLoaded ? 'loaded' : ''}`}>
+				{/* Fallback background */}
+				<div
+					className="hero__background-fallback"
+					style={{
+						position: 'absolute',
+						inset: 0,
+						background: 'linear-gradient(to bottom right, #f3f4f6, #e5e7eb)',
+						opacity: isImageLoaded ? 0 : 1,
+						transition: 'opacity 0.3s ease-in-out',
+					}}
+				/>
+
 				<div className="container">
 					<div className="row">
 						<div className="col-xxl-12">
@@ -94,14 +119,52 @@ const DigitalAgencyHero = () => {
 
 				<Image
 					priority
-					style={{ width: 'auto', height: 'auto' }}
+					quality={75}
+					placeholder="blur"
+					blurDataURL={Hero1bg.blurDataURL}
 					src={Hero1bg}
-					alt="image"
+					alt="NPH Digital Hero Background"
 					className="hero1_bg"
+					sizes={`
+          (max-width: ${imageBreakpoints.mobile}px) 100vw,
+          (max-width: ${imageBreakpoints.tablet}px) 100vw,
+          100vw
+        `}
+					onLoad={handleImageLoad}
+					style={{
+						width: '100%',
+						height: 'auto',
+						objectFit: 'cover',
+						objectPosition: 'center',
+						opacity: isImageLoaded ? 1 : 0,
+						transition: 'opacity 0.3s ease-in-out',
+						willChange: 'transform',
+						transform: 'translateZ(0)',
+						backfaceVisibility: 'hidden',
+						WebkitFontSmoothing: 'subpixel-antialiased',
+					}}
 				/>
 			</section>
+			<style jsx="true">{`
+				.hero__area {
+					position: relative;
+				}
+
+				.hero1_bg {
+					will-change: transform;
+					transform: translateZ(0);
+					backface-visibility: hidden;
+					-webkit-font-smoothing: subpixel-antialiased;
+				}
+
+				@media (max-width: 640px) {
+					.hero1_bg {
+						height: 100vh;
+						object-position: center;
+					}
+				}
+			`}</style>
 		</>
 	);
 };
-
 export default DigitalAgencyHero;
