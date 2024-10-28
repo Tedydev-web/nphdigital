@@ -1,15 +1,14 @@
-'use client';
-
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { useMemo } from 'react';
+import { useLanguageManager } from '@/hooks/useLanguageManager';
 
-function LanguageSwitcher() {
-	const { t, i18n } = useTranslation('common');
-	const [selectedLanguage, setSelectedLanguage] = useState(null);
+function LanguageSwitcher({ onLanguageChange }) {
+	const { t } = useTranslation('common');
+	const { currentLanguage, changeLanguage } = useLanguageManager();
 	const [isOpen, setIsOpen] = useState(false);
-	const [isChanging, setIsChanging] = useState(false);
+	const [mounted, setMounted] = useState(false);
+	const [isLanguageChanging, setIsLanguageChanging] = useState(false);
 	const dropdownRef = useRef(null);
 
 	const languages = useMemo(
@@ -23,33 +22,45 @@ function LanguageSwitcher() {
 	);
 
 	useEffect(() => {
-		const currentLanguage = languages.find((lang) => lang.code === i18n.language);
-		setSelectedLanguage(currentLanguage);
-	}, [i18n.language, languages]);
-
-	useEffect(() => {
-		const handleOutsideClick = (e) => {
-			if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+		setMounted(true);
+		const handleClickOutside = (event) => {
+			if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
 				setIsOpen(false);
 			}
 		};
-		document.addEventListener('mousedown', handleOutsideClick);
-		return () => document.removeEventListener('mousedown', handleOutsideClick);
+
+		document.addEventListener('mousedown', handleClickOutside);
+		return () => {
+			document.removeEventListener('mousedown', handleClickOutside);
+		};
 	}, []);
 
-	const handleLanguageChange = (language) => {
-		setIsChanging(true);
-		i18n.changeLanguage(language.code);
+	const handleSelection = async (language) => {
 		setIsOpen(false);
+		setIsLanguageChanging(true);
 
-		setTimeout(() => setIsChanging(false), 800);
+		try {
+			await changeLanguage(language.code);
+			if (onLanguageChange) {
+				onLanguageChange(language.code);
+			}
+		} catch (error) {
+			console.error('Error changing language:', error);
+		} finally {
+			setTimeout(() => {
+				setIsLanguageChanging(false);
+			}, 1000);
+		}
 	};
+
+	const currentLanguageData = useMemo(() => languages.find((lang) => lang.code === currentLanguage) || languages[0], [currentLanguage, languages]);
+
+	if (!mounted) return null;
 
 	return (
 		<div
-			style={{ position: 'relative', zIndex: 1000 }}
-			aria-label="Language Switcher"
-			ref={dropdownRef}>
+			ref={dropdownRef}
+			style={{ position: 'relative' }}>
 			<motion.div
 				onClick={() => setIsOpen(!isOpen)}
 				className="language-switcher-button"
@@ -68,16 +79,16 @@ function LanguageSwitcher() {
 					transition: 'box-shadow 0.3s ease, background-color 0.3s ease',
 				}}>
 				<motion.span
-					animate={isOpen ? { x: [0, 2, -2, 2, 0] } : {}}
+					animate={{ rotate: [0, 10, -10, 10, 0] }}
 					transition={{
 						repeat: Infinity,
-						duration: 1.5,
+						duration: 2,
 						ease: 'easeInOut',
 					}}
 					style={{ marginRight: '10px' }}>
-					{selectedLanguage?.flag}
+					{currentLanguageData.flag}
 				</motion.span>
-				<span style={{ fontWeight: '500', fontSize: '16px' }}>{selectedLanguage?.name}</span>
+				<span style={{ fontSize: '16px' }}>{currentLanguageData.name}</span>
 				<span
 					style={{
 						marginLeft: 'auto',
@@ -113,7 +124,7 @@ function LanguageSwitcher() {
 								initial={{ opacity: 0, x: -10 }}
 								animate={{ opacity: 1, x: 0 }}
 								transition={{ delay: index * 0.05 }}
-								onClick={() => handleLanguageChange(language)}
+								onClick={() => handleSelection(language)}
 								style={{
 									padding: '14px 20px',
 									cursor: 'pointer',
@@ -144,9 +155,8 @@ function LanguageSwitcher() {
 				)}
 			</AnimatePresence>
 
-			{/* Comment phần overlay */}
-			{/* <AnimatePresence>
-				{isChanging && (
+			<AnimatePresence>
+				{isLanguageChanging && (
 					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
@@ -170,29 +180,9 @@ function LanguageSwitcher() {
 						</motion.div>
 					</motion.div>
 				)}
-			</AnimatePresence> */}
+			</AnimatePresence>
 		</div>
 	);
-}
-
-export function useLanguageChanging() {
-	const [isChanging, setIsChanging] = useState(false);
-	const { i18n } = useTranslation();
-
-	useEffect(() => {
-		const handleLanguageChange = () => {
-			setIsChanging(true);
-			setTimeout(() => setIsChanging(false), 800);
-		};
-
-		i18n.on('languageChanged', handleLanguageChange);
-
-		return () => {
-			i18n.off('languageChanged', handleLanguageChange);
-		};
-	}, [i18n]);
-
-	return isChanging;
 }
 
 export default LanguageSwitcher;

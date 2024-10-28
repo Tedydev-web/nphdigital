@@ -1,7 +1,7 @@
+// src/components/common/layout/RootLayout.jsx
 import '../../../i18n.js';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState, useMemo } from 'react';
-import { detectUserLanguage } from '../../../utils/languageUtils';
 import allNavData from '../../../data/navData.json';
 import Preloader from '@/components/preloader/Preloader';
 import CommonAnimation from '../CommonAnimation';
@@ -18,6 +18,7 @@ import { tsParticles } from '@tsparticles/engine';
 import Particles from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import SwitcherLang from '@/components/common/SwitcherLang';
+import { useLanguageManager } from '@/hooks/useLanguageManager';
 
 const HeaderContent = ({ header, navData }) => {
 	const headers = {
@@ -42,11 +43,7 @@ export default function RootLayout({ children, header = '', footer = '', default
 	const cursor1 = useRef();
 	const cursor2 = useRef();
 	const { t, i18n } = useTranslation('common');
-
-	useEffect(() => {
-		detectUserLanguage();
-	}, []);
-
+	const { currentLanguage } = useLanguageManager(); // Sử dụng hook mà không cần `changeLanguage`
 
 	useEffect(() => {
 		setNavData(allNavData);
@@ -146,10 +143,6 @@ export default function RootLayout({ children, header = '', footer = '', default
 		}),
 		[particleValue]
 	);
-
-	const changeLanguage = (lng) => {
-		i18n.changeLanguage(lng);
-	};
 
 	return (
 		<CommonAnimation>

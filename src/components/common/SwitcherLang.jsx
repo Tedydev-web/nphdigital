@@ -1,76 +1,130 @@
+// src/components/common/SwitcherLang.jsx
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
-import LanguageSwitcher, { useLanguageChanging } from './LanguageSwitcher';
+import LanguageSwitcher from './LanguageSwitcher';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguageManager } from '@/hooks/useLanguageManager';
 
 const SwitcherLang = () => {
-	const switcherIcon = useRef();
-	const switcherItems = useRef();
-	const switcherOpen = useRef();
-	const switcherClose = useRef();
-	const idleTimeout = useRef();
-	const { t, i18n } = useTranslation('common'); // Thêm i18n để kiểm tra ngôn ngữ hiện tại
+	const switcherIcon = useRef(null);
+	const switcherItems = useRef(null);
+	const switcherOpen = useRef(null);
+	const switcherClose = useRef(null);
+	const idleTimeout = useRef(null);
+	const timeoutRef = useRef(null); // Thêm ref cho setTimeout
+	const { t } = useTranslation('common');
 	const [isOpen, setIsOpen] = useState(false);
-	const isLanguageChanging = useLanguageChanging(); // Sử dụng hook để lấy trạng thái isChanging
+	const [isLanguageChanging, setIsLanguageChanging] = useState(false);
+	const { currentLanguage, changeLanguage } = useLanguageManager();
 
-	// Hàm đóng switcher với một khoảng thời gian trễ
-	const triggerCloseWithDelay = useCallback(() => {
-		switcherItems.current.classList.add('closing');
-		setTimeout(() => {
-			setIsOpen(false);
-			switcherClose.current.style.display = 'none';
-			switcherOpen.current.style.display = 'flex';
-			switcherIcon.current.style.right = '0';
-			switcherItems.current.style.right = '-280px';
-			switcherItems.current.classList.remove('closing');
-			clearTimeout(idleTimeout.current);
-		}, 2000);
+	// Cleanup function để xóa các timeout
+	useEffect(() => {
+		return () => {
+			if (idleTimeout.current) clearTimeout(idleTimeout.current);
+			if (timeoutRef.current) clearTimeout(timeoutRef.current);
+		};
 	}, []);
+
+	// Định nghĩa triggerCloseWithDelay
+	const triggerCloseWithDelay = useCallback(() => {
+		if (switcherItems.current) {
+			switcherItems.current.classList.add('closing');
+
+			// Lưu các giá trị hiện tại của refs
+			const currentSwitcherClose = switcherClose.current;
+			const currentSwitcherOpen = switcherOpen.current;
+			const currentSwitcherIcon = switcherIcon.current;
+			const currentSwitcherItems = switcherItems.current;
+
+			timeoutRef.current = setTimeout(() => {
+				setIsOpen(false);
+
+				// Kiểm tra từng ref trước khi sử dụng
+				if (currentSwitcherClose) {
+					currentSwitcherClose.style.display = 'none';
+				}
+				if (currentSwitcherOpen) {
+					currentSwitcherOpen.style.display = 'flex';
+				}
+				if (currentSwitcherIcon) {
+					currentSwitcherIcon.style.right = '0';
+				}
+				if (currentSwitcherItems) {
+					currentSwitcherItems.style.right = '-280px';
+					currentSwitcherItems.classList.remove('closing');
+				}
+
+				if (idleTimeout.current) {
+					clearTimeout(idleTimeout.current);
+				}
+			}, 2000);
+		}
+	}, []);
+
+	// Sau đó định nghĩa openSwitcher
+	const openSwitcher = useCallback(() => {
+		if (switcherItems.current && switcherClose.current && switcherOpen.current && switcherIcon.current) {
+			setIsOpen(true);
+			switcherOpen.current.style.display = 'none';
+			switcherClose.current.style.display = 'flex';
+			switcherIcon.current.style.right = '280px';
+			switcherItems.current.style.right = '0';
+
+			if (idleTimeout.current) {
+				clearTimeout(idleTimeout.current);
+			}
+			idleTimeout.current = setTimeout(triggerCloseWithDelay, 5000);
+		}
+	}, [triggerCloseWithDelay]);
+
+	// Định nghĩa startIdleTimeout
+	const startIdleTimeout = useCallback(() => {
+		if (idleTimeout.current) {
+			clearTimeout(idleTimeout.current);
+		}
+		idleTimeout.current = setTimeout(triggerCloseWithDelay, 3000);
+	}, [triggerCloseWithDelay]);
 
 	// Xử lý click bên ngoài để đóng switcher
 	const handleOutsideClick = useCallback(
 		(e) => {
-			if (switcherItems.current && !switcherItems.current.contains(e.target) && !switcherIcon.current.contains(e.target)) {
+			if (switcherItems.current && !switcherItems.current.contains(e.target) && switcherIcon.current && !switcherIcon.current.contains(e.target)) {
 				triggerCloseWithDelay();
 			}
 		},
 		[triggerCloseWithDelay]
 	);
 
+	// Thêm useEffect để xử lý click bên ngoài
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			switcherIcon.current.style.zIndex = '1000';
-			switcherItems.current.style.zIndex = '1000';
+			if (switcherIcon.current) {
+				switcherIcon.current.style.zIndex = '1000';
+			}
+			if (switcherItems.current) {
+				switcherItems.current.style.zIndex = '1000';
+			}
 			document.addEventListener('click', handleOutsideClick);
-			return () => document.removeEventListener('click', handleOutsideClick);
+			return () => {
+				document.removeEventListener('click', handleOutsideClick);
+			};
 		}
 	}, [handleOutsideClick]);
 
-	// Hàm mở switcher
-	const openSwitcher = useCallback(() => {
-		setIsOpen(true);
-		switcherOpen.current.style.display = 'none';
-		switcherClose.current.style.display = 'flex';
-		switcherIcon.current.style.right = '280px';
-		switcherItems.current.style.right = '0';
-		clearTimeout(idleTimeout.current);
-		idleTimeout.current = setTimeout(triggerCloseWithDelay, 5000); // Tăng thời gian trễ để người dùng có đủ thời gian chọn ngôn ngữ
-	}, [triggerCloseWithDelay]);
-
-	// Hàm bắt đầu thời gian trễ khi không hoạt động
-	const startIdleTimeout = useCallback(() => {
-		clearTimeout(idleTimeout.current);
-		idleTimeout.current = setTimeout(triggerCloseWithDelay, 3000);
-	}, [triggerCloseWithDelay]);
-
-	// Hàm xử lý chọn ngôn ngữ
-	const handleLanguageChange = (language) => {
-		setUserLanguage(language);
-		// Đóng switcher sau khi chọn ngôn ngữ
-		triggerCloseWithDelay();
-	};
+	// Định nghĩa handleLanguageChange
+	const handleLanguageChange = useCallback(
+		(language) => {
+			setIsLanguageChanging(true);
+			changeLanguage(language.code);
+			setTimeout(() => {
+				setIsLanguageChanging(false);
+			}, 3000);
+			triggerCloseWithDelay();
+		},
+		[changeLanguage, triggerCloseWithDelay]
+	);
 
 	return (
 		<>
@@ -90,8 +144,7 @@ const SwitcherLang = () => {
 						ref={switcherClose}
 						onClick={triggerCloseWithDelay}
 						aria-label="Đóng switcher ngôn ngữ"
-						style={{ display: 'none' }} // Đặt trạng thái mặc định của nút đóng là ẩn
-					>
+						style={{ display: 'none' }}>
 						<FontAwesomeIcon icon={faXmark} />
 					</button>
 				</div>
@@ -99,16 +152,16 @@ const SwitcherLang = () => {
 				<div
 					className="switcher__items"
 					ref={switcherItems}
-					onMouseEnter={() => clearTimeout(idleTimeout.current)}
+					onMouseEnter={() => {
+						if (idleTimeout.current) clearTimeout(idleTimeout.current);
+					}}
 					onMouseLeave={startIdleTimeout}
-					style={{ right: '-280px' }} // Đặt vị trí mặc định của switcher là ẩn bên phải
-				>
+					style={{ right: '-280px' }}>
 					<div className="switcher__item">
 						<div className="switch__title-wrap">
 							<h2 className="switcher__title">{t('common.languageSwitcher.lang')}</h2>
 						</div>
 						<div className="switcher__btn">
-							{/* Sử dụng LanguageSwitcher để chọn ngôn ngữ và gọi handleLanguageChange */}
 							<LanguageSwitcher onLanguageChange={handleLanguageChange} />
 						</div>
 					</div>

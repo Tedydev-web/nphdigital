@@ -7,47 +7,56 @@ import Shape11 from '../../../public/assets/imgs/shape/11.png';
 import Shape12 from '../../../public/assets/imgs/shape/12.png';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
+import { useLanguageManager } from '@/hooks/useLanguageManager';
 
 const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 	const [accordion, setAccordion] = useState(0);
 	const [subAccordion, setSubAccordion] = useState(0);
 	const menu = useRef();
-	const { t, i18n } = useTranslation('common');
+	const { t } = useTranslation('common');
+	const { currentLanguage } = useLanguageManager();
 
 	useEffect(() => {
-		if (typeof window !== 'undefined') {
-			setTimeout(() => {
+		const updateMenuText = () => {
+			if (typeof window !== 'undefined' && menu.current) {
 				let rootParent = menu.current.children;
 				for (let i = 0; i < rootParent.length; i++) {
 					let firstParent = rootParent[i].children;
 					for (let j = 0; j < firstParent.length; j++) {
 						if (firstParent[j].className.includes('header_title')) {
-							// Lấy text đã được dịch
-							let translatedText = firstParent[j].children[0].textContent;
-							let arr = translatedText.split('');
-							let spanData = '';
-							for (let k = 0; k < arr.length; k++) {
-								if (arr[k] == ' ') {
-									spanData += `<span style='width:1vw;'>${arr[k]}</span>`;
-								} else {
-									spanData += `<span>${arr[k]}</span>`;
+							let link = firstParent[j].querySelector('a');
+							if (link) {
+								let translatedText = link.textContent;
+								let arr = translatedText.split('');
+								let spanData = '';
+								for (let k = 0; k < arr.length; k++) {
+									if (arr[k] == ' ') {
+										spanData += `<span style='width:1vw;'>${arr[k]}</span>`;
+									} else {
+										spanData += `<span>${arr[k]}</span>`;
+									}
 								}
+								let result = '<div class="menu-text">' + spanData + '</div>';
+								link.innerHTML = result;
 							}
-							let result = '<div className="menu-text">' + spanData + '</div>';
-							firstParent[j].children[0].innerHTML = result;
 						}
 					}
 				}
-			}, 100); // Tăng timeout để đảm bảo i18n đã hoàn thành việc dịch
-		}
-	}, [i18n.language]); // Thêm i18n.language vào dependencies
+			}
+		};
+
+		const timer = setTimeout(updateMenuText, 100);
+		return () => clearTimeout(timer);
+	}, [currentLanguage, t]);
 
 	const openData = (data) => {
 		setAccordion(data);
 	};
+
 	const openSubData = (data) => {
 		setSubAccordion(data);
 	};
+
 	const closeCanvas = () => {
 		ofCanvasArea.current.style.opacity = '0';
 		ofCanvasArea.current.style.visibility = 'hidden';
@@ -56,6 +65,7 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 			header_bg.style.setProperty('mix-blend-mode', 'exclusion');
 		}
 	};
+
 	return (
 		<>
 			<div
@@ -71,39 +81,23 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 									src={logoWhite2}
 									alt="Offcanvas Logo"
 								/>
-							</Link>{' '}
-						</div>{' '}
+							</Link>
+						</div>
 						<div className="offcanvas__social">
-							<h3 className="social-title"> {t('canvas.title')} </h3>{' '}
+							<h3 className="social-title">{t('canvas.title')}</h3>
 							<ul>
 								<li>
-									<a href="https://zalo.me/2599746016148700210?src=qr&f=1"> {t('canvas.social.zalo')}</a>{' '}
-								</li>{' '}
+									<a href="https://zalo.me/2599746016148700210?src=qr&f=1">{t('canvas.social.zalo')}</a>
+								</li>
 								<li>
-									<a href="https://www.facebook.com/nphdigital838"> {t('canvas.social.facebook')}</a>{' '}
-								</li>{' '}
+									<a href="https://www.facebook.com/nphdigital838">{t('canvas.social.facebook')}</a>
+								</li>
 								<li>
-									<a href="https://t.me/Nphdigital"> {t('canvas.social.telegram')}</a>{' '}
-								</li>{' '}
-							</ul>{' '}
-						</div>{' '}
-						{/* <div className="offcanvas__links">
-							<ul>
-								<li>
-									<Link href="/about"> About </Link>{' '}
-								</li>{' '}
-								<li>
-									<Link href="/contact"> contact </Link>{' '}
-								</li>{' '}
-								<li>
-									<Link href="/career"> Career </Link>{' '}
-								</li>{' '}
-								<li>
-									<Link href="/blog"> blog </Link>{' '}
-								</li>{' '}
-							</ul>{' '}
-						</div>{' '} */}
-					</div>{' '}
+									<a href="https://t.me/Nphdigital">{t('canvas.social.telegram')}</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<div className="offcanvas__mid">
 						<div className="offcanvas__menu-wrapper">
 							<nav className="offcanvas__menu">
@@ -112,41 +106,33 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 									ref={menu}>
 									<li>
 										<div className="header_title">
-											<Link href={'https://nphdigital.com/'}> {t('canvas.menu.home')}</Link>
-											{/* <div className="accordian-btn"> {accordion === 1 ? : <a onClick={() => openData(1)}> + </a>} </div>{' '} */}
-										</div>{' '}
-									</li>{' '}
+											<Link href={'https://nphdigital.com/'}>{t('canvas.menu.home')}</Link>
+										</div>
+									</li>
 									<li>
 										<div className="header_title">
-											<Link href={'/gioi-thieu'}> {t('canvas.menu.about')}</Link>{' '}
-										</div>{' '}
-									</li>{' '}
+											<Link href={'/gioi-thieu'}>{t('canvas.menu.about')}</Link>
+										</div>
+									</li>
 									<li>
 										<div className="header_title d-flex">
-											<Link href={'/dich-vu'}> {t('canvas.menu.service')}</Link>
-											{/* <div className="accordian-btn"> {accordion === 3 ? <a onClick={() => openData(0)}> - </a> : <a onClick={() => openData(3)}> + </a>} </div>{' '} */}
-										</div>{' '}
-									</li>{' '}
-									{/* <li>
-										<div className="header_title d-flex">
-											<Link href={'#'}> DỰ ÁN </Link> <div className="accordian-btn"> {accordion === 4 ? <a onClick={() => openData(0)}> - </a> : <a onClick={() => openData(4)}> + </a>} </div>{' '}
-										</div>{' '}
-									</li>{' '} */}
+											<Link href={'/dich-vu'}>{t('canvas.menu.service')}</Link>
+										</div>
+									</li>
 									<li>
 										<div className="header_title">
-											<Link href={'/bai-viet'}> {t('canvas.menu.blog')}</Link>
-											{/* <div className="accordian-btn"> {accordion === 5 ? <a onClick={() => openData(0)}> - </a> : <a onClick={() => openData(5)}> + </a>} </div>{' '} */}
-										</div>{' '}
-									</li>{' '}
+											<Link href={'/bai-viet'}>{t('canvas.menu.blog')}</Link>
+										</div>
+									</li>
 									<li>
 										<div className="header_title">
-											<Link href={'/lien-he'}> {t('canvas.menu.contact')}</Link>{' '}
-										</div>{' '}
-									</li>{' '}
-								</ul>{' '}
-							</nav>{' '}
-						</div>{' '}
-					</div>{' '}
+											<Link href={'/lien-he'}>{t('canvas.menu.contact')}</Link>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
 					<div className="offcanvas__right">
 						<div className="offcanvas__search">
 							<form action="#">
@@ -156,22 +142,22 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 									placeholder="Search keyword"
 								/>
 								<button>
-									<FontAwesomeIcon icon={faMagnifyingGlass}> </FontAwesomeIcon>{' '}
-								</button>{' '}
-							</form>{' '}
-						</div>{' '}
+									<FontAwesomeIcon icon={faMagnifyingGlass} />
+								</button>
+							</form>
+						</div>
 						<div className="offcanvas__contact">
-							<h3> {t('canvas.contact.title')}</h3>{' '}
+							<h3>{t('canvas.contact.title')}</h3>
 							<ul>
 								<li>
-									<a href="tel:02094980547"> +(84) - 0777 018 333 </a>{' '}
-								</li>{' '}
+									<a href="tel:02094980547">+(84) - 0777 018 333</a>
+								</li>
 								<li>
-									<a href="mailto:info@extradesign.com"> hi@nphdigital.com </a>{' '}
-								</li>{' '}
-								<li> {t('canvas.contact.address')}</li>{' '}
-							</ul>{' '}
-						</div>{' '}
+									<a href="mailto:info@extradesign.com">hi@nphdigital.com</a>
+								</li>
+								<li>{t('canvas.contact.address')}</li>
+							</ul>
+						</div>
 						<Image
 							priority
 							style={{ width: 'auto', height: 'auto' }}
@@ -186,16 +172,16 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 							alt="shape"
 							className="shape-2"
 						/>
-					</div>{' '}
+					</div>
 					<div className="offcanvas__close">
 						<button
 							type="button"
 							onClick={closeCanvas}>
-							<FontAwesomeIcon icon={faXmark}> </FontAwesomeIcon>{' '}
-						</button>{' '}
-					</div>{' '}
-				</div>{' '}
-			</div>{' '}
+							<FontAwesomeIcon icon={faXmark} />
+						</button>
+					</div>
+				</div>
+			</div>
 		</>
 	);
 };
