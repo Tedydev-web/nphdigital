@@ -1,12 +1,11 @@
 import { useTranslation } from 'react-i18next';
-import { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
-import { SplitText } from '@/plugins';
+import { useEffect, useRef, useState, Suspense } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Link from 'next/link.js';
 import ArrowDownBig from '../../../public/assets/imgs/icon/arrow-down-big.png';
 import Hero1bg from '../../../public/assets/imgs/hero/1/1-bg.png';
 import Image from 'next/image.js';
+import { FaArrowRight } from 'react-icons/fa'; // Sử dụng react-icons
 
 const imageBreakpoints = {
 	mobile: 640,
@@ -20,45 +19,48 @@ const DigitalAgencyHero = () => {
 	const heroSubTitle = useRef();
 	const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-	// Xử lý khi hình ảnh load xong
 	const handleImageLoad = () => {
 		setIsImageLoaded(true);
 	};
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			let tHero = gsap.context(() => {
-				gsap.set('.experience', {
-					y: 50,
-					opacity: 0,
-				});
-				let split_hero__title = new SplitText(heroTitle.current, {
-					type: 'chars',
-				});
-				let split_hero__subtitle = new SplitText(heroSubTitle.current, {
-					type: 'chars words',
-				});
+			import('gsap').then(({ gsap }) => {
+				import('@/plugins').then(({ SplitText }) => {
+					let tHero = gsap.context(() => {
+						gsap.set('.experience', {
+							y: 50,
+							opacity: 0,
+						});
+						let split_hero__title = new SplitText(heroTitle.current, {
+							type: 'chars',
+						});
+						let split_hero__subtitle = new SplitText(heroSubTitle.current, {
+							type: 'chars words',
+						});
 
-				gsap.from(split_hero__title.chars, {
-					duration: 1,
-					x: 70,
-					autoAlpha: 0,
-					stagger: 0.1,
-				});
-				gsap.from(split_hero__subtitle.words, { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 }, '-=1');
+						gsap.from(split_hero__title.chars, {
+							duration: 1,
+							x: 70,
+							autoAlpha: 0,
+							stagger: 0.1,
+						});
+						gsap.from(split_hero__subtitle.words, { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 }, '-=1');
 
-				gsap.to(
-					'.experience',
-					{
-						y: 0,
-						opacity: 1,
-						duration: 2,
-						ease: 'power2.out',
-					},
-					'-=1.5'
-				);
+						gsap.to(
+							'.experience',
+							{
+								y: 0,
+								opacity: 1,
+								duration: 2,
+								ease: 'power2.out',
+							},
+							'-=1.5'
+						);
+					});
+					return () => tHero.revert();
+				});
 			});
-			return () => tHero.revert();
 		}
 	}, []);
 
@@ -84,7 +86,7 @@ const DigitalAgencyHero = () => {
 								<Link href="/dich-vu">
 									{t('DigitalAgencyHero.link')}{' '}
 									<span>
-										<i className="fa-solid fa-arrow-right"></i>
+										<FaArrowRight />
 									</span>
 								</Link>
 								<div className="hero__title-wrapper">
@@ -104,9 +106,10 @@ const DigitalAgencyHero = () => {
 								<Image
 									priority
 									width={170}
-									style={{ height: 'auto' }}
+									height={170} // Thêm chiều cao
 									src={ArrowDownBig}
 									alt="Arrow Down Icon"
+									layout="fixed" // Hoặc 'responsive'
 								/>
 								<div className="experience">
 									<h2 className="title">{t('DigitalAgencyHero.experience.title')}</h2>
@@ -126,10 +129,10 @@ const DigitalAgencyHero = () => {
 					alt="NPH Digital Hero Background"
 					className="hero1_bg"
 					sizes={`
-          (max-width: ${imageBreakpoints.mobile}px) 100vw,
-          (max-width: ${imageBreakpoints.tablet}px) 100vw,
-          100vw
-        `}
+            (max-width: ${imageBreakpoints.mobile}px) 100vw,
+            (max-width: ${imageBreakpoints.tablet}px) 100vw,
+            100vw
+          `}
 					onLoad={handleImageLoad}
 					style={{
 						width: '100%',
@@ -145,7 +148,7 @@ const DigitalAgencyHero = () => {
 					}}
 				/>
 			</section>
-			<style jsx="true">{`
+			<style jsx>{`
 				.hero__area {
 					position: relative;
 				}
@@ -167,4 +170,5 @@ const DigitalAgencyHero = () => {
 		</>
 	);
 };
+
 export default DigitalAgencyHero;
