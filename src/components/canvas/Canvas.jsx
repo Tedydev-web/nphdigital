@@ -9,10 +9,11 @@ import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 
 const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
-	const { t } = useTranslation('common');
 	const [accordion, setAccordion] = useState(0);
 	const [subAccordion, setSubAccordion] = useState(0);
 	const menu = useRef();
+	const { t, i18n } = useTranslation('common');
+
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			setTimeout(() => {
@@ -21,7 +22,9 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 					let firstParent = rootParent[i].children;
 					for (let j = 0; j < firstParent.length; j++) {
 						if (firstParent[j].className.includes('header_title')) {
-							let arr = firstParent[j].children[0].textContent.split('');
+							// Lấy text đã được dịch
+							let translatedText = firstParent[j].children[0].textContent;
+							let arr = translatedText.split('');
 							let spanData = '';
 							for (let k = 0; k < arr.length; k++) {
 								if (arr[k] == ' ') {
@@ -35,9 +38,10 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 						}
 					}
 				}
-			}, 10);
+			}, 100); // Tăng timeout để đảm bảo i18n đã hoàn thành việc dịch
 		}
-	}, []);
+	}, [i18n.language]); // Thêm i18n.language vào dependencies
+
 	const openData = (data) => {
 		setAccordion(data);
 	};
