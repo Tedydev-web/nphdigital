@@ -67,18 +67,24 @@ export default function RootLayout({ children, header = '', footer = '', default
 						mode: 'push',
 					},
 					onHover: {
-						enable: false,
-						mode: 'repulse',
+						enable: true,
+						mode: 'grab', // Các mode có sẵn: grab, push, repulse
 					},
 					resize: true,
 				},
 				modes: {
 					push: {
-						quantity: 4,
+						quantity: 8,
 					},
 					repulse: {
 						distance: 200,
 						duration: 0.4,
+					},
+					grab: {
+						distance: 150,
+						line_linked: {
+							opacity: 10,
+						},
 					},
 				},
 			},
@@ -88,13 +94,13 @@ export default function RootLayout({ children, header = '', footer = '', default
 				},
 				links: {
 					color: '#ffffff',
-					distance: 150,
+					distance: 180,
 					enable: true,
 					opacity: 0.5,
 					width: 1,
 				},
 				collisions: {
-					enable: false,
+					enable: true,
 				},
 				move: {
 					direction: 'none',
@@ -117,7 +123,7 @@ export default function RootLayout({ children, header = '', footer = '', default
 					value: 0.5,
 				},
 				shape: {
-					type: 'circle',
+					type: 'polygon',
 				},
 				size: {
 					value: { min: 1, max: 3 },

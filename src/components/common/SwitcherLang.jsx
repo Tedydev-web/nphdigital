@@ -1,4 +1,3 @@
-// src/components/common/SwitcherLang.jsx
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear, faXmark } from '@fortawesome/free-solid-svg-icons';
@@ -13,13 +12,22 @@ const SwitcherLang = () => {
 	const switcherOpen = useRef(null);
 	const switcherClose = useRef(null);
 	const idleTimeout = useRef(null);
-	const timeoutRef = useRef(null); // Thêm ref cho setTimeout
+	const timeoutRef = useRef(null);
 	const { t } = useTranslation('common');
 	const [isOpen, setIsOpen] = useState(false);
 	const [isLanguageChanging, setIsLanguageChanging] = useState(false);
 	const { currentLanguage, changeLanguage } = useLanguageManager();
+	const [selectedLanguage, setSelectedLanguage] = useState(() => {
+		if (typeof window !== 'undefined') {
+			return sessionStorage.getItem('userLanguage') || currentLanguage;
+		}
+		return currentLanguage;
+	});
 
-	// Cleanup function để xóa các timeout
+	useEffect(() => {
+		setSelectedLanguage(currentLanguage);
+	}, [currentLanguage]);
+
 	useEffect(() => {
 		return () => {
 			if (idleTimeout.current) clearTimeout(idleTimeout.current);
@@ -27,12 +35,10 @@ const SwitcherLang = () => {
 		};
 	}, []);
 
-	// Định nghĩa triggerCloseWithDelay
 	const triggerCloseWithDelay = useCallback(() => {
 		if (switcherItems.current) {
 			switcherItems.current.classList.add('closing');
 
-			// Lưu các giá trị hiện tại của refs
 			const currentSwitcherClose = switcherClose.current;
 			const currentSwitcherOpen = switcherOpen.current;
 			const currentSwitcherIcon = switcherIcon.current;
@@ -41,7 +47,6 @@ const SwitcherLang = () => {
 			timeoutRef.current = setTimeout(() => {
 				setIsOpen(false);
 
-				// Kiểm tra từng ref trước khi sử dụng
 				if (currentSwitcherClose) {
 					currentSwitcherClose.style.display = 'none';
 				}
@@ -63,7 +68,6 @@ const SwitcherLang = () => {
 		}
 	}, []);
 
-	// Sau đó định nghĩa openSwitcher
 	const openSwitcher = useCallback(() => {
 		if (switcherItems.current && switcherClose.current && switcherOpen.current && switcherIcon.current) {
 			setIsOpen(true);
@@ -79,7 +83,6 @@ const SwitcherLang = () => {
 		}
 	}, [triggerCloseWithDelay]);
 
-	// Định nghĩa startIdleTimeout
 	const startIdleTimeout = useCallback(() => {
 		if (idleTimeout.current) {
 			clearTimeout(idleTimeout.current);
@@ -87,7 +90,6 @@ const SwitcherLang = () => {
 		idleTimeout.current = setTimeout(triggerCloseWithDelay, 3000);
 	}, [triggerCloseWithDelay]);
 
-	// Xử lý click bên ngoài để đóng switcher
 	const handleOutsideClick = useCallback(
 		(e) => {
 			if (switcherItems.current && !switcherItems.current.contains(e.target) && switcherIcon.current && !switcherIcon.current.contains(e.target)) {
@@ -97,7 +99,6 @@ const SwitcherLang = () => {
 		[triggerCloseWithDelay]
 	);
 
-	// Thêm useEffect để xử lý click bên ngoài
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			if (switcherIcon.current) {
@@ -113,10 +114,10 @@ const SwitcherLang = () => {
 		}
 	}, [handleOutsideClick]);
 
-	// Định nghĩa handleLanguageChange
 	const handleLanguageChange = useCallback(
 		(language) => {
 			setIsLanguageChanging(true);
+			setSelectedLanguage(language.code);
 			changeLanguage(language.code);
 			setTimeout(() => {
 				setIsLanguageChanging(false);
@@ -162,7 +163,10 @@ const SwitcherLang = () => {
 							<h2 className="switcher__title">{t('common.languageSwitcher.lang')}</h2>
 						</div>
 						<div className="switcher__btn">
-							<LanguageSwitcher onLanguageChange={handleLanguageChange} />
+							<LanguageSwitcher
+								onLanguageChange={handleLanguageChange}
+								currentLanguage={selectedLanguage}
+							/>
 						</div>
 					</div>
 				</div>
