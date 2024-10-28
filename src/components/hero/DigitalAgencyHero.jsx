@@ -15,10 +15,15 @@ const DigitalAgencyHero = () => {
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let tHero = gsap.context(() => {
+				// Thiết lập timeline để kiểm soát timing tốt hơn
+				const tl = gsap.timeline();
+
+				// Thiết lập ban đầu cho experience
 				gsap.set('.experience', {
-					y: 50,
+					y: 30,
 					opacity: 0,
 				});
+
 				let split_hero__title = new SplitText(heroTitle.current, {
 					type: 'chars',
 				});
@@ -26,23 +31,41 @@ const DigitalAgencyHero = () => {
 					type: 'chars words',
 				});
 
-				gsap.from(split_hero__title.chars, {
-					duration: 1,
-					x: 70,
-					autoAlpha: 0,
-					stagger: 0.1,
-				});
-				gsap.from(split_hero__subtitle.words, { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 }, '-=1');
-
-				gsap.to(
+				// Animation cho experience - chạy đầu tiên
+				tl.to(
 					'.experience',
 					{
 						y: 0,
 						opacity: 1,
 						duration: 2,
 						ease: 'power2.out',
+						delay: 0.8,
 					},
-					'-=1.5'
+					0
+				);
+
+				// Animation cho title
+				tl.from(
+					split_hero__title.chars,
+					{
+						duration: 1,
+						x: 70,
+						autoAlpha: 0,
+						stagger: 0.1,
+					},
+					0.3
+				);
+
+				// Animation cho subtitle
+				tl.from(
+					split_hero__subtitle.words,
+					{
+						duration: 1,
+						x: 50,
+						autoAlpha: 0,
+						stagger: 0.05,
+					},
+					'-=0.7'
 				);
 			});
 			return () => tHero.revert();
@@ -51,7 +74,7 @@ const DigitalAgencyHero = () => {
 
 	return (
 		<>
-			<section className="hero__area ">
+			<section className="hero__area">
 				<div className="container">
 					<div className="row">
 						<div className="col-xxl-12">
