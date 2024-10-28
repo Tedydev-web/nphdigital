@@ -8,7 +8,7 @@ import Shape12 from '../../../public/assets/imgs/shape/12.png';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import { useLanguageManager } from '@/hooks/useLanguageManager';
-
+import SwitcherLang from '@/components/common/SwitcherLang';
 const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 	const [accordion, setAccordion] = useState(0);
 	const [subAccordion, setSubAccordion] = useState(0);
@@ -135,16 +135,7 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 					</div>
 					<div className="offcanvas__right">
 						<div className="offcanvas__search">
-							<form action="#">
-								<input
-									type="text"
-									name="search"
-									placeholder="Search keyword"
-								/>
-								<button>
-									<FontAwesomeIcon icon={faMagnifyingGlass} />
-								</button>
-							</form>
+							<SwitcherLang />
 						</div>
 						<div className="offcanvas__contact">
 							<h3>{t('canvas.contact.title')}</h3>
