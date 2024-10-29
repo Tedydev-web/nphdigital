@@ -1,6 +1,5 @@
 // src/components/common/layout/RootLayout.jsx
 import '../../../i18n.js';
-import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState, useMemo } from 'react';
 import allNavData from '../../../data/navData.json';
 import Preloader from '@/components/preloader/Preloader';
@@ -17,7 +16,6 @@ import Footer3 from '@/components/footer/Footer3';
 import { tsParticles } from '@tsparticles/engine';
 import Particles from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
-import { useLanguageManager } from '@/hooks/useLanguageManager';
 
 const HeaderContent = ({ header, navData }) => {
 	const headers = {
@@ -41,8 +39,6 @@ export default function RootLayout({ children, header = '', footer = '', default
 	const [particleValue, setParticleValue] = useState(70);
 	const cursor1 = useRef();
 	const cursor2 = useRef();
-	const { t, i18n } = useTranslation('common');
-	const { currentLanguage } = useLanguageManager(); // Sử dụng hook mà không cần `changeLanguage`
 
 	useEffect(() => {
 		setNavData(allNavData);
@@ -155,7 +151,7 @@ export default function RootLayout({ children, header = '', footer = '', default
 				className="has-smooth"
 				id="has_smooth"></div>
 			<ScrollSmootherComponents />
-			{/* <Preloader /> */}
+			<Preloader />
 			<CursorAnimation
 				cursor1={cursor1}
 				cursor2={cursor2}
