@@ -4,20 +4,30 @@ import { useTranslation } from 'react-i18next';
 
 export const useLanguageManager = () => {
 	const { i18n } = useTranslation();
+
+	// Thêm event listener để xóa localStorage khi đóng tab/trình duyệt
+	useEffect(() => {
+		if (typeof window !== 'undefined') {
+			const handleUnload = () => {
+				localStorage.removeItem('userLanguage');
+			};
+
+			window.addEventListener('beforeunload', handleUnload);
+			return () => window.removeEventListener('beforeunload', handleUnload);
+		}
+	}, []);
+
 	const [currentLanguage, setCurrentLanguage] = useState(() => {
 		if (typeof window !== 'undefined') {
-			// Kiểm tra sessionStorage trước
-			const savedLanguage = sessionStorage.getItem('userLanguage');
+			// Kiểm tra localStorage trước
+			const savedLanguage = localStorage.getItem('userLanguage');
 			if (savedLanguage) {
 				return savedLanguage;
 			}
 
-			// Nếu không có trong sessionStorage, sử dụng navigator.language
+			// Nếu không có trong localStorage, sử dụng navigator.language
 			const browserLang = navigator.language.split('-')[0];
 			const supportedLang = ['en', 'vi', 'zh', 'hi'].includes(browserLang) ? browserLang : 'en';
-
-			// Lưu ngôn ngữ từ navigator vào sessionStorage
-			sessionStorage.setItem('userLanguage', supportedLang);
 			return supportedLang;
 		}
 		return 'en'; // Fallback cho SSR
@@ -25,18 +35,18 @@ export const useLanguageManager = () => {
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			// Luôn kiểm tra sessionStorage trước
-			const savedLanguage = sessionStorage.getItem('userLanguage');
+			// Luôn kiểm tra localStorage trước
+			const savedLanguage = localStorage.getItem('userLanguage');
 			if (savedLanguage) {
 				setCurrentLanguage(savedLanguage);
 				i18n.changeLanguage(savedLanguage);
 				document.documentElement.lang = savedLanguage;
 			} else {
+				// Nếu không có trong localStorage, sử dụng navigator.language
 				const browserLang = navigator.language.split('-')[0];
 				const supportedLang = ['en', 'vi', 'zh', 'hi'].includes(browserLang) ? browserLang : 'en';
 				setCurrentLanguage(supportedLang);
 				i18n.changeLanguage(supportedLang);
-				sessionStorage.setItem('userLanguage', supportedLang);
 				document.documentElement.lang = supportedLang;
 			}
 		}
@@ -46,7 +56,7 @@ export const useLanguageManager = () => {
 		if (typeof window !== 'undefined') {
 			setCurrentLanguage(lang);
 			i18n.changeLanguage(lang);
-			sessionStorage.setItem('userLanguage', lang);
+			localStorage.setItem('userLanguage', lang);
 			document.documentElement.lang = lang;
 		}
 	};

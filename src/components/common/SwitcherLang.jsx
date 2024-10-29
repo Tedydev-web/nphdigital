@@ -22,8 +22,12 @@ export default function SwitcherLang() {
 		(languageCode) => {
 			setIsLanguageChanging(true);
 			setIsOpen(false);
+
+			i18n.changeLanguage(languageCode);
+			localStorage.setItem('userLanguage', languageCode);
+			document.documentElement.lang = languageCode;
+
 			setTimeout(() => {
-				i18n.changeLanguage(languageCode);
 				setIsLanguageChanging(false);
 			}, 1500);
 		},

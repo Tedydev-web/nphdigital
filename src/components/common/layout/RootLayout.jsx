@@ -17,7 +17,6 @@ import Footer3 from '@/components/footer/Footer3';
 import { tsParticles } from '@tsparticles/engine';
 import Particles from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
-import SwitcherLang from '@/components/common/SwitcherLang';
 import { useLanguageManager } from '@/hooks/useLanguageManager';
 
 const HeaderContent = ({ header, navData }) => {
@@ -166,7 +165,6 @@ export default function RootLayout({ children, header = '', footer = '', default
 				header={header}
 				navData={navData}
 			/>
-			<SwitcherLang />
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					{children}
