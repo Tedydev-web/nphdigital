@@ -14,12 +14,14 @@ import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
 import DigitalMarketingTestimonial from '@/components/testimonial/DigitalMarketingTestimonial';
 import gsap from 'gsap';
 import { useTranslation } from 'react-i18next';
+import { useLanguageManager } from '@/hooks/useLanguageManager';
 
 const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
 const DigitalAgency = () => {
 	const { t } = useTranslation('common');
 	const timelineRef = useRef(null);
 	const dotsRef = useRef([]);
+	const { currentLanguage } = useLanguageManager();
 	const setupScrollDots = useCallback(() => {
 		const dots = dotsRef.current;
 		const sections = document.querySelectorAll('section');
@@ -305,18 +307,20 @@ const DigitalAgency = () => {
 				/>
 			</Head>
 
-			<div
-				className="timeline"
-				ref={timelineRef}>
-				{['', '', t('timeline.comp1'), t('timeline.comp2'), t('timeline.comp3'), t('timeline.comp4'), t('timeline.comp5'), t('timeline.comp6'), t('timeline.comp7'), t('timeline.comp8')].map((label, index) => (
-					<span
-						key={index}
-						className="dot"
-						ref={(el) => (dotsRef.current[index] = el)}>
-						<span className="dot-label">{label}</span>
-					</span>
-				))}
-			</div>
+			{currentLanguage && (
+				<div
+					className="timeline"
+					ref={timelineRef}>
+					{['', '', t('timeline.comp1'), t('timeline.comp2'), t('timeline.comp3'), t('timeline.comp4'), t('timeline.comp5'), t('timeline.comp6'), t('timeline.comp7'), t('timeline.comp8')].map((label, index) => (
+						<span
+							key={index}
+							className="dot"
+							ref={(el) => (dotsRef.current[index] = el)}>
+							<span className="dot-label">{label}</span>
+						</span>
+					))}
+				</div>
+			)}
 			<main>
 				<div
 					className="cursor"
