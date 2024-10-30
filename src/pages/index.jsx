@@ -158,7 +158,7 @@ const DigitalAgency = () => {
 				/>
 				<meta
 					property="og:image:alt"
-					content="Hình ảnh đại diện cho NPH Digital"
+					content="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
 				/>
 				<meta
 					property="og:locale"
@@ -184,7 +184,7 @@ const DigitalAgency = () => {
 				{/* Twitter Card Meta Tags */}
 				<meta
 					name="twitter:card"
-					content="summary_large_image"
+					content="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
 				/>
 				<meta
 					name="twitter:title"
@@ -200,7 +200,7 @@ const DigitalAgency = () => {
 				/>
 				<meta
 					name="twitter:image:alt"
-					content="Hình ảnh đại diện cho NPH Digital"
+					content="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
 				/>
 				<meta
 					name="twitter:site"
