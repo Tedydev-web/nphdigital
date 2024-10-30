@@ -8,12 +8,21 @@
       "changing": "Changing Language English",
       "pleaseWait": "Please wait a moment.",
       "lang": "Language"
+    },
+    "switcher": {
+      "cursor": "Cursor",
+      "default": "Default",
+      "animated": "Animated"
+    },
+    "mode": {
+      "modeScreen": "Mode",
+      "light": "Light",
+      "dark": "Dark"
     }
   },
   "header": {
     "support": "Support Center"
-    },
-
+  },
   "footer": {
     "roll": {
       "line1": "Contact",

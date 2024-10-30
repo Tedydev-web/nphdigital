@@ -8,6 +8,16 @@
       "changing": "切换为越南语",
       "pleaseWait": "请稍等片刻。",
       "lang": "语言"
+    },
+    "switcher": {
+      "cursor": "光标",
+      "default": "默认",
+      "animated": "动画"
+    },
+    "mode": {
+      "modeScreen": "模式",
+      "light": "光",
+      "dark": "暗"
     }
   },
   "header": {

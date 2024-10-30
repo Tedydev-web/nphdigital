@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import RootLayout from '@/components/common/layout/RootLayout';
 import BlogDetails2 from '@/components/blog/BlogDetails2';
-import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
 import Switcher from '../components/common/Switcher';
-
+import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
+import BlogRelated2 from '@/components/blog/BlogRelated/BlogRelated2';
+import { useEffect, useRef, useState } from 'react';
 const BlogDetails = () => {
 	const [mode, setMode] = useState('light');
 	const cursor1 = useRef();
@@ -12,20 +13,15 @@ const BlogDetails = () => {
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			if (mode === 'dark') {
-				document.querySelector('body').classList.add('light');
+				document.querySelector('body').classList.add('dark');
 			} else {
-				document.querySelector('body').classList.remove('light');
+				document.querySelector('body').classList.remove('dark');
 			}
 		}
 	}, [mode]);
+
 	return (
 		<>
-			<Switcher
-				setMode={setMode}
-				mode={mode}
-				cursor1={cursor1}
-				cursor2={cursor2}
-			/>
 			<Head>
 				<title>Chi Tiết Blog | NPH Digital</title>
 				<meta
@@ -176,18 +172,25 @@ const BlogDetails = () => {
 					}}
 				/>
 			</Head>
+			<Switcher
+				setMode={setMode}
+				mode={mode}
+				cursor1={cursor1}
+				cursor2={cursor2}
+			/>
 
 			<main>
 				<RootLayout
 					header="header3"
 					footer="footer3"
-					defaultMode="light">
+					defaultMode={mode}>
 					<BlogDetails2 />
-					<DigitalAgencyCTA />
+					<BlogRelated2 />
+					{/* <DigitalAgencyCTA /> */}
 				</RootLayout>
 			</main>
 		</>
 	);
 };
 
-export default BlogDetails2;
+export default BlogDetails;

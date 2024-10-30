@@ -1,9 +1,11 @@
+// src/components/common/Switcher.jsx
 import { useEffect, useRef, useState, useCallback, useMemo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
-import LanguageSwitcher from './LanguageSwitcher';
+import SwitcherLang from './SwitcherLang';
 import CursorAnimation from './CursorAnimation';
+import { useLanguageManager } from '../../hooks/useLanguageManager';
 
 const Switcher = ({ setMode, mode, cursor1, cursor2 }) => {
 	const switcherIcon = useRef();
@@ -11,23 +13,41 @@ const Switcher = ({ setMode, mode, cursor1, cursor2 }) => {
 	const switcherOpen = useRef();
 	const switcherClose = useRef();
 	const cursorStyle = useRef();
-	const idleTimeout = useRef();
+	const idleTimeout = useRef(null); // Khởi tạo ref cho timeout
 	const [isCursorVisible, setIsCursorVisible] = useState(true);
-	const { t, i18n } = useTranslation('common');
+	const { t } = useTranslation('common');
 	const [isOpen, setIsOpen] = useState(false);
 
-	const triggerCloseWithDelay = useCallback(() => {
-		switcherItems.current.classList.add('closing');
-		setTimeout(() => {
-			setIsOpen(false);
-			switcherClose.current.style.display = 'none';
-			switcherOpen.current.style.display = 'flex';
-			switcherIcon.current.style.right = '0';
-			switcherItems.current.style.right = '-280px';
-			switcherItems.current.classList.remove('closing');
-			clearTimeout(idleTimeout.current);
-		}, 2000);
+	// Sử dụng hook useLanguageManager
+	const { currentLanguage } = useLanguageManager();
+
+	const closeSwitcher = useCallback(() => {
+		setIsOpen(false);
+		if (switcherClose.current) switcherClose.current.style.display = 'none';
+		if (switcherOpen.current) switcherOpen.current.style.display = 'flex';
+		if (switcherIcon.current) switcherIcon.current.style.right = '0';
+		if (switcherItems.current) switcherItems.current.style.right = '-280px';
+		if (switcherItems.current) switcherItems.current.classList.remove('closing');
+		clearTimeout(idleTimeout.current);
+		idleTimeout.current = null;
 	}, []);
+
+	const triggerCloseWithDelay = useCallback(() => {
+		if (switcherItems.current) {
+			switcherItems.current.classList.add('closing');
+		}
+		idleTimeout.current = setTimeout(() => {
+			closeSwitcher();
+		}, 5000);
+	}, [closeSwitcher]);
+
+	const handleCloseClick = useCallback(() => {
+		if (idleTimeout.current) {
+			clearTimeout(idleTimeout.current);
+			idleTimeout.current = null;
+		}
+		closeSwitcher();
+	}, [closeSwitcher]);
 
 	const handleOutsideClick = useCallback(
 		(e) => {
@@ -49,12 +69,12 @@ const Switcher = ({ setMode, mode, cursor1, cursor2 }) => {
 
 	const openSwitcher = useCallback(() => {
 		setIsOpen(true);
-		switcherOpen.current.style.display = 'none';
-		switcherClose.current.style.display = 'flex';
-		switcherIcon.current.style.right = '280px';
-		switcherItems.current.style.right = '0';
+		if (switcherOpen.current) switcherOpen.current.style.display = 'none';
+		if (switcherClose.current) switcherClose.current.style.display = 'flex';
+		if (switcherIcon.current) switcherIcon.current.style.right = '280px';
+		if (switcherItems.current) switcherItems.current.style.right = '0';
 		clearTimeout(idleTimeout.current);
-		idleTimeout.current = setTimeout(triggerCloseWithDelay, 3000);
+		idleTimeout.current = setTimeout(triggerCloseWithDelay, 5000);
 	}, [triggerCloseWithDelay]);
 
 	const cursor = useCallback(() => {
@@ -65,7 +85,7 @@ const Switcher = ({ setMode, mode, cursor1, cursor2 }) => {
 
 	const modeChange = useCallback(
 		(data) => {
-			setMode?.(data === 'dark' ? 'dark' : '');
+			setMode?.(data === 'dark' ? 'dark' : 'light');
 			triggerCloseWithDelay();
 		},
 		[setMode, triggerCloseWithDelay]
@@ -73,7 +93,7 @@ const Switcher = ({ setMode, mode, cursor1, cursor2 }) => {
 
 	const startIdleTimeout = useCallback(() => {
 		clearTimeout(idleTimeout.current);
-		idleTimeout.current = setTimeout(triggerCloseWithDelay, 3000);
+		idleTimeout.current = setTimeout(triggerCloseWithDelay, 5000);
 	}, [triggerCloseWithDelay]);
 
 	const languages = useMemo(
@@ -89,10 +109,9 @@ const Switcher = ({ setMode, mode, cursor1, cursor2 }) => {
 	const handleLanguageChange = useCallback(
 		(event) => {
 			const langCode = event.target.value;
-			i18n.changeLanguage(langCode);
 			triggerCloseWithDelay();
 		},
-		[i18n, triggerCloseWithDelay]
+		[triggerCloseWithDelay]
 	);
 
 	return (
@@ -110,7 +129,7 @@ const Switcher = ({ setMode, mode, cursor1, cursor2 }) => {
 					<button
 						id="switcher_close"
 						ref={switcherClose}
-						onClick={triggerCloseWithDelay}>
+						onClick={handleCloseClick}>
 						<FontAwesomeIcon icon={faXmark} />
 					</button>
 				</div>
@@ -122,7 +141,15 @@ const Switcher = ({ setMode, mode, cursor1, cursor2 }) => {
 					onMouseLeave={startIdleTimeout}>
 					<div className="switcher__item">
 						<div className="switch__title-wrap">
-							<h2 className="switcher__title">Cursor</h2>
+							<h2 className="switcher__title">{t('common.languageSwitcher.lang')}</h2>
+						</div>
+						<div className="switcher__btn mode-type wc-col-2">
+							<SwitcherLang />
+						</div>
+					</div>
+					<div className="switcher__item">
+						<div className="switch__title-wrap">
+							<h2 className="switcher__title">{t('common.switcher.cursor')}</h2>
 						</div>
 						<div className="switcher__btn">
 							<select
@@ -131,47 +158,26 @@ const Switcher = ({ setMode, mode, cursor1, cursor2 }) => {
 								id="cursor_style"
 								ref={cursorStyle}
 								onChange={cursor}>
-								<option value="1">default</option>
-								<option value="2">animated</option>
+								<option value="1">{t('common.switcher.default')}</option>
+								<option value="2">{t('common.switcher.animated')}</option>
 							</select>
 						</div>
 					</div>
 
 					<div className="switcher__item">
 						<div className="switch__title-wrap">
-							<h2 className="switcher__title">{t('language')}</h2>
-						</div>
-						<div className="switcher__btn">
-							<select
-								value={i18n.language}
-								name="language"
-								id="language"
-								onChange={handleLanguageChange}>
-								{languages.map((lang) => (
-									<option
-										key={lang.code}
-										value={lang.code}>
-										{lang.name}
-									</option>
-								))}
-							</select>
-						</div>
-					</div>
-
-					<div className="switcher__item">
-						<div className="switch__title-wrap">
-							<h2 className="switcher__title">Mode</h2>
+							<h2 className="switcher__title">{t('common.mode.modeScreen')}</h2>
 						</div>
 						<div className="switcher__btn mode-type wc-col-2">
 							<button
 								onClick={() => modeChange('light')}
 								className={mode === 'dark' ? '' : 'active'}>
-								Light
+								{t('common.mode.light')}
 							</button>
 							<button
 								onClick={() => modeChange('dark')}
 								className={mode === 'dark' ? 'active' : ''}>
-								Dark
+								{t('common.mode.dark')}
 							</button>
 						</div>
 					</div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
@@ -44,6 +44,39 @@ export default function SwitcherLang() {
 		visible: { scale: 1, opacity: 1 },
 	};
 
+	useEffect(() => {
+		let timer;
+
+		const resetTimer = () => {
+			if (timer) {
+				clearTimeout(timer);
+			}
+			timer = setTimeout(() => {
+				setIsOpen(false);
+			}, 7000);
+		};
+
+		const handleUserActivity = () => {
+			resetTimer();
+		};
+
+		if (isOpen) {
+			resetTimer();
+			document.addEventListener('mousemove', handleUserActivity);
+			document.addEventListener('click', handleUserActivity);
+			document.addEventListener('touchstart', handleUserActivity);
+		}
+
+		return () => {
+			if (timer) {
+				clearTimeout(timer);
+			}
+			document.removeEventListener('mousemove', handleUserActivity);
+			document.removeEventListener('click', handleUserActivity);
+			document.removeEventListener('touchstart', handleUserActivity);
+		};
+	}, [isOpen]);
+
 	return (
 		<>
 			<motion.button
@@ -54,7 +87,7 @@ export default function SwitcherLang() {
 					display: 'flex',
 					alignItems: 'center',
 					width: '200px',
-					padding: '12px',
+					padding: '0',
 					border: 'none',
 					borderRadius: '12px',
 					background: 'transparent',
@@ -64,7 +97,7 @@ export default function SwitcherLang() {
 					transition: 'all 0.3s ease',
 					left: '0',
 					position: 'relative',
-					margin: '0 0 40px 0',
+					margin: '0 0 10px 0',
 				}}>
 				<motion.span
 					animate={isOpen ? { x: [0, 2, -2, 2, 0] } : {}}
@@ -104,6 +137,8 @@ export default function SwitcherLang() {
 							alignItems: 'center',
 							justifyContent: 'center',
 							zIndex: 1000,
+							borderTopLeftRadius: '20px',
+							borderBottomLeftRadius: '20px',
 						}}>
 						<motion.div
 							className="language-modal"
@@ -187,6 +222,8 @@ export default function SwitcherLang() {
 							backgroundColor: 'rgba(0, 0, 0, 0.6)',
 							backdropFilter: 'blur(8px)',
 							zIndex: 1001,
+							borderTopLeftRadius: '20px',
+							borderBottomLeftRadius: '20px',
 						}}>
 						<motion.div
 							style={{ textAlign: 'center', color: 'white' }}

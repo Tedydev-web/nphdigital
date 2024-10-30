@@ -1,11 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
 import Head from 'next/head';
 import RootLayout from '@/components/common/layout/RootLayout';
 import BlogDetails1 from '@/components/blog/BlogDetails1';
 import Switcher from '../components/common/Switcher';
-
 import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
-
+import BlogRelated1 from '@/components/blog/BlogRelated/BlogRelated1';
+import { useEffect, useRef, useState } from 'react';
 const BlogDetails = () => {
 	const [mode, setMode] = useState('light');
 	const cursor1 = useRef();
@@ -14,21 +13,15 @@ const BlogDetails = () => {
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			if (mode === 'dark') {
-				document.querySelector('body').classList.add('light');
+				document.querySelector('body').classList.add('dark');
 			} else {
-				document.querySelector('body').classList.remove('light');
+				document.querySelector('body').classList.remove('dark');
 			}
 		}
 	}, [mode]);
 
 	return (
 		<>
-			<Switcher
-				setMode={setMode}
-				mode={mode}
-				cursor1={cursor1}
-				cursor2={cursor2}
-			/>
 			<Head>
 				<title>Chi Tiết Blog | NPH Digital</title>
 				<meta
@@ -171,7 +164,7 @@ const BlogDetails = () => {
 								name: 'NPH Digital',
 								url: 'https://nphdigital.com',
 							},
-							url: 'https://nphdigital.com/chi-tiet-bai-viet',
+							url: 'https://nphdigital.com/chi-tiet-bai-viet-2',
 							image: 'https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png',
 							datePublished: '2024-10-16', // Cập nhật theo ngày bạn xuất bản bài viết
 							dateModified: '2024-10-16', // Cập nhật theo ngày bạn chỉnh sửa bài viết
@@ -179,6 +172,12 @@ const BlogDetails = () => {
 					}}
 				/>
 			</Head>
+			<Switcher
+				setMode={setMode}
+				mode={mode}
+				cursor1={cursor1}
+				cursor2={cursor2}
+			/>
 
 			<main>
 				<RootLayout
@@ -186,7 +185,8 @@ const BlogDetails = () => {
 					footer="footer3"
 					defaultMode={mode}>
 					<BlogDetails1 />
-					<DigitalAgencyCTA />
+					<BlogRelated1 />
+					{/* <DigitalAgencyCTA /> */}
 				</RootLayout>
 			</main>
 		</>

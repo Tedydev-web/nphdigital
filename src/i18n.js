@@ -24,6 +24,7 @@ import BLOG_DETAILS_13_VI from './locales/vi/blogDetails13.json';
 import BLOG_DETAILS_14_VI from './locales/vi/blogDetails14.json';
 import BLOG_DETAILS_15_VI from './locales/vi/blogDetails15.json';
 import CONTACT_VI from './locales/vi/contact.json';
+import BLOG_RELATED_VI from './locales/vi/blogRelated.json';
 
 // Tiếng anh
 import COMMON_EN from './locales/en/common.json';
@@ -48,6 +49,7 @@ import BLOG_DETAILS_13_EN from './locales/en/blogDetails13.json';
 import BLOG_DETAILS_14_EN from './locales/en/blogDetails14.json';
 import BLOG_DETAILS_15_EN from './locales/en/blogDetails15.json';
 import CONTACT_EN from './locales/en/contact.json';
+import BLOG_RELATED_EN from './locales/en/blogRelated.json';
 
 // Tiếng trung
 import COMMON_ZH from './locales/zh/common.json';
@@ -72,6 +74,8 @@ import BLOG_DETAILS_13_ZH from './locales/zh/blogDetails13.json';
 import BLOG_DETAILS_14_ZH from './locales/zh/blogDetails14.json';
 import BLOG_DETAILS_15_ZH from './locales/zh/blogDetails15.json';
 import CONTACT_ZH from './locales/zh/contact.json';
+import BLOG_RELATED_ZH from './locales/zh/blogRelated.json';
+
 // Tiếng Hindi
 import COMMON_HI from './locales/hi/common.json';
 import HOME_HI from './locales/hi/home.json';
@@ -95,7 +99,7 @@ import BLOG_DETAILS_13_HI from './locales/hi/blogDetails13.json';
 import BLOG_DETAILS_14_HI from './locales/hi/blogDetails14.json';
 import BLOG_DETAILS_15_HI from './locales/hi/blogDetails15.json';
 import CONTACT_HI from './locales/hi/contact.json';
-
+import BLOG_RELATED_HI from './locales/hi/blogRelated.json';
 const resources = {
 	vi: {
 		home: HOME_VI,
@@ -120,6 +124,7 @@ const resources = {
 		blog14: BLOG_DETAILS_14_VI,
 		blog15: BLOG_DETAILS_15_VI,
 		contact: CONTACT_VI,
+		blogRelated: BLOG_RELATED_VI,
 	},
 
 	en: {
@@ -145,6 +150,7 @@ const resources = {
 		blog14: BLOG_DETAILS_14_EN,
 		blog15: BLOG_DETAILS_15_EN,
 		contact: CONTACT_EN,
+		blogRelated: BLOG_RELATED_EN,
 	},
 
 	zh: {
@@ -170,6 +176,7 @@ const resources = {
 		blog14: BLOG_DETAILS_14_ZH,
 		blog15: BLOG_DETAILS_15_ZH,
 		contact: CONTACT_ZH,
+		blogRelated: BLOG_RELATED_ZH,
 	},
 
 	hi: {
@@ -195,13 +202,14 @@ const resources = {
 		blog14: BLOG_DETAILS_14_HI,
 		blog15: BLOG_DETAILS_15_HI,
 		contact: CONTACT_HI,
+		blogRelated: BLOG_RELATED_HI,
 	},
 };
 const defaultNS = 'home';
 i18n.use(initReactI18next).init({
 	resources,
 	lng: 'en',
-	ns: ['common', 'home', 'about', 'service', 'serviceDetails', 'blog', 'blogDetails1', 'blogDetails2', 'blogDetails3', 'blogDetails4', 'blogDetails5', 'blogDetails6', 'blogDetails7', 'blogDetails8', 'blogDetails9', 'blogDetails10', 'blogDetails11', 'blogDetails12', 'blogDetails13', 'blogDetails14', 'blogDetails15'],
+	ns: ['common', 'home', 'about', 'service', 'serviceDetails', 'blog', 'blogDetails1', 'blogDetails2', 'blogDetails3', 'blogDetails4', 'blogDetails5', 'blogDetails6', 'blogDetails7', 'blogDetails8', 'blogDetails9', 'blogDetails10', 'blogDetails11', 'blogDetails12', 'blogDetails13', 'blogDetails14', 'blogDetails15', 'blogRelated'],
 	defaultNS,
 	fallbackLng: 'en',
 	interpolation: {

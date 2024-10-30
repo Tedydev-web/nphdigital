@@ -8,6 +8,16 @@
       "changing": "Đổi ngôn ngữ Tiếng việt",
       "pleaseWait": "Vui lòng chờ trong giây lát.",
       "lang": "Ngôn ngữ"
+    },
+    "switcher": {
+      "cursor": "Con trỏ",
+      "default": "Mặc định",
+      "animated": "Hiệu ứng"
+    },
+    "mode": {
+      "modeScreen": "Chế độ",
+      "light": "Sáng",
+      "dark": "Tối"
     }
   },
   "header": {

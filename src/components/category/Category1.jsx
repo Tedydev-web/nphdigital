@@ -117,7 +117,7 @@ const Category1 = () => {
 								<Link
 									href="/chi-tiet-bai-viet"
 									className="blog__btn">
-									Read More{' '}
+									{t('blogRelated.readMore')}
 									<span>
 										<i className="fa-solid fa-arrow-right"></i>
 									</span>
@@ -160,7 +160,7 @@ const Category1 = () => {
 								<Link
 									href="/chi-tiet-bai-viet"
 									className="blog__btn">
-									Read More{' '}
+									{t('blogRelated.readMore')}
 									<span>
 										<i className="fa-solid fa-arrow-right"></i>
 									</span>
@@ -203,7 +203,7 @@ const Category1 = () => {
 								<Link
 									href="/chi-tiet-bai-viet"
 									className="blog__btn">
-									Read More{' '}
+									{t('blogRelated.readMore')}
 									<span>
 										<i className="fa-solid fa-arrow-right"></i>
 									</span>
@@ -242,7 +242,7 @@ const Category1 = () => {
 								<Link
 									href="/chi-tiet-bai-viet"
 									className="blog__btn">
-									Read More{' '}
+									{t('blogRelated.readMore')}
 									<span>
 										<i className="fa-solid fa-arrow-right"></i>
 									</span>
@@ -285,7 +285,7 @@ const Category1 = () => {
 								<Link
 									href="/chi-tiet-bai-viet"
 									className="blog__btn">
-									Read More{' '}
+									{t('blogRelated.readMore')}
 									<span>
 										<i className="fa-solid fa-arrow-right"></i>
 									</span>
@@ -328,7 +328,7 @@ const Category1 = () => {
 								<Link
 									href="/chi-tiet-bai-viet"
 									className="blog__btn">
-									Read More{' '}
+									{t('blogRelated.readMore')}
 									<span>
 										<i className="fa-solid fa-arrow-right"></i>
 									</span>

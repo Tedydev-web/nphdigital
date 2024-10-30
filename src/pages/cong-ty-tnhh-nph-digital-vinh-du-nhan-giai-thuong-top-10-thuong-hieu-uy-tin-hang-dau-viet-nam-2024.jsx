@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import RootLayout from '@/components/common/layout/RootLayout';
-import top10 from '@/components/blog/top10';
-
-import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
+import Top10 from '@/components/blog/top10';
+import BlogRelated5 from '@/components/blog/BlogRelated/BlogRelated5';
 import Switcher from '../components/common/Switcher';
+import { useEffect, useRef, useState } from 'react';
 
 const BlogDetails = () => {
 	const [mode, setMode] = useState('light');
@@ -13,7 +13,7 @@ const BlogDetails = () => {
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			if (mode === 'dark') {
-				document.querySelector('body').classList.add('light');
+				document.querySelector('body').classList.add('dark');
 			} else {
 				document.querySelector('body').classList.remove('dark');
 			}
@@ -22,12 +22,6 @@ const BlogDetails = () => {
 
 	return (
 		<>
-			<Switcher
-				setMode={setMode}
-				mode={mode}
-				cursor1={cursor1}
-				cursor2={cursor2}
-			/>
 			<Head>
 				<title>Chi Tiết Blog | NPH Digital</title>
 				<meta
@@ -58,7 +52,7 @@ const BlogDetails = () => {
 				/>
 				<meta
 					property="og:url"
-					content="https://nphdigital.com/cong-ty-tnhh-nph-digital-vinh-du-nhan-giai-thuong-top-10-thuong-hieu-uy-tin-hang-dau-viet-nam-2024"
+					content="https://nphdigital.com/chi-tiet-bai-viet"
 				/>
 				<meta
 					property="og:image"
@@ -108,7 +102,7 @@ const BlogDetails = () => {
 				{/* URL Canonical */}
 				<link
 					rel="canonical"
-					href="https://nphdigital.com/cong-ty-tnhh-nph-digital-vinh-du-nhan-giai-thuong-top-10-thuong-hieu-uy-tin-hang-dau-viet-nam-2024"
+					href="https://nphdigital.com/chi-tiet-bai-viet"
 				/>
 
 				{/* Favicon */}
@@ -170,7 +164,7 @@ const BlogDetails = () => {
 								name: 'NPH Digital',
 								url: 'https://nphdigital.com',
 							},
-							url: 'https://nphdigital.com/cong-ty-tnhh-nph-digital-vinh-du-nhan-giai-thuong-top-10-thuong-hieu-uy-tin-hang-dau-viet-nam-2024',
+							url: 'https://nphdigital.com/chi-tiet-bai-viet-2',
 							image: 'https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png',
 							datePublished: '2024-10-16', // Cập nhật theo ngày bạn xuất bản bài viết
 							dateModified: '2024-10-16', // Cập nhật theo ngày bạn chỉnh sửa bài viết
@@ -178,18 +172,24 @@ const BlogDetails = () => {
 					}}
 				/>
 			</Head>
+			<Switcher
+				setMode={setMode}
+				mode={mode}
+				cursor1={cursor1}
+				cursor2={cursor2}
+			/>
 
 			<main>
 				<RootLayout
 					header="header3"
 					footer="footer3"
 					defaultMode={mode}>
-					<top10 />
-					<DigitalAgencyCTA />
+					<Top10 />
+					<BlogRelated5 />
 				</RootLayout>
 			</main>
 		</>
 	);
 };
 
-export default top10;
+export default BlogDetails;

@@ -11,7 +11,7 @@
   &__icon {
     position: fixed;
     width: 50px;
-    height: 50px;
+    height: 75px;
     background: var(--white);
     right: 0;
     top: 40%;
@@ -19,6 +19,8 @@
     z-index: 999;
     transition: all 0.3s;
     mix-blend-mode: exclusion;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 
     button {
       font-size: 24px;
@@ -42,15 +44,17 @@
 
   &__items {
     width: 280px;
-    // padding: 50px 30px;
-    background: transparent !important;
-    // position: fixed;
-    // right: -280px;
-    // top: 40%;
+    padding: 50px 30px;
+    background: var(--black-2);
+    position: fixed;
+    right: -280px;
+    top: 40%;
     z-index: 99;
     transform: translateY(-50%);
     font-family: $font_primary;
     transition: all 0.3s;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 
     .wc-col-2 {
       display: grid;
@@ -92,6 +96,7 @@
       border-radius: 4px;
       padding: 10px 15px;
       text-transform: capitalize;
+      
 
       &:hover,
       &.active {

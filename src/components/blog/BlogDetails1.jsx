@@ -40,6 +40,7 @@ const BlogDetails2024 = () => {
 			}
 		}
 	}, [mode]);
+
 	return (
 		<>
 			<Switcher
@@ -54,14 +55,12 @@ const BlogDetails2024 = () => {
 					<div className="row">
 						<div className="col-xxl-8 col-xl-10 offset-xxl-2 offset-xl-1">
 							<div className="blog__detail-top">
-								{
-									<h2
-										className="blog__detail-date animation__word_come"
-										ref={wordAnim}>
-										<span>{t('blogDetails1.content.h2.1')}</span>
-										<span>06 Jan 2024</span>
-									</h2>
-								}
+								<h2
+									className="blog__detail-date animation__word_come"
+									ref={wordAnim}>
+									<span>{t('blogDetails1.content.h2.1')}</span>
+									<span>06 Jan 2024</span>
+								</h2>
 								<h3
 									className="blog__detail-title animation__word_come"
 									ref={wordAnim2}>
@@ -326,7 +325,7 @@ const BlogDetails2024 = () => {
 								<ul>
 									<li>{t('blogDetails1.content.ul.5.li.1')}</li>
 									<li>{t('blogDetails1.content.ul.5.li.2')}</li>
-									<li>{t('blogDetails1.content.ul.5.li.3')} </li>
+									<li>{t('blogDetails1.content.ul.5.li.3')}</li>
 								</ul>
 								<h3>{t('blogDetails1.content.h3.20')}</h3>
 								<ul>
@@ -342,12 +341,12 @@ const BlogDetails2024 = () => {
 								<ul>
 									<li>{t('blogDetails1.content.ul.8.li.1')}</li>
 									<li>{t('blogDetails1.content.ul.8.li.2')}</li>
-									<li>{t('blogDetails1.content.ul.8.li.3')} </li>
+									<li>{t('blogDetails1.content.ul.8.li.3')}</li>
 								</ul>
 							</div>
 							<div className="blog__detail-tags">
 								<p className="sub-title-anim">
-									tags: <Link href="/blog">{t('blogDetails1.content.p.54')}</Link>, <Link href="/blog">UX/UI</Link>,<Link href="/tag">{t('blogDetails1.content.p.55')}</Link>
+									tags: <Link href="/blog">{t('blogDetails1.content.p.54')}</Link>, <Link href="/blog">UX/UI</Link>, <Link href="/tag">{t('blogDetails1.content.p.55')}</Link>
 								</p>
 							</div>
 						</div>

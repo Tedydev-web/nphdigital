@@ -3,22 +3,24 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from '@/plugins';
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link.js';
-import Blog41 from '../../../public/assets/imgs/blog/3/3.png';
-import Blog42 from '../../../public/assets/imgs/blog/3/4.png';
-import Blog43 from '../../../public/assets/imgs/blog/3/5.png';
-import Blog44 from '../../../public/assets/imgs/blog/3/6.jpg';
-import Blog45 from '../../../public/assets/imgs/blog/3/7.png';
-import Blog46 from '../../../public/assets/imgs/blog/3/8.png';
-import Blog47 from '../../../public/assets/imgs/blog/3/9.png';
-import Blog48 from '../../../public/assets/imgs/blog/3/10.png';
-import Blog49 from '../../../public/assets/imgs/blog/3/11.jpg';
-import Blog50 from '../../../public/assets/imgs/blog/3/12.png';
-import Blog51 from '../../../public/assets/imgs/blog/3/13.jpg';
-import Blog52 from '../../../public/assets/imgs/blog/3/14.jpg';
-import Blog53 from '../../../public/assets/imgs/blog/3/15.jpg';
-import Blog54 from '../../../public/assets/imgs/blog/3/16.png';
-import Blog55 from '../../../public/assets/imgs/blog/3/17.png';
-import Blog56 from '../../../public/assets/imgs/blog/3/18.png';
+import Blog1 from '../../../public/assets/imgs/blog/3/3.png';
+import Blog2 from '../../../public/assets/imgs/blog/3/4.png';
+import Blog3 from '../../../public/assets/imgs/blog/3/5.png';
+import Blog4 from '../../../public/assets/imgs/blog/3/6.jpg';
+// import Blog5 from '../../../public/assets/imgs/blog/3/7.png';
+import Blog6 from '../../../public/assets/imgs/blog/3/8.png';
+import Blog7 from '../../../public/assets/imgs/blog/3/9.png';
+import Blog8 from '../../../public/assets/imgs/blog/3/10.png';
+import Blog9 from '../../../public/assets/imgs/blog/3/11.jpg';
+import Blog10 from '../../../public/assets/imgs/blog/3/12.png';
+import Blog11 from '../../../public/assets/imgs/blog/3/13.jpg';
+import Blog12 from '../../../public/assets/imgs/blog/3/14.jpg';
+import Blog13 from '../../../public/assets/imgs/blog/3/15.jpg';
+import Blog14 from '../../../public/assets/imgs/blog/3/16.png';
+import Blog15 from '../../../public/assets/imgs/blog/3/17.png';
+// import Blog16 from '../../../public/assets/imgs/blog/3/18.png';
+import Blog16 from '../../../public/assets/imgs/blog/detail/2.png';
+
 import Image from 'next/image.js';
 import React from 'react';
 
@@ -28,7 +30,7 @@ const StartupAgencyBlog = () => {
 	const { t } = useTranslation('blog');
 	const blogs = [
 		{
-			src: Blog56,
+			src: Blog16,
 			href: '/cong-ty-tnhh-nph-digital-vinh-du-nhan-giai-thuong-top-10-thuong-hieu-uy-tin-hang-dau-viet-nam-2024',
 			category: t('StartupAgencyBlog.blogs.blog1.category'),
 			date: t('StartupAgencyBlog.blogs.blog1.date'),
@@ -36,7 +38,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog1.excerpt'),
 		},
 		{
-			src: Blog54,
+			src: Blog14,
 			href: '/chi-tiet-bai-viet-14',
 			category: t('StartupAgencyBlog.blogs.blog2.category'),
 			date: t('StartupAgencyBlog.blogs.blog2.date'),
@@ -44,7 +46,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog2.excerpt'),
 		},
 		{
-			src: Blog55,
+			src: Blog15,
 			href: '/chi-tiet-bai-viet-15',
 			category: t('StartupAgencyBlog.blogs.blog3.category'),
 			date: t('StartupAgencyBlog.blogs.blog3.date'),
@@ -52,7 +54,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog3.excerpt'),
 		},
 		{
-			src: Blog49,
+			src: Blog9,
 			href: '/chi-tiet-bai-viet-9',
 			category: t('StartupAgencyBlog.blogs.blog4.category'),
 			date: t('StartupAgencyBlog.blogs.blog4.date'),
@@ -60,7 +62,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog4.excerpt'),
 		},
 		{
-			src: Blog50,
+			src: Blog10,
 			href: '/chi-tiet-bai-viet-10',
 			category: t('StartupAgencyBlog.blogs.blog5.category'),
 			date: t('StartupAgencyBlog.blogs.blog5.date'),
@@ -68,7 +70,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog5.excerpt'),
 		},
 		{
-			src: Blog53,
+			src: Blog13,
 			href: '/chi-tiet-bai-viet-13',
 			category: t('StartupAgencyBlog.blogs.blog6.category'),
 			date: t('StartupAgencyBlog.blogs.blog6.date'),
@@ -76,7 +78,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog6.excerpt'),
 		},
 		{
-			src: Blog52,
+			src: Blog12,
 			href: '/chi-tiet-bai-viet-12',
 			category: t('StartupAgencyBlog.blogs.blog7.category'),
 			date: t('StartupAgencyBlog.blogs.blog7.date'),
@@ -84,7 +86,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog7.excerpt'),
 		},
 		{
-			src: Blog51,
+			src: Blog11,
 			href: '/chi-tiet-bai-viet-11',
 			category: t('StartupAgencyBlog.blogs.blog8.category'),
 			date: t('StartupAgencyBlog.blogs.blog8.date'),
@@ -92,7 +94,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog8.excerpt'),
 		},
 		{
-			src: Blog41,
+			src: Blog1,
 			href: '/chi-tiet-bai-viet',
 			category: t('StartupAgencyBlog.blogs.blog9.category'),
 			date: t('StartupAgencyBlog.blogs.blog9.date'),
@@ -100,7 +102,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog9.excerpt'),
 		},
 		{
-			src: Blog42,
+			src: Blog2,
 			href: '/chi-tiet-bai-viet-2',
 			category: t('StartupAgencyBlog.blogs.blog10.category'),
 			date: t('StartupAgencyBlog.blogs.blog10.date'),
@@ -108,7 +110,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog10.excerpt'),
 		},
 		{
-			src: Blog43,
+			src: Blog3,
 			href: '/chi-tiet-bai-viet-3',
 			category: t('StartupAgencyBlog.blogs.blog11.category'),
 			date: t('StartupAgencyBlog.blogs.blog11.date'),
@@ -116,7 +118,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog11.excerpt'),
 		},
 		{
-			src: Blog44,
+			src: Blog4,
 			href: '/chi-tiet-bai-viet-4',
 			category: t('StartupAgencyBlog.blogs.blog12.category'),
 			date: t('StartupAgencyBlog.blogs.blog12.date'),
@@ -124,7 +126,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog12.excerpt'),
 		},
 		{
-			src: Blog46,
+			src: Blog6,
 			href: '/chi-tiet-bai-viet-6',
 			category: t('StartupAgencyBlog.blogs.blog14.category'),
 			date: t('StartupAgencyBlog.blogs.blog14.date'),
@@ -132,7 +134,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog14.excerpt'),
 		},
 		{
-			src: Blog47,
+			src: Blog7,
 			href: '/chi-tiet-bai-viet-7',
 			category: t('StartupAgencyBlog.blogs.blog15.category'),
 			date: t('StartupAgencyBlog.blogs.blog15.date'),
@@ -140,7 +142,7 @@ const StartupAgencyBlog = () => {
 			excerpt: t('StartupAgencyBlog.blogs.blog15.excerpt'),
 		},
 		{
-			src: Blog48,
+			src: Blog8,
 			href: '/chi-tiet-bai-viet-8',
 			category: t('StartupAgencyBlog.blogs.blog16.category'),
 			date: t('StartupAgencyBlog.blogs.blog16.date'),

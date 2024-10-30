@@ -8,6 +8,16 @@
       "changing": "वियतनामी भाषा में बदलाव",
       "pleaseWait": "कृपया कुछ क्षण प्रतीक्षा करें।",
       "lang": "भाषा"
+    },
+    "switcher": {
+      "cursor": "कर्सर",
+      "default": "डिफ़ॉल्ट",
+      "animated": "एनिमेटेड"
+    },
+    "mode": {
+      "modeScreen": "चाल",
+      "light": "सूखा",
+      "dark": "डार्क"
     }
   },
   "header": {

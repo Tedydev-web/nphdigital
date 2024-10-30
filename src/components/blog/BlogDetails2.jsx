@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
-
 import Detail1 from '../../../public/assets/imgs/blog/detail/2/1.webp';
 import Detail2 from '../../../public/assets/imgs/blog/detail/2/2.webp';
 import Detail3 from '../../../public/assets/imgs/blog/detail/2/3.webp';
