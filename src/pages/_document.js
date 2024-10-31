@@ -4,6 +4,20 @@ export default function Document() {
 	return (
 		<Html lang="en">
 			<Head>
+				{/* Google tag (gtag.js) */}
+				<script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=G-4QW02Z13FF"></script>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-4QW02Z13FF');
+            `,
+					}}
+				/>
 				<link
 					href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap"
 					rel="stylesheet"></link>

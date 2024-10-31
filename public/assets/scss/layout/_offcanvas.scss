@@ -32,12 +32,31 @@
             grid-template-columns: 1.2fr 2.3fr 1.8fr;
         }
         @media #{$sm} {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto;
+            display: flex;
+            flex-direction: column;
+            grid-template-columns: unset;
+            grid-template-rows: unset;
             height: auto;
             overflow-y: auto;
             max-height: 100vh;
             padding-bottom: 30px;
+
+            .offcanvas__logo {
+                order: 1;
+            }
+            .offcanvas__search {
+                order: 2;
+                padding: 20px;
+            }
+            .offcanvas__mid {
+                order: 3;
+            }
+            .offcanvas__social {
+                order: 4;
+            }
+            .offcanvas__contact {
+                order: 5;
+            }
         }
     }
 
@@ -47,10 +66,10 @@
         border-right: 1px solid var(--black-4);
 
         @media #{$sm} {
-            display: block;
+            display: flex;
+            flex-direction: column;
             border-right: none;
-            border-bottom: 1px solid var(--black-4);
-            padding-bottom: 20px;
+            border-bottom: none;
         }
     }
 
@@ -95,10 +114,13 @@
             padding: 0 15px;
         }
         @media #{$sm} {
-            display: block;
-            padding: 20px;
-            margin-top: 20px;
+            padding: 0;
             background-color: transparent;
+            
+            .offcanvas__search {
+                position: relative;
+                margin-top: 0;
+            }
         }
 
         .shape {
@@ -152,8 +174,10 @@
         @media #{$sm} {
             padding: 30px 20px;
             text-align: center;
+            border-bottom: 1px solid var(--black-4);
         }
     }
+
     &__search {
         padding-top: 190px;
         padding-bottom: 30px;
@@ -171,9 +195,9 @@
             padding-bottom: 30px;
         }
         @media #{$sm} {
-            padding-top: 30px;
-            padding-bottom: 20px;
+            padding: 20px;
             text-align: center;
+            border-bottom: 1px solid var(--black-4);
         }
 
         form {
@@ -211,6 +235,7 @@
             border-radius: 0 100% 100% 0;
         }
     }
+
     &__social {
         padding-left: 50px;
         padding-top: 220px;
@@ -230,9 +255,8 @@
         }
         @media #{$sm} {
             padding: 20px;
-            padding-top: 30px;
             text-align: center;
-            border-bottom: none;
+            border-bottom: 1px solid var(--black-4);
         }
 
         .social-title {
@@ -341,11 +365,11 @@
         }
     }
 
-
     &__contact {
         @media #{$sm} {
             text-align: center;
             padding: 20px;
+            border-bottom: 1px solid var(--black-4);
         }
 
         h3 {
@@ -384,7 +408,6 @@
         }
     }
 
-    // Menu styles for mobile
     &__menu {
         @media #{$sm} {
             ul.menu-anim {
