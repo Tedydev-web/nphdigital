@@ -133,9 +133,60 @@ const DigitalAgency = () => {
 					href="/sitemap.xml"
 				/>
 
+				{/* Thêm các meta tags cho SEO */}
+				<meta
+					name="googlebot"
+					content="index, follow"
+				/>
+				<meta
+					name="bingbot"
+					content="index, follow"
+				/>
+				<meta
+					name="revisit-after"
+					content="1 days"
+				/>
+				<meta
+					name="rating"
+					content="general"
+				/>
+
+				{/* Các meta tags hiện có của bạn */}
 				<meta
 					name="description"
 					content="NPH Digital - Giải pháp kỹ thuật số toàn diện: Phát triển ứng dụng di động, Thiết kế website, UX/UI, Marketing số, CRM, ERP, AI, và thuê ngoài IT."
+				/>
+
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify({
+							'@context': 'http://schema.org',
+							'@type': 'Organization',
+							name: 'NPH Digital',
+							url: 'https://nphdigital.com',
+							logo: 'https://res.cloudinary.com/tedydev/image/upload/nphdigital/logo.png',
+							sameAs: ['https://www.facebook.com/nphdigital838', 'https://twitter.com/NPHDigital'],
+							address: {
+								'@type': 'PostalAddress',
+								addressCountry: 'VN',
+								addressRegion: 'Ho Chi Minh City',
+							},
+							contactPoint: {
+								'@type': 'ContactPoint',
+								telephone: '+84-777-018-333',
+								contactType: 'customer service',
+							},
+							description: 'NPH Digital - Giải pháp kỹ thuật số toàn diện cho doanh nghiệp',
+							foundingDate: '2023',
+							founders: [
+								{
+									'@type': 'Person',
+									name: 'NPH Digital',
+								},
+							],
+						}),
+					}}
 				/>
 				<meta
 					name="keywords"
