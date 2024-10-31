@@ -23,11 +23,11 @@ function App({ Component, pageProps }) {
 
 		// Cấu hình Google Analytics
 		gtag('js', new Date());
-		gtag('config', 'G-4QW02Z13FF');
+		gtag('config', process.env.NEXT_PUBLIC_GA_ID);
 
 		// Hàm xử lý sự kiện thay đổi route
 		const handleRouteChange = (url) => {
-			window.gtag('config', 'G-4QW02Z13FF', {
+			window.gtag('config', process.env.NEXT_PUBLIC_GA_ID, {
 				page_path: url,
 			});
 		};
