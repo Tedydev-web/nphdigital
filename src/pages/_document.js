@@ -1,14 +1,15 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 export default function Document() {
 	return (
 		<Html lang="en">
 			<Head>
 				{/* Google tag (gtag.js) */}
-				<script
+				<Script
 					async
-					src="https://www.googletagmanager.com/gtag/js?id=G-4QW02Z13FF"></script>
-				<script
+					src="https://www.googletagmanager.com/gtag/js?id=G-4QW02Z13FF"></Script>
+				<Script
 					dangerouslySetInnerHTML={{
 						__html: `
               window.dataLayer = window.dataLayer || [];
