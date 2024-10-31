@@ -11,6 +11,17 @@ const ServiceV5 = () => {
 		<>
 			<Head>
 				<title>Dịch vụ | NPH Digital</title>
+				{/* Thêm meta robots và sitemap */}
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					href="/sitemap.xml"
+				/>
+
 				<meta
 					name="description"
 					content="Khám phá dịch vụ của NPH Digital - Giải pháp kỹ thuật số toàn diện, bao gồm phát triển ứng dụng, thiết kế website, marketing số và nhiều hơn nữa."

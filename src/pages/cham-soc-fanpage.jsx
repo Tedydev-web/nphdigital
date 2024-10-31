@@ -11,6 +11,16 @@ const ServiceDetails = () => {
 		<>
 			<Head>
 				<title>Chăm sóc fanpage | NPH Digital</title>
+				{/* Thêm meta robots và sitemap */}
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					href="/sitemap.xml"
+				/>
 				<meta
 					name="description"
 					content="Dịch vụ chăm sóc fanpage của NPH Digital giúp doanh nghiệp quản lý, phát triển nội dung và tương tác với khách hàng trên mạng xã hội một cách hiệu quả."

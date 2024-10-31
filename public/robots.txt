@@ -1,0 +1,113 @@
+# NPH Digital - Robots.txt Configuration
+# Updated: 2024-04-27
+# Website: https://nphdigital.com
+
+# Cho phép tất cả các robot
+User-agent: *
+
+# Cho phép truy cập tất cả
+Allow: /
+Allow: /gioi-thieu
+Allow: /dich-vu
+Allow: /bai-viet
+Allow: /lien-he
+
+# Cho phép truy cập các trang dịch vụ
+Allow: /thiet-ke-ui-ux
+Allow: /thiet-ke-website
+Allow: /lap-trinh-ai
+Allow: /thue-phong-it-ngoai
+Allow: /tuong-tac-so
+Allow: /quang-cao-so
+Allow: /mobile-app
+Allow: /crm-erp-hrm
+Allow: /cham-soc-fanpage
+
+# Cho phép truy cập các bài viết blog
+Allow: /chi-tiet-bai-viet*
+
+# Chặn truy cập các thư mục và file hệ thống
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /*.php$
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.scss$
+Disallow: /*.sass$
+Disallow: /*.less$
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.yml$
+Disallow: /*.yaml$
+Disallow: /*.txt$
+Disallow: /*.md$
+Disallow: /*.log$
+Disallow: /.env
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /vendor/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /cache/
+
+# Chặn các tham số URL không cần thiết
+Disallow: /*?*
+Disallow: /*&*
+Disallow: /*#*
+
+# Chặn các trang trùng lặp
+Disallow: /*?page=*
+Disallow: /*?paged=*
+Disallow: /*?preview=*
+
+# Chặn các trang tìm kiếm và lọc
+Disallow: /search
+Disallow: /tag
+Disallow: /category
+Disallow: /archive
+
+# Tối ưu crawl rate
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://nphdigital.com/sitemap.xml
+
+# Host chính
+Host: https://nphdigital.com
+
+# Các quy tắc cho bot cụ thể
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.webp$
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 10
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 10
+
+# Chặn các bot có hại
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

@@ -11,6 +11,17 @@ const ServiceDetails = () => {
 		<>
 			<Head>
 				<title>Cho thuê phòng IT ngoài | NPH Digital</title>
+				{/* Thêm meta robots và sitemap */}
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					href="/sitemap.xml"
+				/>
+
 				<meta
 					name="description"
 					content="Dịch vụ cho thuê phòng IT ngoài của NPH Digital, cung cấp phòng làm việc trang bị đầy đủ thiết bị, máy tính, mạng internet tốc độ cao, hỗ trợ tối đa cho các dự án công nghệ thông tin."

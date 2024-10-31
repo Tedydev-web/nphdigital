@@ -11,6 +11,17 @@ const ServiceDetails = () => {
 		<>
 			<Head>
 				<title>Phát triển ứng dụng di động | NPH Digital</title>
+				{/* Thêm meta robots và sitemap */}
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					href="/sitemap.xml"
+				/>
+
 				<meta
 					name="description"
 					content="Dịch vụ phát triển ứng dụng di động của NPH Digital giúp doanh nghiệp tạo ra các ứng dụng chất lượng cao, thân thiện với người dùng trên các nền tảng iOS và Android."

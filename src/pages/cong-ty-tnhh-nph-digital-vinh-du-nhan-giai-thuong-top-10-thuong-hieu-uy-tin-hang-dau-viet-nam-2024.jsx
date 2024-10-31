@@ -24,6 +24,16 @@ const BlogDetails = () => {
 		<>
 			<Head>
 				<title>Chi Tiết Blog | NPH Digital</title>
+				{/* Thêm meta robots và sitemap */}
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					href="/sitemap.xml"
+				/>
 				<meta
 					name="description"
 					content="Khám phá các bài viết chi tiết trên blog của NPH Digital, cung cấp thông tin và giải pháp số hữu ích cho doanh nghiệp."

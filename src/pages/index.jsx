@@ -122,6 +122,17 @@ const DigitalAgency = () => {
 		<div>
 			<Head>
 				<title>NPH Digital | Giải Pháp kỹ thuật số toàn diện</title>
+				{/* Thêm meta robots và sitemap */}
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					href="/sitemap.xml"
+				/>
+
 				<meta
 					name="description"
 					content="NPH Digital - Giải pháp kỹ thuật số toàn diện: Phát triển ứng dụng di động, Thiết kế website, UX/UI, Marketing số, CRM, ERP, AI, và thuê ngoài IT."

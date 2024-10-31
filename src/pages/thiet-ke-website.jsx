@@ -11,6 +11,17 @@ const ServiceDetails = () => {
 		<>
 			<Head>
 				<title>Thiết kế website | NPH Digital</title>
+				{/* Thêm meta robots và sitemap */}
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					href="/sitemap.xml"
+				/>
+
 				<meta
 					name="description"
 					content="Dịch vụ thiết kế website của NPH Digital mang đến các giải pháp website hiện đại, thân thiện với người dùng, tối ưu cho SEO và thiết kế chuẩn UX/UI."

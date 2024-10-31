@@ -11,6 +11,17 @@ const ServiceDetails = () => {
 		<>
 			<Head>
 				<title>Tương tác số | NPH Digital</title>
+				{/* Thêm meta robots và sitemap */}
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					href="/sitemap.xml"
+				/>
+
 				<meta
 					name="description"
 					content="Dịch vụ tương tác số của NPH Digital giúp các doanh nghiệp tương tác và kết nối với khách hàng một cách hiệu quả thông qua các giải pháp kỹ thuật số tiên tiến."

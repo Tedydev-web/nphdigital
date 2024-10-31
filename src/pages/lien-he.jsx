@@ -6,6 +6,17 @@ const Contact = () => {
 		<>
 			<Head>
 				<title>Liên Hệ | NPH Digital</title>
+				{/* Thêm meta robots và sitemap */}
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					href="/sitemap.xml"
+				/>
+
 				<meta
 					name="description"
 					content="Liên hệ với NPH Digital để nhận được các giải pháp kỹ thuật số toàn diện: Phát triển ứng dụng, Thiết kế website, Marketing số, và nhiều hơn nữa."

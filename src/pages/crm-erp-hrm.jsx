@@ -11,6 +11,17 @@ const ServiceDetails = () => {
 		<>
 			<Head>
 				<title>CRM, ERP, HRM | NPH Digital</title>
+				{/* Thêm meta robots và sitemap */}
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					href="/sitemap.xml"
+				/>
+
 				<meta
 					name="description"
 					content="NPH Digital cung cấp các giải pháp CRM, ERP, và HRM giúp doanh nghiệp quản lý khách hàng, tối ưu hóa quy trình kinh doanh và quản lý nguồn nhân lực hiệu quả."

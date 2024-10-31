@@ -11,6 +11,17 @@ const ServiceDetails = () => {
 		<>
 			<Head>
 				<title>Quảng cáo số | NPH Digital</title>
+				{/* Thêm meta robots và sitemap */}
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					href="/sitemap.xml"
+				/>
+
 				<meta
 					name="description"
 					content="Dịch vụ quảng cáo số của NPH Digital giúp doanh nghiệp tiếp cận khách hàng tiềm năng thông qua các nền tảng kỹ thuật số hiệu quả như Google, Facebook, và nhiều kênh khác."

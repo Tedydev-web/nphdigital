@@ -11,6 +11,17 @@ const ServiceDetails = () => {
 		<>
 			<Head>
 				<title>Thiết kế UI/UX | NPH Digital</title>
+				{/* Thêm meta robots và sitemap */}
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					href="/sitemap.xml"
+				/>
+
 				<meta
 					name="description"
 					content="Dịch vụ thiết kế UI/UX của NPH Digital tạo ra các giao diện người dùng đẹp mắt, trải nghiệm người dùng tối ưu, giúp gia tăng sự hài lòng và tương tác của khách hàng."

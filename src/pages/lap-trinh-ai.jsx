@@ -11,6 +11,17 @@ const ServiceDetails = () => {
 		<>
 			<Head>
 				<title>Lập trình AI | NPH Digital</title>
+				{/* Thêm meta robots và sitemap */}
+				<meta
+					name="robots"
+					content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					href="/sitemap.xml"
+				/>
+
 				<meta
 					name="description"
 					content="Dịch vụ lập trình AI của NPH Digital giúp doanh nghiệp ứng dụng trí tuệ nhân tạo vào các sản phẩm và quy trình của mình, tăng cường hiệu quả và tối ưu hóa hoạt động."
