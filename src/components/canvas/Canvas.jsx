@@ -9,12 +9,15 @@ import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import { useLanguageManager } from '@/hooks/useLanguageManager';
 import SwitcherLang from '@/components/common/SwitcherLang';
+import { useRouter } from 'next/router'; // Thêm import useRouter
+
 const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 	const [accordion, setAccordion] = useState(0);
 	const [subAccordion, setSubAccordion] = useState(0);
 	const menu = useRef();
 	const { t } = useTranslation('common');
 	const { currentLanguage } = useLanguageManager();
+	const router = useRouter(); // Thêm hook useRouter
 
 	useEffect(() => {
 		const updateMenuText = () => {
@@ -66,6 +69,21 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 		}
 	};
 
+	// Thêm hàm xử lý click
+	const handleLinkClick = (e, href) => {
+		// Lấy URL hiện tại (bỏ domain)
+		const currentPath = router.asPath;
+
+		// Chuẩn hóa href (bỏ domain nếu có)
+		const normalizedHref = href.replace('https://nphdigital.com', '');
+
+		// Nếu đang ở trang hiện tại
+		if (currentPath === normalizedHref || (currentPath === '/' && normalizedHref === '/')) {
+			e.preventDefault(); // Ngăn chặn chuyển trang
+			closeCanvas(); // Đóng canvas
+		}
+	};
+
 	return (
 		<>
 			<div
@@ -106,27 +124,47 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 									ref={menu}>
 									<li>
 										<div className="header_title">
-											<Link href={'https://nphdigital.com/'}>{t('canvas.menu.home')}</Link>
+											<Link
+												href={'https://nphdigital.com/'}
+												onClick={(e) => handleLinkClick(e, 'https://nphdigital.com/')}>
+												{t('canvas.menu.home')}
+											</Link>
 										</div>
 									</li>
 									<li>
 										<div className="header_title">
-											<Link href={'/gioi-thieu'}>{t('canvas.menu.about')}</Link>
+											<Link
+												href={'/gioi-thieu'}
+												onClick={(e) => handleLinkClick(e, '/gioi-thieu')}>
+												{t('canvas.menu.about')}
+											</Link>
 										</div>
 									</li>
 									<li>
 										<div className="header_title d-flex">
-											<Link href={'/dich-vu'}>{t('canvas.menu.service')}</Link>
+											<Link
+												href={'/dich-vu'}
+												onClick={(e) => handleLinkClick(e, '/dich-vu')}>
+												{t('canvas.menu.service')}
+											</Link>
 										</div>
 									</li>
 									<li>
 										<div className="header_title">
-											<Link href={'/bai-viet'}>{t('canvas.menu.blog')}</Link>
+											<Link
+												href={'/bai-viet'}
+												onClick={(e) => handleLinkClick(e, '/bai-viet')}>
+												{t('canvas.menu.blog')}
+											</Link>
 										</div>
 									</li>
 									<li>
 										<div className="header_title">
-											<Link href={'/lien-he'}>{t('canvas.menu.contact')}</Link>
+											<Link
+												href={'/lien-he'}
+												onClick={(e) => handleLinkClick(e, '/lien-he')}>
+												{t('canvas.menu.contact')}
+											</Link>
 										</div>
 									</li>
 								</ul>
