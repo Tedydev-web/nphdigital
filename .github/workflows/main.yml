@@ -16,10 +16,8 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: 22
         script: |
-          cd /home/next-deploy-vps
-          git fetch origin
-          git checkout production
-          git pull
-          npm install
-          npm run build
-          pm2 reload next-demo
+          cd /var/www/nphdigital.com/nphcom
+          sudo git pull origin
+          sudo npm install
+          sudo npm run build
+          pm2 reload nphdigital
