@@ -3,7 +3,7 @@
     "DetailsTuongTacSo": {
       "secTitle": "Tương tác số",
     "p": {
-      "1": "Chúng tôi cung cấp dịch vụ tương tác số, giúp doanh nghiệp chuyển đổi số và tạo ra trải nghiệm tương tác phong phú với người dùng thông qua các nền tảng kỹ thuật số. Dịch vụ này tập trung vào việc nâng cao khả năng kết nối giữa thương hiệu và khách hàng thông qua các công cụ, ứng dụng và chiến lược tương tác số.",
+      "1": "Chúng tôi cung cấp dịch vụ tương tác số, giúp doanh nghiệp chuyển đổi số và tạo ra trải nghiệm tương tác phong phú với người dùng thông qua các nền tảng chuyển đổi số. Dịch vụ này tập trung vào việc nâng cao khả năng kết nối giữa thương hiệu và khách hàng thông qua các công cụ, ứng dụng và chiến lược tương tác số.",
       "2": "Với sự kết hợp giữa công nghệ hiện đại và sáng tạo, chúng tôi phát triển các giải pháp tương tác giúp doanh nghiệp tiếp cận khách hàng một cách trực tiếp và hiệu quả hơn. Chúng tôi cam kết mang đến sự khác biệt trong từng dự án, từ việc phát triển các ứng dụng tương tác đến tích hợp các công cụ hỗ trợ phân tích hành vi người dùng."
     },
     "ul": {
@@ -281,7 +281,7 @@
     "5": "Các công cụ phổ biến để thiết kế UI/UX là gì?"
   },
   "answer": {
-    "1": "UI (Giao diện người dùng) là cách mà người dùng tương tác với sản phẩm hoặc dịch vụ kỹ thuật số. Thiết kế UI tập trung vào việc tối ưu hóa các yếu tố trực quan như nút, biểu tượng và bố cục để đảm bảo trải nghiệm người dùng tốt nhất.",
+    "1": "UI (Giao diện người dùng) là cách mà người dùng tương tác với sản phẩm hoặc dịch vụ chuyển đổi số. Thiết kế UI tập trung vào việc tối ưu hóa các yếu tố trực quan như nút, biểu tượng và bố cục để đảm bảo trải nghiệm người dùng tốt nhất.",
     "2": "Không. UX (Trải nghiệm người dùng) tập trung vào việc tối ưu hóa hành trình người dùng, trong khi UI tập trung vào các yếu tố giao diện. Cả hai phối hợp với nhau để tạo ra trải nghiệm sản phẩm hoàn chỉnh.",
     "3": "Thiết kế UI cần phải nhất quán, dễ sử dụng, rõ ràng, và trực quan. Các yếu tố như màu sắc, phông chữ, và bố cục phải được sử dụng một cách hợp lý để tạo sự dễ hiểu và hấp dẫn cho người dùng.",
     "4": "Thiết kế UX tốt bắt đầu từ việc hiểu rõ nhu cầu của người dùng. Việc nghiên cứu người dùng, thử nghiệm với prototype và lắng nghe phản hồi là các bước cần thiết để cải thiện trải nghiệm người dùng liên tục.",

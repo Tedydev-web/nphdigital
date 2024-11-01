@@ -24,11 +24,11 @@ const ServiceDetails = () => {
 
 				<meta
 					name="description"
-					content="Dịch vụ tương tác số của NPH Digital giúp các doanh nghiệp tương tác và kết nối với khách hàng một cách hiệu quả thông qua các giải pháp kỹ thuật số tiên tiến."
+					content="Dịch vụ tương tác số của NPH Digital giúp các doanh nghiệp tương tác và kết nối với khách hàng một cách hiệu quả thông qua các giải pháp chuyển đổi số tiên tiến."
 				/>
 				<meta
 					name="keywords"
-					content="Tương tác số, giải pháp kỹ thuật số, tương tác khách hàng, kết nối khách hàng, marketing số, CRM, ERP, NPH Digital, chuyển đổi số, công nghệ số"
+					content="Tương tác số, giải pháp chuyển đổi số, tương tác khách hàng, kết nối khách hàng, marketing số, CRM, ERP, NPH Digital, chuyển đổi số, công nghệ số"
 				/>
 				<meta
 					name="author"
@@ -76,7 +76,7 @@ const ServiceDetails = () => {
 				/>
 				<meta
 					name="twitter:description"
-					content="Dịch vụ tương tác số của NPH Digital cung cấp các công cụ kỹ thuật số hiện đại để doanh nghiệp tương tác và kết nối với khách hàng một cách tối ưu."
+					content="Dịch vụ tương tác số của NPH Digital cung cấp các công cụ chuyển đổi số hiện đại để doanh nghiệp tương tác và kết nối với khách hàng một cách tối ưu."
 				/>
 				<meta
 					name="twitter:image"

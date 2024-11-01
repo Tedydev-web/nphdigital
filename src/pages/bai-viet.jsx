@@ -21,11 +21,11 @@ const Blog = () => {
 
 				<meta
 					name="description"
-					content="Đọc những bài viết mới nhất từ NPH Digital về các giải pháp kỹ thuật số, xu hướng công nghệ, và mẹo hữu ích trong ngành."
+					content="Đọc những bài viết mới nhất từ NPH Digital về các giải pháp chuyển đổi số, xu hướng công nghệ, và mẹo hữu ích trong ngành."
 				/>
 				<meta
 					name="keywords"
-					content="Bài viết NPH Digital, Giải pháp kỹ thuật số, Xu hướng công nghệ, Mẹo hữu ích"
+					content="Bài viết NPH Digital, Giải pháp chuyển đổi số, Xu hướng công nghệ, Mẹo hữu ích"
 				/>
 				<meta
 					name="author"
@@ -39,7 +39,7 @@ const Blog = () => {
 				/>
 				<meta
 					property="og:description"
-					content="Đọc những bài viết mới nhất từ NPH Digital về các giải pháp kỹ thuật số, xu hướng công nghệ, và mẹo hữu ích trong ngành."
+					content="Đọc những bài viết mới nhất từ NPH Digital về các giải pháp chuyển đổi số, xu hướng công nghệ, và mẹo hữu ích trong ngành."
 				/>
 				<meta
 					property="og:type"
@@ -73,7 +73,7 @@ const Blog = () => {
 				/>
 				<meta
 					name="twitter:description"
-					content="Đọc những bài viết mới nhất từ NPH Digital về các giải pháp kỹ thuật số, xu hướng công nghệ, và mẹo hữu ích trong ngành."
+					content="Đọc những bài viết mới nhất từ NPH Digital về các giải pháp chuyển đổi số, xu hướng công nghệ, và mẹo hữu ích trong ngành."
 				/>
 				<meta
 					name="twitter:image"
@@ -161,7 +161,7 @@ const Blog = () => {
 							'@type': 'WebPage',
 							name: 'Bài viết | NPH Digital',
 							url: 'https://nphdigital.com/bai-viet',
-							description: 'Đọc những bài viết mới nhất từ NPH Digital về các giải pháp kỹ thuật số, xu hướng công nghệ, và mẹo hữu ích trong ngành.',
+							description: 'Đọc những bài viết mới nhất từ NPH Digital về các giải pháp chuyển đổi số, xu hướng công nghệ, và mẹo hữu ích trong ngành.',
 						}),
 					}}
 				/>

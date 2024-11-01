@@ -24,11 +24,11 @@ const ServiceDetails = () => {
 
 				<meta
 					name="description"
-					content="Dịch vụ quảng cáo số của NPH Digital giúp doanh nghiệp tiếp cận khách hàng tiềm năng thông qua các nền tảng kỹ thuật số hiệu quả như Google, Facebook, và nhiều kênh khác."
+					content="Dịch vụ quảng cáo số của NPH Digital giúp doanh nghiệp tiếp cận khách hàng tiềm năng thông qua các nền tảng chuyển đổi số hiệu quả như Google, Facebook, và nhiều kênh khác."
 				/>
 				<meta
 					name="keywords"
-					content="Quảng cáo số, quảng cáo trực tuyến, digital marketing, quảng cáo Google, quảng cáo Facebook, NPH Digital, tiếp thị kỹ thuật số"
+					content="Quảng cáo số, quảng cáo trực tuyến, digital marketing, quảng cáo Google, quảng cáo Facebook, NPH Digital, tiếp thị chuyển đổi số"
 				/>
 				<meta
 					name="author"

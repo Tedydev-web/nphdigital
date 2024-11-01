@@ -121,7 +121,7 @@ const DigitalAgency = () => {
 	return (
 		<div>
 			<Head>
-				<title>NPH Digital | Giải Pháp kỹ thuật số toàn diện</title>
+				<title>NPH Digital | Giải Pháp chuyển đổi số toàn diện</title>
 				{/* Thêm meta robots và sitemap */}
 				<meta
 					name="robots"
@@ -154,7 +154,7 @@ const DigitalAgency = () => {
 				{/* Các meta tags hiện có của bạn */}
 				<meta
 					name="description"
-					content="NPH Digital - Giải pháp kỹ thuật số toàn diện: Phát triển ứng dụng di động, Thiết kế website, UX/UI, Marketing số, CRM, ERP, AI, và thuê ngoài IT."
+					content="NPH Digital - Giải pháp chuyển đổi số toàn diện: Phát triển ứng dụng di động, Thiết kế website, UX/UI, Marketing số, CRM, ERP, AI, và thuê ngoài IT."
 				/>
 
 				<script
@@ -177,7 +177,7 @@ const DigitalAgency = () => {
 								telephone: '+84-777-018-333',
 								contactType: 'customer service',
 							},
-							description: 'NPH Digital - Giải pháp kỹ thuật số toàn diện cho doanh nghiệp',
+							description: 'NPH Digital - Giải pháp chuyển đổi số toàn diện cho doanh nghiệp',
 							foundingDate: '2023',
 							founders: [
 								{
@@ -190,7 +190,7 @@ const DigitalAgency = () => {
 				/>
 				<meta
 					name="keywords"
-					content="Giải pháp kỹ thuật số, Phát triển ứng dụng di động, Thiết kế website, UX/UI, Marketing số, CRM, ERP, AI, Thuê ngoài IT, NPH Digital"
+					content="Giải pháp chuyển đổi số, Phát triển ứng dụng di động, Thiết kế website, UX/UI, Marketing số, CRM, ERP, AI, Thuê ngoài IT, NPH Digital"
 				/>
 				<meta
 					name="author"
@@ -200,11 +200,11 @@ const DigitalAgency = () => {
 				{/* Open Graph Meta Tags */}
 				<meta
 					property="og:title"
-					content="NPH Digital | Giải Pháp kỹ thuật số toàn diện"
+					content="NPH Digital | Giải Pháp chuyển đổi số toàn diện"
 				/>
 				<meta
 					property="og:description"
-					content="NPH Digital - Giải pháp kỹ thuật số toàn diện: Phát triển ứng dụng di động, Thiết kế website, UX/UI, Marketing số, CRM, ERP, AI, và thuê ngoài IT."
+					content="NPH Digital - Giải pháp chuyển đổi số toàn diện: Phát triển ứng dụng di động, Thiết kế website, UX/UI, Marketing số, CRM, ERP, AI, và thuê ngoài IT."
 				/>
 				<meta
 					property="og:type"
@@ -250,11 +250,11 @@ const DigitalAgency = () => {
 				/>
 				<meta
 					name="twitter:title"
-					content="NPH Digital | Giải Pháp kỹ thuật số toàn diện"
+					content="NPH Digital | Giải Pháp chuyển đổi số toàn diện"
 				/>
 				<meta
 					name="twitter:description"
-					content="NPH Digital - Giải pháp kỹ thuật số toàn diện: Phát triển ứng dụng di động, Thiết kế website, UX/UI, Marketing số, CRM, ERP, AI, và thuê ngoài IT."
+					content="NPH Digital - Giải pháp chuyển đổi số toàn diện: Phát triển ứng dụng di động, Thiết kế website, UX/UI, Marketing số, CRM, ERP, AI, và thuê ngoài IT."
 				/>
 				<meta
 					name="twitter:image"

@@ -19,11 +19,11 @@ const Contact = () => {
 
 				<meta
 					name="description"
-					content="Liên hệ với NPH Digital để nhận được các giải pháp kỹ thuật số toàn diện: Phát triển ứng dụng, Thiết kế website, Marketing số, và nhiều hơn nữa."
+					content="Liên hệ với NPH Digital để nhận được các giải pháp chuyển đổi số toàn diện: Phát triển ứng dụng, Thiết kế website, Marketing số, và nhiều hơn nữa."
 				/>
 				<meta
 					name="keywords"
-					content="Liên hệ, NPH Digital, Giải pháp kỹ thuật số, Phát triển ứng dụng, Thiết kế website"
+					content="Liên hệ, NPH Digital, Giải pháp chuyển đổi số, Phát triển ứng dụng, Thiết kế website"
 				/>
 				<meta
 					name="author"
@@ -37,7 +37,7 @@ const Contact = () => {
 				/>
 				<meta
 					property="og:description"
-					content="Liên hệ với NPH Digital để nhận được các giải pháp kỹ thuật số toàn diện: Phát triển ứng dụng, Thiết kế website, Marketing số, và nhiều hơn nữa."
+					content="Liên hệ với NPH Digital để nhận được các giải pháp chuyển đổi số toàn diện: Phát triển ứng dụng, Thiết kế website, Marketing số, và nhiều hơn nữa."
 				/>
 				<meta
 					property="og:type"
@@ -71,7 +71,7 @@ const Contact = () => {
 				/>
 				<meta
 					name="twitter:description"
-					content="Liên hệ với NPH Digital để nhận được các giải pháp kỹ thuật số toàn diện: Phát triển ứng dụng, Thiết kế website, Marketing số, và nhiều hơn nữa."
+					content="Liên hệ với NPH Digital để nhận được các giải pháp chuyển đổi số toàn diện: Phát triển ứng dụng, Thiết kế website, Marketing số, và nhiều hơn nữa."
 				/>
 				<meta
 					name="twitter:image"

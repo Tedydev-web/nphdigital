@@ -26,11 +26,11 @@ const About = () => {
 
 				<meta
 					name="description"
-					content="Tìm hiểu về NPH Digital - Giải pháp kỹ thuật số toàn diện với đội ngũ chuyên nghiệp và nhiều năm kinh nghiệm trong ngành."
+					content="Tìm hiểu về NPH Digital - Giải pháp chuyển đổi số toàn diện với đội ngũ chuyên nghiệp và nhiều năm kinh nghiệm trong ngành."
 				/>
 				<meta
 					name="keywords"
-					content="Giới thiệu NPH Digital, Giải pháp kỹ thuật số, Đội ngũ chuyên nghiệp, Kinh nghiệm ngành"
+					content="Giới thiệu NPH Digital, Giải pháp chuyển đổi số, Đội ngũ chuyên nghiệp, Kinh nghiệm ngành"
 				/>
 				<meta
 					name="author"
@@ -44,7 +44,7 @@ const About = () => {
 				/>
 				<meta
 					property="og:description"
-					content="Tìm hiểu về NPH Digital - Giải pháp kỹ thuật số toàn diện với đội ngũ chuyên nghiệp và nhiều năm kinh nghiệm trong ngành."
+					content="Tìm hiểu về NPH Digital - Giải pháp chuyển đổi số toàn diện với đội ngũ chuyên nghiệp và nhiều năm kinh nghiệm trong ngành."
 				/>
 				<meta
 					property="og:type"
@@ -82,7 +82,7 @@ const About = () => {
 				/>
 				<meta
 					name="twitter:description"
-					content="Tìm hiểu về NPH Digital - Giải pháp kỹ thuật số toàn diện với đội ngũ chuyên nghiệp và nhiều năm kinh nghiệm trong ngành."
+					content="Tìm hiểu về NPH Digital - Giải pháp chuyển đổi số toàn diện với đội ngũ chuyên nghiệp và nhiều năm kinh nghiệm trong ngành."
 				/>
 				<meta
 					name="twitter:image"

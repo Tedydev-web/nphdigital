@@ -2,426 +2,369 @@
 /*  13. OFFCANVES CSS START
 /*----------------------------------------*/
 
+
 .offcanvas {
     &__area {
-        background-color: var(--black-2);
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        left: 0;
-        top: 0;
-        z-index: 9999;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s;
+      background-color: var(--black-2);
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      left: 0;
+      top: 0;
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
     }
-
+  
     &__body {
-        display: grid;
-        grid-template-columns: 0.9fr 3fr 1.3fr;
-        height: 100%;
-        transition: all 0.3s ease;
-
-        @media #{$xl} {
-            grid-template-columns: 1.2fr 3fr 1.5fr;
-        }
-        @media #{$lg} {
-            grid-template-columns: 1.2fr 2fr 1.5fr;
-        }
-        @media #{$md} {
-            grid-template-columns: 1.2fr 2.3fr 1.8fr;
-        }
-        @media #{$sm} {
-            display: flex;
-            flex-direction: column;
-            grid-template-columns: unset;
-            grid-template-rows: unset;
-            height: auto;
-            overflow-y: auto;
-            max-height: 100vh;
-            padding-bottom: 30px;
-
-            .offcanvas__logo {
-                order: 1;
-            }
-            .offcanvas__search {
-                order: 2;
-                padding: 20px;
-            }
-            .offcanvas__mid {
-                order: 3;
-            }
-            .offcanvas__social {
-                order: 4;
-            }
-            .offcanvas__contact {
-                order: 5;
-            }
-        }
+      display: grid;
+      grid-template-columns: 0.9fr 3fr 1.3fr;
+      height: 100%;
+  
+      @media #{$xl} {
+        grid-template-columns: 1.2fr 3fr 1.5fr;
+      }
+  
+      @media #{$lg} {
+        grid-template-columns: 1.2fr 2fr 1.5fr;
+      }
+  
+      @media #{$md} {
+        grid-template-columns: 1.2fr 2.3fr 1.8fr;
+      }
+  
+      @media #{$sm} {
+        grid-template-columns: 1fr;
+      }
     }
-
+  
     &__left {
-        display: grid;
-        grid-template-rows: 0.5fr 2.1fr 1fr;
-        border-right: 1px solid var(--black-4);
-
-        @media #{$sm} {
-            display: flex;
-            flex-direction: column;
-            border-right: none;
-            border-bottom: none;
-        }
+      display: grid;
+      grid-template-rows: 0.5fr 2.1fr 1fr;
+      border-right: 1px solid var(--black-4);
+  
+      @media #{$sm} {
+        display: none;
+      }
     }
-
+  
     &__mid {
-        overflow: hidden;
-        overflow-y: auto;
-
-        @media #{$sm} {
-            margin-top: 20px;
-            padding: 0 20px;
-            border-bottom: 1px solid var(--black-4);
-        }
-
-        &::-webkit-scrollbar {
-            width: 5px;
-        }
-        &::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px var(--black);
-            border-radius: 10px;
-        }
-        &::-webkit-scrollbar-thumb {
-            background: var(--primary);
-            border-radius: 10px;
-        }
+      overflow: hidden;
+      overflow-y: auto;
+  
+      @media #{$sm} {
+        margin-top: 75px;
+      }
+  
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+  
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px var(--black);
+        border-radius: 10px;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: 10px;
+      }
     }
-
+  
     &__right {
-        background-color: var(--black-4);
-        padding: 0 50px;
-        position: relative;
-
-        @media #{$xxl} {
-            padding: 0 30px;
+      background-color: var(--black-4);
+      padding: 0 50px;
+      position: relative;
+  
+      @media #{$xxl} {
+        padding: 0 30px;
+      }
+  
+      @media #{$xl} {
+        padding: 0 30px;
+      }
+  
+      @media #{$lg} {
+        padding: 0 30px;
+      }
+  
+      @media #{$md} {
+        padding: 0 15px;
+      }
+  
+      @media #{$sm} {
+        display: none;
+      }
+  
+      .shape {
+        &-1 {
+          position: absolute;
+          bottom: 0;
+          left: 125px;
+  
+          @media #{$xxl} {
+            left: 20px;
+          }
+  
+          @media #{$xl} {
+            left: 0;
+          }
+  
+          @media #{$lg} {
+            left: 0;
+          }
+  
+          @media #{$md} {
+            left: 0;
+          }
         }
-        @media #{$xl} {
-            padding: 0 30px;
+  
+        &-2 {
+          position: absolute;
+          bottom: 90px;
+          right: 110px;
+  
+          @media #{$md} {
+            right: 30px;
+          }
         }
-        @media #{$lg} {
-            padding: 0 30px;
-        }
-        @media #{$md} {
-            padding: 0 15px;
-        }
-        @media #{$sm} {
-            padding: 0;
-            background-color: transparent;
-            
-            .offcanvas__search {
-                position: relative;
-                margin-top: 0;
-            }
-        }
-
-        .shape {
-            &-1 {
-                position: absolute;
-                bottom: 0;
-                left: 125px;
-                @media #{$xxl} {
-                    left: 20px;
-                }
-                @media #{$xl} {
-                    left: 0;
-                }
-                @media #{$lg} {
-                    left: 0;
-                }
-                @media #{$md} {
-                    left: 0;
-                }
-                @media #{$sm} {
-                    display: none;
-                }
-            }
-            &-2 {
-                position: absolute;
-                bottom: 90px;
-                right: 110px;
-                @media #{$md} {
-                    right: 30px;
-                }
-                @media #{$sm} {
-                    display: none;
-                }
-            }
-        }
+      }
     }
-    
+  
     &__logo {
-        padding: 55px 0 55px 50px;
-        border-bottom: 1px solid var(--black-4);
-        
-        @media #{$xl} {
-            padding: 30px 0 30px 50px;
-        }
-        @media #{$lg} {
-            padding: 30px 0 30px 15px;
-        }
-        @media #{$md} {
-            padding: 30px 0 30px 15px;
-        }
-        @media #{$sm} {
-            padding: 30px 20px;
-            text-align: center;
-            border-bottom: 1px solid var(--black-4);
-        }
+      padding: 55px 0 55px 50px;
+      border-bottom: 1px solid var(--black-4);
+  
+      @media #{$xl} {
+        padding: 30px 0 30px 50px;
+      }
+  
+      @media #{$lg} {
+        padding: 30px 0 30px 15px;
+      }
+  
+      @media #{$md} {
+        padding: 30px 0 30px 15px;
+      }
     }
-
-    &__search {
-        padding-top: 190px;
-        padding-bottom: 30px;
-
-        @media #{$xl} {
-            padding-top: 140px;
-            padding-bottom: 30px;
-        }
-        @media #{$lg} {
-            padding-top: 140px;
-            padding-bottom: 30px;
-        }
-        @media #{$md} {
-            padding-top: 140px;
-            padding-bottom: 30px;
-        }
-        @media #{$sm} {
-            padding: 20px;
-            text-align: center;
-            border-bottom: 1px solid var(--black-4);
-        }
-
-        form {
-            position: relative;
-        }
-
-        input {
-            color: #585858;
-            font-size: 14px;
-            font-weight: 400;
-            width: 100%;
-            padding: 20px 45px 20px 20px;
-            border-radius: 30px;
-            border: 1px solid #3c3c3c;
-            background-color: transparent;
-            outline: none;
-
-            @media #{$md} {
-                padding: 15px 40px 15px 15px;
-            }
-
-            &::placeholder {
-                opacity: 1;
-                color: #585858;
-            }
-        }
-
-        button {
-            color: var(--white);
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 60px;
-            height: 100%;
-            border-radius: 0 100% 100% 0;
-        }
-    }
-
+  
     &__social {
+      padding-left: 50px;
+      padding-top: 220px;
+      border-bottom: 1px solid var(--black-4);
+  
+      @media #{$xl} {
         padding-left: 50px;
-        padding-top: 220px;
-        border-bottom: 1px solid var(--black-4);
-        
-        @media #{$xl} {
-            padding-left: 50px;
-            padding-top: 30px;
-        }
-        @media #{$lg} {
-            padding-left: 30px;
-            padding-top: 50px;
-        }
+        padding-top: 30px;
+      }
+  
+      @media #{$lg} {
+        padding-left: 30px;
+        padding-top: 50px;
+      }
+  
+      @media #{$md} {
+        padding-left: 15px;
+        padding-top: 50px;
+      }
+  
+      .social-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.5;
+        color: var(--white);
+        padding-bottom: 20px;
+  
         @media #{$md} {
-            padding-left: 15px;
-            padding-top: 50px;
+          font-size: 20px;
         }
-        @media #{$sm} {
-            padding: 20px;
-            text-align: center;
-            border-bottom: 1px solid var(--black-4);
-        }
-
-        .social-title {
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 1.5;
-            color: var(--white);
-            padding-bottom: 20px;
-            @media #{$md} {
-                font-size: 20px;
-            }
-        }
-
-        ul {
-            li {
-                padding-bottom: 2px;
-                @media #{$md} {
-                    padding-bottom: 5px;
-                }
-                a {
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 1.5;
-                    color: var(--white);
-                    &:hover {
-                        color: var(--gray-2);
-                    }
-                    @media #{$md} {
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-    }
-
-    &__links {
-        padding-left: 50px;
-        padding-top: 110px;
-
-        @media #{$xl} {
-            padding-left: 30px;
-            padding-top: 30px;
-        }
-        @media #{$lg} {
-            padding-left: 30px;
-            padding-top: 40px;
-        }
-        @media #{$md} {
-            padding-left: 15px;
-            padding-top: 40px;
-        }
-        @media #{$sm} {
-            padding: 20px;
-            text-align: center;
-        }
-
-        ul {
-            li {
-                padding-bottom: 2px;
-                a {
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 1.5;
-                    color: var(--white);
-                    &:hover {
-                        color: var(--gray-2);
-                    }
-                }
-            }
-        }
-    }
-
-    &__close {
-        position: absolute;
-        right: 40px;
-        top: 30px;
-        z-index: 1001;
-
-        @media #{$sm} {
-            position: fixed;
-            right: 15px;
-            top: 15px;
-        }
-
-        button {
-            font-size: 30px;
-            width: 60px;
-            height: 60px;
-            color: var(--white);
-            background: #232323;
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s;
-
-            &:hover {
-                color: var(--gray-2);
-            }
-
-            @media #{$sm} {
-                font-size: 24px;
-                width: 48px;
-                height: 48px;
-            }
-        }
-    }
-
-    &__contact {
-        @media #{$sm} {
-            text-align: center;
-            padding: 20px;
-            border-bottom: 1px solid var(--black-4);
-        }
-
-        h3 {
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 1.5;
-            color: var(--white);
-            padding-bottom: 20px;
-
-            @media #{$md} {
-                font-size: 20px;
-            }
-        }
-
+      }
+  
+      ul {
         li {
+          padding-bottom: 2px;
+  
+          @media #{$md} {
+            padding-bottom: 5px;
+          }
+  
+          a {
             font-weight: 400;
             font-size: 18px;
             line-height: 1.5;
             color: var(--white);
-            padding-bottom: 7px;
-            max-width: 260px;
-
+  
+            &:hover {
+              color: var(--gray-2);
+            }
+  
             @media #{$md} {
-                font-size: 16px;
+              font-size: 16px;
             }
-            @media #{$sm} {
-                max-width: 100%;
-            }
-
-            a {
-                color: var(--white);
-                &:hover {
-                    color: var(--gray-2);
-                }
-            }
+          }
         }
+      }
     }
-
-    &__menu {
+  
+    &__links {
+      padding-left: 50px;
+      padding-top: 110px;
+  
+      @media #{$xl} {
+        padding-left: 30px;
+        padding-top: 30px;
+      }
+  
+      @media #{$lg} {
+        padding-left: 30px;
+        padding-top: 40px;
+      }
+  
+      @media #{$md} {
+        padding-left: 15px;
+        padding-top: 40px;
+      }
+  
+      ul {
+        li {
+          padding-bottom: 2px;
+  
+          a {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.5;
+            color: var(--white);
+  
+            &:hover {
+              color: var(--gray-2);
+            }
+          }
+        }
+      }
+    }
+  
+    &__close {
+      position: absolute;
+      right: 40px;
+      top: 30px;
+  
+      @media #{$sm} {
+        right: 15px;
+        top: 15px;
+      }
+  
+      button {
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+        color: var(--white);
+        background: #232323;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+  
+        &:hover {
+          color: var(--gray-2);
+        }
+  
         @media #{$sm} {
-            ul.menu-anim {
-                padding: 0;
-                
-                li {
-                    text-align: center;
-                    padding: 10px 0;
-                    
-                    .header_title {
-                        justify-content: center;
-                    }
-                }
-            }
+          font-size: 24px;
+          width: 48px;
+          height: 48px;
         }
+      }
     }
-}
+  
+    &__search {
+      padding-top: 190px;
+      padding-bottom: 140px;
+  
+      @media #{$xl} {
+        padding-top: 140px;
+        padding-bottom: 60px;
+      }
+  
+      @media #{$lg} {
+        padding-top: 140px;
+        padding-bottom: 60px;
+      }
+  
+      @media #{$md} {
+        padding-top: 140px;
+        padding-bottom: 60px;
+      }
+  
+      form {
+        position: relative;
+      }
+  
+      input {
+        color: #585858;
+        font-size: 14px;
+        font-weight: 400;
+        width: 100%;
+        padding: 20px 45px 20px 20px;
+        border-radius: 30px;
+        border: 1px solid #3C3C3C;
+        background-color: transparent;
+        outline: none;
+  
+        @media #{$md} {
+          padding: 15px 40px 15px 15px;
+        }
+  
+        &::placeholder {
+          opacity: 1;
+          color: #585858;
+        }
+      }
+  
+      button {
+        color: var(--white);
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 60px;
+        height: 100%;
+        border-radius: 0 100% 100% 0;
+      }
+    }
+  
+    &__contact {
+      h3 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.5;
+        color: var(--white);
+        padding-bottom: 20px;
+  
+        @media #{$md} {
+          font-size: 20px;
+        }
+      }
+  
+      li {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5;
+        color: var(--white);
+        padding-bottom: 7px;
+        max-width: 260px;
+  
+        @media #{$md} {
+          font-size: 16px;
+        }
+  
+        a {
+          color: var(--white);
+  
+          &:hover {
+            color: var(--gray-2);
+          }
+        }
+      }
+    }
+  }

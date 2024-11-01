@@ -24,11 +24,11 @@ const ServiceV5 = () => {
 
 				<meta
 					name="description"
-					content="Khám phá dịch vụ của NPH Digital - Giải pháp kỹ thuật số toàn diện, bao gồm phát triển ứng dụng, thiết kế website, marketing số và nhiều hơn nữa."
+					content="Khám phá dịch vụ của NPH Digital - Giải pháp chuyển đổi số toàn diện, bao gồm phát triển ứng dụng, thiết kế website, marketing số và nhiều hơn nữa."
 				/>
 				<meta
 					name="keywords"
-					content="Dịch vụ NPH Digital, Giải pháp kỹ thuật số, Phát triển ứng dụng, Thiết kế website, Marketing số"
+					content="Dịch vụ NPH Digital, Giải pháp chuyển đổi số, Phát triển ứng dụng, Thiết kế website, Marketing số"
 				/>
 				<meta
 					name="author"
@@ -42,7 +42,7 @@ const ServiceV5 = () => {
 				/>
 				<meta
 					property="og:description"
-					content="Khám phá dịch vụ của NPH Digital - Giải pháp kỹ thuật số toàn diện, bao gồm phát triển ứng dụng, thiết kế website, marketing số và nhiều hơn nữa."
+					content="Khám phá dịch vụ của NPH Digital - Giải pháp chuyển đổi số toàn diện, bao gồm phát triển ứng dụng, thiết kế website, marketing số và nhiều hơn nữa."
 				/>
 				<meta
 					property="og:type"
@@ -76,7 +76,7 @@ const ServiceV5 = () => {
 				/>
 				<meta
 					name="twitter:description"
-					content="Khám phá dịch vụ của NPH Digital - Giải pháp kỹ thuật số toàn diện, bao gồm phát triển ứng dụng, thiết kế website, marketing số và nhiều hơn nữa."
+					content="Khám phá dịch vụ của NPH Digital - Giải pháp chuyển đổi số toàn diện, bao gồm phát triển ứng dụng, thiết kế website, marketing số và nhiều hơn nữa."
 				/>
 				<meta
 					name="twitter:image"
