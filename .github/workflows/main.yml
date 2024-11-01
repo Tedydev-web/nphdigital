@@ -17,7 +17,6 @@ jobs:
         port: 22
         script: |
           cd /var/www/nphdigital.com/nphcom
-          # Kiểm tra xem mật khẩu sudo có đúng không
           echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S -v
           if [ $? -eq 0 ]; then
             echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S git pull origin
