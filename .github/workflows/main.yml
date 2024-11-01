@@ -1,4 +1,4 @@
-name: Next Deployment
+name: NPH Digital Deplotment
 
 on:
   push:
@@ -17,7 +17,14 @@ jobs:
         port: 22
         script: |
           cd /var/www/nphdigital.com/nphcom
-          echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S git pull origin
-          echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S npm install
-          echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S npm run build
-          pm2 reload nphdigital
+          # Kiểm tra xem mật khẩu sudo có đúng không
+          echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S -v
+          if [ $? -eq 0 ]; then
+            echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S git pull origin
+            echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S npm install
+            echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S npm run build
+            pm2 reload nphdigital
+          else
+            echo "Mật khẩu sudo không chính xác."
+            exit 1
+          fi
