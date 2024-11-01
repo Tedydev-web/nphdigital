@@ -17,7 +17,7 @@ jobs:
         port: 22
         script: |
           cd /var/www/nphdigital.com/nphcom
-          sudo git pull origin
-          sudo npm install
-          sudo npm run build
+          echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S git pull origin
+          echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S npm install
+          echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S npm run build
           pm2 reload nphdigital
