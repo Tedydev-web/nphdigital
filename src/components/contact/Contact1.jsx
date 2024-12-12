@@ -99,7 +99,7 @@ const Contact1 = () => {
 								</h3>
 								<ul>
 									<li>
-										<a href="tel:+(2)578365379">(+84) 777 018 333</a>
+										<a href="tel:+(2)578365379">1900088883</a>
 									</li>
 									<li>
 										<a href="mailto:hi@nphdigital.com">hi@nphdigital.com</a>

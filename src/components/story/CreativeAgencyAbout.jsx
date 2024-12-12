@@ -14,66 +14,36 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 const CreativeAgencyAbout = () => {
 	const { t } = useTranslation('about');
 	const videoRef = useRef(null);
-	const [isPopupVisible, setIsPopupVisible] = useState(true); // Quản lý trạng thái popup
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let device_width = window.innerWidth;
 			let tHero = gsap.context(() => {
-				ScrollSmoother.create({
-					smooth: 1.35,
-					effects: device_width < 1025,
-					smoothTouch: false,
-					normalizeScroll: false,
-					ignoreMobileResize: true,
+					ScrollSmoother.create({
+						smooth: 1.35,
+						effects: device_width < 1025,
+						smoothTouch: false,
+						normalizeScroll: false,
+						ignoreMobileResize: true,
+					});
+					gsap.to('.about__img-2 img', {
+						scale: 1.15,
+						duration: 1,
+						scrollTrigger: {
+							trigger: '.about__img-2',
+							start: 'top bottom',
+							markers: false,
+							scrub: 1,
+							end: 'bottom center',
+						},
+					});
 				});
-				gsap.to('.about__img-2 img', {
-					scale: 1.15,
-					duration: 1,
-					scrollTrigger: {
-						trigger: '.about__img-2',
-						start: 'top bottom',
-						markers: false,
-						scrub: 1,
-						end: 'bottom center',
-					},
-				});
-			});
 			return () => tHero.revert();
 		}
 	}, []);
 
-	const handleUserInteraction = () => {
-		// Ẩn popup trước khi bắt đầu video
-		setIsPopupVisible(false);
-
-		// Chạy video sau 2 giây
-		setTimeout(() => {
-			if (videoRef.current) {
-				videoRef.current.muted = false; // Bỏ muted
-				videoRef.current.play(); // Bắt đầu chạy video
-			}
-		}, 2000);
-	};
-
 	return (
 		<>
-			{/* Popup */}
-			{isPopupVisible && (
-				<div
-					className="popup-overlay"
-					onClick={handleUserInteraction}>
-					<div className="popup-content">
-						<p style={{ color: '#e0fd60', fontSize: '22px' }}>{t('popup.line1')}</p>
-						<button
-							className="popup-button"
-							onClick={handleUserInteraction}>
-							{t('popup.line2')}
-						</button>
-					</div>
-				</div>
-			)}
-
 			<div className="video__area about__img-2">
 				<video
 					ref={videoRef}
@@ -169,40 +139,6 @@ const CreativeAgencyAbout = () => {
 					</Link>
 				</div>
 			</section>
-
-			{/* CSS Popup */}
-			<style jsx>{`
-				.popup-overlay {
-					position: fixed;
-					top: 0; /* Đặt ở vị trí trên cùng */
-					left: 0;
-					width: 100%;
-					height: 100%;
-					background-color: rgba(0, 0, 0, 0.8);
-					display: flex;
-					justify-content: center;
-					align-items: flex-start;
-					z-index: 9998;
-				}
-				.popup-content {
-					background-color: transparent;
-					padding: 20px;
-					border-radius: 10px;
-					text-align: center;
-					margin-top: 40vh;
-					width: 80%;
-				}
-
-				.popup-button {
-					margin-top: 10px;
-					padding: 10px 20px;
-					background-color: #e0fd60;
-					color: #333;
-					border: none;
-					border-radius: 5px;
-					cursor: pointer;
-				}
-			`}</style>
 		</>
 	);
 };
