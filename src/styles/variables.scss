@@ -1,0 +1,36 @@
+// Colors
+$primary-color: #2c6ef2;
+$secondary-color: #1d1d1d;
+$text-color: #1d1d1d;
+$background-color: #ffffff;
+
+// Typography
+$font-family-base: 'Sora', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// Spacing
+$spacing-unit: 8px;
+$container-padding: 15px;
+$section-padding: 80px;
+
+// Z-index
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;
+
+// Transitions
+$transition-base: all 0.3s ease-in-out;
+$transition-fade: opacity 0.15s linear;
+$transition-collapse: height 0.35s ease;

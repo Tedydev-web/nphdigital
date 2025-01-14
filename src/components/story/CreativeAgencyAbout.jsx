@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, forwardRef, useImperativeHandle } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger, ScrollSmoother, ScrollToPlugin } from '@/plugins';
 import Image from 'next/image';
@@ -11,33 +11,54 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
-const CreativeAgencyAbout = () => {
+const CreativeAgencyAbout = forwardRef((props, ref) => {
 	const { t } = useTranslation('about');
 	const videoRef = useRef(null);
+	const [isMuted, setIsMuted] = useState(true);
+
+	useImperativeHandle(ref, () => ({
+		unmuteVideo: () => {
+			if (videoRef.current) {
+				videoRef.current.muted = false;
+				setIsMuted(false);
+				// Đảm bảo video tiếp tục phát
+				videoRef.current.play().catch(error => {
+					console.log("Video playback failed:", error);
+				});
+			}
+		},
+		muteVideo: () => {
+			if (videoRef.current) {
+				videoRef.current.muted = true;
+				setIsMuted(true);
+			}
+		},
+		isVideoMuted: () => isMuted
+	}));
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			let device_width = window.innerWidth;
 			let tHero = gsap.context(() => {
-					ScrollSmoother.create({
-						smooth: 1.35,
-						effects: device_width < 1025,
-						smoothTouch: false,
-						normalizeScroll: false,
-						ignoreMobileResize: true,
-					});
-					gsap.to('.about__img-2 img', {
-						scale: 1.15,
-						duration: 1,
-						scrollTrigger: {
-							trigger: '.about__img-2',
-							start: 'top bottom',
-							markers: false,
-							scrub: 1,
-							end: 'bottom center',
-						},
-					});
+				ScrollSmoother.create({
+					smooth: 1.35,
+					effects: device_width < 1025,
+					smoothTouch: false,
+					normalizeScroll: false,
+					ignoreMobileResize: true,
 				});
+				gsap.to('.about__img-2 img', {
+					scale: 1.15,
+					duration: 1,
+					scrollTrigger: {
+						trigger: '.about__img-2',
+						start: 'top bottom',
+						markers: false,
+						scrub: 1,
+						end: 'bottom center',
+					},
+				});
+			});
 			return () => tHero.revert();
 		}
 	}, []);
@@ -51,8 +72,18 @@ const CreativeAgencyAbout = () => {
 					src="/assets/video/2.mp4"
 					playsInline
 					autoPlay
-					muted
+					loop
+					muted={isMuted}
 				/>
+				{isMuted && (
+					<button 
+						onClick={() => ref.current?.unmuteVideo()} 
+						className="unmute-button"
+						aria-label="Unmute video"
+					>
+						<i className="fa-solid fa-volume-xmark"></i>
+					</button>
+				)}
 			</div>
 
 			{/* Nội dung khác */}
@@ -141,6 +172,7 @@ const CreativeAgencyAbout = () => {
 			</section>
 		</>
 	);
-};
+});
 
+CreativeAgencyAbout.displayName = 'CreativeAgencyAbout';
 export default CreativeAgencyAbout;

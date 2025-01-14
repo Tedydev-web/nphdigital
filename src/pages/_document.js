@@ -3,7 +3,7 @@ import Script from 'next/script';
 
 export default function Document() {
 	return (
-		<Html lang="en">
+		<Html lang="vi">
 			<Head>
 				{/* Google Tag Manager */}
 				<Script
@@ -53,6 +53,47 @@ export default function Document() {
 					as="image"
 					type="image/png"
 				/>
+
+				{/* Preload fonts */}
+				<link
+					rel="preload"
+					href="/assets/fonts/your-main-font.woff2"
+					as="font"
+					type="font/woff2"
+					crossOrigin="anonymous"
+				/>
+
+				{/* Preconnect to critical origins */}
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
+				{/* Font loading optimization */}
+				<style dangerouslySetInnerHTML={{
+					__html: `
+						@font-face {
+							font-family: 'YourMainFont';
+							font-style: normal;
+							font-weight: 400;
+							font-display: swap;
+							src: url('/assets/fonts/your-main-font.woff2') format('woff2');
+						}
+					`
+				}} />
+
+				{/* Critical CSS */}
+				<style dangerouslySetInnerHTML={{
+					__html: `
+						.hero__title {
+							visibility: visible;
+							opacity: 1;
+							transform: none;
+						}
+					`
+				}} />
+
+				{/* Resource hints */}
+				<link rel="preload" as="style" href="/assets/scss/master.scss" />
+				<link rel="modulepreload" href="/_next/static/chunks/main.js" />
 			</Head>
 			<body>
 				{/* Google Tag Manager (noscript) */}

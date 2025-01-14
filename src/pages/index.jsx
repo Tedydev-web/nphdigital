@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef, useCallback, useState } from 'react';
 import RootLayout from '@/components/common/layout/RootLayout';
 import DigitalAgencyHero from '@/components/hero/DigitalAgencyHero';
 import DigitalAgencyRoll from '@/components/roll/DigitalAgencyRoll';
@@ -12,17 +12,31 @@ import DigitalAgencyPortfolio from '@/components/portfolio/DigitalAgencyPortfoli
 import DigitalAgencyBrand from '@/components/brand/DigitalAgencyBrand';
 import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
 import DigitalMarketingTestimonial from '@/components/testimonial/DigitalMarketingTestimonial';
-import gsap from 'gsap';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import { useLanguageManager } from '@/hooks/useLanguageManager';
 
-const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
 const DigitalAgency = () => {
 	const { t } = useTranslation('common');
 	const timelineRef = useRef(null);
 	const dotsRef = useRef([]);
 	const { currentLanguage } = useLanguageManager();
+	const [gsapInstance, setGsapInstance] = useState(null);
+
+	useEffect(() => {
+		// Load GSAP and ScrollTrigger
+		const loadGSAP = async () => {
+			const gsapModule = await import('gsap');
+			const ScrollTriggerModule = await import('gsap/ScrollTrigger');
+			const gsap = gsapModule.default;
+			gsap.registerPlugin(ScrollTriggerModule.default);
+			setGsapInstance(gsap);
+		};
+		loadGSAP();
+	}, []);
+
 	const setupScrollDots = useCallback(() => {
+		if (!gsapInstance) return;
+		
 		const dots = dotsRef.current;
 		const sections = document.querySelectorAll('section');
 
@@ -43,12 +57,13 @@ const DigitalAgency = () => {
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
 		};
-	}, []);
+	}, [gsapInstance]);
 
 	const setupTimeline = useCallback(() => {
+		if (!gsapInstance) return;
+		
 		const timeline = timelineRef.current;
-
-		gsap.to(timeline, {
+		gsapInstance.to(timeline, {
 			scrollTrigger: {
 				trigger: document.body,
 				start: 'top top',
@@ -60,51 +75,52 @@ const DigitalAgency = () => {
 				},
 			},
 		});
-	}, []);
+	}, [gsapInstance]);
 
 	const playCursor = useCallback(() => {
+		if (!gsapInstance) return;
+		
 		let client_cursor = document.getElementById('client_cursor');
+		if (!client_cursor) return;
 
 		const handleMouseMove = (e) => {
 			const target = e.target;
-			let tHero = gsap.context(() => {
-				let tl = gsap.timeline({
-					defaults: { x: e.clientX, y: e.clientY },
+			
+			if (target.closest('.testimonial__img')) {
+				gsapInstance.to(client_cursor, {
+					opacity: 1,
+					x: e.clientX,
+					y: e.clientY,
+					ease: 'power4.out',
 				});
-
-				let t2 = gsap.timeline({
-					defaults: { x: e.clientX, y: e.clientY },
+			} else {
+				gsapInstance.to(client_cursor, {
+					opacity: 0,
+					x: e.clientX,
+					y: e.clientY,
+					ease: 'power4.out',
 				});
-
-				if (target.closest('.testimonial__img')) {
-					tl.to(client_cursor, {
-						opacity: 1,
-						ease: 'power4.out',
-					});
-				} else {
-					t2.to(client_cursor, {
-						opacity: 0,
-						ease: 'power4.out',
-					});
-				}
-			});
-
-			return () => tHero.revert();
+			}
 		};
 
 		document.addEventListener('mousemove', handleMouseMove);
 		return () => {
 			document.removeEventListener('mousemove', handleMouseMove);
 		};
-	}, []);
+	}, [gsapInstance]);
 
 	useEffect(() => {
-		if (typeof window !== 'undefined') {
-			playCursor();
+		if (typeof window !== 'undefined' && gsapInstance) {
+			const cursorCleanup = playCursor();
 			setupTimeline();
-			setupScrollDots();
+			const dotsCleanup = setupScrollDots();
+
+			return () => {
+				cursorCleanup && cursorCleanup();
+				dotsCleanup && dotsCleanup();
+			};
 		}
-	}, [playCursor, setupTimeline, setupScrollDots]);
+	}, [playCursor, setupTimeline, setupScrollDots, gsapInstance]);
 
 	const highlightDot = (index) => {
 		if (dotsRef.current[index]) {

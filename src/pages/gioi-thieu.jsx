@@ -9,33 +9,33 @@ import AboutTestimonial from '@/components/testimonial/AboutTestimonial';
 import Head from 'next/head';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 const About = () => {
+	const creativeAgencyAboutRef = useRef(null);
+
 	const notify = () => {
 		const toastId = toast.info('Nhấn vào đây để bật âm thanh video!', {
 			onClick: () => {
-				// Gọi hàm unmuteVideo từ CreativeAgencyAbout
-				const videoElement = document.querySelector('.video__area video');
-				if (videoElement) {
-					videoElement.muted = false; // Bỏ muted
-					videoElement.play(); // Bắt đầu chạy video
-
-					// Cập nhật thông báo toast.info thành toast.success
+				if (creativeAgencyAboutRef.current) {
+					creativeAgencyAboutRef.current.unmuteVideo();
+					
 					toast.update(toastId, {
 						render: 'Video đã được bật tiếng!',
 						type: 'success',
-						autoClose: 3000, // Tự động ẩn sau 3 giây
+						autoClose: 3000,
 						isLoading: false,
 					});
 				}
 			},
-			autoClose: false, // Không tự động ẩn
+			autoClose: false,
+			closeOnClick: false,
+			closeButton: true,
 		});
 	};
 
 	useEffect(() => {
-		notify(); // Hiển thị thông báo khi người dùng truy cập
+		notify();
 	}, []);
 
 	return (
@@ -217,7 +217,7 @@ const About = () => {
 					header="header3"
 					footer="footer3">
 					<ModernAgencySingleImage />
-					<CreativeAgencyAbout />
+					<CreativeAgencyAbout ref={creativeAgencyAboutRef} />
 					<AboutCounter />
 					{/* <AboutTeam /> */}
 					<DigitalAgencyBrand />

@@ -1,45 +1,87 @@
+import { useEffect, useState, Suspense } from 'react';
+import { useRouter } from 'next/router';
+import { appWithTranslation } from 'next-i18next';
+import { useResourcePreload } from '@/hooks/usePerformance';
+import dynamic from 'next/dynamic';
+
+// Styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../public/assets/scss/master.scss';
 import '@/styles/extra.css';
-import '@fortawesome/fontawesome-svg-core/styles.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import { config } from '@fortawesome/fontawesome-svg-core';
-config.autoAddCss = false;
+// Dynamic imports with loading optimization
+const FontAwesomeConfig = dynamic(() => import('@/components/FontAwesomeConfig'), {
+	ssr: false,
+	loading: () => null
+});
 
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
+const Preloader = dynamic(() => import('@/components/preloader/Preloader'), {
+	ssr: false,
+	loading: () => null
+});
 
 function App({ Component, pageProps }) {
 	const router = useRouter();
+	const [mounted, setMounted] = useState(false);
+	const [isRouteChanging, setIsRouteChanging] = useState(false);
+	
+	// Preload critical resources
+	useResourcePreload();
 
 	useEffect(() => {
-		// Khởi tạo dataLayer nếu chưa tồn tại
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			window.dataLayer.push(arguments);
-		}
-		window.gtag = gtag;
+		setMounted(true);
+	}, []);
 
-		// Cấu hình Google Analytics
-		gtag('js', new Date());
-		gtag('config', process.env.NEXT_PUBLIC_GA_ID);
+	useEffect(() => {
+		// Route change optimization
+		const handleStart = () => setIsRouteChanging(true);
+		const handleComplete = () => setIsRouteChanging(false);
 
-		// Hàm xử lý sự kiện thay đổi route
-		const handleRouteChange = (url) => {
-			window.gtag('config', process.env.NEXT_PUBLIC_GA_ID, {
-				page_path: url,
+		router.events.on('routeChangeStart', handleStart);
+		router.events.on('routeChangeComplete', handleComplete);
+		router.events.on('routeChangeError', handleComplete);
+
+		// Lazy load Google Analytics
+		const loadGA = () => {
+			window.requestIdleCallback(() => {
+				const script = document.createElement('script');
+				script.src = `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`;
+				script.async = true;
+				document.head.appendChild(script);
+
+				script.onload = () => {
+					window.dataLayer = window.dataLayer || [];
+					function gtag() {
+						window.dataLayer.push(arguments);
+					}
+					window.gtag = gtag;
+					gtag('js', new Date());
+					gtag('config', process.env.NEXT_PUBLIC_GA_ID);
+				};
 			});
 		};
 
-		// Lắng nghe sự kiện thay đổi route
-		router.events.on('routeChangeComplete', handleRouteChange);
-		return () => {
-			router.events.off('routeChangeComplete', handleRouteChange);
-		};
-	}, [router.events]);
+		if (process.env.NODE_ENV === 'production') {
+			loadGA();
+		}
 
-	return <Component {...pageProps} />;
+		return () => {
+			router.events.off('routeChangeStart', handleStart);
+			router.events.off('routeChangeComplete', handleComplete);
+			router.events.off('routeChangeError', handleComplete);
+		};
+	}, [router]);
+
+	if (!mounted) {
+		return <Preloader />;
+	}
+
+	return (
+		<Suspense fallback={<Preloader />}>
+			{!isRouteChanging && <FontAwesomeConfig />}
+			<Component {...pageProps} />
+		</Suspense>
+	);
 }
 
-export default App;
+export default appWithTranslation(App);
