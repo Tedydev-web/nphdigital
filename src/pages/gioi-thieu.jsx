@@ -245,39 +245,49 @@ const About = () => {
 					padding: 0;
 					width: auto !important;
 					max-width: 90vw;
+					z-index: 9999;
 				}
 
 				/* Màn hình lớn (desktop) */
 				@media (min-width: 1024px) {
 					.Toastify__toast-container {
-						max-width: 420px;
+						max-width: 480px;
+						min-width: 380px;
 					}
 
 					.Toastify__toast {
 						font-size: 0.95rem;
-						padding: 1rem;
+						padding: 0.75rem 1rem;
 						margin-bottom: 1rem;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
 					}
 				}
 
 				/* Tablet */
 				@media (max-width: 1023px) and (min-width: 768px) {
 					.Toastify__toast-container {
-						max-width: 360px;
+						max-width: 420px;
+						min-width: 340px;
 					}
 
 					.Toastify__toast {
 						font-size: 0.9rem;
-						padding: 0.875rem;
+						padding: 0.75rem;
 						margin-bottom: 0.875rem;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
 					}
 				}
 
 				/* Mobile */
 				@media (max-width: 767px) {
 					.Toastify__toast-container {
-						max-width: calc(100vw - 32px);
-						padding: 0 16px;
+						max-width: 92vw;
+						min-width: 280px;
+						padding: 0 8px;
 						left: 50% !important;
 						transform: translateX(-50%);
 						bottom: 16px !important;
@@ -285,9 +295,12 @@ const About = () => {
 
 					.Toastify__toast {
 						font-size: 0.85rem;
-						padding: 0.75rem;
+						padding: 0.625rem 0.75rem;
 						margin-bottom: 0.75rem;
 						min-height: auto;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
 					}
 
 					/* Ẩn nút đóng trên mobile để tiết kiệm không gian */
@@ -298,100 +311,66 @@ const About = () => {
 
 				/* CSS chung cho toast */
 				.Toastify__toast {
-					background: rgba(18, 18, 18, 0.6);
+					background: rgba(18, 18, 18, 0.8);
 					backdrop-filter: blur(12px);
 					-webkit-backdrop-filter: blur(12px);
-					border-radius: 16px;
+					border-radius: 12px;
 					cursor: pointer;
 					transition: all 0.3s ease;
 					position: relative;
 					padding: 2px;
 					border: 1px solid rgba(255, 255, 255, 0.1);
-					box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 255, 255, 0.05), 0 0 40px rgba(0, 255, 255, 0.03), 0 0 60px rgba(0, 255, 255, 0.01);
+					box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.2);
+					display: flex;
+					align-items: center;
 				}
 
-				/* Tạo background gradient cho toast */
-				.Toastify__toast::before {
-					content: '';
-					position: absolute;
-					inset: -1px;
-					background: linear-gradient(90deg, #3b82f6, #10b981, #6366f1, #8b5cf6, #ec4899);
-					border-radius: 16px;
-					z-index: -1;
-					opacity: 0;
-					transition: opacity 0.3s ease;
-				}
-
-				/* Tạo inner background để che phần gradient ở giữa */
-				.Toastify__toast::after {
-					content: '';
-					position: absolute;
-					inset: 1px;
-					background: rgba(18, 18, 18, 0.9);
-					border-radius: 15px;
-					z-index: -1;
-					box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.05);
-				}
-
-				/* Animation khi hover */
-				.Toastify__toast:hover {
-					transform: translateY(-2px);
-					border-color: transparent;
-					box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 255, 255, 0.07), 0 0 50px rgba(0, 255, 255, 0.05);
-				}
-
-				.Toastify__toast:hover::before {
-					opacity: 1;
-					animation: borderAnimation 3s linear infinite;
-				}
-
-				@keyframes borderAnimation {
-					0% {
-						background-position: 0% 50%;
-					}
-					100% {
-						background-position: 130% 50%;
-					}
+				.Toastify__toast-body {
+					flex: 1;
+					padding: 4px 8px;
+					min-width: 0; /* Cho phép text-overflow hoạt động */
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
 				}
 
 				/* Tùy chỉnh nội dung toast */
 				.Toastify__toast-body {
-					font-family: 'SF Pro Display', sans-serif;
+					font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
 					color: rgba(255, 255, 255, 0.95);
-					line-height: 1.5;
-					padding: 8px;
+					line-height: 1.4;
 					margin: 0;
 					text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 				}
 
 				/* Tùy chỉnh thanh progress */
 				.Toastify__progress-bar {
-					background: linear-gradient(to right, rgba(59, 130, 246, 0.7), rgba(16, 185, 129, 0.7));
-					height: 3px;
-					backdrop-filter: blur(8px);
+					background: linear-gradient(to right, #3b82f6, #10b981);
+					height: 2px;
+					opacity: 0.8;
 				}
 
-				/* Hiệu ứng pulse nhẹ cho toast mới */
-				@keyframes softPulse {
-					0% {
-						box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.2);
+				/* Hiệu ứng khi toast xuất hiện */
+				@keyframes toastSlideUp {
+					from {
+						transform: translateY(100%);
+						opacity: 0;
 					}
-					70% {
-						box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
-					}
-					100% {
-						box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+					to {
+						transform: translateY(0);
+						opacity: 1;
 					}
 				}
 
 				.Toastify__toast--entering {
-					animation: toastSlideIn 0.3s ease forwards, softPulse 2s infinite;
+					animation: toastSlideUp 0.3s ease forwards;
 				}
 
 				/* Tối ưu hiệu năng */
 				.Toastify__toast {
 					will-change: transform;
 					backface-visibility: hidden;
+					-webkit-font-smoothing: antialiased;
 				}
 			`}</style>
 			<style jsx>{`
