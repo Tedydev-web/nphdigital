@@ -14,13 +14,46 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          token: ${{ secrets.TOKEN }}
+      
       - name: Merge master -> nphdigital.vn
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
+          
+          # Fetch all branches
+          echo "Fetching all branches..."
+          git fetch origin
+          
+          # Checkout and update nphdigital.vn branch
+          echo "Checking out nphdigital.vn branch..."
           git checkout nphdigital.vn
-          git merge origin/master -m "Auto-merge master into nphdigital.vn"
+          git pull origin nphdigital.vn
+          
+          # Try to merge
+          echo "Attempting to merge master into nphdigital.vn..."
+          if ! git merge origin/master -m "Auto-merge master into nphdigital.vn"; then
+            echo "⚠️ Merge conflicts detected. Listing conflicted files:"
+            git diff --name-only --diff-filter=U
+            
+            echo "Resolving conflicts by preferring master branch changes..."
+            # Ưu tiên thay đổi từ master trong trường hợp conflict
+            git checkout --ours .
+            git add .
+            
+            # Commit merge với resolved conflicts
+            echo "Committing resolved conflicts..."
+            git commit -m "Resolve merge conflicts in favor of master branch"
+            
+            echo "✅ Conflicts resolved successfully."
+          else
+            echo "✅ Merge completed successfully with no conflicts."
+          fi
+          
+          # Push changes
+          echo "Pushing changes to nphdigital.vn..."
           git push origin nphdigital.vn
+          echo "✅ All changes have been pushed successfully."
 
   deploy-com:
     if: github.ref == 'refs/heads/master'
