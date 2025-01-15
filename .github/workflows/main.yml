@@ -16,10 +16,10 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: 22
         script: |
-          cd /var/www/nphdigital.com/nphcom
+          cd /var/www/nphdigital/nphdigital.com/nphdigital
           echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S -v
           if [ $? -eq 0 ]; then
-            echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S git pull origin
+            echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S git pull origin master
             # echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S npm install
             echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S npm run build
             pm2 reload nphdigital
