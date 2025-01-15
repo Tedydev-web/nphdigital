@@ -85,7 +85,7 @@ export default function Header3() {
 					</div>
 					<div className="header__support">
 						<p>
-							{t('header.support')} <a href="tel:0777018333">0777 018 333</a>
+							{t('header.support')} <a href="tel:0777018333">1900088883</a>
 						</p>
 					</div>
 				</div>
