@@ -50,7 +50,7 @@ const ServiceDetails = () => {
 				/>
 				<meta
 					property="og:url"
-					content="https://nphdigital.com/thiet-ke-website"
+					content="https://nphdigital.vn/thiet-ke-website"
 				/>
 				<meta
 					property="og:image"
@@ -88,7 +88,7 @@ const ServiceDetails = () => {
 				{/* Canonical URL */}
 				<link
 					rel="canonical"
-					href="https://nphdigital.com/thiet-ke-website"
+					href="https://nphdigital.vn/thiet-ke-website"
 				/>
 
 				{/* Favicon */}
@@ -144,7 +144,7 @@ const ServiceDetails = () => {
 							'@context': 'http://schema.org',
 							'@type': 'Organization',
 							name: 'NPH Digital',
-							url: 'https://nphdigital.com',
+							url: 'https://nphdigital.vn',
 							logo: 'https://res.cloudinary.com/tedydev/image/upload/nphdigital/logo.png',
 							sameAs: ['https://www.facebook.com/nphdigital838', 'https://twitter.com/NPHDigital'],
 						}),

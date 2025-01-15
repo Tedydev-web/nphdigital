@@ -45,7 +45,7 @@ const Contact = () => {
 				/>
 				<meta
 					property="og:url"
-					content="https://nphdigital.com/lien-he"
+					content="https://nphdigital.vn/lien-he"
 				/>
 				<meta
 					property="og:image"
@@ -95,7 +95,7 @@ const Contact = () => {
 				{/* Canonical URL */}
 				<link
 					rel="canonical"
-					href="https://nphdigital.com/lien-he"
+					href="https://nphdigital.vn/lien-he"
 				/>
 
 				{/* Favicon */}
@@ -158,7 +158,7 @@ const Contact = () => {
 							'@context': 'http://schema.org',
 							'@type': 'Organization',
 							name: 'NPH Digital',
-							url: 'https://nphdigital.com',
+							url: 'https://nphdigital.vn',
 							logo: 'https://res.cloudinary.com/tedydev/image/upload/nphdigital/logo.png',
 							sameAs: ['https://www.facebook.com/nphdigital838', 'https://twitter.com/NPHDigital'],
 						}),

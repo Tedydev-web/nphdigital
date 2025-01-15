@@ -50,7 +50,7 @@ const ServiceV5 = () => {
 				/>
 				<meta
 					property="og:url"
-					content="https://nphdigital.com/dich-vu"
+					content="https://nphdigital.vn/dich-vu"
 				/>
 				<meta
 					property="og:image"
@@ -100,7 +100,7 @@ const ServiceV5 = () => {
 				{/* Canonical URL */}
 				<link
 					rel="canonical"
-					href="https://nphdigital.com/dich-vu"
+					href="https://nphdigital.vn/dich-vu"
 				/>
 
 				{/* Favicon */}
@@ -163,7 +163,7 @@ const ServiceV5 = () => {
 							'@context': 'http://schema.org',
 							'@type': 'Organization',
 							name: 'NPH Digital',
-							url: 'https://nphdigital.com',
+							url: 'https://nphdigital.vn',
 							logo: 'https://res.cloudinary.com/tedydev/image/upload/nphdigital/logo.png',
 							sameAs: ['https://www.facebook.com/nphdigital838', 'https://twitter.com/NPHDigital'],
 						}),

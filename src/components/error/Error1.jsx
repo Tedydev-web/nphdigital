@@ -21,7 +21,7 @@ const Error1 = () => {
 								<p>{"The page you are looking for doesn't exist or has been moved"}</p>
 								<div className="btn_wrapper">
 									<Link
-										href="https://nphdigital.com/"
+										href="https://nphdigital.vn/"
 										className="wc-btn-primary btn-hover btn-item">
 										<span></span> Back to <br />
 										Homepage <i className="fa-solid fa-arrow-right"></i>

@@ -62,7 +62,7 @@ const BlogDetails = () => {
 				/>
 				<meta
 					property="og:url"
-					content="https://nphdigital.com/chi-tiet-bai-viet"
+					content="https://nphdigital.vn/chi-tiet-bai-viet"
 				/>
 				<meta
 					property="og:image"
@@ -112,7 +112,7 @@ const BlogDetails = () => {
 				{/* URL Canonical */}
 				<link
 					rel="canonical"
-					href="https://nphdigital.com/chi-tiet-bai-viet"
+					href="https://nphdigital.vn/chi-tiet-bai-viet"
 				/>
 
 				{/* Favicon */}
@@ -172,9 +172,9 @@ const BlogDetails = () => {
 							author: {
 								'@type': 'Organization',
 								name: 'NPH Digital',
-								url: 'https://nphdigital.com',
+								url: 'https://nphdigital.vn',
 							},
-							url: 'https://nphdigital.com/chi-tiet-bai-viet-2',
+							url: 'https://nphdigital.vn/chi-tiet-bai-viet-2',
 							image: 'https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png',
 							datePublished: '2024-10-16', // Cập nhật theo ngày bạn xuất bản bài viết
 							dateModified: '2024-10-16', // Cập nhật theo ngày bạn chỉnh sửa bài viết

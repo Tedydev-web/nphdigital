@@ -51,7 +51,7 @@ export default function Header3() {
 				ref={headerArea}>
 				<div className="header__inner">
 					<div className="header__logo">
-						<Link href="https://nphdigital.com/">
+						<Link href="https://nphdigital.vn/">
 							<Image
 								priority
 								width={50}

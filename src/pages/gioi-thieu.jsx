@@ -81,7 +81,7 @@ const About = () => {
 				/>
 				<meta
 					property="og:url"
-					content="https://nphdigital.com/gioi-thieu"
+					content="https://nphdigital.vn/gioi-thieu"
 				/>
 				<meta
 					property="og:image"
@@ -139,7 +139,7 @@ const About = () => {
 				{/* Canonical URL */}
 				<link
 					rel="canonical"
-					href="https://nphdigital.com/gioi-thieu"
+					href="https://nphdigital.vn/gioi-thieu"
 				/>
 
 				{/* Favicon */}
@@ -204,7 +204,7 @@ const About = () => {
 							'@context': 'http://schema.org',
 							'@type': 'Organization',
 							name: 'NPH Digital',
-							url: 'https://nphdigital.com',
+							url: 'https://nphdigital.vn',
 							logo: 'https://res.cloudinary.com/tedydev/image/upload/nphdigital/logo.png',
 							sameAs: ['https://www.facebook.com/nphdigital838', 'https://twitter.com/NPHDigital'],
 						}),

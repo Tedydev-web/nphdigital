@@ -180,7 +180,7 @@ const DigitalAgency = () => {
 							'@context': 'http://schema.org',
 							'@type': 'Organization',
 							name: 'NPH Digital',
-							url: 'https://nphdigital.com',
+							url: 'https://nphdigital.vn',
 							logo: 'https://res.cloudinary.com/tedydev/image/upload/nphdigital/logo.png',
 							sameAs: ['https://www.facebook.com/nphdigital838', 'https://twitter.com/NPHDigital'],
 							address: {
@@ -228,7 +228,7 @@ const DigitalAgency = () => {
 				/>
 				<meta
 					property="og:url"
-					content="https://nphdigital.com/"
+					content="https://nphdigital.vn/"
 				/>
 				<meta
 					property="og:image"
@@ -311,7 +311,7 @@ const DigitalAgency = () => {
 				{/* Canonical URL */}
 				<link
 					rel="canonical"
-					href="https://nphdigital.com/"
+					href="https://nphdigital.vn/"
 				/>
 
 				{/* Favicon */}
@@ -377,7 +377,7 @@ const DigitalAgency = () => {
 							'@context': 'http://schema.org',
 							'@type': 'Organization',
 							name: 'NPH Digital',
-							url: 'https://nphdigital.com',
+							url: 'https://nphdigital.vn',
 							logo: 'https://res.cloudinary.com/tedydev/image/upload/nphdigital/logo.png',
 							sameAs: ['https://www.facebook.com/nphdigital838', 'https://twitter.com/NPHDigital'],
 						}),

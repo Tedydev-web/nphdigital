@@ -47,7 +47,7 @@ const Blog = () => {
 				/>
 				<meta
 					property="og:url"
-					content="https://nphdigital.com/bai-viet"
+					content="https://nphdigital.vn/bai-viet"
 				/>
 				<meta
 					property="og:image"
@@ -97,7 +97,7 @@ const Blog = () => {
 				{/* Canonical URL */}
 				<link
 					rel="canonical"
-					href="https://nphdigital.com/bai-viet"
+					href="https://nphdigital.vn/bai-viet"
 				/>
 
 				{/* Favicon */}
@@ -160,7 +160,7 @@ const Blog = () => {
 							'@context': 'http://schema.org',
 							'@type': 'WebPage',
 							name: 'Bài viết | NPH Digital',
-							url: 'https://nphdigital.com/bai-viet',
+							url: 'https://nphdigital.vn/bai-viet',
 							description: 'Đọc những bài viết mới nhất từ NPH Digital về các giải pháp chuyển đổi số, xu hướng công nghệ, và mẹo hữu ích trong ngành.',
 						}),
 					}}

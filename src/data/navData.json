@@ -2,7 +2,7 @@
 	"nav": [
 		{
 			"nav_name": "Home",
-			"link": "https://nphdigital.com/",
+			"link": "https://nphdigital.vn/",
 			"type": "megamenu",
 			"full_width": false,
 			"sub_nav": [
@@ -11,7 +11,7 @@
 					"data": [
 						{
 							"name": "Digital Marketing",
-							"link": "https://nphdigital.com/"
+							"link": "https://nphdigital.vn/"
 						},
 						{
 							"name": "Design Studio",
@@ -19,7 +19,7 @@
 						},
 						{
 							"name": "NPH Digital",
-							"link": "https://nphdigital.com/"
+							"link": "https://nphdigital.vn/"
 						},
 						{
 							"name": "Creative Agency",
@@ -44,7 +44,7 @@
 					"data": [
 						{
 							"name": "Digital Marketing",
-							"link": "https://nphdigital.com/-dark"
+							"link": "https://nphdigital.vn/-dark"
 						},
 						{
 							"name": "Design Studio",
@@ -52,7 +52,7 @@
 						},
 						{
 							"name": "NPH Digital",
-							"link": "https://nphdigital.com/-dark"
+							"link": "https://nphdigital.vn/-dark"
 						},
 						{
 							"name": "Creative Agency",

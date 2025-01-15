@@ -8,7 +8,7 @@ export default function LogoItem() {
 		<>
 			<div className="header__logo-2">
 				<Link
-					href={'https://nphdigital.com/'}
+					href={'https://nphdigital.vn/'}
 					className="logo-dark">
 					<Image
 						priority
@@ -19,7 +19,7 @@ export default function LogoItem() {
 					/>
 				</Link>
 				<Link
-					href={'https://nphdigital.com/'}
+					href={'https://nphdigital.vn/'}
 					className="logo-light">
 					<Image
 						priority

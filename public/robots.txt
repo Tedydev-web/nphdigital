@@ -1,6 +1,6 @@
 # NPH Digital - Robots.txt Configuration
 # Updated: 2024-04-27
-# Website: https://nphdigital.com
+# Website: https://nphdigital.vn
 
 # Cho phép tất cả các robot
 User-agent: *
@@ -73,10 +73,10 @@ Disallow: /archive
 Crawl-delay: 10
 
 # Sitemap
-Sitemap: https://nphdigital.com/sitemap.xml
+Sitemap: https://nphdigital.vn/sitemap.xml
 
 # Host chính
-Host: https://nphdigital.com
+Host: https://nphdigital.vn
 
 # Các quy tắc cho bot cụ thể
 User-agent: Googlebot

@@ -46,7 +46,7 @@ export default function Header5() {
 				<div className="header__inner-5">
 					<div className="header__logo-5">
 						<Link
-							href="https://nphdigital.com/"
+							href="https://nphdigital.vn/"
 							className="logo-dark">
 							<Image
 								priority
@@ -57,7 +57,7 @@ export default function Header5() {
 							/>
 						</Link>
 						<Link
-							href="https://nphdigital.com/"
+							href="https://nphdigital.vn/"
 							className="logo-light">
 							<Image
 								priority

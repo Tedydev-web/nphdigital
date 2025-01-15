@@ -75,7 +75,7 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 		const currentPath = router.asPath;
 
 		// Chuẩn hóa href (bỏ domain nếu có)
-		const normalizedHref = href.replace('https://nphdigital.com', '');
+		const normalizedHref = href.replace('https://nphdigital.vn', '');
 
 		// Nếu đang ở trang hiện tại
 		if (currentPath === normalizedHref || (currentPath === '/' && normalizedHref === '/')) {
@@ -92,7 +92,7 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 				<div className="offcanvas__body">
 					<div className="offcanvas__left">
 						<div className="offcanvas__logo">
-							<Link href="https://nphdigital.com/">
+							<Link href="https://nphdigital.vn/">
 								<Image
 									priority
 									style={{ width: '200px', height: 'auto' }}
@@ -125,8 +125,8 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 									<li>
 										<div className="header_title">
 											<Link
-												href={'https://nphdigital.com/'}
-												onClick={(e) => handleLinkClick(e, 'https://nphdigital.com/')}>
+												href={'https://nphdigital.vn/'}
+												onClick={(e) => handleLinkClick(e, 'https://nphdigital.vn/')}>
 												{t('canvas.menu.home')}
 											</Link>
 										</div>
