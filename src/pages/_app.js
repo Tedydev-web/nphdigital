@@ -14,7 +14,7 @@ import '@/styles/extra.css';
 class ErrorBoundary extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { hasError: false, error: null };
+		this.state = { hasError: false, error: null, errorInfo: null };
 	}
 
 	static getDerivedStateFromError(error) {
@@ -23,23 +23,61 @@ class ErrorBoundary extends React.Component {
 
 	componentDidCatch(error, errorInfo) {
 		console.error('Error caught by boundary:', error, errorInfo);
+		this.setState({
+			errorInfo: errorInfo
+		});
 	}
 
 	render() {
 		if (this.state.hasError) {
 			return (
-				<div style={{ padding: '20px', textAlign: 'center' }}>
-					<h2>Đã có lỗi xảy ra</h2>
-					<p>Vui lòng tải lại trang hoặc thử lại sau.</p>
+				<div style={{ 
+					padding: '20px', 
+					textAlign: 'center',
+					position: 'fixed',
+					top: '50%',
+					left: '50%',
+					transform: 'translate(-50%, -50%)',
+					width: '90%',
+					maxWidth: '400px',
+					background: '#fff',
+					boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+					borderRadius: '8px'
+				}}>
+					<h2 style={{ marginBottom: '15px', color: '#333' }}>Đã có lỗi xảy ra</h2>
+					<p style={{ marginBottom: '20px', color: '#666' }}>Vui lòng tải lại trang hoặc thử lại sau.</p>
+					{process.env.NODE_ENV === 'development' && this.state.error && (
+						<details style={{ 
+							marginBottom: '20px', 
+							textAlign: 'left',
+							padding: '10px',
+							background: '#f5f5f5',
+							borderRadius: '4px'
+						}}>
+							<summary style={{ cursor: 'pointer', color: '#007bff' }}>Chi tiết lỗi</summary>
+							<pre style={{ 
+								marginTop: '10px',
+								whiteSpace: 'pre-wrap',
+								fontSize: '12px',
+								color: '#666'
+							}}>
+								{this.state.error.toString()}
+								{this.state.errorInfo && this.state.errorInfo.componentStack}
+							</pre>
+						</details>
+					)}
 					<button 
 						onClick={() => window.location.reload()}
 						style={{
-							padding: '10px 20px',
+							padding: '12px 24px',
 							border: 'none',
 							borderRadius: '5px',
 							background: '#007bff',
 							color: 'white',
-							cursor: 'pointer'
+							cursor: 'pointer',
+							fontSize: '16px',
+							fontWeight: '500',
+							boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
 						}}
 					>
 						Tải lại trang
@@ -72,7 +110,17 @@ function App({ Component, pageProps }) {
 	useResourcePreload();
 
 	useEffect(() => {
+		// Handle mobile viewport height
+		const setVH = () => {
+			let vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+		};
+
+		setVH();
+		window.addEventListener('resize', setVH);
 		setMounted(true);
+
+		return () => window.removeEventListener('resize', setVH);
 	}, []);
 
 	useEffect(() => {
@@ -86,22 +134,42 @@ function App({ Component, pageProps }) {
 
 		// Lazy load Google Analytics
 		const loadGA = () => {
-			window.requestIdleCallback(() => {
-				const script = document.createElement('script');
-				script.src = `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`;
-				script.async = true;
-				document.head.appendChild(script);
+			if ('requestIdleCallback' in window) {
+				window.requestIdleCallback(() => {
+					const script = document.createElement('script');
+					script.src = `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`;
+					script.async = true;
+					document.head.appendChild(script);
 
-				script.onload = () => {
-					window.dataLayer = window.dataLayer || [];
-					function gtag() {
-						window.dataLayer.push(arguments);
-					}
-					window.gtag = gtag;
-					gtag('js', new Date());
-					gtag('config', process.env.NEXT_PUBLIC_GA_ID);
-				};
-			});
+					script.onload = () => {
+						window.dataLayer = window.dataLayer || [];
+						function gtag() {
+							window.dataLayer.push(arguments);
+						}
+						window.gtag = gtag;
+						gtag('js', new Date());
+						gtag('config', process.env.NEXT_PUBLIC_GA_ID);
+					};
+				});
+			} else {
+				// Fallback for browsers that don't support requestIdleCallback
+				setTimeout(() => {
+					const script = document.createElement('script');
+					script.src = `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`;
+					script.async = true;
+					document.head.appendChild(script);
+
+					script.onload = () => {
+						window.dataLayer = window.dataLayer || [];
+						function gtag() {
+							window.dataLayer.push(arguments);
+						}
+						window.gtag = gtag;
+						gtag('js', new Date());
+						gtag('config', process.env.NEXT_PUBLIC_GA_ID);
+					};
+				}, 1);
+			}
 		};
 
 		if (process.env.NODE_ENV === 'production') {

@@ -5,6 +5,7 @@ const { i18n } = require('./next-i18next.config');
 const nextConfig = {
 	i18n,
 	reactStrictMode: true,
+	poweredByHeader: false,
 	sassOptions: {
 		includePaths: [path.join(__dirname, 'src/styles'), path.join(__dirname, 'public/assets/scss')],
 	},
@@ -48,10 +49,13 @@ const nextConfig = {
 	optimizeFonts: true,
 	swcMinify: true,
 	compiler: {
-		removeConsole: process.env.NODE_ENV === 'production',
+		removeConsole: process.env.NODE_ENV === 'production' ? {
+			exclude: ['error', 'warn'],
+		} : false,
 	},
 	experimental: {
-		optimizeCss: true
+		optimizeCss: true,
+		scrollRestoration: true
 	}
 }
 
