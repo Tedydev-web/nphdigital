@@ -179,7 +179,7 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 							<h3>{t('canvas.contact.title')}</h3>
 							<ul>
 								<li>
-									<a href="tel:02094980547">+(84) - 0777 018 333</a>
+									<a href="tel:02094980547">+(84) - 1900088883</a>
 								</li>
 								<li>
 									<a href="mailto:info@extradesign.com">hi@nphdigital.com</a>
