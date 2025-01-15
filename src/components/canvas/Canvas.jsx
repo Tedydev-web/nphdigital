@@ -85,134 +85,141 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
 	};
 
 	return (
-		<>
-			<div
-				className="offcanvas__area"
-				ref={ofCanvasArea}>
-				<div className="offcanvas__body">
-					<div className="offcanvas__left">
-						<div className="offcanvas__logo">
-							<Link href="https://nphdigital.com/">
-								<Image
-									priority
-									style={{ width: '200px', height: 'auto' }}
-									src={logoWhite2}
-									alt="Offcanvas Logo"
-								/>
-							</Link>
-						</div>
-						<div className="offcanvas__social">
-							<h3 className="social-title">{t('canvas.title')}</h3>
-							<ul>
-								<li>
-									<a href="https://zalo.me/2599746016148700210?src=qr&f=1">{t('canvas.social.zalo')}</a>
-								</li>
-								<li>
-									<a href="https://www.facebook.com/nphdigital838">{t('canvas.social.facebook')}</a>
-								</li>
-								<li>
-									<a href="https://t.me/Nphdigital">{t('canvas.social.telegram')}</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div className="offcanvas__mid">
-						<div className="offcanvas__menu-wrapper">
-							<nav className="offcanvas__menu">
-								<ul
-									className="menu-anim title"
-									ref={menu}>
-									<li>
-										<div className="header_title">
-											<Link
-												href={'https://nphdigital.com/'}
-												onClick={(e) => handleLinkClick(e, 'https://nphdigital.com/')}>
-												{t('canvas.menu.home')}
-											</Link>
-										</div>
-									</li>
-									<li>
-										<div className="header_title">
-											<Link
-												href={'/gioi-thieu'}
-												onClick={(e) => handleLinkClick(e, '/gioi-thieu')}>
-												{t('canvas.menu.about')}
-											</Link>
-										</div>
-									</li>
-									<li>
-										<div className="header_title d-flex">
-											<Link
-												href={'/dich-vu'}
-												onClick={(e) => handleLinkClick(e, '/dich-vu')}>
-												{t('canvas.menu.service')}
-											</Link>
-										</div>
-									</li>
-									<li>
-										<div className="header_title">
-											<Link
-												href={'/bai-viet'}
-												onClick={(e) => handleLinkClick(e, '/bai-viet')}>
-												{t('canvas.menu.blog')}
-											</Link>
-										</div>
-									</li>
-									<li>
-										<div className="header_title">
-											<Link
-												href={'/lien-he'}
-												onClick={(e) => handleLinkClick(e, '/lien-he')}>
-												{t('canvas.menu.contact')}
-											</Link>
-										</div>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-					<div className="offcanvas__right">
-						<div className="offcanvas__search">
-							<SwitcherLang />
-						</div>
-						<div className="offcanvas__contact">
-							<h3>{t('canvas.contact.title')}</h3>
-							<ul>
-								<li>
-									<a href="tel:02094980547">+(84) - 1900088883</a>
-								</li>
-								<li>
-									<a href="mailto:info@extradesign.com">hi@nphdigital.com</a>
-								</li>
-								<li>{t('canvas.contact.address')}</li>
-							</ul>
-						</div>
-						<Image
-							priority
-							style={{ width: 'auto', height: 'auto' }}
-							src={Shape11}
-							alt="shape"
-							className="shape-1"
-						/>
-						<Image
-							priority
-							style={{ width: 'auto', height: 'auto' }}
-							src={Shape12}
-							alt="shape"
-							className="shape-2"
-						/>
-					</div>
-					<div className="offcanvas__close">
-						<button
-							type="button"
-							onClick={closeCanvas}>
-							<FontAwesomeIcon icon={faXmark} />
-						</button>
-					</div>
-				</div>
-			</div>
-		</>
-	);
+    <>
+      <div className="offcanvas__area" ref={ofCanvasArea}>
+        <div className="offcanvas__body">
+          <div className="offcanvas__left">
+            <div className="offcanvas__logo">
+              <Link href="https://nphdigital.com/">
+                <Image
+                  priority
+                  style={{ width: "200px", height: "auto" }}
+                  src={logoWhite2}
+                  alt="Offcanvas Logo"
+                />
+              </Link>
+            </div>
+            <div className="offcanvas__social">
+              <h3 className="social-title">{t("canvas.title")}</h3>
+              <ul>
+                <li>
+                  <a href="https://zalo.me/2599746016148700210?src=qr&f=1">
+                    {t("canvas.social.zalo")}
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/nphdigital838">
+                    {t("canvas.social.facebook")}
+                  </a>
+                </li>
+                <li>
+                  <a href="https://t.me/Nphdigital">
+                    {t("canvas.social.telegram")}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="offcanvas__mid">
+            <div className="offcanvas__menu-wrapper">
+              <nav className="offcanvas__menu">
+                <ul className="menu-anim title" ref={menu}>
+                  <li>
+                    <div className="header_title">
+                      <Link
+                        href={"https://nphdigital.com/"}
+                        onClick={(e) =>
+                          handleLinkClick(e, "https://nphdigital.com/")
+                        }
+                      >
+                        {t("canvas.menu.home")}
+                      </Link>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="header_title">
+                      <Link
+                        href={"/gioi-thieu"}
+                        onClick={(e) => handleLinkClick(e, "/gioi-thieu")}
+                      >
+                        {t("canvas.menu.about")}
+                      </Link>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="header_title d-flex">
+                      <Link
+                        href={"/dich-vu"}
+                        onClick={(e) => handleLinkClick(e, "/dich-vu")}
+                      >
+                        {t("canvas.menu.service")}
+                      </Link>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="header_title">
+                      <Link
+                        href={"/bai-viet"}
+                        onClick={(e) => handleLinkClick(e, "/bai-viet")}
+                      >
+                        {t("canvas.menu.blog")}
+                      </Link>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="header_title">
+                      <Link
+                        href={"/lien-he"}
+                        onClick={(e) => handleLinkClick(e, "/lien-he")}
+                      >
+                        {t("canvas.menu.contact")}
+                      </Link>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div className="offcanvas__right">
+            <div className="offcanvas__search">
+              <SwitcherLang />
+            </div>
+            <div className="offcanvas__contact">
+              <h3>{t("canvas.contact.title")}</h3>
+              <ul>
+                <li>
+                  <a href="tel:02094980547">1900088883</a>
+                </li>
+                <li>
+                  <a href="mailto:info@extradesign.com">hi@nphdigital.com</a>
+                </li>
+                <li>{t("canvas.contact.address")}</li>
+              </ul>
+            </div>
+            <Image
+              priority
+              style={{ width: "auto", height: "auto" }}
+              src={Shape11}
+              alt="shape"
+              className="shape-1"
+            />
+            <Image
+              priority
+              style={{ width: "auto", height: "auto" }}
+              src={Shape12}
+              alt="shape"
+              className="shape-2"
+            />
+          </div>
+          <div className="offcanvas__close">
+            <button type="button" onClick={closeCanvas}>
+              <FontAwesomeIcon icon={faXmark} />
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Canvas;
