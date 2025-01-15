@@ -7,7 +7,7 @@ on:
       - nphdigital.vn
 
 jobs:
-  merge-to-vn:
+  merge-and-deploy:
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
@@ -16,90 +16,67 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.TOKEN }}
       
-      - name: Merge master -> nphdigital.vn
+      - name: Merge and Deploy
         run: |
+          # Cấu hình git
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
           
-          # Fetch all branches
-          echo "Fetching all branches..."
+          # Merge master vào nphdigital.vn
+          echo "🔄 Merging master into nphdigital.vn..."
           git fetch origin
-          
-          # Checkout and update nphdigital.vn branch
-          echo "Checking out nphdigital.vn branch..."
           git checkout nphdigital.vn
           git pull origin nphdigital.vn
           
-          # Try to merge
-          echo "Attempting to merge master into nphdigital.vn..."
           if ! git merge origin/master -m "Auto-merge master into nphdigital.vn"; then
-            echo "⚠️ Merge conflicts detected. Listing conflicted files:"
-            git diff --name-only --diff-filter=U
-            
-            echo "Resolving conflicts by preferring master branch changes..."
-            # Ưu tiên thay đổi từ master trong trường hợp conflict
+            echo "⚠️ Conflicts detected, resolving with master changes..."
             git checkout --ours .
             git add .
-            
-            # Commit merge với resolved conflicts
-            echo "Committing resolved conflicts..."
-            git commit -m "Resolve merge conflicts in favor of master branch"
-            
-            echo "✅ Conflicts resolved successfully."
-          else
-            echo "✅ Merge completed successfully with no conflicts."
+            git commit -m "Resolve conflicts with master changes"
           fi
           
-          # Push changes
-          echo "Pushing changes to nphdigital.vn..."
           git push origin nphdigital.vn
-          echo "✅ All changes have been pushed successfully."
+          echo "✅ Merge completed successfully"
 
-  deploy-com:
-    if: github.ref == 'refs/heads/master'
-    runs-on: ubuntu-latest
-    needs: merge-to-vn
-    steps:
-    - name: Deploy to nphdigital.com
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: 22
-        script: |
-          cd /var/www/nphdigital/nphdigital.com/nphdigital
-          echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S -v
-          if [ $? -eq 0 ]; then
+      - name: Deploy to Both Domains
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: |
+            # Deploy nphdigital.com
+            echo "🚀 Deploying nphdigital.com..."
+            cd /var/www/nphdigital/nphdigital.com/nphdigital
             echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S git pull origin master
             echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S npm run build
             pm2 reload 0
             pm2 restart 0
-          else
-            echo "Mật khẩu sudo không chính xác."
-            exit 1
-          fi
-
-  deploy-vn:
-    if: github.ref == 'refs/heads/nphdigital.vn'
-    runs-on: ubuntu-latest
-    steps:
-    - name: Deploy to nphdigital.vn
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: 22
-        script: |
-          cd /var/www/nphdigital/nphdigital.vn/nphdigitalvn
-          echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S -v
-          if [ $? -eq 0 ]; then
+            
+            # Deploy nphdigital.vn
+            echo "🚀 Deploying nphdigital.vn..."
+            cd /var/www/nphdigital/nphdigital.vn/nphdigitalvn
             echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S git pull origin nphdigital.vn
             echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S npm run build
             pm2 reload 1
             pm2 restart 1
-          else
-            echo "Mật khẩu sudo không chính xác."
-            exit 1
-          fi
+
+  deploy-vn-only:
+    if: github.ref == 'refs/heads/nphdigital.vn'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy nphdigital.vn
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: |
+            echo "🚀 Deploying nphdigital.vn..."
+            cd /var/www/nphdigital/nphdigital.vn/nphdigitalvn
+            echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S git pull origin nphdigital.vn
+            echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S npm run build
+            pm2 reload 1
+            pm2 restart 1
