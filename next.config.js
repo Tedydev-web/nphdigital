@@ -51,9 +51,7 @@ const nextConfig = {
 		removeConsole: process.env.NODE_ENV === 'production',
 	},
 	experimental: {
-		optimizeCss: true,
-		legacyBrowsers: false,
-		browsersListForSwc: true
+		optimizeCss: true
 	}
 }
 
