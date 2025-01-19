@@ -1,157 +1,157 @@
-import dynamic from 'next/dynamic';
-import Head from 'next/head';
-import { useEffect, useRef, useCallback, useState } from 'react';
-import RootLayout from '@/components/common/layout/RootLayout';
-import DigitalAgencyHero from '@/components/hero/DigitalAgencyHero';
-import DigitalAgencyRoll from '@/components/roll/DigitalAgencyRoll';
-import DigitalAgencyAbout from '@/components/about/DigitalAgencyAbout';
-import ServiceElementV4 from '@/components/service/ServiceElementV4';
-import DigitalAgencyCounter from '@/components/counter/DigitalAgencyCounter';
-import DigitalAgencyWorkflow from '@/components/workflow/DigitalAgencyWorkflow';
-import DigitalAgencyPortfolio from '@/components/portfolio/DigitalAgencyPortfolio';
-import DigitalAgencyBrand from '@/components/brand/DigitalAgencyBrand';
-import DigitalAgencyCTA from '@/components/cta/DigitalAgencyCTA';
-import DigitalMarketingTestimonial from '@/components/testimonial/DigitalMarketingTestimonial';
-import { useTranslation } from 'next-i18next';
-import { useLanguageManager } from '@/hooks/useLanguageManager';
+import dynamic from "next/dynamic";
+import Head from "next/head";
+import { useEffect, useRef, useCallback, useState } from "react";
+import RootLayout from "@/components/common/layout/RootLayout";
+import DigitalAgencyHero from "@/components/hero/DigitalAgencyHero";
+import DigitalAgencyRoll from "@/components/roll/DigitalAgencyRoll";
+import DigitalAgencyAbout from "@/components/about/DigitalAgencyAbout";
+import ServiceElementV4 from "@/components/service/ServiceElementV4";
+import DigitalAgencyCounter from "@/components/counter/DigitalAgencyCounter";
+import DigitalAgencyWorkflow from "@/components/workflow/DigitalAgencyWorkflow";
+import DigitalAgencyPortfolio from "@/components/portfolio/DigitalAgencyPortfolio";
+import DigitalAgencyBrand from "@/components/brand/DigitalAgencyBrand";
+import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
+import DigitalMarketingTestimonial from "@/components/testimonial/DigitalMarketingTestimonial";
+import { useTranslation } from "next-i18next";
+import { useLanguageManager } from "@/hooks/useLanguageManager";
 
 const DigitalAgency = () => {
-	const { t } = useTranslation('common');
-	const timelineRef = useRef(null);
-	const dotsRef = useRef([]);
-	const { currentLanguage } = useLanguageManager();
-	const [gsapInstance, setGsapInstance] = useState(null);
+  const { t } = useTranslation("common");
+  const timelineRef = useRef(null);
+  const dotsRef = useRef([]);
+  const { currentLanguage } = useLanguageManager();
+  const [gsapInstance, setGsapInstance] = useState(null);
 
-	useEffect(() => {
-		// Load GSAP and ScrollTrigger
-		const loadGSAP = async () => {
-			const gsapModule = await import('gsap');
-			const ScrollTriggerModule = await import('gsap/ScrollTrigger');
-			const gsap = gsapModule.default;
-			gsap.registerPlugin(ScrollTriggerModule.default);
-			setGsapInstance(gsap);
-		};
-		loadGSAP();
-	}, []);
+  useEffect(() => {
+    // Load GSAP and ScrollTrigger
+    const loadGSAP = async () => {
+      const gsapModule = await import("gsap");
+      const ScrollTriggerModule = await import("gsap/ScrollTrigger");
+      const gsap = gsapModule.default;
+      gsap.registerPlugin(ScrollTriggerModule.default);
+      setGsapInstance(gsap);
+    };
+    loadGSAP();
+  }, []);
 
-	const setupScrollDots = useCallback(() => {
-		if (!gsapInstance) return;
-		
-		const dots = dotsRef.current;
-		const sections = document.querySelectorAll('section');
+  const setupScrollDots = useCallback(() => {
+    if (!gsapInstance) return;
 
-		const handleScroll = () => {
-			const scrollPosition = window.scrollY + window.innerHeight / 2;
-			sections.forEach((section, index) => {
-				const sectionTop = section.offsetTop;
-				const sectionHeight = section.offsetHeight;
-				if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-					highlightDot(index);
-				} else {
-					unhighlightDot(index);
-				}
-			});
-		};
+    const dots = dotsRef.current;
+    const sections = document.querySelectorAll("section");
 
-		window.addEventListener('scroll', handleScroll);
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	}, [gsapInstance]);
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+      sections.forEach((section, index) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          highlightDot(index);
+        } else {
+          unhighlightDot(index);
+        }
+      });
+    };
 
-	const setupTimeline = useCallback(() => {
-		if (!gsapInstance) return;
-		
-		const timeline = timelineRef.current;
-		gsapInstance.to(timeline, {
-			scrollTrigger: {
-				trigger: document.body,
-				start: 'top top',
-				end: 'bottom bottom',
-				scrub: true,
-				onUpdate: (self) => {
-					const progress = self.progress * 100;
-					timeline.style.height = `${progress}%`;
-				},
-			},
-		});
-	}, [gsapInstance]);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [gsapInstance]);
 
-	const playCursor = useCallback(() => {
-		if (!gsapInstance) return;
-		
-		let client_cursor = document.getElementById('client_cursor');
-		if (!client_cursor) return;
+  const setupTimeline = useCallback(() => {
+    if (!gsapInstance) return;
 
-		const handleMouseMove = (e) => {
-			const target = e.target;
-			
-			if (target.closest('.testimonial__img')) {
-				gsapInstance.to(client_cursor, {
-					opacity: 1,
-					x: e.clientX,
-					y: e.clientY,
-					ease: 'power4.out',
-				});
-			} else {
-				gsapInstance.to(client_cursor, {
-					opacity: 0,
-					x: e.clientX,
-					y: e.clientY,
-					ease: 'power4.out',
-				});
-			}
-		};
+    const timeline = timelineRef.current;
+    gsapInstance.to(timeline, {
+      scrollTrigger: {
+        trigger: document.body,
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+        onUpdate: (self) => {
+          const progress = self.progress * 100;
+          timeline.style.height = `${progress}%`;
+        },
+      },
+    });
+  }, [gsapInstance]);
 
-		document.addEventListener('mousemove', handleMouseMove);
-		return () => {
-			document.removeEventListener('mousemove', handleMouseMove);
-		};
-	}, [gsapInstance]);
+  const playCursor = useCallback(() => {
+    if (!gsapInstance) return;
 
-	useEffect(() => {
-		if (typeof window !== 'undefined' && gsapInstance) {
-			const cursorCleanup = playCursor();
-			setupTimeline();
-			const dotsCleanup = setupScrollDots();
+    let client_cursor = document.getElementById("client_cursor");
+    if (!client_cursor) return;
 
-			return () => {
-				cursorCleanup && cursorCleanup();
-				dotsCleanup && dotsCleanup();
-			};
-		}
-	}, [playCursor, setupTimeline, setupScrollDots, gsapInstance]);
+    const handleMouseMove = (e) => {
+      const target = e.target;
 
-	const highlightDot = (index) => {
-		if (dotsRef.current[index]) {
-			dotsRef.current[index].classList.add('active');
-		}
-	};
+      if (target.closest(".testimonial__img")) {
+        gsapInstance.to(client_cursor, {
+          opacity: 1,
+          x: e.clientX,
+          y: e.clientY,
+          ease: "power4.out",
+        });
+      } else {
+        gsapInstance.to(client_cursor, {
+          opacity: 0,
+          x: e.clientX,
+          y: e.clientY,
+          ease: "power4.out",
+        });
+      }
+    };
 
-	const unhighlightDot = (index) => {
-		if (dotsRef.current[index]) {
-			dotsRef.current[index].classList.remove('active');
-		}
-	};
+    document.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, [gsapInstance]);
 
-	return (
+  useEffect(() => {
+    if (typeof window !== "undefined" && gsapInstance) {
+      const cursorCleanup = playCursor();
+      setupTimeline();
+      const dotsCleanup = setupScrollDots();
+
+      return () => {
+        cursorCleanup && cursorCleanup();
+        dotsCleanup && dotsCleanup();
+      };
+    }
+  }, [playCursor, setupTimeline, setupScrollDots, gsapInstance]);
+
+  const highlightDot = (index) => {
+    if (dotsRef.current[index]) {
+      dotsRef.current[index].classList.add("active");
+    }
+  };
+
+  const unhighlightDot = (index) => {
+    if (dotsRef.current[index]) {
+      dotsRef.current[index].classList.remove("active");
+    }
+  };
+
+  return (
     <div>
       <Head>
         <title>NPH Digital | Giải Pháp chuyển đổi số toàn diện</title>
-        {/* Thêm meta robots và sitemap */}
         <meta
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
-        {/* Thêm các meta tags cho SEO */}
         <meta name="googlebot" content="index, follow" />
         <meta name="bingbot" content="index, follow" />
         <meta name="revisit-after" content="1 days" />
         <meta name="rating" content="general" />
 
-        {/* Các meta tags hiện có của bạn */}
         <meta
           name="description"
           content="NPH Digital - Giải pháp chuyển đổi số toàn diện: Phát triển ứng dụng di động, Thiết kế website, UX/UI, Marketing số, CRM, ERP, AI, và thuê ngoài IT."
@@ -177,7 +177,7 @@ const DigitalAgency = () => {
               },
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "1900088883",
+                telephone: "+84-777-018-333",
                 contactType: "customer service",
               },
               description:
@@ -198,7 +198,6 @@ const DigitalAgency = () => {
         />
         <meta name="author" content="NPH Digital" />
 
-        {/* Open Graph Meta Tags */}
         <meta
           property="og:title"
           content="NPH Digital | Giải Pháp chuyển đổi số toàn diện"
@@ -257,13 +256,10 @@ const DigitalAgency = () => {
         <meta httpEquiv="Pragma" content="no-cache" />
         <meta httpEquiv="Expires" content="0" />
 
-        {/* Viewport and Mobile Optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        {/* Canonical URL */}
         <link rel="canonical" href="https://nphdigital.com/" />
 
-        {/* Favicon */}
         <link
           rel="icon"
           href="https://res.cloudinary.com/tedydev/image/upload/nphdigital/favicon.ico"
@@ -288,14 +284,12 @@ const DigitalAgency = () => {
           sizes="16x16"
         />
 
-        {/* Preload important resources */}
         <link
           rel="preload"
           as="image"
           href="https://res.cloudinary.com/tedydev/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/nphdigital/cover.png"
         />
 
-        {/* Other Meta Tags */}
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="application-name" content="NPH Digital" />
@@ -303,7 +297,6 @@ const DigitalAgency = () => {
 
         <meta name="copyright" content="NPH Digital" />
 
-        {/* Schema Markup */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
