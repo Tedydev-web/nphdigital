@@ -7,7 +7,10 @@ const nextConfig = {
 	reactStrictMode: true,
 	poweredByHeader: false,
 	sassOptions: {
-		includePaths: [path.join(__dirname, 'src/styles'), path.join(__dirname, 'public/assets/scss')],
+		includePaths: [
+			path.join(__dirname, 'src/styles'),
+			path.join(__dirname, 'public/assets/scss'),
+		],
 	},
 	images: {
 		domains: ['res.cloudinary.com'],
@@ -21,8 +24,8 @@ const nextConfig = {
 			test: /\.(woff|woff2|eot|ttf|otf)$/,
 			type: 'asset/resource',
 			generator: {
-				filename: 'static/fonts/[hash][ext][query]'
-			}
+				filename: 'static/fonts/[hash][ext][query]',
+			},
 		});
 
 		// CSS optimization
@@ -35,7 +38,6 @@ const nextConfig = {
 				priority: 10,
 			};
 
-			// Optimize common chunks
 			config.optimization.splitChunks.cacheGroups.commons = {
 				name: 'commons',
 				chunks: 'all',
@@ -44,19 +46,25 @@ const nextConfig = {
 			};
 		}
 
+		// ✅ Add alias for @ → src/
+		config.resolve.alias['@'] = path.resolve(__dirname, 'src');
+
 		return config;
 	},
 	optimizeFonts: true,
 	swcMinify: true,
 	compiler: {
-		removeConsole: process.env.NODE_ENV === 'production' ? {
-			exclude: ['error', 'warn'],
-		} : false,
+		removeConsole:
+			process.env.NODE_ENV === 'production'
+				? {
+						exclude: ['error', 'warn'],
+				  }
+				: false,
 	},
 	experimental: {
 		optimizeCss: true,
-		scrollRestoration: true
-	}
-}
+		scrollRestoration: true,
+	},
+};
 
 module.exports = nextConfig;
