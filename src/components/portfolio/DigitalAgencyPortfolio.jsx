@@ -3,14 +3,24 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from '@/plugins';
 import Link from 'next/link';
-import Portfilio11 from '../../../public/assets/imgs/portfolio/1/1.webp';
-import Portfilio12 from '../../../public/assets/imgs/portfolio/1/2.webp';
-import Portfilio13 from '../../../public/assets/imgs/portfolio/1/3.webp';
-import Portfilio14 from '../../../public/assets/imgs/portfolio/1/4.webp';
-import Portfilio15 from '../../../public/assets/imgs/portfolio/1/5.webp';
-import Portfilio16 from '../../../public/assets/imgs/portfolio/1/6.webp';
-import Portfolio17 from '../../../public/assets/imgs/portfolio/1/7.webp';
-import Portfilio18 from '../../../public/assets/imgs/portfolio/1/8.webp';
+// import Portfilio11 from '../../../public/assets/imgs/portfolio/1/1.webp';
+// import Portfilio12 from '../../../public/assets/imgs/portfolio/1/2.webp';
+// import Portfilio13 from '../../../public/assets/imgs/portfolio/1/3.webp';
+// import Portfilio14 from '../../../public/assets/imgs/portfolio/1/4.webp';
+// import Portfilio15 from '../../../public/assets/imgs/portfolio/1/5.webp';
+// import Portfilio16 from '../../../public/assets/imgs/portfolio/1/6.webp';
+// import Portfolio17 from '../../../public/assets/imgs/portfolio/1/7.webp';
+// import Portfilio18 from '../../../public/assets/imgs/portfolio/1/8.webp';
+
+import Portfilio11 from '@/assets/imgs/portfolio/1/1.webp';
+import Portfilio12 from '@/assets/imgs/portfolio/1/2.webp';
+import Portfilio13 from '@/assets/imgs/portfolio/1/3.webp';
+import Portfilio14 from '@/assets/imgs/portfolio/1/4.webp';
+import Portfilio15 from '@/assets/imgs/portfolio/1/5.webp';
+import Portfilio16 from '@/assets/imgs/portfolio/1/6.webp';
+import Portfolio17 from '@/assets/imgs/portfolio/1/7.webp';
+import Portfilio18 from '@/assets/imgs/portfolio/1/8.webp';
+
 import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
