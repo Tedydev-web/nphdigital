@@ -188,7 +188,7 @@ const Canvas = ({ bladeMode = '', ofCanvasArea }) => {
               <h3>{t("canvas.contact.title")}</h3>
               <ul>
                 <li>
-                  <a href="tel:02094980547">1900088883</a>
+                  <a href="tel:18003108">18003108</a>
                 </li>
                 <li>
                   <a href="mailto:info@extradesign.com">hi@nphdigital.com</a>
