@@ -8,10 +8,10 @@
     "line1": "Don’t hesitate!",
     "line2": "Send us your information"
   },
-  "address": {
-    "line1": "No. 838, Vinh Binh Hamlet,",
-    "line2": "An Vinh Ngai Commune, Tan An City, Long An Province"
-  },
+"address": {
+  "line1": "No. 838, Vinh Binh Hamlet,",
+  "line2": "An Vinh Ngai Commune, Tan An Ward, Tay Ninh Province"
+},
   "form": {
     "name": "Name *",
     "email": "Email *",
