@@ -270,7 +270,7 @@ export default function Footer3() {
 										<li>{t('footer.contact.address')}</li>
 										<li>
 											<a
-												href="tel:02574328301"
+												href="tel:18003108"
 												className="phone">
 												{t('footer.contact.phone')}
 											</a>
