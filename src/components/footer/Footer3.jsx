@@ -175,7 +175,7 @@ export default function Footer3() {
 										</a>
 
 										<a
-											href="https://www.facebook.com/nphdigital838838"
+											href="https://www.facebook.com/nphdigital838"
 											target="_blank"
 											rel="noopener noreferrer">
 											<button className="Btn facebook">
